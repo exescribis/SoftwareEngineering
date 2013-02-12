@@ -4,7 +4,7 @@ $NomSysteme:
   Le nom des systèmes et des sous-systèmes doivent clairement reflêter leur rôle et/ou la décomposition réalisée.
 	
 $NomActeur:
-  Le nom d'un acteur doit être une forme nominale, ne pas être générique (par exemple "utilisateur" et "acteur" sont à éviter), et ne pas correspondre à un .
+  Le nom d'un acteur doit être une forme nominale, ne pas être générique (par exemple "utilisateur" et "acteur" sont à éviter), et ne pas correspondre à une position ou un status dans une organisation.
 	
 $NomCU:
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale. 
@@ -22,6 +22,14 @@ $NomScenarioInstantie:
 
 -- Description
 
+-- Diagramme
+$NonHumain
+	Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
+---- Diagramme $3A Entre 3 et 7
+
+
 -- Scénario
 
-	
+-- Sujet explicite pour chaque phrase (acteur ou système) 
+-- Phrase traduisant soit une intention de l'acteur, soit la responsabilité du système
+
