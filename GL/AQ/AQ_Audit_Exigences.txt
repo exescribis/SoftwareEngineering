@@ -1,0 +1,160 @@
+﻿$Langage:
+	Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
+
+$Orthographe:
+  Le texte comporte une ou plusieurs fautes d'orthographe. 
+
+$Ponctuation:
+  Les règles de ponctuation associées au langage utilisé ne sont pas respectées. 
+  -- Pour la langue française voir par exemple l'url suivante http://www.la-ponctuation.com/
+
+$Grammaire:
+  La grammaire du langage n'est pas respectée.
+
+$Style:
+  Le style du texte est inappoprié. Par exemple le style est trop "télégraphique", trop verbeux, trop technique, etc. 
+
+$Abbreviation:
+  Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables. 
+
+$ArticleInDefini:
+  Un article défini est utilisé (par exemple "le", "au", ...) sans que le ou les objets referencés soit clairement identifiés ou un article indéfini est utilisé (par exemple "un" , "des" , ...) alors que ce devrait être un article défini.
+
+$RerefenceAmbigue:
+  Une référence ambigüe est faite à un objet. Ce peut être une référence via un article défini (e.g. "le"),
+  une référence temporelle (p.e. "le jour", "auparavant"), etc. 
+
+$Vocabulaire
+  L'utilisation des termes utilisés ne semble pas systèmatique, il est difficile de déterminer quelles combinaisons de termes sont spécifiques au domaine considéré, l'utilisation de synonymes et/ou paraphrases est inadapté au style ou les termes vocabulaire n'est pas de texte considéré. 
+
+$Identificateur: 
+	Les identificateurs doivent être clairs et compréhensibles en dehors de leur contexte immédiat.
+	Ils doivent reflêter les objets auquels ils font références.
+
+$Temps:
+  Le temps (passé, présent, futur ...) ou la modalité (devoir, pouvoir, savoir, ...) associé à un ou plusieurs éléments de la phrase est inadapté, incorrect, flou, et/ou à préciser.	
+	
+$Contexte:
+  Certains éléments du texte ne sont pas facilement interprétables en l'absence d'un contexte clairement défini ou la dépendance par rapport à ce contexte devrait être limitée.
+
+$PhraseMalConstruite:	
+  Une ou plusieurs phrases sont mal construites, trop longues, contiennent trop d'imbrications, d'enchainements et/ou de références ambigües.
+
+$ImbricationInutile:
+  Les éléments d'imbrications telles que les parenthèses, les guillemets, les tirets, les deux points, et autres types de ponctuations devraient être remplacés par des structures de phrases plus explicitant. 
+	
+$TexteSection:
+  Les titres des sections et de sous-sections ne doivent s'enchainer sans qu'un texte d'introduction ou de liaison ne les séparent. 		
+
+$Trigramme: 
+  L'utilisation systématique des trigrammes est nécessaire à chaque fois qu'une référence est faite à une partie prenante.
+
+$Justification:
+  L'information fournie n'est pas claire ou n'est pas justifiée. 
+	
+$Subjectif:
+  Le texte fait référence à un ou des éléments pouvant être interpretée de manière subjective, imprécise et/ou non quantifiables.	
+
+$Precision:
+  Le texte comporte des termes flous ou trop imprécis par rapport au niveau d'exigence souhaité. Par exemple le connecteur "ou" peut être interpretée comme étant exclusif ou non. 
+
+$Redondance:
+  Le texte comporte des éléments redondants entre eux ou par rapport à d'autres descriptions. 
+	
+$Incoherence:
+  Le texte comporte des éléments pouvant se révéler incohérents entre eux ou par rapport à d'autres descriptions. 
+	
+$Completude:
+  Le texte est trop incomplet ou ne fait pas référence à tous les objets pertinents dans l'univers du discours.
+
+$Invalide:
+  La texte fait référence à une propriété, un objet, ou un fait pouvant être jugé invalide ou irréaliste.
+
+$Homogeneite:
+  Le texte fourni n'est pas homogène ne avec les descriptions suivantes et précédentes faisant références à des objets similaires
+  
+$Exemple:
+  Le status d'exemple, d'illustration ou de cas général n'est pas explicite et/ou il est souhaitable de séparer de manière explicite les éléments qui releve de l'illustration ou du cas général.
+	
+$Sujet:
+  Le sujet de la phrase n'est pas clair, peu explicite ou erroné.
+	
+$Complexite:
+  La formulation de la phrase est inutilement complexe et peut être simplifée.
+
+$Interpretation:
+  La phrase est difficile a interpretée et/ou peut être interpretée de manière inadéquate, erronée et/ou ambigüe.
+	
+$NonAbstraction:
+  La phrase comporte un ou plusieurs éléments faisant référence à des concepts ou objets correspondant à des niveaux d'abstractions différents et/ou trop détaillés.
+
+$HypotheseNonValidee:
+  Une hypothèse est faite implicitement ou explicitement sans pour autant que cette hypothèse ai été validée. 
+	
+$Pipe:
+  Une confusion est faite entre la description/representation/identification d'un objet et cet objet lui même.
+
+$ExigenceIncoherente:
+  L'exigence est incohérente avec une autre exigence decrite avant ou après.
+	
+$ExigenceInvalide:
+  L'exigence n'est pas ou ne semble pas être valide par rapport aux besoins exprimés par le client.
+
+$SurExgigence:
+  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client	ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
+	
+$SousExigence:
+  La l'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
+
+$StatusNonDefinitif:
+  L'utilisation de la valeur "définitive" pour l'attribut stabilité doit être reservée aux versions revisées, stables, et dont la qualité à été prouvée.
+	
+$ProprieteExigenceInadaptee:
+  La valeur de la propriété associée à l'exigence semble inadaptée.
+
+$IdentificateurExigence:
+	L'identificateur ne fait pas clairement référence à une exigence.
+	
+$DescriptionExigence:
+	Le texte ne décrit pas une exigence, mais par exemple un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des utilisateurs, etc.
+
+$TypeDExigence:
+  Le type de l'exigence n'est pas correct ou la phrase contient différentes exigences de types différents.
+
+$ExigencesMultiples:
+  Le texte fait référence à plusieurs exigences simultanément et/ou les descriptions de ces exigences devraient être séparées.
+
+$LimiteDuSysteme:
+	Les limites du systeme ne sont pas clairement identifiées et/ou il n'est pas clairement établi quel est le rôle exact du système dans la situation décrite.
+	
+
+
+	L'application ne fonctionne pas de 7H à 19H30 les jours ouvrés pour les bâtiments d'enseignement
+	Le droit d'accès d'une personne à un bâtiment est l'accès le plus souple des autorisations des groupes auquels elle appartient
+	On enregistre un journal d'activité d'une personne (accès aux bâtiments, etc..)
+		Le ou les gardiens surveille(nt) le fonctionnement continu du système
+
+	La réponse de la demande d'accès à un bâtiment ne doit pas être trop longue
+	Les utilisateurs permanents doivent en plus renseigner le bâtiment et numéro de leur bureau, leur numéro de téléphone professionnel ainsi que leur adresse électronique
+	on genere un badge et on l'insere dans la BD
+	Les périodes d'accès à un bâtiment sont définis soit pour un jour férié et/ou ouvré.
+	On peut enregistrer une alarme en cas d'incident suite à un déclanchement
+	On doit modifier les informations des personnes   (priorité : stable)
+  A la lecture d'un badge, on peut récupérer les informations dans le système central
+	Le logiciel de gestion du système pour le superviseur et les administrateurs doit avoir un temps de réponse normal
+	on genere un badge et on l'insere dans la BD
+	On renseigne son nom, prénom et le numéro de code lié au système d'accès. Et on y rajoute les infos complementaires selon son type d'apartenance (numero de bureau pour le personnel permanent, numero de carte d'etudiant pour les stagiaires...etc)  (priorité : stable)
+	Deux entrées successives déclenchent une alarme et créent un incident.
+	Le lecteur lit un badge
+	Le système central analyse et valide la demande, envoie les signaux adéquats pour l'affichage, pour débloquer la porte, la fermer et la rebloquer, ou envoyer les alarmes selon les diverses situations d'erreur
+	BatPubBatCtrl: Si un personne est entrée dans un bâtiment qui été en mode public, elle n'est autorisée à sortir que si ce bâtiment passe à l'état contrôlé et si la personne en question possède une autorisation d'accès pour la plage horaire correspondante.
+	Une autorisation doit être comprise dans les autorisations générales du bâtiment
+	Un utilisateur passe son badge avant d'entrer dans le bâtiment
+	A chaque passage, vérifier le sens de passage et que celui-ci est unique
+	Les droits de l'administrateur sont inclus dans ceux du superviseur
+	Il faut au moins un accès par bâtiment pour qu'il soit accessible
+	Un bâtiment doit avoir une fonctionalité ( ex : enseignement)
+  AjouterAlarme: Lorsqu'une alarme est declanchée, enregistrer l'alarme.
+	Gérer le materiel ( badges, points d'acces, ...) qui est deffectueux et doit être changé
+	badgeUnique: Une et une seule personne peut utiliser un même badge
+	Administrateur et Superviseur possède un compte avec mot de passe
