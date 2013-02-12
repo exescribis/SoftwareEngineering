@@ -1,0 +1,27 @@
+﻿-- Nomemclature
+
+$NomSysteme:
+  Le nom des systèmes et des sous-systèmes doivent clairement reflêter leur rôle et/ou la décomposition réalisée.
+	
+$NomActeur:
+  Le nom d'un acteur doit être une forme nominale, ne pas être générique (par exemple "utilisateur" et "acteur" sont à éviter), et ne pas correspondre à un .
+	
+$NomCU:
+  Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale. 
+	
+$NomActeurInstancie:
+  Les noms des personnes jouant le role d'acteur doivent dans des scénarios instanciés doivent être à la fois particuliers pour être mémotechniques mais aussi représenter la diversité culturelle associé au contexte du système et du projet associé.
+	
+$NomScenario:
+  Le nom d'un scénario doit faire référence explicitement au cas d'utilisation qu'il réalise ainsi que dans la mesure du possible à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario. 
+	
+$NomScenarioInstantie:
+  Le nom d'un scénario instantié doit faire autant que possile référence aux instances considérées dans le scénarios notamment à l'acteur instancié.
+	
+-- Résumé
+
+-- Description
+
+-- Scénario
+
+	
