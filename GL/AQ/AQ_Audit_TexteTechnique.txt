@@ -24,8 +24,14 @@ $RerefenceAmbigue:
   Une référence ambigüe est faite à un objet. Ce peut être une référence via un article défini (e.g. "le"),
   une référence temporelle (p.e. "le jour", "auparavant"), etc. 
 
-$Vocabulaire
-  L'utilisation des termes utilisés ne semble pas systèmatique, il est difficile de déterminer quelles combinaisons de termes sont spécifiques au domaine considéré, l'utilisation de synonymes et/ou paraphrases est inadapté au style ou les termes vocabulaire n'est pas de texte considéré. 
+$Vocabulaire:
+  L'utilisation des termes utilisés ne semble pas systèmatique ou il est difficile de déterminer quelles combinaisons de termes sont spécifiques au domaine considéré ou l'utilisation de synonymes et/ou de paraphrases est inadapté. 
+	
+$Glossaire:
+	Un ou des termes potentiellement spécifiques à un domaine particulier sont utilisés sans que ceux-ci soient présentant dans un glossaire ou l'utilisation de ces termes dans le texte ne semble pas compatible avec la définition donnée dans le glossaire.
+	
+$TermeMetier:
+  Un ou des termes utilisés ne semble(nt) pas être conformes au vocabulaire utilisé par les experts membres du métier considéré ou un terme plus précis semble être disponible dans ce domaine.
 
 $Identificateur: 
 	Les identificateurs doivent être clairs et compréhensibles en dehors de leur contexte immédiat.

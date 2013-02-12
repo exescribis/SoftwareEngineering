@@ -1,0 +1,19 @@
+﻿$Abbreviation:
+  Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables. 
+
+$Identificateur: 
+	Les identificateurs doivent être clairs et compréhensibles en dehors de leur contexte immédiat.
+	Ils doivent reflêter les objets auquels ils font références.
+
+$Trigramme: 
+  Un trigramme doit être utilisé pour reférencer une partie prenante.
+
+$FormeNominale
+	Une forme nominale doit être utilisée pour référencer l'objet considéré.
+	
+$FormeVerbale
+  Une forme verbale doit être utilisée pour référencer l'objet considéré.
+	
+$Generique
+  Le ou les termes utilisés sont trop génériques et ne fournissent pas d'information ou des termes plus spécifiques sont peut être disponibles dans le vocabulaire du domaine.
+	
