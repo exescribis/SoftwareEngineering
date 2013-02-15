@@ -1,0 +1,16 @@
+-- Nomenclature
+
+$ActeurSujet:
+  Le nom de l'acteur principal associé à un cas d'utilisateur doit être le sujet de la forme verbale correspondant un nom du cas d'utilisation.
+
+
+
+ Relation
+ dRf 	Utilisation raisonnée des flêches et description explicite de la sémantique associée
+ dRa    Pas de relation entre acteurs sauf éventuellement une spécialisation
+ dRas1  Un acteur spécifique peut réaliser tous les CU de l'acteur qu'il spécialise 
+ dRas2  Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise
+
+DescriptionTextuelle
+ dtG   Termes particuliers présents dans le glossaire
+ dtPC   Phrases courtes
