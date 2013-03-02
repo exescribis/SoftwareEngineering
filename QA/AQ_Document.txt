@@ -1,0 +1,16 @@
+﻿#= Document
+#== MetaInformation
+$EnteteDocument:
+	Le titre, sous titre, ou plus généralement l'identification du document est manquant, inapproprié ou non conforme.
+
+#== Plan	
+$PlanDesiquilibre:
+	Le plan du document doit être mieux équilibré en terme de longueur relative des sections.
+
+
+#== Figures
+$DescriptionFigure:
+	Une ou des figures ne sont pas documentée(s) ou décrite(s).
+	
+$TitreFigure:
+  Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés.
