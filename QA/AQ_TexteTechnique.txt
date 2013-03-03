@@ -1,4 +1,4 @@
-﻿# TexteTechnique
+﻿#= TexteTechnique
 # Cet ensemble de règles s'appliquent aux textes techniques tel que spécifications, documentations, commentaires, etc. 
 $Langage:
 	Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
@@ -15,6 +15,9 @@ $Grammaire:
 
 $Style:
   Le style du texte est inappoprié. Par exemple le style est trop "télégraphique", trop verbeux, trop technique, etc. 
+	
+$Formatage:
+  Le formatage du texte n'est pas adéquat.
 
 $Abbreviation:
   Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables. 

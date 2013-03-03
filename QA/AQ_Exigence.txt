@@ -1,4 +1,7 @@
-﻿$ExigenceIncoherente:
+﻿$IdentificateurExigence:
+	L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.
+	
+$ExigenceIncoherente:
   L'exigence est incohérente avec une autre exigence decrite avant ou après.
 	
 $ExigenceInvalide:
@@ -16,8 +19,6 @@ $StatusNonDefinitif:
 $ProprieteExigenceInadaptee:
   La valeur de la propriété associée à l'exigence semble inadaptée.
 
-$IdentificateurExigence:
-	L'identificateur ne fait pas clairement référence à une exigence.
 	
 $DescriptionExigence:
 	Le texte ne décrit pas une exigence, mais par exemple un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des utilisateurs, etc.

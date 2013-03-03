@@ -1,0 +1,11 @@
+#=Livrable
+$Nomenclature:
+  Le nom d'un ou de plusieurs ressources livrées n'est pas conforme à aux règles de nomenclatures.
+
+$Delai:
+  Les délais de livraison n'ont pas été respectés.
+
+$Format:
+  Le format des ressources livrées n'est pas conforme.
+
+	

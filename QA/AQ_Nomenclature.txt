@@ -2,8 +2,7 @@
   Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables. 
 
 $Identificateur: 
-	Les identificateurs doivent être clairs et compréhensibles en dehors de leur contexte immédiat.
-	Ils doivent reflêter les objets auquels ils font références.
+	Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
 
 $Trigramme: 
   Un trigramme doit être utilisé pour reférencer une partie prenante.
@@ -17,3 +16,5 @@ $FormeVerbale
 $Generique
   Le ou les termes utilisés sont trop génériques et ne fournissent pas d'information ou des termes plus spécifiques sont peut être disponibles dans le vocabulaire du domaine.
 	
+$Connecteur
+  Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
