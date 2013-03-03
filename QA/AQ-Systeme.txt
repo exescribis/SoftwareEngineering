@@ -1,2 +1,0 @@
-$DecompositionSousSysteme:
-  La décomposition en termes de sous systèmes ne semble pas adéquate, pas équilibrée et/ou pas justifiée.

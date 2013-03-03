@@ -11,7 +11,7 @@ $PlanDesiquilibre:
 #== Figures
 	
 $TitreFigure:
-  Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés.
+  Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés, ou explicite par exemple parceque le titre de la figure sera difficile à interpréter dans la liste des figures par exemple.
 	
 $DescriptionFigure:
 	Une ou des figures ne sont pas documentée(s) ou décrite(s) ; il semble utile de décrire pourquoi telle ou telle figure est présentée, quels sont les éléments qui y sont représentés, pourquoi ceux-ci ont été séléctionnés, etc.

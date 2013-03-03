@@ -49,7 +49,7 @@ $Contexte:
   Certains éléments du texte ne sont pas facilement interprétables en l'absence d'un contexte clairement défini ou la dépendance par rapport à ce contexte devrait être limitée.
 
 $PhraseMalConstruite:	
-  Une ou plusieurs phrases sont mal construites, trop longues, contiennent trop d'imbrications, d'enchainements et/ou de références ambigües.
+  Une ou plusieurs phrases sont mal construites, trop longues, non achevées, contiennent trop d'imbrications, d'enchainements et/ou de références ambigües.
 
 $ImbricationInutile:
   Les éléments d'imbrications telles que les parenthèses, les guillemets, les tirets, les deux points, et autres types de ponctuations devraient être remplacés par des structures de phrases plus explicitant. 
@@ -64,10 +64,10 @@ $Justification:
   L'information fournie n'est pas claire ou n'est pas justifiée. 
 	
 $Subjectif:
-  Le texte fait référence à un ou des éléments pouvant être interpretée de manière subjective, imprécise et/ou non quantifiables.	
+  Le texte fait référence à un ou des éléments pouvant être interpretée de manière subjective, imprécise et/ou non quantifiable.	
 
 $Precision:
-  Le texte comporte des termes flous ou trop imprécis par rapport au niveau d'exigence souhaité. Par exemple le connecteur "ou" peut être interpretée comme étant exclusif ou non. 
+  Le texte comporte des termes flous ou trop imprécis par rapport au contexte du document. Par exemple le connecteur "ou" peut être interpretée comme étant exclusif ou non. 
 
 $Redondance:
   Le texte comporte des éléments redondants entre eux ou par rapport à d'autres descriptions. 

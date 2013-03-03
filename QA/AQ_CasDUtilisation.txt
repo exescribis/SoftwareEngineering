@@ -1,10 +1,9 @@
 #== Nomenclature
 
-$NomSysteme:
-  Le nom des systèmes et des sous-systèmes doivent clairement reflêter leur rôle et/ou la décomposition réalisée.
+
 	
 $NomActeur:
-  Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "utilisateur" et "acteur" sont à éviter), et ne pas correspondre à une position ou un status dans une organisation.
+  Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter), et ne pas correspondre à une position ou un status dans une organisation.
 	
 $NomCU:
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale. 
