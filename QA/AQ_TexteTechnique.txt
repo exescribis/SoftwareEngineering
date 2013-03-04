@@ -72,6 +72,9 @@ $Precision:
 $Redondance:
   Le texte comporte des éléments redondants entre eux ou par rapport à d'autres descriptions. 
 	
+$Paraphrase:
+  Le texte comporte des paraphrases qui n'apportent rien, donne une impression de redite, ou le sentiment d'un certain malaise lié à l'envie de re-phraser des concepts non définis ou mal exprimés auparavant.
+	
 $Incoherence:
   Le texte comporte des éléments pouvant se révéler incohérents entre eux ou par rapport à d'autres descriptions. 
 	

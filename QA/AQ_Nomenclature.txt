@@ -7,14 +7,26 @@ $Identificateur:
 $Trigramme: 
   Un trigramme doit être utilisé pour reférencer une partie prenante.
 
-$FormeNominale
+$FormeNominale:
 	Une forme nominale doit être utilisée pour référencer l'objet considéré.
 	
-$FormeVerbale
+$FormeVerbale:
   Une forme verbale doit être utilisée pour référencer l'objet considéré.
 	
-$Generique
+$Generique:
   Le ou les termes utilisés sont trop génériques et ne fournissent pas d'information ou des termes plus spécifiques sont peut être disponibles dans le vocabulaire du domaine.
 	
-$Connecteur
+$Connecteur:
   Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
+	
+	
+$MajMin:
+  Un ou des identificateurs devraient être dans le style MajMin comme par exemple UnIdenficateur
+	
+$StyleSIdentificateur:
+  Différents styles d'intentificateurs sont utilisés sans pour autant que l'on puisse déterminer dans quelles conditions ces styles varient, s'ils sont utilisés de manière consistentes ou non. C'est le cas par exemple lorsque certains indentificateurs sont issues à la fois de styles MajMin, min_min, MAJ_MAJ, ou dans toutes autres combinaisons ad-hoc.
+	
+# $min_min
+# $min-min
+# $MAJ-MAJ
+# $MAJ_MAJ
