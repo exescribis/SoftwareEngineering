@@ -1,3 +1,4 @@
+#=UMLStarUML
 # From StarUML user manual http://staruml.sourceforge.net/docs/user-guide(en)/ch09.html
 
 $StarUML1
@@ -76,3 +77,10 @@ $StarUML37
   Outgoing transition of ActionState cannot have trigger event. --- ActionState
 $StarUML38
   SubactivityState must have connection to ActivityGraph. --- SubactivityState
+
+
+	
+	
+	
+	
+	

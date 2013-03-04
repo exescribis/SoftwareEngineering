@@ -1,4 +1,5 @@
 ﻿#= Document
+
 #== MetaInformation
 $EnteteDocument:
 	Le titre, sous titre, ou plus généralement l'identification du document est manquant, inapproprié ou non conforme.
@@ -21,3 +22,8 @@ $Legende:
 	
 $TailleFigure:
   Certains éléments de la figure sont inadaptés et sont soit trop gros, soit trop petits, nuisant ainsi à la lisibilité de la figure.
+
+	
+	
+	
+	

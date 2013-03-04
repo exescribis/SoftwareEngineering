@@ -1,4 +1,6 @@
-﻿$IdentificateurExigence:
+﻿#=Exigence
+
+$IdentificateurExigence:
 	L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.
 	
 $ExigenceIncoherente:
@@ -18,7 +20,6 @@ $StatusNonDefinitif:
 	
 $ProprieteExigenceInadaptee:
   La valeur de la propriété associée à l'exigence semble inadaptée.
-
 	
 $DescriptionExigence:
 	Le texte ne décrit pas une exigence, mais par exemple un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des utilisateurs, etc.
@@ -31,3 +32,9 @@ $ExigencesMultiples:
 
 $LimiteDuSysteme:
 	Les limites du systeme ne sont pas clairement identifiées et/ou il n'est pas clairement établi quel est le rôle exact du système dans la situation décrite.
+
+	
+	
+	
+	
+	

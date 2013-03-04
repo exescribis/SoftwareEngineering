@@ -1,7 +1,7 @@
+#CasDUtilisation
+
 #== Nomenclature
 
-
-	
 $NomActeur:
   Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter), et ne pas correspondre à une position ou un status dans une organisation.
 	
@@ -15,7 +15,7 @@ $NomActeurInstancie:
 $ActeurSujet:
   Le nom de l'acteur principal associé à un cas d'utilisation doit être le sujet de la forme verbale correspondant au nom du cas d'utilisation.
 
-#== Diagramme	
+#== Diagramme:
 
 $Relation
   Pas de relation entre acteurs sauf éventuellement une spécialisation
@@ -24,8 +24,9 @@ $HeritageActeur:
 $SousTypageActeur:
   Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise
 
-$NonHumain
+$NonHumain:
 	Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
-
-
+	
+	
+	
 

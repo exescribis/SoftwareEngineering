@@ -1,10 +1,10 @@
 #=Classe
 
-#== Nomenclature
-$NomClasse
+#== Nomenclature:
+$NomClasse:
 	Le nom d'une classe doit correspondre à une forme nominale au singulier.
 	
-#== Role
+#== Role:
 $NomRole:
   Le nom d'un rôle doit a priori correspondre à une forme nominal et en tout état de cause à un rôle que peuvent jouer le ou les objets destination du rôles.
 	
@@ -22,5 +22,9 @@ $Navigabilite:
 $Cardinalite:
   La cardinalite est manquante ou erronée.
 	
-$CardinaliteNM
+$CardinaliteNM:
   En UML les cardinalités minimales ou maximales doivent être des constantes entières ou *
+	
+
+	
+	
