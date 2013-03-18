@@ -4,10 +4,10 @@
 
 $NomActeur:
   Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter), et ne pas correspondre à une position ou un status dans une organisation.
-	
+  
 $NomCU:
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale. 
-	
+  
 $NomActeurInstancie:
   Les noms des personnes jouant le role d'acteur doivent dans des scénarios instanciés doivent être à la fois particuliers pour être mémotechniques mais aussi représenter la diversité culturelle associé au contexte du système et du projet associé.
 
@@ -19,16 +19,16 @@ $ActeurSujet:
 
 $Relation:
   Pas de relation entre acteurs sauf éventuellement une spécialisation.
-	
+  
 $HeritageActeur:
   Un acteur spécifique peut réaliser tous les CU de l'acteur qu'il spécialise. 
-	
+  
 $SousTypageActeur:
   Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise.
 
 $NonHumain:
-	Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
-	
-	
-	
+  Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
+  
+  
+  
 

@@ -1,5 +1,5 @@
 ﻿$CUSeulementPrimaire:
-	Seuls les acteurs primaires doivent être representés dans les diagrammes de cas d'utilisation.
+  Seuls les acteurs primaires doivent être representés dans les diagrammes de cas d'utilisation.
 
-	
-	
+  
+  

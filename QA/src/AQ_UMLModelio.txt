@@ -376,8 +376,8 @@ $ModelioR3240:
 $ModelioR3250:
   A Process, a SubProcess, or a Pool should have at least one StartEvent and one EndEvent.
 
-	
-	
-	
-	
-	
+  
+  
+  
+  
+  

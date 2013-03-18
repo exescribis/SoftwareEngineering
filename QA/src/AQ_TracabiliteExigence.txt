@@ -5,7 +5,6 @@ $CUExigenceFonctionnelle:
 
 $CURoleExigences:
   Le role joué par les exigences reliées au cas d'utilisation n'est pas clair, et il n'est par exemple pas facile de déterminer quelles sont les types des exigences via leur nom, quelles sont l'exigence fonctionnelle principale réalisée par le cas d'utilisation, etc.
-	
-	
-	
-	
+  
+  
+  

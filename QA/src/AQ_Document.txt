@@ -2,28 +2,28 @@
 
 #== MetaInformation
 $EnteteDocument:
-	Le titre, sous titre, ou plus généralement l'identification du document est manquant, inapproprié ou non conforme.
+  Le titre, sous titre, ou plus généralement l'identification du document est manquant, inapproprié ou non conforme.
 
-#== Plan	
+#== Plan  
 $PlanDesiquilibre:
-	Le plan du document doit être mieux équilibré en terme de longueur relative des sections.
+  Le plan du document doit être mieux équilibré en terme de longueur relative des sections.
 
 
 #== Figures
-	
+  
 $TitreFigure:
   Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés, ou explicite par exemple parceque le titre de la figure sera difficile à interpréter dans la liste des figures par exemple.
-	
+  
 $DescriptionFigure:
-	Une ou des figures ne sont pas documentée(s) ou décrite(s) ; il semble utile de décrire pourquoi telle ou telle figure est présentée, quels sont les éléments qui y sont représentés, pourquoi ceux-ci ont été séléctionnés, etc.
-	
+  Une ou des figures ne sont pas documentée(s) ou décrite(s) ; il semble utile de décrire pourquoi telle ou telle figure est présentée, quels sont les éléments qui y sont représentés, pourquoi ceux-ci ont été séléctionnés, etc.
+  
 $Legende:
   Les symboles ou conventions utilisées dans la où les figures ne sont pas explicités et une légende pourrait remédier à ce problème, ou si une légende est présente celle-ci n'est pas adéquate ou complète.
-	
+  
 $TailleFigure:
   Certains éléments de la figure sont inadaptés et sont soit trop gros, soit trop petits, nuisant ainsi à la lisibilité de la figure.
 
-	
-	
-	
-	
+  
+  
+  
+  

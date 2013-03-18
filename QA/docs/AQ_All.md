@@ -3,11 +3,11 @@
 $NomActeur:
 -----
   Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter), et ne pas correspondre à une position ou un status dans une organisation.
-	
+  
 $NomCU:
 -----
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale. 
-	
+  
 $NomActeurInstancie:
 -----
   Les noms des personnes jouant le role d'acteur doivent dans des scénarios instanciés doivent être à la fois particuliers pour être mémotechniques mais aussi représenter la diversité culturelle associé au contexte du système et du projet associé.
@@ -20,35 +20,35 @@ $ActeurSujet:
 $Relation:
 -----
   Pas de relation entre acteurs sauf éventuellement une spécialisation.
-	
+  
 $HeritageActeur:
 -----
   Un acteur spécifique peut réaliser tous les CU de l'acteur qu'il spécialise. 
-	
+  
 $SousTypageActeur:
 -----
   Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise.
 
 $NonHumain:
 -----
-	Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
-	
-	
-	
+  Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
+  
+  
+  
 
 ﻿#=CasDUtilisation_ModeleDetaille
 
 $RelationsCUIncoherentes:
 -----
-	Les relations de dépendences <<includes>> et <<extends>> existant entre cas d'utilisations ne sont pas cohérentes avec les descriptions détaillées de ceux-ci
-	
+  Les relations de dépendences <<includes>> et <<extends>> existant entre cas d'utilisations ne sont pas cohérentes avec les descriptions détaillées de ceux-ci
+  
 $IncludeMultiple:
 -----
   Un cas d'utilisation inclu via une relation dépendence <<includes>> doit l'être dans au moins deux cas d'utilisation.
-	
-	
-	
-	
+  
+  
+  
+  
 ﻿#=CasDUtilisation_ModelePreliminaire
 
 $PasDeRelationEntreCU:
@@ -57,80 +57,78 @@ $PasDeRelationEntreCU:
 
 $CUAuxiliaireDecore:
 -----
-	Le stéréotype auxilaire doit être associé aux acteurs auxillaires.
+  Le stéréotype auxilaire doit être associé aux acteurs auxillaires.
 
 ﻿#= StyleEssentiel 
 $StyleEssentiel:
 -----
   La description du scenario ne doit pas faire de références inutiles à la manière dont les acteurs et le système intéragissent dans le détail, sachant que l'objectif d'un cas d'utilisation essentiel n'est pas de décrire des exigences sur une ou des interfaces personnes systèmes. 
 
-	
+  
 $CUPrimaireAGauche:
 -----
   Les acteurs primaires doivent être représentés à gauche du système, les acteurs secondaires à droite.
 
-	
+  
 ﻿$CUSeulementPrimaire:
-	Seuls les acteurs primaires doivent être representés dans les diagrammes de cas d'utilisation.
+  Seuls les acteurs primaires doivent être representés dans les diagrammes de cas d'utilisation.
 
-	
-	
+  
+  
 
 $NomClasse:
 -----
-	Le nom d'une classe doit correspondre à une forme nominale au singulier.
-	
+  Le nom d'une classe doit correspondre à une forme nominale au singulier.
+  
 $NomRole:
 -----
   Le nom d'un rôle doit a priori correspondre à une forme nominal et en tout état de cause à un rôle que peuvent jouer le ou les objets destination du rôles.
-	
+  
 $NomAssociation:
 -----
   Le nom de l'association doit a priori correspondre à une forme verbale ; les objets jouant le rôle de sources pour cette association jouant le rôle de "sujets" de cette forme verbale.
-	
+  
 $RoleClasse:
 -----
-  Le nom d'une classe semble correspondre à un rôle ou inversement ; la modélisation pourrait être revue.	
+  Le nom d'une classe semble correspondre à un rôle ou inversement ; la modélisation pourrait être revue.  
 $RoleAssociation:
 -----
   Le nom du rôle semble être interverti par rapport à un nom d'association ou vice versa.
-	
+  
 $Navigabilite:
 -----
   Un ou plusieurs roles portent des indications de navigabilite sans que cela semble justifié ou cohérent.
-	
+  
 $Cardinalite:
 -----
   La cardinalite est manquante ou erronée.
-	
+  
 $CardinaliteNM:
 -----
   En UML les cardinalités minimales ou maximales doivent être des constantes entières ou *
-	
+  
 
-	
+  
 
 $Protocole:
 -----
   Le nom de l'association ou du lien devrait faire référence à un protocole de communication.
 
 
-	
-	
 ﻿#= Diagramme
 
 $Densite:
 -----
   La densite des éléments dans la diagramme est soit trop importante soit insuffisante et le diagramme pourrait utilement être compacté ou au contraire étendu.
-	
+  
 $Disposition:
 -----
   La disposition spatiale des différents éléments graphiques dans le diagramme n'est pas conventionelle, nuit à la lisibilité du diagramme et/ou devrait être améliorée ou optimisée.
-	
+  
 $Couleurs:
 -----
-	L'utilisation des couleurs n'est pas optimale et pourrait être améliorée soit en diminuant, soit en augmentant le nombre des couleurs, soit en rendant explicites leur signification dans le diagramme.
-	
+  L'utilisation des couleurs n'est pas optimale et pourrait être améliorée soit en diminuant, soit en augmentant le nombre des couleurs, soit en rendant explicites leur signification dans le diagramme.
+  
 $Chevauchements:
 -----
   De nombreux chevauchements d'éléments graphiques rendre la lecture du diagramme difficile.
@@ -140,58 +138,58 @@ $Surcharge:
   Le diagramme comporte trop d'éléments graphiques et/ou textuels.
 
 
-	
-	
+  
+  
 ﻿#= Document
 
 $EnteteDocument:
 -----
-	Le titre, sous titre, ou plus généralement l'identification du document est manquant, inapproprié ou non conforme.
+  Le titre, sous titre, ou plus généralement l'identification du document est manquant, inapproprié ou non conforme.
 
 $PlanDesiquilibre:
 -----
-	Le plan du document doit être mieux équilibré en terme de longueur relative des sections.
+  Le plan du document doit être mieux équilibré en terme de longueur relative des sections.
 
 
-	
+  
 $TitreFigure:
 -----
   Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés, ou explicite par exemple parceque le titre de la figure sera difficile à interpréter dans la liste des figures par exemple.
-	
+  
 $DescriptionFigure:
 -----
-	Une ou des figures ne sont pas documentée(s) ou décrite(s) ; il semble utile de décrire pourquoi telle ou telle figure est présentée, quels sont les éléments qui y sont représentés, pourquoi ceux-ci ont été séléctionnés, etc.
-	
+  Une ou des figures ne sont pas documentée(s) ou décrite(s) ; il semble utile de décrire pourquoi telle ou telle figure est présentée, quels sont les éléments qui y sont représentés, pourquoi ceux-ci ont été séléctionnés, etc.
+  
 $Legende:
 -----
   Les symboles ou conventions utilisées dans la où les figures ne sont pas explicités et une légende pourrait remédier à ce problème, ou si une légende est présente celle-ci n'est pas adéquate ou complète.
-	
+  
 $TailleFigure:
 -----
   Certains éléments de la figure sont inadaptés et sont soit trop gros, soit trop petits, nuisant ainsi à la lisibilité de la figure.
 
-	
-	
-	
-	
+  
+  
+  
+  
 ﻿#=Exigence
 
 $IdentificateurExigence:
 -----
-	L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.
-	
+  L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.
+  
 $ExigenceIncoherente:
 -----
   L'exigence est incohérente avec une autre exigence decrite avant ou après.
-	
+  
 $ExigenceInvalide:
 -----
   L'exigence n'est pas ou ne semble pas être valide par rapport aux besoins exprimés par le client.
 
 $SurExgigence:
 -----
-  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client	ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
-	
+  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client  ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
+  
 $SousExigence:
 -----
   La l'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
@@ -199,14 +197,14 @@ $SousExigence:
 $StatusNonDefinitif:
 -----
   L'utilisation de la valeur "définitive" pour l'attribut stabilité doit être reservée aux versions revisées, stables, et dont la qualité à été prouvée.
-	
+  
 $ProprieteExigenceInadaptee:
 -----
   La valeur de la propriété associée à l'exigence semble inadaptée.
-	
+  
 $DescriptionExigence:
 -----
-	Le texte ne décrit pas une exigence, mais par exemple un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des utilisateurs, etc.
+  Le texte ne décrit pas une exigence, mais par exemple un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des utilisateurs, etc.
 
 $TypeDExigence:
 -----
@@ -217,10 +215,10 @@ $ExigencesMultiples:
   Le texte fait référence à plusieurs exigences simultanément et/ou les descriptions de ces exigences devraient être séparées.
 
 
-	
-	
-	
-	
+  
+  
+  
+  
 
 $Nomenclature:
 -----
@@ -233,14 +231,14 @@ $Delai:
 $Format:
 -----
   Le format des ressources livrées n'est pas conforme.
-	
+  
 $DescriptifLivrable:
 -----
   Dans le cas où un livrable coomposite est livré, c'est à dire que le livrable est formé de différents artefacts par exemple rassemblé dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrés mais également les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifest, ou de tout autre artefact clairement identifiable.
 
-	
-	
-	
+  
+  
+
 ﻿#= Nomenclature
 
 $Trigramme:
@@ -262,53 +260,53 @@ $Date:
 
 
 
-	
+  
 $Abbreviation:
 -----
   Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables. 
 
 $Identificateur: 
-	Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
+  Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
 
 $Trigramme: 
   Un trigramme doit être utilisé pour reférencer une partie prenante.
 
 $FormeNominale:
 -----
-	Une forme nominale doit être utilisée pour référencer l'objet considéré.
-	
+  Une forme nominale doit être utilisée pour référencer l'objet considéré.
+  
 $FormeVerbale:
 -----
   Une forme verbale doit être utilisée pour référencer l'objet considéré.
-	
+  
 $Generique:
 -----
   Le ou les termes utilisés sont trop génériques et ne fournissent pas d'information ou des termes plus spécifiques sont peut être disponibles dans le vocabulaire du domaine.
-	
+  
 $Connecteur:
 -----
   Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
-	
+  
 $MajMin:
 -----
   Un ou des identificateurs devraient être dans le style MajMin comme par exemple UnIdenficateur
-	
+  
 $StyleSIdentificateur:
 -----
   Différents styles d'intentificateurs sont utilisés sans pour autant que l'on puisse déterminer dans quelles conditions ces styles varient, s'ils sont utilisés de manière consistentes ou non. C'est le cas par exemple lorsque certains indentificateurs sont issues à la fois de styles MajMin, min_min, MAJ_MAJ, ou dans toutes autres combinaisons ad-hoc.
-	
+  
 $min_min:
 -----
   TODO.
-	
+  
 $min-min:
 -----
   TODO.
-	
+  
 $MAJ-MAJ:
 -----
   TODO.
-	
+  
 $MAJ_MAJ:
 -----
   TODO.
@@ -322,12 +320,12 @@ $MAJ_MAJ:
 $NomScenario:
 -----
   Chaque scenario doit être nommé et le nom d'un scénario doit si possible faire référence explicitement au cas d'utilisation qu'il réalise ainsi que dans la mesure du possible à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario et un résumé décrira le contenu ou intention du scénario. 
-	
+  
 $NomScenarioInstantie:
 -----
   Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées. Si trop d'information sont à décrire, il peut être préférable de numéroter les scénario et de définir leur contenu via le résumé du scénario.
-	
-	
+  
+  
 $IntentionScenario:
 -----
   Si un scénario est décrit de manière détaillée sous la forme d'une séquence d'actions, le "résumé" associé au scénario doit principalement décrire l'intention du scénario et positionner celui-ci par rapport aux autres scénarii correspondant au même cas d'utilisation. 
@@ -339,12 +337,12 @@ $SequenceDActions:
 
 $SujetAction:
 -----
-  La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur). 	
+  La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur).   
 
 $SujetInstancie:
 -----
-  Le sujet de la phrase doit correspondre à un acteur instancié ou un système instancié. 	
-	
+  Le sujet de la phrase doit correspondre à un acteur instancié ou un système instancié.   
+  
 $ActionAtomique:
 -----
   Certaines descriptions d'actions font références implicitement ou explicitement (via des connecteurs "et" par exemple) à plusieurs actions atomiques qui devraient décomposées.
@@ -352,89 +350,87 @@ $ActionAtomique:
 $ActionConcrete:
 -----
   L'action ou les actions ne sont pas décrites de manières suffisemment concrètes, soit en terme des moyens utilisés pour les interactions, soit en termes des informations échangées.
-	
+  
 
 $ActionMetier:
 -----
   La description de l'action doit faire référence à des termes métiers et ne doit pas comporter par exemple des détails techniques inutiles ou ne correspondant pas au niveau d'abstraction du scénario.
 
 
-	
+  
 
 $ParametreConcret:
 -----
   Les paramètres des actions doivent avoir des valeurs concrétes et correspondre par exemple à des valeurs scalaires précises ou à des identificateurs d'objets.
-	Exemple: badge231  2.5  
-	
+  Exemple: badge231  2.5  
+  
 $ParametreObjet:
 -----
   Un ou des paramétres prennent des valeurs scalaires alors qu'ils devrait plutot correspondre à des objets.
-	Exemple:  Badge=145 devrait être remplacé par badge145 qui correspond implicitement au nom d'un objet de type Badge. On notera que l'identificateur dans le style minMaj correpond au style utilisé par exemple en java et qu'une telle convention est utile lors de la génération de code.
-	
+  Exemple:  Badge=145 devrait être remplacé par badge145 qui correspond implicitement au nom d'un objet de type Badge. On notera que l'identificateur dans le style minMaj correpond au style utilisé par exemple en java et qu'une telle convention est utile lors de la génération de code.
+  
 $FormatValeur:
 -----
   Le format de la valeur semble incorrect, imprécis, incohérent ou non défini.
-	
+  
 $UniteValeur:
 -----
-	TODO
-	
+  TODO
+  
 $CardinalVsOrdinal:
 -----
   TODO
-	
+  
 $ValeurPlausible:
 -----
   TODO
-	
+  
 $ValeurReflechie:
 -----
   Une ou plusieurs valeurs semblent totalement factices et ne pas résulter d'une reflexion approfondie. Des valeurs comme 123456 ou 001 reflêtent généralement l'absence de reflexion de la part d'un auteur et parfois de telles valeurs ne sont pas réalistes.
-	
+  
 
 $ReferenceScenario:
 -----
   Le diagramme de séquence n'est pas clairement identifié, ou si cet identificateur existe, celui-ci n'est pas en lien direct et systèmatique avec l'identificateur du scenario qu'il représente. La tracabilité entre representation graphique et textuelle des scenarios n'est pas assurée.
-	Explication: les diagrammes de sequences et les représentations textuelles sont formés de suites d'actions ne sont qu'une représentation graphique alternative d'un scenarii et il devrait donc y avoir le même identificateur.
+  Explication: les diagrammes de sequences et les représentations textuelles sont formés de suites d'actions ne sont qu'une représentation graphique alternative d'un scenarii et il devrait donc y avoir le même identificateur.
 
 
 $Surcodification:
 -----
   L'utilisation de "codes" ne semble pas correspondre à la réalité du métier ou peut impliquer une charge cognitive inutilement élevée dans le cas d'interfaces personne systeme. Par exemple un code est demandé à un acteur dans une interaction personne système sans que cet utilisateur aie, de part ses caractéristique et celle de son rôle, l'ensemble des codes "en tête".
-	
+  
 
 $ObjetClassifie:
 -----
   Un ou plusieurs objets n'indiquent pas de manière satisfaisante la classe dont il sont à l'origine.
-	modelio: le champ "base" de certains objets n'a pas été renseigné correctement
+  modelio: le champ "base" de certains objets n'a pas été renseigné correctement
 
 
 $NomSysteme:
 -----
   Les noms des systèmes et des sous-systèmes doivent clairement reflêter leur rôle et/ou la décomposition réalisée, ne doivent pas être générique (par exemple "Systeme" est à éviter), et doivent clairement montrer leur status de systèmes (par exemple SystemeDeGestionDesBatiment est correct alors que Batiment ne l'est pas).
-	
+  
 $DecompositionSousSysteme:
 -----
   La décomposition en termes de sous systèmes ne semble pas adéquate, pas équilibrée et/ou pas justifiée.
-	
+  
 $SurDecomposition:
 -----
   La décomposition en sous-systèmes fait apparaître trop de sous-systèmes sans pour autant que ceux-ci semblent justifiés et/ou il serait peut être pertinent de les regrouper en sous-systèmes plus "gros", quitte éventuellement à réaliser une décomposition hiérarchique.
-	
+  
 $LimiteDuSysteme:
 -----
-	Les limites du systeme ne sont pas clairement identifiées et/ou il n'est pas clairement établi quel est le rôle exact du système dans la situation décrite.
+  Les limites du systeme ne sont pas clairement identifiées et/ou il n'est pas clairement établi quel est le rôle exact du système dans la situation décrite.
 
 
 
-	
-	
-	
+
 ﻿#= TexteTechnique
 
 $Langage:
 -----
-	Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
+  Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
 
 $Orthographe:
 -----
@@ -452,7 +448,7 @@ $Grammaire:
 $Style:
 -----
   Le style du texte est inappoprié. Par exemple le style est trop "télégraphique", trop verbeux, trop technique, etc. 
-	
+  
 $Formatage:
 -----
   Le formatage du texte n'est pas adéquat.
@@ -473,37 +469,37 @@ $RerefenceAmbigue:
 $Vocabulaire:
 -----
   L'utilisation des termes utilisés ne semble pas systèmatique ou il est difficile de déterminer quelles combinaisons de termes sont spécifiques au domaine considéré ou l'utilisation de synonymes et/ou de paraphrases est inadapté. 
-	
+  
 $Glossaire:
 -----
-	Un ou des termes potentiellement spécifiques à un domaine particulier sont utilisés sans que ceux-ci soient présentant dans un glossaire ou l'utilisation de ces termes dans le texte ne semble pas compatible avec la définition donnée dans le glossaire.
-	
+  Un ou des termes potentiellement spécifiques à un domaine particulier sont utilisés sans que ceux-ci soient présentant dans un glossaire ou l'utilisation de ces termes dans le texte ne semble pas compatible avec la définition donnée dans le glossaire.
+  
 $TermeMetier:
 -----
   Un ou des termes utilisés ne semble(nt) pas être conformes au vocabulaire utilisé par les experts membres du métier considéré ou un terme plus précis semble être disponible dans ce domaine.
 
 $Identificateur: 
-	Les identificateurs doivent être clairs et compréhensibles en dehors de leur contexte immédiat.
-	Ils doivent reflêter les objets auquels ils font références.
+  Les identificateurs doivent être clairs et compréhensibles en dehors de leur contexte immédiat.
+  Ils doivent reflêter les objets auquels ils font références.
 
 $Temps:
 -----
-  Le temps (passé, présent, futur ...) ou la modalité (devoir, pouvoir, savoir, ...) associé à un ou plusieurs éléments de la phrase est inadapté, incorrect, flou, et/ou à préciser.	
-	
+  Le temps (passé, présent, futur ...) ou la modalité (devoir, pouvoir, savoir, ...) associé à un ou plusieurs éléments de la phrase est inadapté, incorrect, flou, et/ou à préciser.  
+  
 $Contexte:
 -----
   Certains éléments du texte ne sont pas facilement interprétables en l'absence d'un contexte clairement défini ou la dépendance par rapport à ce contexte devrait être limitée.
 
-$PhraseMalConstruite:	
+$PhraseMalConstruite:  
   Une ou plusieurs phrases sont mal construites, trop longues, non achevées, contiennent trop d'imbrications, d'enchainements et/ou de références ambigües.
 
 $ImbricationInutile:
 -----
   Les éléments d'imbrications telles que les parenthèses, les guillemets, les tirets, les deux points, et autres types de ponctuations devraient être remplacés par des structures de phrases plus explicitant. 
-	
+  
 $TexteSection:
 -----
-  Les titres des sections et de sous-sections ne doivent s'enchainer sans qu'un texte d'introduction ou de liaison ne les séparent. 		
+  Les titres des sections et de sous-sections ne doivent s'enchainer sans qu'un texte d'introduction ou de liaison ne les séparent.
 
 $Trigramme: 
   L'utilisation systématique des trigrammes est nécessaire à chaque fois qu'une référence est faite à une partie prenante.
@@ -511,10 +507,10 @@ $Trigramme:
 $Justification:
 -----
   L'information fournie n'est pas claire ou n'est pas justifiée. 
-	
+  
 $Subjectif:
 -----
-  Le texte fait référence à un ou des éléments pouvant être interpretée de manière subjective, imprécise et/ou non quantifiable.	
+  Le texte fait référence à un ou des éléments pouvant être interpretée de manière subjective, imprécise et/ou non quantifiable.  
 
 $Precision:
 -----
@@ -523,15 +519,15 @@ $Precision:
 $Redondance:
 -----
   Le texte comporte des éléments redondants entre eux ou par rapport à d'autres descriptions. 
-	
+  
 $Paraphrase:
 -----
   Le texte comporte des paraphrases qui n'apportent rien, donne une impression de redite, ou le sentiment d'un certain malaise lié à l'envie de re-phraser des concepts non définis ou mal exprimés auparavant.
-	
+  
 $Incoherence:
 -----
   Le texte comporte des éléments pouvant se révéler incohérents entre eux ou par rapport à d'autres descriptions. 
-	
+  
 $Completude:
 -----
   Le texte est trop incomplet ou ne fait pas référence à tous les objets pertinents dans l'univers du discours.
@@ -547,11 +543,11 @@ $Homogeneite:
 $Exemple:
 -----
   Le status d'exemple, d'illustration ou de cas général n'est pas explicite et/ou il est souhaitable de séparer de manière explicite les éléments qui releve de l'illustration ou du cas général.
-	
+  
 $Sujet:
 -----
   Le sujet de la phrase n'est pas clair, peu explicite ou erroné.
-	
+  
 $Complexite:
 -----
   La formulation de la phrase est inutilement complexe et peut être simplifée.
@@ -559,7 +555,7 @@ $Complexite:
 $Interpretation:
 -----
   La phrase est difficile a interpretée et/ou peut être interpretée de manière inadéquate, erronée et/ou ambigüe.
-	
+  
 $NonAbstraction:
 -----
   La phrase comporte un ou plusieurs éléments faisant référence à des concepts ou objets correspondant à des niveaux d'abstractions différents et/ou trop détaillés.
@@ -567,7 +563,7 @@ $NonAbstraction:
 $HypotheseNonValidee:
 -----
   Une hypothèse est faite implicitement ou explicitement sans pour autant que cette hypothèse ai été validée. 
-	
+  
 $Pipe:
 -----
   Une confusion est faite entre la description/representation/identification d'un objet et cet objet lui même.
@@ -579,10 +575,9 @@ $CUExigenceFonctionnelle:
 $CURoleExigences:
 -----
   Le role joué par les exigences reliées au cas d'utilisation n'est pas clair, et il n'est par exemple pas facile de déterminer quelles sont les types des exigences via leur nom, quelles sont l'exigence fonctionnelle principale réalisée par le cas d'utilisation, etc.
-	
-	
-	
-	
+  
+  
+  
 
 $ModelioR1000:
 -----
@@ -1146,11 +1141,11 @@ $ModelioR3250:
 -----
   A Process, a SubProcess, or a Pool should have at least one StartEvent and one EndEvent.
 
-	
-	
-	
-	
-	
+  
+  
+  
+  
+  
 
 $StarUML1:
 -----
@@ -1268,5 +1263,5 @@ $StarUML38:
   SubactivityState must have connection to ActivityGraph. --- SubactivityState
 
 
-	
-	
+  
+  

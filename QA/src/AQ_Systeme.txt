@@ -2,18 +2,16 @@
 
 $NomSysteme:
   Les noms des systèmes et des sous-systèmes doivent clairement reflêter leur rôle et/ou la décomposition réalisée, ne doivent pas être générique (par exemple "Systeme" est à éviter), et doivent clairement montrer leur status de systèmes (par exemple SystemeDeGestionDesBatiment est correct alors que Batiment ne l'est pas).
-	
+  
 $DecompositionSousSysteme:
   La décomposition en termes de sous systèmes ne semble pas adéquate, pas équilibrée et/ou pas justifiée.
-	
+  
 $SurDecomposition:
   La décomposition en sous-systèmes fait apparaître trop de sous-systèmes sans pour autant que ceux-ci semblent justifiés et/ou il serait peut être pertinent de les regrouper en sous-systèmes plus "gros", quitte éventuellement à réaliser une décomposition hiérarchique.
-	
+  
 $LimiteDuSysteme:
-	Les limites du systeme ne sont pas clairement identifiées et/ou il n'est pas clairement établi quel est le rôle exact du système dans la situation décrite.
+  Les limites du systeme ne sont pas clairement identifiées et/ou il n'est pas clairement établi quel est le rôle exact du système dans la situation décrite.
 
 
 
-	
-	
-	
+

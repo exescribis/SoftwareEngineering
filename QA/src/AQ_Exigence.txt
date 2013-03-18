@@ -1,28 +1,28 @@
 ﻿#=Exigence
 
 $IdentificateurExigence:
-	L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.
-	
+  L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.
+  
 $ExigenceIncoherente:
   L'exigence est incohérente avec une autre exigence decrite avant ou après.
-	
+  
 $ExigenceInvalide:
   L'exigence n'est pas ou ne semble pas être valide par rapport aux besoins exprimés par le client.
 
 $SurExgigence:
-  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client	ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
-	
+  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client  ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
+  
 $SousExigence:
   La l'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
 
 $StatusNonDefinitif:
   L'utilisation de la valeur "définitive" pour l'attribut stabilité doit être reservée aux versions revisées, stables, et dont la qualité à été prouvée.
-	
+  
 $ProprieteExigenceInadaptee:
   La valeur de la propriété associée à l'exigence semble inadaptée.
-	
+  
 $DescriptionExigence:
-	Le texte ne décrit pas une exigence, mais par exemple un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des utilisateurs, etc.
+  Le texte ne décrit pas une exigence, mais par exemple un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des utilisateurs, etc.
 
 $TypeDExigence:
   Le type de l'exigence n'est pas correct ou la phrase contient différentes exigences de types différents.
@@ -31,7 +31,7 @@ $ExigencesMultiples:
   Le texte fait référence à plusieurs exigences simultanément et/ou les descriptions de ces exigences devraient être séparées.
 
 
-	
-	
-	
-	
+  
+  
+  
+  

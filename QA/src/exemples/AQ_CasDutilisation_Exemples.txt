@@ -7,11 +7,11 @@ ainsi que les fonctionnalités principales.
 d'accès.
 
   Gardien: Gardien du système
-	PersonneAvecBadge: Personne possédant un badge
-	Gardien: CreerAlarme
-	Gardien: ModifierAlarme
-	Gardien: CreerPersonne
-	Superviseur: AfficherBadge
-	Superviseur: AttacherBadge
-	
-	
+  PersonneAvecBadge: Personne possédant un badge
+  Gardien: CreerAlarme
+  Gardien: ModifierAlarme
+  Gardien: CreerPersonne
+  Superviseur: AfficherBadge
+  Superviseur: AttacherBadge
+  
+  

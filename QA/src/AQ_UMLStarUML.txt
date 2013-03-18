@@ -79,5 +79,5 @@ $StarUML38:
   SubactivityState must have connection to ActivityGraph. --- SubactivityState
 
 
-	
-	
+  
+  
