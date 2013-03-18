@@ -1,5 +1,6 @@
 ﻿#= TexteTechnique
 # Cet ensemble de règles s'appliquent aux textes techniques tel que spécifications, documentations, commentaires, etc. 
+
 $Langage:
 	Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
 

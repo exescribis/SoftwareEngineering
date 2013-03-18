@@ -4,11 +4,13 @@ $Nomenclature:
   Le nom d'un ou de plusieurs ressources livrées n'est pas conforme à aux règles de nomenclatures.
 
 $Delai:
-  Les délais de livraison n'ont pas été respectés.
+  Le ou les délais de livraison n'ont pas été respectés.
 
 $Format:
   Le format des ressources livrées n'est pas conforme.
-
+	
+$DescriptifLivrable:
+  Dans le cas où un livrable coomposite est livré, c'est à dire que le livrable est formé de différents artefacts par exemple rassemblé dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrés mais également les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifest, ou de tout autre artefact clairement identifiable.
 
 	
 	

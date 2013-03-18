@@ -1,17 +1,72 @@
 #= Scenario	
 
+#== Nomenclature
+
 $NomScenario:
-  Le nom d'un scénario doit faire référence explicitement au cas d'utilisation qu'il réalise ainsi que dans la mesure du possible à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario et un résumé décrira le contenu ou intention du scénario. 
+  Chaque scenario doit être nommé et le nom d'un scénario doit si possible faire référence explicitement au cas d'utilisation qu'il réalise ainsi que dans la mesure du possible à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario et un résumé décrira le contenu ou intention du scénario. 
 	
 $NomScenarioInstantie:
-  Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées.
+  Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées. Si trop d'information sont à décrire, il peut être préférable de numéroter les scénario et de définir leur contenu via le résumé du scénario.
+	
 	
 #== Resume
+$IntentionScenario:
+  Si un scénario est décrit de manière détaillée sous la forme d'une séquence d'actions, le "résumé" associé au scénario doit principalement décrire l'intention du scénario et positionner celui-ci par rapport aux autres scénarii correspondant au même cas d'utilisation. 
 
 #== Description
 
-$SujetPhrase:
-  Le sujet de la phrase doit être soit le système (instancié s'il s'agit d'un scenario instantié), soit l'acteur (idem). 	
+$SequenceDActions:
+  Le scenario n'est pas décrit sous forme d'une séquence d'action clairement identifiables et repréable dans la séquence.
 
-# Phrase traduisant soit une intention de l'acteur, soit la responsabilité du système
+$SujetAction:
+  La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur). 	
 
+$SujetInstancie:
+  Le sujet de la phrase doit correspondre à un acteur instancié ou un système instancié. 	
+	
+$ActionAtomique:
+  Certaines descriptions d'actions font références implicitement ou explicitement (via des connecteurs "et" par exemple) à plusieurs actions atomiques qui devraient décomposées.
+
+$ActionConcrete:
+  L'action ou les actions ne sont pas décrites de manières suffisemment concrètes, soit en terme des moyens utilisés pour les interactions, soit en termes des informations échangées.
+	
+
+$ActionMetier:
+  La description de l'action doit faire référence à des termes métiers et ne doit pas comporter par exemple des détails techniques inutiles ou ne correspondant pas au niveau d'abstraction du scénario.
+
+
+	
+#== Valeur
+
+$ParametreConcret:
+  Les paramètres des actions doivent avoir des valeurs concrétes et correspondre par exemple à des valeurs scalaires précises ou à des identificateurs d'objets.
+	Exemple: badge231  2.5  
+	
+$ParametreObjet:
+  Un ou des paramétres prennent des valeurs scalaires alors qu'ils devrait plutot correspondre à des objets.
+	Exemple:  Badge=145 devrait être remplacé par badge145 qui correspond implicitement au nom d'un objet de type Badge. On notera que l'identificateur dans le style minMaj correpond au style utilisé par exemple en java et qu'une telle convention est utile lors de la génération de code.
+	
+$FormatValeur:
+  Le format de la valeur semble incorrect, imprécis, incohérent ou non défini.
+	
+$UniteValeur:
+	
+$CardinalVsOrdinal:
+
+$ValeurPlausible:
+
+$ValeurReflechie:
+  Une ou plusieurs valeurs semblent totalement factices et ne pas résulter d'une reflexion approfondie. Des valeurs comme 123456 ou 001 reflêtent généralement l'absence de reflexion de la part d'un auteur et parfois de telles valeurs ne sont pas réalistes.
+	
+#==  DiagrammeDeSequence
+
+#== Tracabilite
+$ReferenceScenario:
+  Le diagramme de séquence n'est pas clairement identifié, ou si cet identificateur existe, celui-ci n'est pas en lien direct et systèmatique avec l'identificateur du scenario qu'il représente. La tracabilité entre representation graphique et textuelle des scenarios n'est pas assurée.
+	Explication: les diagrammes de sequences et les representations textuelles sont forme de suite d'actions ne sont qu'une représentation graphique alternative d'un scenarii et il devrait donc y avoir le même identificata
+
+
+#-----------------------------------
+$Surcodification:
+  L'utilisation de "codes" ne semble pas correspondre à la réalité du métier ou peut impliquer une charge cognitive inutilement élevée dans le cas d'interfaces personne systeme. Par exemple un code est demandé à un acteur dans une interaction personne système sans que cet utilisateur aie, de part ses caractéristique et celle de son rôle, l'ensemble des codes "en tête".
+	

@@ -1,0 +1,24 @@
+   1/ Jane enregistre un badge avec le même numéro qu’un autre badge.
+   2/ La base de donnée vérifie la cohérence des données.
+   3/ La base de donnée annule la création du badge et affiche une erreur.
+
+	 1/ Le superviseur Pierre demande au système CyberBatiment de lui afficher le formulaire permettant de saisir un nouveau point d'accès.
+	 2/ CyberBatiment lui affiche le formulaire.
+   3/ Pierre rempli et valide le formulaire;
+
+   1/ Un incident I001 est enregistré sur le point d'accès P123 du bâtiment IM2AG-A.	
+   2/ Le gardien Jacques est alerté de cet incident I001.
+   3/ Jacques se déplace vers le point d'accès P123.
+   4/ Jacques débloque le point d'accès P123.
+   5/ Jacques remet le badge B007 dans un état cohérent.
+	 
+	 ...
+	 5/ CyberBatiment enregistre une alarme sur ce point d'accès.
+   6/ La porte se verrouille.
+   7/ Le gardien doit venir déverrouiller la porte.
+	 
+	 1/ Marc, le superviseur sélectionne la fonction 'Créer groupe' du menu.
+   2/ Le système affecte un numéro de code au groupe : '00765'.
+   3/ Le système demande alors le numéro de code de l'administrateur du groupe.
+   3/ Marc tape '128652946'.
+   4/ Le système affiche 'Nouveau groupe créé'.

@@ -18,11 +18,13 @@ $ActeurSujet:
 #== Diagramme:
 
 $Relation
-  Pas de relation entre acteurs sauf éventuellement une spécialisation
+  Pas de relation entre acteurs sauf éventuellement une spécialisation.
+	
 $HeritageActeur:
   Un acteur spécifique peut réaliser tous les CU de l'acteur qu'il spécialise. 
+	
 $SousTypageActeur:
-  Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise
+  Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise.
 
 $NonHumain:
 	Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
