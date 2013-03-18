@@ -1,7 +1,5 @@
 ﻿#=CasDUtilisation_ModelePreliminaire
 # Alternative: CasDUtilisation_ModeleDetaille
 
-$PasDeRelationEntreCU
+$PasDeRelationEntreCU:
   L'utilisation de relations entre cas d'utilisation n'est recommandée.
-	
-

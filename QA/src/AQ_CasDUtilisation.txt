@@ -17,7 +17,7 @@ $ActeurSujet:
 
 #== Diagramme:
 
-$Relation
+$Relation:
   Pas de relation entre acteurs sauf éventuellement une spécialisation.
 	
 $HeritageActeur:

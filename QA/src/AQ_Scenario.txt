@@ -50,11 +50,14 @@ $FormatValeur:
   Le format de la valeur semble incorrect, imprécis, incohérent ou non défini.
 	
 $UniteValeur:
+	TODO
 	
 $CardinalVsOrdinal:
-
+  TODO
+	
 $ValeurPlausible:
-
+  TODO
+	
 $ValeurReflechie:
   Une ou plusieurs valeurs semblent totalement factices et ne pas résulter d'une reflexion approfondie. Des valeurs comme 123456 ou 001 reflêtent généralement l'absence de reflexion de la part d'un auteur et parfois de telles valeurs ne sont pas réalistes.
 	
@@ -63,7 +66,7 @@ $ValeurReflechie:
 #== Tracabilite
 $ReferenceScenario:
   Le diagramme de séquence n'est pas clairement identifié, ou si cet identificateur existe, celui-ci n'est pas en lien direct et systèmatique avec l'identificateur du scenario qu'il représente. La tracabilité entre representation graphique et textuelle des scenarios n'est pas assurée.
-	Explication: les diagrammes de sequences et les representations textuelles sont forme de suite d'actions ne sont qu'une représentation graphique alternative d'un scenarii et il devrait donc y avoir le même identificata
+	Explication: les diagrammes de sequences et les représentations textuelles sont formés de suites d'actions ne sont qu'une représentation graphique alternative d'un scenarii et il devrait donc y avoir le même identificateur.
 
 
 #-----------------------------------
