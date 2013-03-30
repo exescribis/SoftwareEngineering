@@ -7,14 +7,32 @@ $Disposition:
   La disposition spatiale des différents éléments graphiques dans le diagramme n'est pas conventionelle, nuit à la lisibilité du diagramme et/ou devrait être améliorée ou optimisée.
   
 $Couleurs:
-  L'utilisation des couleurs n'est pas optimale et pourrait être améliorée soit en diminuant, soit en augmentant le nombre des couleurs, soit en rendant explicites leur signification dans le diagramme.
+  L'utilisation des couleurs n'est pas optimale et pourrait être améliorée soit en diminuant, soit en augmentant le nombre des couleurs, soit en rendant explicites leur signification dans le diagramme par exemple via une note.
   
 $Chevauchements:
-  De nombreux chevauchements d'éléments graphiques rendre la lecture du diagramme difficile.
+  De nombreux chevauchements d'éléments graphiques rendent la lecture du diagramme difficile.
 
 $Surcharge:
   Le diagramme comporte trop d'éléments graphiques et/ou textuels.
+	
+$ContenuPauvre:
+  Le contenu du diagramme est trop pauvre pour que ce dernier soit réellement pertinent. Soit le diagramme manque de détails soit l'existence du diagramme ou plus simplement son indroduction dans un document pourrait être mise en cause ; c'est le cas si l'information contenue dans le diagramme peut être dérivée à partir d'autres éléments déjà présents dans le document et d'une certaine manière "n'apporte rien".
 
+$TitreDiagramme:
+  Le titre des diagrammes doit refleter ce qu'ils modélisent et peuventt donc utilement faire référence à un modèle, à un artéfact, etc. Le type de diagramme peut également être utilement inséré dans ce titre.
+  # Commentaire: Mieux structurer les noms des figures. Ce pourrait être par exemple
+  # Figure XXX: NomDuCasDUtilisation_NomDuScenario - TypeDeDiagramme
+  # ou type de diagramme est  
+  # DCU = Diagramme de Cas d'Utilisation
+	# DD = Diagramme de Déploiement
+	# DC = Diagramme de Classes
+	# DO = Diagramme d'Objets
+	# DS = Diagramme de Séquences
+	# DSE = Diagramme de Séquences Externe
+  # DSI = Diagramme de Séquence Interne
+  # DCI = Diagramme de Communication Interne
+	# DE = Diagramme d'Etat
+	# DA = Diagramme d'Activité
 
   
   

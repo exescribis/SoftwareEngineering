@@ -1,17 +1,25 @@
 #=Livrable
 
-$Nomenclature:
-  Le nom d'un ou de plusieurs ressources livrÃ©es n'est pas conforme Ã  aux rÃ¨gles de nomenclatures.
+$NomenclatureLivrable:
+  Le nom d'un ou de plusieurs ressources livrées n'est pas conforme à aux règles de nomenclatures.
 
-$Delai:
-  Le ou les dÃ©lais de livraison n'ont pas Ã©tÃ© respectÃ©s.
+$DelaiLivrable:
+  Le ou les délais de livraison n'ont pas été respectés.
 
-$Format:
-  Le format des ressources livrÃ©es n'est pas conforme.
+$FormatLivrable:
+  Le format des ressources livrées n'est pas conforme.
   
 $DescriptifLivrable:
-  Dans le cas oÃ¹ un livrable coomposite est livrÃ©, c'est Ã  dire que le livrable est formÃ© de diffÃ©rents artefacts par exemple rassemblÃ© dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrÃ©s mais Ã©galement les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifest, ou de tout autre artefact clairement identifiable.
+  Le descriptif d'un ou plusieurs livrable est manquant, incomplet ou incohérent.
+  Dans le cas où un livrable coomposite est livré, c'est à dire que le livrable est formé de différents artefacts, par exemple rassemblés dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrés mais également les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifest, ou de tout autre artefact clairement identifiable.
+	
+$NonLivre:
+  Un ou des artefacts, ou des parties d'artefacts non pas été livrés et la livraison n'est donc pas conforme aux résultats attendus.
 
+$MiseAJourVersion:
+	Un numéro de version est incorrect ou ne semble pas avoir mis à jour.
   
-  
+$DefautDejaMentionne:
+  Un ou des défauts ont déjà été mentionnés dans un audit précédent et n'ont pas été corrigés ou amendés dans le livrable courant. 
+	Commentaire: Cette situation est inacceptable car elle remet en cause le processus d'évolution et le principe même d'audit. Si les défauts détectés au cours des audits successives ne sont pas commentés, pris en compte ou corrigés, ils risquent d'être impossible de converger vers un produit final de qualité. Par ailleurs, les audits ayant un coût non négligeable, devoir redétecter des défauts déjà mentionnés constitue à la fois une perte de temps pour l'équipe qualité, mais marque également une dégradation de la confiance par rapport à la capacité de l'équipe de production de délivrer un produit final. 
 

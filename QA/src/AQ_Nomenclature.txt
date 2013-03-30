@@ -1,4 +1,8 @@
 ﻿#= Nomenclature
+
+$HomogeneiteIdentificateurs:
+  Les identificateurs utilisés ne sont globalement pas homogènes et soit il existe une absence totale de style, soit trop de style sont utilisés sans que cela soit justifié.
+	
 #== Partie Prenantes ==
 
 #=== Trigrammes ===
@@ -13,7 +17,8 @@ $Portrait:
 
 #=== Prénoms & Noms ===
 $NomPersonne:
-  Chaque personne est identifiée par son (ou ses) prénom(s) d'usage suivi et de son (ou ses) nom(s) d'usage orthographiés systématiquement de la même manière et séparés systématiquement par la même ponctuation. Pour distinguer le (ou les) nom(s) ceux-ci sont écrits en majuscules. L'utilisation de trigramme se fera après chaque partie prenante entre parenthèse.
+  Chaque personne est identifiée par son (ou ses) prénom(s) d'usage suivi et de son (ou ses) nom(s) d'usage orthographiés systématiquement de la même manière et séparés systématiquement par la même ponctuation. Pour distinguer le (ou les) nom(s) ceux-ci sont écrits en majuscules. Lorsque nécessaire, et si un champ n'est pas prévu spécifiquement à cet effet, m'utilisation de trigramme se fera après chaque partie prenante entre parenthèses.
+	Exemple: "Djiamila Maria WONG CONNOR (DWG)"
 
 #== Dates, Time & Periodes ==
 $Date:

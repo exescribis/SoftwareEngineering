@@ -1,0 +1,10 @@
+Autorisation.verificationAutorisation(badge007,lecteurDeBadge753)
+michel -> lecteurDeBadge.bagder(145, 025E3, 14:30) 
+
+$HomogeneiteIdentificateurs:
+  exemple 
+    demande
+    badger
+    ouverture
+    autorisationOK
+    autorisationAccordée
