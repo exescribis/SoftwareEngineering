@@ -1,6 +1,12 @@
 Autorisation.verificationAutorisation(badge007,lecteurDeBadge753)
 michel -> lecteurDeBadge.bagder(145, 025E3, 14:30) 
 
+
+# ci dessous on ne sait pas s'il s'agit d'une entrée ou d'une sortie car le même message est appelé deux fois
+capteur1 -> controleur.passageDetecte()
+capteur2 -> controleur.passageDetecte()
+
+
 $HomogeneiteIdentificateurs:
   exemple 
     demande

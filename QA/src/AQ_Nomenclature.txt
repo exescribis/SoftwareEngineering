@@ -63,7 +63,13 @@ $Connecteur:
   Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
   
 $MajMin:
-  Un ou des identificateurs devraient être dans le style MajMin comme par exemple UnIdenficateur
+  Un ou des identificateurs devraient être dans le style MajMin c'est à dire correspondre à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une majuscule. L'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.
+  Exemple: ConnecteurDInterface, SMSRenvoye
+
+$minMaj:
+  Un ou des identificateurs devraient être dans le style minMaj c'est à dire correspond à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une minuscule. LL'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.
+  Exemple: lesConnecteurs, smsRenvoye2, lesSMSRecus
+
   
 $StyleSIdentificateur:
   Différents styles d'intentificateurs sont utilisés sans pour autant que l'on puisse déterminer dans quelles conditions ces styles varient, s'ils sont utilisés de manière consistentes ou non. C'est le cas par exemple lorsque certains indentificateurs sont issues à la fois de styles MajMin, min_min, MAJ_MAJ, ou dans toutes autres combinaisons ad-hoc.

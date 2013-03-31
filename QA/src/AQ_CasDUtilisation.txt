@@ -3,10 +3,17 @@
 #== Nomenclature
 
 $NomActeur:
-  Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter), et ne pas correspondre à une position ou un status dans une organisation.
+  Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter). La notion d'acteur est définie par le rôle joué par l'acteur par rapport au système et non pas par la position de la personne jouant ce role à un moment donné dans une organisation.
+
+$NomenclatureActeur:
+  Les nom des acteurs doivent être de préférences en MajMin (cf $MajMin).
   
 $NomCU:
-  Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale. 
+  Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale.
+
+$NomenclatureCU:
+  Le nom des cas d'utilisation doivent être en MajMin (cf $MajMin).
+	Commentaire: les cas d'utilisation correspondent à des classes de scenarii et il est donc logique d'utiliser la même convention que pour les Classes a savoir l'utilisation d'une majuscule en début de nom.
   
 $NomActeurInstancie:
   Les noms des personnes jouant le role d'acteur doivent dans des scénarios instanciés doivent être à la fois particuliers pour être mémotechniques mais aussi représenter la diversité culturelle associé au contexte du système et du projet associé.

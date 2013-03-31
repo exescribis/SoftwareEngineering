@@ -1,9 +1,3 @@
-DCE
-  Diagramme de Communication Externe
-DSI
-  Diagramme de Sequence Interne
-DSE
-  Diagramme de Sequence Externe
 Operation
 Methode
 Attribut
