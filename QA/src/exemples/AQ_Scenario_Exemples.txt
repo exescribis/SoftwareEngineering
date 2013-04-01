@@ -11,6 +11,17 @@
    3/ Jacques se déplace vers le point d'accès P123.
    4/ Jacques débloque le point d'accès P123.
    5/ Jacques remet le badge B007 dans un état cohérent.
+
+   1) Marie veut entrer dans un bâtiment
+   1/ Marie se présente devant la porte d'un bâtiment
+   2/ Le lecteur indique que la porte fonctionne normalement
+   3/ Marie présente son badge
+   4/ Le lecteur détecte le badge et envoi les informations du badge au système
+   5/ Le système constate que Marie est autorisée à accèder à ce bâtiment
+   6/ Le système répond au lecteur d'ouvrir la porte
+   7/ La porte s'ouvre
+   8/ Marie passe la porte
+   9/ La porte se referme 3 secondes après le passage de Marie
    
    ...
    5/ CyberBatiment enregistre une alarme sur ce point d'accès.
@@ -39,3 +50,5 @@ informations au lecteur Lec01.
    6/ Le capteur C1 positionné sur le coté gauche de la porte P1 détecte un passage et envoi
 cette information au contrôleAccesBât.
    7/ contrôleAccesBât ayant été informé du passage referme la porte après 3 secondes.
+	 
+# voir uml-NSI-rev-JFE-4 figure qui est vraiment bien comme diagramme de communication et comporte plein de details intéressants.
