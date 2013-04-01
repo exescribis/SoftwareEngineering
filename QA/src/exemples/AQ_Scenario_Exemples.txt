@@ -22,3 +22,20 @@
    3/ Le système demande alors le numéro de code de l'administrateur du groupe.
    3/ Marc tape '128652946'.
    4/ Le système affiche 'Nouveau groupe créé'.
+
+# Le scenario suivant est interressant car il permet de montrer les objectifs des scenarios externes
+# (1) séparer les responsabilités système/acteur
+# (2) illustrer le cas d'utilsation pour validation
+# (3) les éléments d'interfaces sont là juste pour l'illustration et la compréhension
+# (4) idem pour les éventuelles actions internes coté acteur ou coté système
+# voir aussi les diagrammes uml-CQD-JNS-rev-JFE-4, fig 21
+
+	 1/ David présente son badge au lecteur de carte Lec01 au point d’accès DLST-A02.
+   2/ contrôleAccesBât effectue les vérifications d’accès par rapport au badge et envois les
+informations au lecteur Lec01.
+   3/ Le lecteur Lec01 confirme l’autorisation d’entrée en affichant « Vous pouvez entrer »
+   4/ contrôleAccesBât ouvre ensuite la porte automatique P1.
+   5/ David entre dans le bâtiment du DLST-A en franchissant la porte P1.
+   6/ Le capteur C1 positionné sur le coté gauche de la porte P1 détecte un passage et envoi
+cette information au contrôleAccesBât.
+   7/ contrôleAccesBât ayant été informé du passage referme la porte après 3 secondes.

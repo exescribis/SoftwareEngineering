@@ -7,7 +7,7 @@ $DelaiLivrable:
   Le ou les délais de livraison n'ont pas été respectés.
 
 $FormatLivrable:
-  Le format des ressources livrées n'est pas conforme.
+  Le format des ressources livrées n'est pas conforme aux attentes (cf $PackagingLivrable).
   
 $DescriptifLivrable:
   Le descriptif d'un ou plusieurs livrable est manquant, incomplet ou incohérent.
@@ -22,12 +22,15 @@ $NonLivre:
   Un ou des artefacts, ou des parties d'artefacts non pas été livrés et la livraison n'est donc pas conforme aux résultats attendus.
 
 $MiseAJourVersion:
-  Un numéro de version est incorrect ou ne semble pas avoir mis à jour.
+  Un numéro de version est incorrect ou ne semble pas avoir mis à jour, ce qui est un problème essentiel du point de vue de la gestion de versions (cf $GestionDeVersions).
+	
+$GestionDeVersions:
+  La gestion des versions semble inexistante, instatisfaisante ou présente des défaults.
+	Commentaire: La gestion de versions est un des aspects essentiels pour la réussite des projets. La gestion de version est l'un des éléments essentiels pour passer du niveau initial et "chaotique" au niveau répétable du modèle CMM. Il existe de nombreux cas documentés de projets de grande envergure dont l'échec à été directement pu être directement et explicitement relié à l'absence d'une gestion de versions cohérente et systèmatique.
 
 $VersionLivrable:
   L'identification de la version du livrable semble être manquant, incorrect ou inadapté au status de livrable.
-  Commentaire: Il est important de distinguer le système de versionnement pour les artefacts internes au projet (par exemple le code source, les modèles, etc), du système de versionnement utilisé pour les livraisons. Ce dernier système etant exposé à l'exterieur et visible par des tierces parties, un soin particulier doit être apportés aux interprétations pouvant être associés à ce système et aux identifiants correspondants. 
-
+  Commentaire: Il est important de distinguer le système de versionnement pour les artefacts internes au projet (par exemple le code source, les modèles, etc), du système de versionnement utilisé pour les livraisons. Ce dernier système etant exposé à l'exterieur et visible par des tierces parties, un soin particulier doit être apportés aux interprétations pouvant être associés à ce système et aux identifiants correspondants. (cf $GestionDeVersions)
 	
 $DefautDejaMentionne:
   Un ou des défauts ont déjà été mentionnés dans un audit précédent et n'ont pas été corrigés ou amendés dans le livrable courant. 

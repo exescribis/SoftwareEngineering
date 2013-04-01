@@ -44,11 +44,19 @@ $ActionMetier:
   
 #== Valeur
 
+$ResultatConcret:
+  Il est nécessaire de donner des valeurs concrètes aux résultats (cf $ValeurConcrete).
+	Commentaire: Cet aspect est particulièrement à plusieurs titres (cf $ValeurConcrete).
+
 $ParametreConcret:
-  Les paramètres des actions doivent avoir des valeurs concrétes et correspondre par exemple à des valeurs scalaires précises ou à des identificateurs d'objets. Ces valeurs ou identificateurs d'objets peuvent être définis de manière globale et il est utile de les utiliser de manière cohérente et identique à la fois dans les descriptions textuelles et dans les diagrammes.
+  Les paramètres des actions doivent avoir des valeurs concrétes (cf $ValeurConcrete).   
+	Commentaire: Cet aspect est particulièrement à plusieurs titres (cf $ValeurConcrete).
+
+$ValeurConcrete:
+  Il est nécessaire d'utiliser des valeurs concrète, correspondant à des valeurs scalaires précises, à des identificateurs d'objets ou à des valeurs structurées. Les valeurs scalaires ou identificateurs d'objets peuvent être définis de manière globale et il est utile de les utiliser de manière cohérente et identique à la fois dans les descriptions textuelles et dans les diagrammes.
 	Commentaire: Plus les élements intervenants dans les scénarii sont concrets, plus les différents intervenants sont en mesure d'apprehender et de valider les éléments de modélisation. Le fait d'utiliser des formats et des identificateurs précis permet de faire référence à des éléments définis par ailleurs de manière encore plus détaillée. Ces objets et valeurs peuvent également être utilisés dans le cadre des tests et par exemple pourront figurer par la suite dans le code source des tests. Si les conventions pour les noms d'objets sont utilisées (cf $NomObjet) les scénarii ne perdent pas en lisibilité.
   Exemple: Par exemple badge231 identifie certainement un objet de type Badge (cf $NomObjet) ; la constante 2.5 est une valeur concrète de type réel ; "1728EGT" est une chaîne de caractère ; "une caillou bloquait la porte" est une valeur contrète pouvant faire sens dans un scénario.   
-  
+    
 $ParametreObjet:
   Un ou des paramétres prennent des valeurs scalaires alors qu'ils devrait plutôt correspondre à des objets et que des noms d'objets doivent donc être fourni (cf $NomObjet).
   Exemple:  Badge=145 devrait être remplacé par badge145 qui correspond au nom d'un objet de type Badge qui pourrait/devrait être déclaré par ailleurs.
@@ -66,7 +74,7 @@ $TypeValeur:
 	Exemple: Il n'est pas facile de déterminer si 012 est une valeur de type entier ou s'il s'agit d'une chaîne de caractères. Par contre il est naturel de penser que bob est un objet de type personne si ce type existe dans le modèle mais que "bob" est une chaîne de caractères. 
 
 $TypeValeurIncorrect:
-  Le type de la valeur fournie semble incorrect par rapport au type attendu par exemple par une variable, un parametre formel ou un type de résultat. 
+  Le type de la valeur fournie semble incorrect par rapport au type attendu par exemple par une variable, un parametre formel ou un type de résultat. Le problème peut provenir du fait que la valeur correspond par exemple au resultat d'une opération et que le nom de l'opération ne semble par cohérent avec ce type de retour. 
   
 $ValeurInexpliquee:
   Il n'est pas facile de comprendre ce que la valeur signifie, d'où elle provient et/ou comment elle est calculée/produite.
@@ -79,6 +87,13 @@ $CardinalVsOrdinal:
   
 $ValeurPlausible:
   TODO
+
+$ValeurComposite:
+  TODO
+
+$ValeurCollection:
+  TODO
+
   
 $ValeurReflechie:
   Une ou plusieurs valeurs semblent totalement factices et ne pas résulter d'une reflexion approfondie. Des valeurs comme 123456 ou 001 reflêtent généralement l'absence de reflexion de la part d'un auteur et parfois de telles valeurs ne sont pas réalistes.
