@@ -1,8 +1,36 @@
 ﻿#= Nomenclature
 
+$Abbreviation:
+  Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables.
+
+$OrthographeIdentificateur:
+  Une ou plusieurs fautes d'orthographes sont présents dans un ou plusieurs identificateurs.
+  Commentaire: La présence de fautes d'orthographes dans les identificateurs sont beaucoup plus importants que dans du texte. Dans du texte, seul la lecture est génée et l'auteur potentiellement décribilisé dans ca capacité de relire ou faire relire le texte qu'il a produit (et donc dans sa capacité à livrer des artefacts de qualité). La situation dans un identificateur est de toute autre nature, et le problème de plusieurs ordre de magnitude plus important. En effet les identificateurs sont fait pour être référencés, recherchés, dérivés, etc. et toute erreur qui s'introduit dans un identificateur risque d'avoir des impacts très lourds en l'absence par exemple de technique de "renommage" car toutes les occurrences de l'identificateur erronées devront être renommées avec tous les risques que cela présente. Il est possible que l'erreur ne soit pas corrigée lorsqu'elle est découverte pour éviter d'éventuels impacts. Rechercher et référencer des identificateurs avec des erreurs d'orthographes risquent de générer des erreurs en cascades, des problèmes de gestion des impacts, etc. La liaison entre les différents artefacts comme le code et le glossaire du domaine risque de ne pas pouvoir non plus être fait.
+
+$Identificateur: 
+  Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
+
+$Trigramme: 
+  Un trigramme (cf $Trigramme) doit être utilisé pour reférencer une partie prenante.
+
+$FormeNominale:
+  Une forme nominale doit être utilisée pour référencer l'objet considéré.
+  
+$FormeVerbale:
+  Une forme verbale doit être utilisée pour référencer l'objet considéré.
+  
+$Generique:
+  Le ou les termes utilisés sont trop génériques et ne fournissent pas d'information ou des termes plus spécifiques sont peut être disponibles dans le vocabulaire du domaine.
+  
+$Connecteur:
+  Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
+
 $HomogeneiteIdentificateurs:
-  Les identificateurs utilisés ne sont globalement pas homogènes et soit il existe une absence totale de style, soit trop de style sont utilisés sans que cela soit justifié.
-	
+  Les identificateurs utilisés ne sont globalement pas homogènes et soit il existe une absence totale de style, soit trop de styles sont utilisés sans que cela soit justifié.
+  Commentaire: Tous les identificateurs d'un même genre (e.g. identificateurs de classes, de scénarios, de cas d'utilisation) devrait être homogènes et respecter des règles de nomenclature portant à la fois sur le plan de la typographie (utilisation de minuscules, majuscules, soulignés ou tirets, etc.), de l'ensemble des caractères utilisés (il est généralement recommandé de ne pas utilisés d'accents ou d'autres caractères diacritiques), des formes grammaticales utilisées (par exemple des formes verbales au passif et au participe présent ne sont pas homogénes), des connecteurs (e.g. des articles) et abbréviations utilisés ou non. Le manque d'homogénéité peut avoir des impacts néfastes sur la lecture, la possibilité de référencer de manière systèmatique des éléménts, la possibilité de faire des recherches textuelles d'identificateurs. Elle met également en péril toute possibilité d'automatisation, d'extraction d'information, de référencement, etc.
+  Exemple: "supprimer employé" et "CreationDUnePers" ne sont pas homogènes car ils diffèrent par raport à (1) la casse, (2) l'ensemble des caractères utilisés, (3) le fait d'utiliser des articles ou non, (4) la forme grammaticale mise en oeuvre (infinitif vs. nom), (5) l'utilisation ou la suppression des articles, (6) l'utilisation d'abbréviation.  
+
+
 #== Partie Prenantes ==
 
 #=== Trigrammes ===
@@ -13,7 +41,8 @@ $Trigramme:
 
 #=== Portraits ===
 $Portrait:
-  Chaque partie prenante est identifiée visuellement pas un portrait unique la représentant de face ou de profil mais permettant son identification sans ambiguité. Sont donc à proscrire tout icones, graphiques, ou représentation de personnages fictifs ne correspondant pas à la partie prenante.
+  Chaque partie prenante doit être identifiée visuellement pas un portrait unique la représentant de face ou de profil mais permettant son identification sans ambiguité. Sont donc à proscrire tout icones, graphiques, ou représentation de personnages fictifs ne correspondant pas à la partie prenante.
+	Commentaire: Dans un monde professionnel, les entreprises maintiennent traditionnelement un "trombinoscope" plus ou moins formels selon son usage et l'entité qui le gère (équipe, niveau global de la corporation, direction des ressources humaines, etc). Dans le cadre d'organisations complexes, d'organisations virtuelles ou de projets globaux géographiquement répartis, pouvoir identifier les différentes parties prenantes et les différents interlocuteurs prenant part à des activités collaboratives est particulièrement important. De la même manière qu'aller travailler avec un masque de tortue ninja n'est pas considéré comme faisant partie des pratiques professionnelles, se cacher derrière un tel avatar ou la représentation d'un nounous ne répond ni besoin de communication de l'organisation, ni à une image de professionnelisme que devrait afficher toutes les parties prenantes.  
 
 #=== Prénoms & Noms ===
 $NomPersonne:
@@ -41,26 +70,6 @@ $Date:
 #  RGLn  Reunion GL
 #  RPLn  Reunion PL
   
-$Abbreviation:
-  Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables. 
-
-$Identificateur: 
-  Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
-
-$Trigramme: 
-  Un trigramme doit être utilisé pour reférencer une partie prenante.
-
-$FormeNominale:
-  Une forme nominale doit être utilisée pour référencer l'objet considéré.
-  
-$FormeVerbale:
-  Une forme verbale doit être utilisée pour référencer l'objet considéré.
-  
-$Generique:
-  Le ou les termes utilisés sont trop génériques et ne fournissent pas d'information ou des termes plus spécifiques sont peut être disponibles dans le vocabulaire du domaine.
-  
-$Connecteur:
-  Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
   
 $MajMin:
   Un ou des identificateurs devraient être dans le style MajMin c'est à dire correspondre à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une majuscule. L'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.

@@ -27,7 +27,9 @@ $SujetAction:
   La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur).   
 
 $SujetInstancie:
-  Le sujet de la phrase doit correspondre à un acteur instancié ou un système instancié.   
+  Le sujet des phrases d'actions doivent correspondre à chaque fois à un acteur instancié ou un système instancié et ces sujets doivent faire référence autant que possible à des éléments de modèles définis par ailleurs.
+	Commentaire: Dans un scenario instancié il est important d'instancier les acteurs et le système dans la mesure ou ces scénarii doivent être aussi concrets que possible pour pouvoir être validés par les différents intervenants. Par ailleurs, donner référencer des acteurs ou systèmes instanciés permet de décrire les caractéristiques de ces derniers plus en détails et par exemple de définir leur profil utilisateur lorsqu'il s'agit d'acteurs humains. Faire référence à un système instancié permet également de situer le scénario dans un contexte plus précis, en prenant en compte par exemple l'état du système instancié (qui pourrait en effet correspondre à un état particulier). Un tel degré de précision peu se réveler fort utile dans le cadre de l'élaboration de tests à partir   
+	Exemple: "Le système" devrait être remplacé par "cyberBatimentIMAG" si le système que l'on considère dans le scénario instancié correspond à l'instantiation du système CyberBatiment. Pour être plus précis, CyberBatiment est vu comme une classe de système pouvant être instantié (installé, configuré, etc.) dans différents contextes et maintenant de fait chacun leur état de manière séparée. 
   
 $ActionAtomique:
   Certaines descriptions d'actions font références implicitement ou explicitement (via des connecteurs "et" par exemple) à plusieurs actions atomiques qui devraient décomposées.
