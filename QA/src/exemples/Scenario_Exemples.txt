@@ -51,4 +51,3 @@ informations au lecteur Lec01.
 cette information au contrôleAccesBât.
    7/ contrôleAccesBât ayant été informé du passage referme la porte après 3 secondes.
 	 
-# voir uml-NSI-rev-JFE-4 figure qui est vraiment bien comme diagramme de communication et comporte plein de details intéressants.
