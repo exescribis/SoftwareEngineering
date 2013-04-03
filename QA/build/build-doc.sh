@@ -27,6 +27,7 @@ gawk '
     
     /^#=[^=]/   {
       gsub(/#=+ */,"") ;
+      gsub(/[ =]*/,"") ;
       PACKAGENAME = $0 ;
       PACKAGES[PACKAGENAME] = PACKAGENAME ;
       

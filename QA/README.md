@@ -95,22 +95,22 @@ package **CasDUtilisation_ModelePreliminaire**
   Le stéréotype auxilaire doit être associé aux acteurs auxillaires.
 
 
-StyleEssentiel 
+StyleEssentiel
 ====================================================
 
 StyleEssentiel
 -------------------
-package **StyleEssentiel **  
+package **StyleEssentiel**  
   La description du scenario ne doit pas faire de références inutiles à la manière dont les acteurs et le système intéragissent dans le détail, sachant que l'objectif d'un cas d'utilisation essentiel n'est pas de décrire des exigences sur une ou des interfaces personnes systèmes. 
 
 CUPrimaireAGauche
 -------------------
-package **StyleEssentiel **  
+package **StyleEssentiel**  
   Les acteurs primaires doivent être représentés à gauche du système, les acteurs secondaires à droite.
 
 CUSeulementPrimaire
 -------------------
-package **StyleEssentiel **  
+package **StyleEssentiel**  
   Seuls les acteurs primaires doivent être representés dans les diagrammes de cas d'utilisation.
 
 
@@ -585,120 +585,120 @@ package **Nomenclature**
 	Commentaire: Dans certaines versions du patron MVC les controleurs jouent les intermediaires entre les modeles et les vues et les interactions directes entre ces couches sont interdites. Les modèles doivent être complétement indépendants des autres couches et donc ne connaître ni les controleurs, ni les vues mais peuvent intégagir entre eux. Les vues ou interfaces, qu'elles correspondent à des dispositifs d'entrée, de sorties, à des actuateurs ou à des capteurs, peuvent intéragir entre elles ou avec des controleurs. Les controleurs peuvent intéragir avec les controleurs, les vues et les modèles et jouent donc un rôle central. 
 
 
-Scenario  
+Scenario
 ====================================================
 
 NomScenario
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Chaque scenario doit être nommé et le nom d'un scénario doit si possible faire référence explicitement au cas d'utilisation qu'il réalise ainsi que dans la mesure du possible à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario et un résumé décrira le contenu ou l'intention du scénario (cf $IntentionScenario). 
 
 NomenclatureScenario
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Le nom d'un scenario doit a priori être en style minMaj (cf $MinMaj).
 	Commentaire: Les scénarii devant être référencés par plusieurs autres éléments de modèles il est utile de nommer de manière précise les scénarii. Comme un scénarii est au niveau "objet", le style minMaj est recommandé et ce par opposition au style MajMin (cf $MajMin) recommandé pour les Cas d'Utilisation (cf $NomenclatureCU).  
 
 NomScenarioInstantie
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées. Si trop d'information sont à décrire, il peut être préférable de numéroter les scénario et de définir leur contenu via le résumé du scénario.
 
 IntentionScenario
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Si un scénario est décrit de manière détaillée sous la forme d'une séquence d'actions, le "résumé" associé au scénario doit principalement décrire l'intention du scénario et positionner celui-ci par rapport aux autres scénarii correspondant au même cas d'utilisation. 
 
 SequenceDActions
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Le scenario n'est pas décrit sous forme d'une séquence d'actions clairement identifiables et repréable au sein d'une séquence.
 
 SujetAction
 -------------------
-package **Scenario  **  
+package **Scenario**  
   La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur).   
 
 SujetInstancie
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Le sujet des phrases d'actions doivent correspondre à chaque fois à un acteur instancié ou un système instancié et ces sujets doivent faire référence autant que possible à des éléments de modèles définis par ailleurs.
   Commentaire: Dans un scenario instancié il est important d'instancier les acteurs et le système dans la mesure ou ces scénarii doivent être aussi concrets que possible pour pouvoir être validés par les différents intervenants. Par ailleurs, donner référencer des acteurs ou systèmes instanciés permet de décrire les caractéristiques de ces derniers plus en détails et par exemple de définir leur profil utilisateur lorsqu'il s'agit d'acteurs humains. Faire référence à un système instancié permet également de situer le scénario dans un contexte plus précis, en prenant en compte par exemple l'état du système instancié (qui pourrait en effet correspondre à un état particulier). Un tel degré de précision peu se réveler fort utile dans le cadre de l'élaboration de tests à partir   
   Exemple: "Le système" devrait être remplacé par "cyberBatimentIMAG" si le système que l'on considère dans le scénario instancié correspond à l'instantiation du système CyberBatiment. Pour être plus précis, CyberBatiment est vu comme une classe de système pouvant être instantié (installé, configuré, etc.) dans différents contextes et maintenant de fait chacun leur état de manière séparée. 
 
 IntermediaireAction
 -------------------
-package **Scenario  **  
+package **Scenario**  
   La ou les actions doivent être reformulées de manière à ce que le sujet de l'action soit clairement identifié (cf $SujetAction) même si des intermediaires peuvent figurer dans l'action à titre d'illustration et/ou pour donner des détails quand aux interactions concretes entres les acteurs et le systeme.
   Commentaire:
 	Exemple: Dans la phrase d'action "paul passe son badge210 dans le lecteurDeBadge214" le système de controle d'acces n'est pas représenté de manière explicite, alors que il est le destinataire du message dans un scenario externe. Le lecteurDeBadge214 joue simplement le rôle d'intermediaire, ou plus précisemment d'interface entre l'acteur et les éléments internes du systèmes. Si la description de ces éléments d'interfaces sont utiles, la phrase d'action devrait être reformulée de la manière suivante par exemple "paul s'identifie auprès du systemeDeControleIMAG via son badge210 qu'il passe devant le lecteurDeBadge214". Ici badge210 et lecteurDeBadge214 sont des intermediaires dans l'interaction entre paul et systemeDeControleIMAG. De manière plus abstraite, et si l'on veut faire abstraction de ces interfaces, on pourrait dire "paul s'identifie auprès du systemeDeControleIMAG".
 
 ActionAtomique
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Certaines descriptions d'actions font références implicitement ou explicitement (via des connecteurs "et" par exemple) à plusieurs actions atomiques qui devraient décomposées.
 	Commentaire: Séparer ces actions permet une meilleure traçabilité entre les différents modèles, par exemple entre les scénarii décrits textuellement et les diagrammes de séquences ou de communication.
 
 ActionConcrete
 -------------------
-package **Scenario  **  
+package **Scenario**  
   L'action ou les actions ne sont pas décrites de manières suffisemment concrètes, soit en terme des moyens utilisés pour les interactions, soit en termes des informations échangées.
 
 ParametreConcret
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Les paramètres des actions doivent avoir des valeurs concrétes (cf $ValeurConcrete).   
   Commentaire: Cet aspect est particulièrement à plusieurs titres (cf $ValeurConcrete).
 
 ActionMetier
 -------------------
-package **Scenario  **  
+package **Scenario**  
   La description de l'action doit faire référence à des termes métiers et ne doit pas comporter par exemple de détails techniques inutiles ou ne correspondant pas au niveau d'abstraction du scénario.
 	Exemple: "Paul demande la création d'un formulaire" n'est pas une action métier. Non seulement le métier de l'acteur ne consiste pas à "demander des formulaires", mais de plus ce genre de détails techniques contraint inutilement les choix futurs de conception ou de réalisation.
 
 MessageInexplique
 -------------------
-package **Scenario  **  
+package **Scenario**  
   La raison menant au déclenchement du message n'est pas facilement compréhensible ou devrait être explicitée.
 
 TypeDeMessage
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Il n'est pas clair si le message correspond à l'invocation d'une opération ou à une valeur de retour.
   Commentaire: Cette règle peut être appliquée dans le cas où les valeurs de retours des opérations sont modélisées par des messages.  
 
 ValeurDeRetour
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Le message devrait correspondre à une valeur de retour et non pas à l'invocation d'une opération. 
   Commentaire: Cette règle peut être appliquée dans le cas où les valeurs de retours des opérations sont modélisées par des messages.
 
 RetourInexplique
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Il n'est pas facile de comprendre à quelle invocation d'opération ce message, qui semble correspondre à une valeur de retour, doit être associé.
   Commentaire: Cette règle peut être appliquée dans le cas où les valeurs de retours des opérations sont modélisées par des messages.
 
 RetourManquant
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Il n'est pas facile de comprendre quel et le retour associé à l'invocation d'une opération soit parcequ'il ne semble pas être fait mention d'un tel retour, soit parceque plusieurs messages pouvant correspondre à des retours sont des candidats potentiels.
 
 Responsabilites
 -------------------
-package **Scenario  **  
+package **Scenario**  
   La répartition des responsabilités entre objets n'est pas claire ou ne semble pas être logique.
   Commentaire: Ce peut être le case par exemple lorsqu'une opération est appelée sur un objet d'une classe alors que cet objet n'a pas la responsabilité de réaliser cette fonctionalité ou d'offrir le service correspondant. Ce peut être également le cas lorsqu'un paramètre n'est pas indiqué car l'objet appelant suppose que l'objet appelé maintient la valeur de ce paramètre ou un état correspondant.
 
 ReferenceScenario
 -------------------
-package **Scenario  **  
+package **Scenario**  
   Le diagramme de séquence ou de communication n'est pas clairement identifié, ou si cet identificateur existe, celui-ci n'est pas en lien direct et systèmatique avec l'identificateur du scenario qu'il représente. La tracabilité entre representation graphique et textuelle des scenarios n'est pas assurée.
   Explication: les diagrammes de sequences ou de communication et les représentations textuelles sont formés de suites d'actions ne sont qu'une représentation graphique alternative d'un scenario et il devrait donc y avoir le même identificateur ou la même racine d'identificateur.
 
 PresenceObjet
 -------------------
-package **Scenario  **  
+package **Scenario**  
   La raison de la présence de l'objet dans le diagramme n'est pas clairement explicitée, ou ne semble pas logique. Pour qu'un objet soit dans un diagramme correspondant à un scénario il doit soit être (1) préxister au scénario, (2) soit être créé dans le cadre du scénario, (3) soit correspondre à un objet retourné par une opération, (3) soit figurer comme paramêtre d'une opération. Dans le cas (3) et (4) au moins un résultat ou paramètre doit faire référence au nom de l'objet.
 
 
@@ -2164,9 +2164,9 @@ RULE PACKAGES (19)
 * [Exigence](#exigence)
 * [Livrable](#livrable)
 * [Nomenclature](#nomenclature)
-* [Scenario  ](#scenario  )
+* [Scenario](#scenario)
 * [Sequence](#sequence)
-* [StyleEssentiel ](#styleessentiel )
+* [StyleEssentiel](#styleessentiel)
 * [Systeme](#systeme)
 * [TexteTechnique](#textetechnique)
 * [TracabiliteExigence](#tracabiliteexigence)
@@ -2178,17 +2178,17 @@ RULES (398)
 * [Abbreviation](#abbreviation) from [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from [Valeur](#valeur)
 * [ActeurSujet](#acteursujet) from [CasDUtilisation](#casdutilisation)
-* [ActionAtomique](#actionatomique) from [Scenario  ](#scenario  )
-* [ActionConcrete](#actionconcrete) from [Scenario  ](#scenario  )
-* [ActionMetier](#actionmetier) from [Scenario  ](#scenario  )
+* [ActionAtomique](#actionatomique) from [Scenario](#scenario)
+* [ActionConcrete](#actionconcrete) from [Scenario](#scenario)
+* [ActionMetier](#actionmetier) from [Scenario](#scenario)
 * [AggregationNonJustifie](#aggregationnonjustifie) from [Classe](#classe)
 * [ArticleInDefini](#articleindefini) from [TexteTechnique](#textetechnique)
 * [ButCU](#butcu) from [CasDUtilisation](#casdutilisation)
 * [CUAuxiliaireDecore](#cuauxiliairedecore) from [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)
 * [CUExigenceFonctionnelle](#cuexigencefonctionnelle) from [TracabiliteExigence](#tracabiliteexigence)
-* [CUPrimaireAGauche](#cuprimaireagauche) from [StyleEssentiel ](#styleessentiel )
+* [CUPrimaireAGauche](#cuprimaireagauche) from [StyleEssentiel](#styleessentiel)
 * [CURoleExigences](#curoleexigences) from [TracabiliteExigence](#tracabiliteexigence)
-* [CUSeulementPrimaire](#cuseulementprimaire) from [StyleEssentiel ](#styleessentiel )
+* [CUSeulementPrimaire](#cuseulementprimaire) from [StyleEssentiel](#styleessentiel)
 * [CardinalVsOrdinal](#cardinalvsordinal) from [Valeur](#valeur)
 * [Cardinalite](#cardinalite) from [Classe](#classe)
 * [CardinaliteInversee](#cardinaliteinversee) from [Classe](#classe)
@@ -2232,9 +2232,9 @@ RULES (398)
 * [ImbricationInutile](#imbricationinutile) from [TexteTechnique](#textetechnique)
 * [IncludeMultiple](#includemultiple) from [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 * [Incoherence](#incoherence) from [TexteTechnique](#textetechnique)
-* [IntentionScenario](#intentionscenario) from [Scenario  ](#scenario  )
+* [IntentionScenario](#intentionscenario) from [Scenario](#scenario)
 * [InteractionProscrite](#interactionproscrite) from [Nomenclature](#nomenclature)
-* [IntermediaireAction](#intermediaireaction) from [Scenario  ](#scenario  )
+* [IntermediaireAction](#intermediaireaction) from [Scenario](#scenario)
 * [Interpretation](#interpretation) from [TexteTechnique](#textetechnique)
 * [Invalide](#invalide) from [TexteTechnique](#textetechnique)
 * [Justification](#justification) from [TexteTechnique](#textetechnique)
@@ -2245,7 +2245,7 @@ RULES (398)
 * [MAJ-MAJ](#maj-maj) from [Nomenclature](#nomenclature)
 * [MAJ_MAJ](#maj_maj) from [Nomenclature](#nomenclature)
 * [MajMin](#majmin) from [Nomenclature](#nomenclature)
-* [MessageInexplique](#messageinexplique) from [Scenario  ](#scenario  )
+* [MessageInexplique](#messageinexplique) from [Scenario](#scenario)
 * [MiseAJourVersion](#miseajourversion) from [Livrable](#livrable)
 * [ModelioR1000](#modelior1000) from [UMLModelio](#umlmodelio)
 * [ModelioR1010](#modelior1010) from [UMLModelio](#umlmodelio)
@@ -2446,8 +2446,8 @@ RULES (398)
 * [NomParametre](#nomparametre) from [Classe](#classe)
 * [NomPersonne](#nompersonne) from [Nomenclature](#nomenclature)
 * [NomRole](#nomrole) from [Classe](#classe)
-* [NomScenario](#nomscenario) from [Scenario  ](#scenario  )
-* [NomScenarioInstantie](#nomscenarioinstantie) from [Scenario  ](#scenario  )
+* [NomScenario](#nomscenario) from [Scenario](#scenario)
+* [NomScenarioInstantie](#nomscenarioinstantie) from [Scenario](#scenario)
 * [NomSysteme](#nomsysteme) from [Systeme](#systeme)
 * [NomenclatureActeur](#nomenclatureacteur) from [CasDUtilisation](#casdutilisation)
 * [NomenclatureAssociation](#nomenclatureassociation) from [Classe](#classe)
@@ -2460,7 +2460,7 @@ RULES (398)
 * [NomenclatureOperation](#nomenclatureoperation) from [Classe](#classe)
 * [NomenclatureParametre](#nomenclatureparametre) from [Classe](#classe)
 * [NomenclatureRole](#nomenclaturerole) from [Classe](#classe)
-* [NomenclatureScenario](#nomenclaturescenario) from [Scenario  ](#scenario  )
+* [NomenclatureScenario](#nomenclaturescenario) from [Scenario](#scenario)
 * [NonAbstraction](#nonabstraction) from [TexteTechnique](#textetechnique)
 * [NonHumain](#nonhumain) from [CasDUtilisation](#casdutilisation)
 * [NonLivre](#nonlivre) from [Livrable](#livrable)
@@ -2468,7 +2468,7 @@ RULES (398)
 * [Orthographe](#orthographe) from [TexteTechnique](#textetechnique)
 * [OrthographeIdentificateur](#orthographeidentificateur) from [Nomenclature](#nomenclature)
 * [PackagingLivrable](#packaginglivrable) from [Livrable](#livrable)
-* [ParametreConcret](#parametreconcret) from [Scenario  ](#scenario  )
+* [ParametreConcret](#parametreconcret) from [Scenario](#scenario)
 * [ParametreObjet](#parametreobjet) from [Valeur](#valeur)
 * [Paraphrase](#paraphrase) from [TexteTechnique](#textetechnique)
 * [PasDeRelationEntreCU](#pasderelationentrecu) from [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)
@@ -2477,23 +2477,23 @@ RULES (398)
 * [Ponctuation](#ponctuation) from [TexteTechnique](#textetechnique)
 * [Portrait](#portrait) from [Nomenclature](#nomenclature)
 * [Precision](#precision) from [TexteTechnique](#textetechnique)
-* [PresenceObjet](#presenceobjet) from [Scenario  ](#scenario  )
+* [PresenceObjet](#presenceobjet) from [Scenario](#scenario)
 * [ProprieteExigenceInadaptee](#proprieteexigenceinadaptee) from [Exigence](#exigence)
 * [Protocole](#protocole) from [Deploiement](#deploiement)
 * [Redondance](#redondance) from [TexteTechnique](#textetechnique)
-* [ReferenceScenario](#referencescenario) from [Scenario  ](#scenario  )
+* [ReferenceScenario](#referencescenario) from [Scenario](#scenario)
 * [Relation](#relation) from [CasDUtilisation](#casdutilisation)
 * [RelationsCUIncoherentes](#relationscuincoherentes) from [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 * [RerefenceAmbigue](#rerefenceambigue) from [TexteTechnique](#textetechnique)
 * [Resolution](#resolution) from [Document](#document)
-* [Responsabilites](#responsabilites) from [Scenario  ](#scenario  )
+* [Responsabilites](#responsabilites) from [Scenario](#scenario)
 * [ResultatConcret](#resultatconcret) from [Valeur](#valeur)
-* [RetourInexplique](#retourinexplique) from [Scenario  ](#scenario  )
-* [RetourManquant](#retourmanquant) from [Scenario  ](#scenario  )
+* [RetourInexplique](#retourinexplique) from [Scenario](#scenario)
+* [RetourManquant](#retourmanquant) from [Scenario](#scenario)
 * [RoleAssociation](#roleassociation) from [Classe](#classe)
 * [RoleClasse](#roleclasse) from [Classe](#classe)
 * [RoleDansPatron](#roledanspatron) from [Nomenclature](#nomenclature)
-* [SequenceDActions](#sequencedactions) from [Scenario  ](#scenario  )
+* [SequenceDActions](#sequencedactions) from [Scenario](#scenario)
 * [SousExigence](#sousexigence) from [Exigence](#exigence)
 * [SousTypageActeur](#soustypageacteur) from [CasDUtilisation](#casdutilisation)
 * [StarUML1](#staruml1) from [UMLStarUML](#umlstaruml)
@@ -2536,12 +2536,12 @@ RULES (398)
 * [StarUML9](#staruml9) from [UMLStarUML](#umlstaruml)
 * [StatusNonDefinitif](#statusnondefinitif) from [Exigence](#exigence)
 * [Style](#style) from [TexteTechnique](#textetechnique)
-* [StyleEssentiel](#styleessentiel) from [StyleEssentiel ](#styleessentiel )
+* [StyleEssentiel](#styleessentiel) from [StyleEssentiel](#styleessentiel)
 * [StyleSIdentificateur](#stylesidentificateur) from [Nomenclature](#nomenclature)
 * [Subjectif](#subjectif) from [TexteTechnique](#textetechnique)
 * [Sujet](#sujet) from [TexteTechnique](#textetechnique)
-* [SujetAction](#sujetaction) from [Scenario  ](#scenario  )
-* [SujetInstancie](#sujetinstancie) from [Scenario  ](#scenario  )
+* [SujetAction](#sujetaction) from [Scenario](#scenario)
+* [SujetInstancie](#sujetinstancie) from [Scenario](#scenario)
 * [SurDecomposition](#surdecomposition) from [Systeme](#systeme)
 * [SurExgigence](#surexgigence) from [Exigence](#exigence)
 * [Surcharge](#surcharge) from [Diagramme](#diagramme)
@@ -2555,7 +2555,7 @@ RULES (398)
 * [Trigramme](#trigramme) from [Nomenclature](#nomenclature)
 * [TypeDExigence](#typedexigence) from [Exigence](#exigence)
 * [TypeDeDiagramme](#typedediagramme) from [Diagramme](#diagramme)
-* [TypeDeMessage](#typedemessage) from [Scenario  ](#scenario  )
+* [TypeDeMessage](#typedemessage) from [Scenario](#scenario)
 * [TypeValeur](#typevaleur) from [Valeur](#valeur)
 * [TypeValeurIncorrect](#typevaleurincorrect) from [Valeur](#valeur)
 * [UniteTempsEspaceCU](#unitetempsespacecu) from [CasDUtilisation](#casdutilisation)
@@ -2564,7 +2564,7 @@ RULES (398)
 * [ValeurComposite](#valeurcomposite) from [Valeur](#valeur)
 * [ValeurConcrete](#valeurconcrete) from [Valeur](#valeur)
 * [ValeurConstante](#valeurconstante) from [Valeur](#valeur)
-* [ValeurDeRetour](#valeurderetour) from [Scenario  ](#scenario  )
+* [ValeurDeRetour](#valeurderetour) from [Scenario](#scenario)
 * [ValeurInexpliquee](#valeurinexpliquee) from [Valeur](#valeur)
 * [ValeurPlausible](#valeurplausible) from [Valeur](#valeur)
 * [ValeurReflechie](#valeurreflechie) from [Valeur](#valeur)
