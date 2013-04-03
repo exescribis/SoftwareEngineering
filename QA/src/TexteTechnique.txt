@@ -49,7 +49,7 @@ $Temps:
 $Contexte:
   Certains éléments du texte ne sont pas facilement interprétables en l'absence d'un contexte clairement défini ou la dépendance par rapport à ce contexte devrait être limitée.
 
-$PhraseMalConstruite:  
+$PhraseMalConstruite:
   Une ou plusieurs phrases sont mal construites, trop longues, non achevées, contiennent trop d'imbrications, d'enchainements et/ou de références ambigües.
 
 $ImbricationInutile:
