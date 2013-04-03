@@ -1,4 +1,4 @@
-#=UMLModelio
+﻿#=UMLModelio
 # From modelio user manual http://forge.modelio.org/projects/modelio-user-manual-english-22/wiki/Modeler_audit_rules_list
 
 $ModelioR1000:

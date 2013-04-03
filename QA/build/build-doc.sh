@@ -1,10 +1,11 @@
-#!/bin/sh
-SRCDIR=../src
+﻿#!/bin/sh
+THISDIR=`dirname $0`
+SRCDIR=${THISDIR?}/../src
 SRCFILESPATTERN=${SRCDIR?}/*.txt
-OUTDIR=..
+OUTDIR=${THISDIR?}/..
 OUTFILE=${OUTDIR?}/README.md
 
-wc -l $SRCFILESPATTERN
+echo `ls $SRCFILESPATTERN | wc -l` source files 
 
 awk '
     /^\$.*:$/   {
@@ -25,5 +26,7 @@ awk '
     }' \
   ${SRCFILESPATTERN} \
   > ${OUTFILE?}
+  
+wc -l ${OUTFILE?}
   
 
