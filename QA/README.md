@@ -47,7 +47,8 @@ $NonHumain:
     
     
     
-ï»¿#=CasDUtilisation_ModeleDetaille  
+CasDUtilisation_ModeleDetaille
+=====
 $RelationsCUIncoherentes:
 -----
   Les relations de dÃ©pendences <<includes>> et <<extends>> existant entre cas d'utilisations ne sont pas cohÃ©rentes avec les descriptions dÃ©taillÃ©es de ceux-ci  
@@ -59,14 +60,16 @@ $IncludeMultiple:
     
     
     
-ï»¿#=CasDUtilisation_ModelePreliminaire  
+CasDUtilisation_ModelePreliminaire
+=====
 $PasDeRelationEntreCU:
 -----
   L'utilisation de relations entre cas d'utilisation n'est recommandÃ©e.  
 $CUAuxiliaireDecore:
 -----
   Le stÃ©rÃ©otype auxilaire doit Ãªtre associÃ© aux acteurs auxillaires.  
-ï»¿#= StyleEssentiel   
+ StyleEssentiel 
+=====
 $StyleEssentiel:
 -----
   La description du scenario ne doit pas faire de rÃ©fÃ©rences inutiles Ã  la maniÃ¨re dont les acteurs et le systÃ¨me intÃ©ragissent dans le dÃ©tail, sachant que l'objectif d'un cas d'utilisation essentiel n'est pas de dÃ©crire des exigences sur une ou des interfaces personnes systÃ¨mes.   
@@ -75,7 +78,8 @@ $CUPrimaireAGauche:
 -----
   Les acteurs primaires doivent Ãªtre reprÃ©sentÃ©s Ã  gauche du systÃ¨me, les acteurs secondaires Ã  droite.  
     
-ï»¿$CUSeulementPrimaire:  
+$CUSeulementPrimaire:
+-----
   Seuls les acteurs primaires doivent Ãªtre representÃ©s dans les diagrammes de cas d'utilisation.  
     
     
@@ -176,7 +180,8 @@ Deploiement
 $Protocole:
 -----
   Le nom de l'association ou du lien devrait faire rÃ©fÃ©rence Ã  un protocole de communication.  
-ï»¿#= Diagramme  
+ Diagramme
+=====
 $Densite:
 -----
   La densite des Ã©lÃ©ments dans la diagramme est soit trop importante soit insuffisante et le diagramme pourrait utilement Ãªtre compactÃ© ou au contraire Ã©tendu.  
@@ -223,7 +228,8 @@ $TypeDeDiagramme:
   #   
     
     
-ï»¿#= Document  
+ Document
+=====
 $EnteteDocument:
 -----
   Le titre, sous titre, ou plus gÃ©nÃ©ralement l'identification du document est manquant, inappropriÃ© ou non conforme.  
@@ -253,7 +259,8 @@ $Resolution:
     
     
     
-ï»¿#=Exigence  
+Exigence
+=====
 $IdentificateurExigence:
 -----
   L'identificateur ne fait pas clairement rÃ©fÃ©rence Ã  une exigence et/ou le type de cette exigence ne transparaÃ®t pas vraiment dans l'identificateur.  
@@ -297,44 +304,45 @@ Livrable
 =====
 $NomenclatureLivrable:
 -----
-  Le nom d'un ou de plusieurs ressources livrées n'est pas conforme à aux règles de nomenclatures.  
+  Le nom d'un ou de plusieurs ressources livrÃ©es n'est pas conforme Ã  aux rÃ¨gles de nomenclatures.  
 $DelaiLivrable:
 -----
-  Le ou les délais de livraison n'ont pas été respectés.  
+  Le ou les dÃ©lais de livraison n'ont pas Ã©tÃ© respectÃ©s.  
 $FormatLivrable:
 -----
-  Le format des ressources livrées n'est pas conforme aux attentes (cf $PackagingLivrable).  
+  Le format des ressources livrÃ©es n'est pas conforme aux attentes (cf $PackagingLivrable).  
     
 $DescriptifLivrable:
 -----
-  Le descriptif d'un ou plusieurs livrable est manquant, incomplet ou incohérent.  
-  Commentaire: Dans le cas où un livrable coomposite est livré, c'est à dire que le livrable est formé de différents artefacts, par exemple rassemblés dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrés mais également les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifeste, ou de tout autre artefact clairement identifiable.  
+  Le descriptif d'un ou plusieurs livrable est manquant, incomplet ou incohÃ©rent.  
+  Commentaire: Dans le cas oÃ¹ un livrable coomposite est livrÃ©, c'est Ã  dire que le livrable est formÃ© de diffÃ©rents artefacts, par exemple rassemblÃ©s dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrÃ©s mais Ã©galement les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifeste, ou de tout autre artefact clairement identifiable.  
 $PackagingLivrable:
 -----
-  Le packaging du livrable, c'est à dire la manière dont les différents artéfacts ou éléments on été assemblés et conditionnés ne correspond pas aux attentes, ne sont pas conforme aux éventuels critères spécifiés ou requière de la part du client un effort supplémentaire de conditionnement ou déconditionnement qui doit lui être épargné.   
-  Commentaire: L'activité de packaging est à la charge du producteur et non pas à celle du client. Ce dernier est en droit est droit d'attendre un produit livré, assemblé, conditionné, et généralement directement utilisable. C'est le client qui connait mieux le produit qu'il livre, sa structure et ses composants, et c'est à lui que revient l'effort du packaging car cela fait partie intégrante de la production.     
-	Exemple: Si un fichier .pdf est demandé ou une structure précise en terme de fichier dans une archive .zip est demandé, il est indispensable de respecter ces consignes et de livrer ce qui est demandé sous la forme demandé.  
+  Le packaging du livrable, c'est Ã  dire la maniÃ¨re dont les diffÃ©rents artÃ©facts ou Ã©lÃ©ments on Ã©tÃ© assemblÃ©s et conditionnÃ©s ne correspond pas aux attentes, ne sont pas conforme aux Ã©ventuels critÃ¨res spÃ©cifiÃ©s ou requiÃ¨re de la part du client un effort supplÃ©mentaire de conditionnement ou dÃ©conditionnement qui doit lui Ãªtre Ã©pargnÃ©.   
+  Commentaire: L'activitÃ© de packaging est Ã  la charge du producteur et non pas Ã  celle du client. Ce dernier est en droit est droit d'attendre un produit livrÃ©, assemblÃ©, conditionnÃ©, et gÃ©nÃ©ralement directement utilisable. C'est le client qui connait mieux le produit qu'il livre, sa structure et ses composants, et c'est Ã  lui que revient l'effort du packaging car cela fait partie intÃ©grante de la production.     
+	Exemple: Si un fichier .pdf est demandÃ© ou une structure prÃ©cise en terme de fichier dans une archive .zip est demandÃ©, il est indispensable de respecter ces consignes et de livrer ce qui est demandÃ© sous la forme demandÃ©.  
 $NonLivre:
 -----
-  Un ou des artefacts, ou des parties d'artefacts non pas été livrés et la livraison n'est donc pas conforme aux résultats attendus.  
+  Un ou des artefacts, ou des parties d'artefacts non pas Ã©tÃ© livrÃ©s et la livraison n'est donc pas conforme aux rÃ©sultats attendus.  
 $MiseAJourVersion:
 -----
-  Un numéro de version est incorrect ou ne semble pas avoir mis à jour, ce qui est un problème essentiel du point de vue de la gestion de versions (cf $GestionDeVersions).  
+  Un numÃ©ro de version est incorrect ou ne semble pas avoir mis Ã  jour, ce qui est un problÃ¨me essentiel du point de vue de la gestion de versions (cf $GestionDeVersions).  
 	  
 $GestionDeVersions:
 -----
-  La gestion des versions semble inexistante, instatisfaisante ou présente des défaults.  
-	Commentaire: La gestion de versions est un des aspects essentiels pour la réussite des projets. La gestion de version est l'un des éléments essentiels pour passer du niveau initial et "chaotique" au niveau répétable du modèle CMM. Il existe de nombreux cas documentés de projets de grande envergure dont l'échec à été directement pu être directement et explicitement relié à l'absence d'une gestion de versions cohérente et systèmatique.  
+  La gestion des versions semble inexistante, instatisfaisante ou prÃ©sente des dÃ©faults.  
+	Commentaire: La gestion de versions est un des aspects essentiels pour la rÃ©ussite des projets. La gestion de version est l'un des Ã©lÃ©ments essentiels pour passer du niveau initial et "chaotique" au niveau rÃ©pÃ©table du modÃ¨le CMM. Il existe de nombreux cas documentÃ©s de projets de grande envergure dont l'Ã©chec Ã  Ã©tÃ© directement pu Ãªtre directement et explicitement reliÃ© Ã  l'absence d'une gestion de versions cohÃ©rente et systÃ¨matique.  
 $VersionLivrable:
 -----
-  L'identification de la version du livrable semble être manquant, incorrect ou inadapté au status de livrable.  
-  Commentaire: Il est important de distinguer le système de versionnement pour les artefacts internes au projet (par exemple le code source, les modèles, etc), du système de versionnement utilisé pour les livraisons. Ce dernier système etant exposé à l'exterieur et visible par des tierces parties, un soin particulier doit être apportés aux interprétations pouvant être associés à ce système et aux identifiants correspondants. (cf $GestionDeVersions)  
+  L'identification de la version du livrable semble Ãªtre manquant, incorrect ou inadaptÃ© au status de livrable.  
+  Commentaire: Il est important de distinguer le systÃ¨me de versionnement pour les artefacts internes au projet (par exemple le code source, les modÃ¨les, etc), du systÃ¨me de versionnement utilisÃ© pour les livraisons. Ce dernier systÃ¨me etant exposÃ© Ã  l'exterieur et visible par des tierces parties, un soin particulier doit Ãªtre apportÃ©s aux interprÃ©tations pouvant Ãªtre associÃ©s Ã  ce systÃ¨me et aux identifiants correspondants. (cf $GestionDeVersions)  
 	  
 $DefautDejaMentionne:
 -----
-  Un ou des défauts ont déjà été mentionnés dans un audit précédent et n'ont pas été corrigés ou amendés dans le livrable courant.   
-	Commentaire: Cette situation est inacceptable car elle remet en cause le processus d'évolution et le principe même d'audit. Si les défauts détectés au cours des audits successives ne sont pas commentés, pris en compte ou corrigés, ils risquent d'être impossible de converger vers un produit final de qualité. Par ailleurs, les audits ayant un coût non négligeable, devoir redétecter des défauts déjà mentionnés constitue à la fois une perte de temps pour l'équipe qualité, mais marque également une dégradation de la confiance par rapport à la capacité de l'équipe de production de délivrer un produit final.   
-ï»¿#= Nomenclature  
+  Un ou des dÃ©fauts ont dÃ©jÃ  Ã©tÃ© mentionnÃ©s dans un audit prÃ©cÃ©dent et n'ont pas Ã©tÃ© corrigÃ©s ou amendÃ©s dans le livrable courant.   
+	Commentaire: Cette situation est inacceptable car elle remet en cause le processus d'Ã©volution et le principe mÃªme d'audit. Si les dÃ©fauts dÃ©tectÃ©s au cours des audits successives ne sont pas commentÃ©s, pris en compte ou corrigÃ©s, ils risquent d'Ãªtre impossible de converger vers un produit final de qualitÃ©. Par ailleurs, les audits ayant un coÃ»t non nÃ©gligeable, devoir redÃ©tecter des dÃ©fauts dÃ©jÃ  mentionnÃ©s constitue Ã  la fois une perte de temps pour l'Ã©quipe qualitÃ©, mais marque Ã©galement une dÃ©gradation de la confiance par rapport Ã  la capacitÃ© de l'Ã©quipe de production de dÃ©livrer un produit final.   
+ Nomenclature
+=====
 $Abbreviation:
 -----
   Le texte comporte une ou plusieurs abbrÃ©viations et/ou acronymes n'Ã©tant pas dÃ©finis/nÃ©cessaires/comprÃ©hensibles et/ou indispensables.  
@@ -522,7 +530,8 @@ $SurDecomposition:
 $LimiteDuSysteme:
 -----
   Les limites du systeme ne sont pas clairement identifiÃ©es et/ou il n'est pas clairement Ã©tabli quel est le rÃ´le exact du systÃ¨me dans la situation dÃ©crite.  
-ï»¿#= TexteTechnique  
+ TexteTechnique
+=====
 $Langage:
 -----
   Le texte comporte un ou plusieurs Ã©lÃ©ments de langages incorrects et/ou peu appropriÃ©s au contexte du document.  
