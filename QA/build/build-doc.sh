@@ -21,7 +21,7 @@ gawk '
       print "" ;
       print RULENAME;      
       print "-------------------" ;
-      print "package " PACKAGENAME ;      
+      print "package **" PACKAGENAME "**  " ;      
       next
     } 
     
@@ -37,8 +37,12 @@ gawk '
       next 
     } 
     
+    /^[ \t]*$/   {
+      next
+    }
+    
     /^[^#]/   {
-      print $0 "  "
+      print $0
     }
     
     function nameToUrl(name) {
