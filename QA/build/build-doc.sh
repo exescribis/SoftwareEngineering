@@ -80,7 +80,7 @@ gawk '
       print "" 
       print rulename   
       print "-------------------" 
-      print "From package " nameToUrl(RULE_TO_PACKAGE[rulename]) "**  " 
+      print "From package " nameToUrl(RULE_TO_PACKAGE[rulename]) "  " 
       print ""  
       print RULE_TO_TEXTS[rulename] ;      
     }
@@ -91,9 +91,9 @@ gawk '
       _nbrules = split(_rulelist,_packagerules," ")        
       print "" 
       print "" 
-      print "Package " packagename
+      print packagename
       print "===================================================="
-      printf "rules %s: " ,  _nbrules 
+      printf "%s rules: " ,  _nbrules 
       for (_i = 1; _i <= _nbrules; _i++) {
         printf "%s " , nameToUrl(_packagerules[_i]) ; 
       }

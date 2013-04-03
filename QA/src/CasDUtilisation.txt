@@ -13,7 +13,7 @@ $NomCU:
 
 $NomenclatureCU:
   Le nom des cas d'utilisation doivent être en MajMin (cf $MajMin).
-	Commentaire: les cas d'utilisation correspondent à des classes de scenarii et il est donc logique d'utiliser la même convention que pour les Classes a savoir l'utilisation d'une majuscule en début de nom.
+  Commentaire: les cas d'utilisation correspondent à des classes de scenarii et il est donc logique d'utiliser la même convention que pour les Classes a savoir l'utilisation d'une majuscule en début de nom.
   
 $NomActeurInstancie:
   Les noms des personnes jouant le role d'acteur doivent dans des scénarios instanciés doivent être à la fois particuliers pour être mémotechniques mais aussi représenter la diversité culturelle associé au contexte du système et du projet associé.
@@ -29,7 +29,7 @@ $ButCU:
 
 $UniteTempsEspaceCU:
   Un ou plusieurs cas d'utilisation ne correspondent pas à une unité de temps et d'espaces par rapport à l'utilisation entre l'acteur principal et le systeme.
-	
+
 
 # Correspond à une fonction du système visible par l’acteur
 # Permet à un acteur d ’atteindre un but

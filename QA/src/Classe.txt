@@ -36,7 +36,7 @@ $NomenclatureMethode:
 
 $NomParametre:
   Le nom du ou des paramètres formels doivent correspondre à des formes nominales et désigner les rôles que les valeurs des paramètres vont jouer dans le cadre de l'opération ou de la méthode concernée. 
-	Commentaire: les règles sont mêmes que pour nommer les objets (cf $NomObjet) si ce n'est que les noms propres et identifiant naturels doivent être proscrits car un paramêtre formel ne correspond pas à un objet concret particulier.
+  Commentaire: les règles sont mêmes que pour nommer les objets (cf $NomObjet) si ce n'est que les noms propres et identifiant naturels doivent être proscrits car un paramêtre formel ne correspond pas à un objet concret particulier.
 
 $NomenclatureParametre:
   Le nom de ou des methodes doivent être en style minMaj (cf $MinMaj).
@@ -68,7 +68,7 @@ $Cardinalite:
 
 $CardinaliteInversee:
   Une ou plusieurs cardinalites semblent être inversées ou sinon il s'agit peut être d'erreurs de cardinalités.
-	Commentaire: Cette erreur est rencontrée de manière relativement fréquente lorsque l'auteur du modèle confond les conventions UML avec les conventions utilisées dans d'autres langages de modélisation.
+  Commentaire: Cette erreur est rencontrée de manière relativement fréquente lorsque l'auteur du modèle confond les conventions UML avec les conventions utilisées dans d'autres langages de modélisation.
 
   
 $CardinaliteNM:

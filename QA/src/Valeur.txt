@@ -15,7 +15,7 @@ $ParametreObjet:
 
 $AbusDeString:
   Une utilisation abusive du type string est faite dans la modélisation.
-  Commentaire: le typage est l'une des plus avancées les plus importantes dans l'histoire de l'informatique et l'utilisation de type string lorsqu'un type plus précis, voir un type d'objets ou de collections aurait pu être utilisés est souvent le reflet d'une modélisation de médiocre qualité ou même souvent l'absence de modélisation ou de reflexion. L'encodage d'information sous forme de chaînes de caractères doit être faite uniquement lorsque cela est strictement justifié. 	
+  Commentaire: le typage est l'une des plus avancées les plus importantes dans l'histoire de l'informatique et l'utilisation de type string lorsqu'un type plus précis, voir un type d'objets ou de collections aurait pu être utilisés est souvent le reflet d'une modélisation de médiocre qualité ou même souvent l'absence de modélisation ou de reflexion. L'encodage d'information sous forme de chaînes de caractères doit être faite uniquement lorsque cela est strictement justifié.   
   
 $FormatValeur:
   Le format de la valeur semble incorrect, imprécis, incohérent ou non défini.
@@ -57,4 +57,4 @@ $ValeurCollection:
 
 $LiteralEnumeration:
   TODO
-	Commentaire: TODO
+  Commentaire: TODO
