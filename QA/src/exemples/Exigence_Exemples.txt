@@ -1,4 +1,4 @@
-﻿  L'application ne fonctionne pas de 7H à 19H30 les jours ouvrés pour les bâtiments d'enseignement
+  L'application ne fonctionne pas de 7H à 19H30 les jours ouvrés pour les bâtiments d'enseignement
   Le droit d'accès d'une personne à un bâtiment est l'accès le plus souple des autorisations des groupes auquels elle appartient
   On enregistre un journal d'activité d'une personne (accès aux bâtiments, etc..)
   Le ou les gardiens surveille(nt) le fonctionnement continu du système

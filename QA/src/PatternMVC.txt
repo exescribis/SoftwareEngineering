@@ -1,4 +1,4 @@
-﻿$RoleDansPatron:
+$RoleDansPatron:
   Le role joué par un objet ou une classe dans le patron n'est pas facilement identifiable.
 
 $InteractionProscrite:

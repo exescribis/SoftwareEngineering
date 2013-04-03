@@ -1,4 +1,4 @@
-﻿#= Diagramme
+#= Diagramme
 
 $Densite:
   La densite des éléments dans la diagramme est soit trop importante soit insuffisante et le diagramme pourrait utilement être compacté ou au contraire étendu.

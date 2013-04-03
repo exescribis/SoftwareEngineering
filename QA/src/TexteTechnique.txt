@@ -1,4 +1,4 @@
-﻿#= TexteTechnique
+#= TexteTechnique
 # Cet ensemble de règles s'appliquent aux textes techniques tel que spécifications, documentations, commentaires, etc. 
 
 $Langage:

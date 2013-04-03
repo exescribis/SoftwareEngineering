@@ -1,4 +1,4 @@
-﻿#=CasDUtilisation
+#=CasDUtilisation
 
 #== Nomenclature
 

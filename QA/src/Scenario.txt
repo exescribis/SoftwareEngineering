@@ -1,4 +1,4 @@
-﻿#= Scenario  
+#= Scenario  
 
 #== Nomenclature
 

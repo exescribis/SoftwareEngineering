@@ -1,4 +1,4 @@
-﻿#=CasDUtilisation_ModelePreliminaire
+#=CasDUtilisation_ModelePreliminaire
 # Alternative: CasDUtilisation_ModeleDetaille
 
 $PasDeRelationEntreCU:

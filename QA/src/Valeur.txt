@@ -1,4 +1,4 @@
-﻿#= Valeur
+#= Valeur
 
 $ResultatConcret:
   Il est nécessaire de donner des valeurs concrètes aux résultats (cf $ValeurConcrete).

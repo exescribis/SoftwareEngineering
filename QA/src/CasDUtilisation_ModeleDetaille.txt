@@ -1,4 +1,4 @@
-﻿#=CasDUtilisation_ModeleDetaille
+#=CasDUtilisation_ModeleDetaille
 # Alternative: CasDUtilisation_ModelePreliminaire
 
 $RelationsCUIncoherentes:

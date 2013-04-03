@@ -1,4 +1,4 @@
-﻿#=Exigence
+#=Exigence
 
 $IdentificateurExigence:
   L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.

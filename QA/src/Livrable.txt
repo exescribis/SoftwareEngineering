@@ -1,4 +1,4 @@
-﻿#=Livrable
+#=Livrable
 
 $NomenclatureLivrable:
   Le nom d'un ou de plusieurs ressources livrées n'est pas conforme à aux règles de nomenclatures.

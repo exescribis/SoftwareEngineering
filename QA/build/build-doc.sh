@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+#!/bin/sh
 THISDIR=`dirname $0`
 SRCDIR=${THISDIR?}/../src
 SRCFILESPATTERN=${SRCDIR?}/*.txt

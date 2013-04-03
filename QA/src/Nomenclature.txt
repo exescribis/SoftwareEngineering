@@ -1,4 +1,4 @@
-﻿#= Nomenclature
+#= Nomenclature
 
 $Abbreviation:
   Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables.

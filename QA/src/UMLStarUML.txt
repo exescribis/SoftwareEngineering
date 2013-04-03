@@ -1,4 +1,4 @@
-﻿#=UMLStarUML
+#=UMLStarUML
 # From StarUML user manual http://staruml.sourceforge.net/docs/user-guide(en)/ch09.html
 
 $StarUML1:
