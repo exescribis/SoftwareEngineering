@@ -19,7 +19,7 @@ gawk '
        
     /^\$.*:[ \t]*$/   {
       #------ rule header -----------
-      gsub(/^\$/,"") ; gsub(/:$/[ \t]*,"") 
+      gsub(/^\$/,"") ; gsub(/:[ \t]*$/,"") 
       RULENAME=$0 
       RULE_TO_PACKAGE[RULENAME] = PACKAGENAME
       PACKAGE_TO_RULELIST[PACKAGENAME] = add(PACKAGE_TO_RULELIST[PACKAGENAME],RULENAME," ") 

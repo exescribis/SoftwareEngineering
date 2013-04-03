@@ -9,18 +9,18 @@ RULE PACKAGES (19)
 * [Document](#document) (7 rules)
 * [Exigence](#exigence) (10 rules)
 * [Livrable](#livrable) (10 rules)
-* [Nomenclature](#nomenclature) (20 rules)
+* [Nomenclature](#nomenclature) (22 rules)
 * [Scenario](#scenario) (20 rules)
 * [Sequence](#sequence) (1 rules)
 * [StyleEssentiel](#styleessentiel) (3 rules)
 * [Systeme](#systeme) (4 rules)
-* [TexteTechnique](#textetechnique) (32 rules)
+* [TexteTechnique](#textetechnique) (35 rules)
 * [TracabiliteExigence](#tracabiliteexigence) (2 rules)
 * [UMLModelio](#umlmodelio) (187 rules)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (398)
+RULES (400)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -75,6 +75,7 @@ RULES (398)
 * [Homogeneite](#homogeneite) from package [TexteTechnique](#textetechnique)
 * [HomogeneiteIdentificateurs](#homogeneiteidentificateurs) from package [Nomenclature](#nomenclature)
 * [HypotheseNonValidee](#hypothesenonvalidee) from package [TexteTechnique](#textetechnique)
+* [Identificateur](#identificateur) from package [TexteTechnique](#textetechnique)
 * [IdentificateurExigence](#identificateurexigence) from package [Exigence](#exigence)
 * [ImbricationInutile](#imbricationinutile) from package [TexteTechnique](#textetechnique)
 * [IncludeMultiple](#includemultiple) from package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
@@ -319,6 +320,7 @@ RULES (398)
 * [ParametreObjet](#parametreobjet) from package [Valeur](#valeur)
 * [Paraphrase](#paraphrase) from package [TexteTechnique](#textetechnique)
 * [PasDeRelationEntreCU](#pasderelationentrecu) from package [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)
+* [PhraseMalConstruite](#phrasemalconstruite) from package [TexteTechnique](#textetechnique)
 * [Pipe](#pipe) from package [TexteTechnique](#textetechnique)
 * [PlanDesiquilibre](#plandesiquilibre) from package [Document](#document)
 * [Ponctuation](#ponctuation) from package [TexteTechnique](#textetechnique)
@@ -399,7 +401,7 @@ RULES (398)
 * [TexteSection](#textesection) from package [TexteTechnique](#textetechnique)
 * [TitreDiagramme](#titrediagramme) from package [Diagramme](#diagramme)
 * [TitreFigure](#titrefigure) from package [Document](#document)
-* [Trigramme](#trigramme) from package [Nomenclature](#nomenclature)
+* [Trigramme](#trigramme) from package [TexteTechnique](#textetechnique)
 * [TypeDExigence](#typedexigence) from package [Exigence](#exigence)
 * [TypeDeDiagramme](#typedediagramme) from package [Diagramme](#diagramme)
 * [TypeDeMessage](#typedemessage) from package [Scenario](#scenario)
@@ -987,7 +989,7 @@ From package [Livrable](#livrable)
 
 Nomenclature
 ====================================================
-20 rules: [Abbreviation](#abbreviation) [OrthographeIdentificateur](#orthographeidentificateur) [FormeNominale](#formenominale) [FormeVerbale](#formeverbale) [Generique](#generique) [Connecteur](#connecteur) [HomogeneiteIdentificateurs](#homogeneiteidentificateurs) [Trigramme](#trigramme) [Portrait](#portrait) [NomPersonne](#nompersonne) [Date](#date) [MajMin](#majmin) [minMaj](#minmaj) [StyleSIdentificateur](#stylesidentificateur) [min_min](#min_min) [min-min](#min-min) [MAJ-MAJ](#maj-maj) [MAJ_MAJ](#maj_maj) [RoleDansPatron](#roledanspatron) [InteractionProscrite](#interactionproscrite) 
+22 rules: [Abbreviation](#abbreviation) [OrthographeIdentificateur](#orthographeidentificateur) [Identificateur](#identificateur) [Trigramme](#trigramme) [FormeNominale](#formenominale) [FormeVerbale](#formeverbale) [Generique](#generique) [Connecteur](#connecteur) [HomogeneiteIdentificateurs](#homogeneiteidentificateurs) [Trigramme](#trigramme) [Portrait](#portrait) [NomPersonne](#nompersonne) [Date](#date) [MajMin](#majmin) [minMaj](#minmaj) [StyleSIdentificateur](#stylesidentificateur) [min_min](#min_min) [min-min](#min-min) [MAJ-MAJ](#maj-maj) [MAJ_MAJ](#maj_maj) [RoleDansPatron](#roledanspatron) [InteractionProscrite](#interactionproscrite) 
 
 Abbreviation
 -------------------
@@ -1007,13 +1009,27 @@ From package [Nomenclature](#nomenclature)
 
   Commentaire: La présence de fautes d'orthographes dans les identificateurs sont beaucoup plus importants que dans du texte. Dans du texte, seul la lecture est génée et l'auteur potentiellement décribilisé dans ca capacité de relire ou faire relire le texte qu'il a produit (et donc dans sa capacité à livrer des artefacts de qualité). La situation dans un identificateur est de toute autre nature, et le problème de plusieurs ordre de magnitude plus important. En effet les identificateurs sont fait pour être référencés, recherchés, dérivés, etc. et toute erreur qui s'introduit dans un identificateur risque d'avoir des impacts très lourds en l'absence par exemple de technique de "renommage" car toutes les occurrences de l'identificateur erronées devront être renommées avec tous les risques que cela présente. Il est possible que l'erreur ne soit pas corrigée lorsqu'elle est découverte pour éviter d'éventuels impacts. Rechercher et référencer des identificateurs avec des erreurs d'orthographes risquent de générer des erreurs en cascades, des problèmes de gestion des impacts, etc. La liaison entre les différents artefacts comme le code et le glossaire du domaine risque de ne pas pouvoir non plus être fait.
 
-$Identificateur: 
+Identificateur
+-------------------
+From package [TexteTechnique](#textetechnique)  
 
   Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
 
-$Trigramme: 
+  Les identificateurs doivent être clairs et compréhensibles en dehors de leur contexte immédiat. Ils doivent reflêter les objets auquels ils font références.
+
+Trigramme
+-------------------
+From package [TexteTechnique](#textetechnique)  
 
   Un trigramme (cf $Trigramme) doit être utilisé pour reférencer une partie prenante.
+
+  Un trigramme est une séquence de trois lettres majsucules faisant référence de manière unique à une personne dans un contexte donné. La première règle appliquée est de concaténer (1) la première lettre du premier prénom, (2) la première lettre du premier nom de famille, et (3) la dernière lettre du premier nom de famille. Si le trigramme est déjà utilisé l'avant dernière lettre du nom est utilisée en place de la dernière et ainsi de suite.
+
+  Observations: Dans les projets informatiques les parties prenantes (stakeholders en anglais) sont souvent identifiées de manière unique par un trigramme identifiant la personne de manière unique. Il existe plusieurs règles selon les enterprises, mais l'objectif est toujours de minimiser la probabilité d'avoir deux personnes ayant par défault le même trigramme (auquels cas une autre règle est appliquée pour la sectond personne). Les trigrammes sont utilisés de manière ubiquitaire dans les projets et autre autre dans les comptes rendus de réunions, les documents, les méls, le code source, les fichiers de suivis de temps, de gestion de projets, etc.
+
+  Exemple: le trigramme de Djiamila Maria WONG CONNOR est DWG
+
+  L'utilisation systématique des trigrammes est nécessaire à chaque fois qu'une référence est faite à une partie prenante.
 
 FormeNominale
 -------------------
@@ -1051,13 +1067,17 @@ From package [Nomenclature](#nomenclature)
 
 Trigramme
 -------------------
-From package [Nomenclature](#nomenclature)  
+From package [TexteTechnique](#textetechnique)  
+
+  Un trigramme (cf $Trigramme) doit être utilisé pour reférencer une partie prenante.
 
   Un trigramme est une séquence de trois lettres majsucules faisant référence de manière unique à une personne dans un contexte donné. La première règle appliquée est de concaténer (1) la première lettre du premier prénom, (2) la première lettre du premier nom de famille, et (3) la dernière lettre du premier nom de famille. Si le trigramme est déjà utilisé l'avant dernière lettre du nom est utilisée en place de la dernière et ainsi de suite.
 
   Observations: Dans les projets informatiques les parties prenantes (stakeholders en anglais) sont souvent identifiées de manière unique par un trigramme identifiant la personne de manière unique. Il existe plusieurs règles selon les enterprises, mais l'objectif est toujours de minimiser la probabilité d'avoir deux personnes ayant par défault le même trigramme (auquels cas une autre règle est appliquée pour la sectond personne). Les trigrammes sont utilisés de manière ubiquitaire dans les projets et autre autre dans les comptes rendus de réunions, les documents, les méls, le code source, les fichiers de suivis de temps, de gestion de projets, etc.
 
   Exemple: le trigramme de Djiamila Maria WONG CONNOR est DWG
+
+  L'utilisation systématique des trigrammes est nécessaire à chaque fois qu'une référence est faite à une partie prenante.
 
 Portrait
 -------------------
@@ -1360,7 +1380,7 @@ From package [Systeme](#systeme)
 
 TexteTechnique
 ====================================================
-32 rules: [Langage](#langage) [Orthographe](#orthographe) [Ponctuation](#ponctuation) [Grammaire](#grammaire) [Style](#style) [Formatage](#formatage) [Abbreviation](#abbreviation) [ArticleInDefini](#articleindefini) [RerefenceAmbigue](#rerefenceambigue) [Vocabulaire](#vocabulaire) [Glossaire](#glossaire) [TermeMetier](#termemetier) [Temps](#temps) [Contexte](#contexte) [ImbricationInutile](#imbricationinutile) [TexteSection](#textesection) [Justification](#justification) [Subjectif](#subjectif) [Precision](#precision) [Redondance](#redondance) [Paraphrase](#paraphrase) [Incoherence](#incoherence) [Completude](#completude) [Invalide](#invalide) [Homogeneite](#homogeneite) [Exemple](#exemple) [Sujet](#sujet) [Complexite](#complexite) [Interpretation](#interpretation) [NonAbstraction](#nonabstraction) [HypotheseNonValidee](#hypothesenonvalidee) [Pipe](#pipe) 
+35 rules: [Langage](#langage) [Orthographe](#orthographe) [Ponctuation](#ponctuation) [Grammaire](#grammaire) [Style](#style) [Formatage](#formatage) [Abbreviation](#abbreviation) [ArticleInDefini](#articleindefini) [RerefenceAmbigue](#rerefenceambigue) [Vocabulaire](#vocabulaire) [Glossaire](#glossaire) [TermeMetier](#termemetier) [Identificateur](#identificateur) [Temps](#temps) [Contexte](#contexte) [PhraseMalConstruite](#phrasemalconstruite) [ImbricationInutile](#imbricationinutile) [TexteSection](#textesection) [Trigramme](#trigramme) [Justification](#justification) [Subjectif](#subjectif) [Precision](#precision) [Redondance](#redondance) [Paraphrase](#paraphrase) [Incoherence](#incoherence) [Completude](#completude) [Invalide](#invalide) [Homogeneite](#homogeneite) [Exemple](#exemple) [Sujet](#sujet) [Complexite](#complexite) [Interpretation](#interpretation) [NonAbstraction](#nonabstraction) [HypotheseNonValidee](#hypothesenonvalidee) [Pipe](#pipe) 
 
 Langage
 -------------------
@@ -1442,7 +1462,11 @@ From package [TexteTechnique](#textetechnique)
 
   Un ou des termes utilisés ne semble(nt) pas être conformes au vocabulaire utilisé par les experts membres du métier considéré ou un terme plus précis semble être disponible dans ce domaine.
 
-$Identificateur: 
+Identificateur
+-------------------
+From package [TexteTechnique](#textetechnique)  
+
+  Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
 
   Les identificateurs doivent être clairs et compréhensibles en dehors de leur contexte immédiat. Ils doivent reflêter les objets auquels ils font références.
 
@@ -1458,7 +1482,9 @@ From package [TexteTechnique](#textetechnique)
 
   Certains éléments du texte ne sont pas facilement interprétables en l'absence d'un contexte clairement défini ou la dépendance par rapport à ce contexte devrait être limitée.
 
-$PhraseMalConstruite:  
+PhraseMalConstruite
+-------------------
+From package [TexteTechnique](#textetechnique)  
 
   Une ou plusieurs phrases sont mal construites, trop longues, non achevées, contiennent trop d'imbrications, d'enchainements et/ou de références ambigües.
 
@@ -1474,7 +1500,17 @@ From package [TexteTechnique](#textetechnique)
 
   Les titres des sections et de sous-sections ne doivent s'enchainer sans qu'un texte d'introduction ou de liaison ne les séparent.
 
-$Trigramme: 
+Trigramme
+-------------------
+From package [TexteTechnique](#textetechnique)  
+
+  Un trigramme (cf $Trigramme) doit être utilisé pour reférencer une partie prenante.
+
+  Un trigramme est une séquence de trois lettres majsucules faisant référence de manière unique à une personne dans un contexte donné. La première règle appliquée est de concaténer (1) la première lettre du premier prénom, (2) la première lettre du premier nom de famille, et (3) la dernière lettre du premier nom de famille. Si le trigramme est déjà utilisé l'avant dernière lettre du nom est utilisée en place de la dernière et ainsi de suite.
+
+  Observations: Dans les projets informatiques les parties prenantes (stakeholders en anglais) sont souvent identifiées de manière unique par un trigramme identifiant la personne de manière unique. Il existe plusieurs règles selon les enterprises, mais l'objectif est toujours de minimiser la probabilité d'avoir deux personnes ayant par défault le même trigramme (auquels cas une autre règle est appliquée pour la sectond personne). Les trigrammes sont utilisés de manière ubiquitaire dans les projets et autre autre dans les comptes rendus de réunions, les documents, les méls, le code source, les fichiers de suivis de temps, de gestion de projets, etc.
+
+  Exemple: le trigramme de Djiamila Maria WONG CONNOR est DWG
 
   L'utilisation systématique des trigrammes est nécessaire à chaque fois qu'une référence est faite à une partie prenante.
 
