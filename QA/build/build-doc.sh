@@ -40,9 +40,14 @@ gawk '
       #------ comment or blank line -----
       next
     }
-        
+    
     {
-      #------ rule paraphraph ----
+      #------ rule paragraph ----
+      gsub(/^  Commentaires?:/,"* **Commentaire:** ") ;
+      gsub(/^  Exemples?:/,"* **Exemple:** ") ;
+      gsub(/^  Remarques?:/,"* **Remarque:** ") ;
+      gsub(/^  Observations?:/,"* **Observation:** ") ;
+
       paragraph=$0 
       RULE_TO_TEXTS[RULENAME] = add(RULE_TO_TEXTS[RULENAME],paragraph,"\n\n") 
     }
