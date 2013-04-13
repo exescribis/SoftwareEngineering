@@ -1,0 +1,6 @@
+Nom d'état
+  refusé
+	verouillé
+	EnCoursDeFermeTURE
+	ouvert
+	créé
