@@ -1,7 +1,8 @@
 #=Livrable
 
 $NomenclatureLivrable:
-  Le nom d'un ou de plusieurs ressources livrées n'est pas conforme à aux règles de nomenclatures.
+  Le nom d'un ou de plusieurs ressources livrées n'est pas conforme aux règles spécifiées (cf $PackagingLivrable).
+	Commentaire: Les livraisons sont des points clés de la vie d'un produit logiciel et l'attention qui doit y être portée est extrème. Ne pas respecter des règles de nomenclature spécifiées auparavant est un problème important. D'une part cela montre que l'organisation productrice n'est pas capable de suivre des règles élémentaires, d'autre par cela rend impossible le traitement automatique des éléments livrés par l'organization cliente. 
 
 $DelaiLivrable:
   Le ou les délais de livraison n'ont pas été respectés.
@@ -11,12 +12,12 @@ $FormatLivrable:
   
 $DescriptifLivrable:
   Le descriptif d'un ou plusieurs livrable est manquant, incomplet ou incohérent.
-  Commentaire: Dans le cas où un livrable coomposite est livré, c'est à dire que le livrable est formé de différents artefacts, par exemple rassemblés dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrés mais également les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifeste, ou de tout autre artefact clairement identifiable.
+  Commentaire: Dans le cas où un livrable composite est livré, c'est à dire que le livrable est formé de différents artefacts, par exemple rassemblés dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrés mais également les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifeste, ou de tout autre artefact clairement identifiable.
 
 $PackagingLivrable:
   Le packaging du livrable, c'est à dire la manière dont les différents artéfacts ou éléments on été assemblés et conditionnés ne correspond pas aux attentes, ne sont pas conforme aux éventuels critères spécifiés ou requière de la part du client un effort supplémentaire de conditionnement ou déconditionnement qui doit lui être épargné. 
   Commentaire: L'activité de packaging est à la charge du producteur et non pas à celle du client. Ce dernier est en droit est droit d'attendre un produit livré, assemblé, conditionné, et généralement directement utilisable. C'est le client qui connait mieux le produit qu'il livre, sa structure et ses composants, et c'est à lui que revient l'effort du packaging car cela fait partie intégrante de la production.   
-  Exemple: Si un fichier .pdf est demandé ou une structure précise en terme de fichier dans une archive .zip est demandé, il est indispensable de respecter ces consignes et de livrer ce qui est demandé sous la forme demandé.
+  Exemple: Si un fichier .pdf est demandé ou une structure précise en terme de fichiers dans une archive .zip est demandé, il est absolument indispensable de respecter ces consignes et de livrer ce qui est demandé sous la forme demandée.
 
 $NonLivre:
   Un ou des artefacts, ou des parties d'artefacts non pas été livrés et la livraison n'est donc pas conforme aux résultats attendus.
@@ -27,6 +28,12 @@ $MiseAJourVersion:
 $GestionDeVersions:
   La gestion des versions semble inexistante, instatisfaisante ou présente des défaults.
   Commentaire: La gestion de versions est un des aspects essentiels pour la réussite des projets. La gestion de version est l'un des éléments essentiels pour passer du niveau initial et "chaotique" au niveau répétable du modèle CMM. Il existe de nombreux cas documentés de projets de grande envergure dont l'échec à été directement pu être directement et explicitement relié à l'absence d'une gestion de versions cohérente et systèmatique.
+
+$Auteur:
+  Le ou les auteurs du document, qu'il s'agisse de personnes physiques ou morale, ne sont pas indiquées clairement ou de manière appropriées.
+
+$Copyright:
+  Les indications de copyrights associées livrées sont inappropriées, trop imprécises ou manquantes, ou ne peuvent pas être clairement associées à une ou plusieurs des ressources livrées. 
 
 $VersionLivrable:
   L'identification de la version du livrable semble être manquant, incorrect ou inadapté au status de livrable.

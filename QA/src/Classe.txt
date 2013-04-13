@@ -3,7 +3,7 @@
 #== Nomenclature
 $NomClasse:
   Le nom d'une classe doit normallement correspondre à une forme nominale au singulier.
-  Commentaire: Une classe représente généralement un concept et les concepts sont généralement identifiés par des noms communs. Le nom de la classe est au singulier car il fait référence au concept et non pas à l'extension de la classe. Il s'agit là d'une différence importante avec les noms de tables des bases de données car dans ce cas il est fait références à l'extension, c'est à dire à l'ensemble des instances contenues dans la table.
+  Commentaire: Une classe représente généralement un concept et les concepts sont généralement identifiés par des noms communs au singulier. Le nom de la classe est au singulier car il fait référence au concept et non pas à l'extension de la classe. Il s'agit là d'une différence importante avec les noms de tables des bases de données car dans ce cas il est fait références à l'extension, c'est à dire à l'ensemble des instances contenues dans la table.
 
 $NomenclatureClasse:
   Le nom des classes doivent être dans le style MajMin (cf $MajMin).
@@ -68,7 +68,7 @@ $Cardinalite:
 
 $CardinaliteInversee:
   Une ou plusieurs cardinalites semblent être inversées ou sinon il s'agit peut être d'erreurs de cardinalités.
-  Commentaire: Cette erreur est rencontrée de manière relativement fréquente lorsque l'auteur du modèle confond les conventions UML avec les conventions utilisées dans d'autres langages de modélisation.
+  Commentaire: Cette erreur est rencontrée de manière relativement fréquente lorsque l'auteur du modèle confond les conventions UML avec les conventions utilisées dans d'autres langages de modélisation. Généralement ce défaut est associé également à l'utilisation de constante "n", ce qui n'est pas non plus correct en UML (cf $CardinaliteNM:).
 
   
 $CardinaliteNM:

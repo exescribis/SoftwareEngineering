@@ -24,6 +24,7 @@ $Generique:
   
 $Connecteur:
   Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
+  Commentaire: un identificateur correspond normallement à un concept ou à une entitée particulière définie et il existe généralement un terme décrivant ce concept, en tout cas dans un vocabulaire métier ou dans un jargon particulier. Si ce n'est pas le cas on peut se poser la question de la réalité ou de l'utilité ou de la réalité de ce concept. Si le concept est effectivement utile, dans ce cas il est généralement préférable de l'associer à un mot existant ou à l'une de ses dérivations (et à ajouter ces termes dans le glossaire), plutot que d'introduire des connecteurs. Très souvent l'utilisation de connecteurs correspond à une justaposition non réflechie d'éléments. Un identificateur composé par des connecteurs peut correspondre également à des pratiques de programmation ou de modélisation problématiques qu'il s'agira soit d'éliminer, soit de documenter avec soin.
 
 $HomogeneiteIdentificateurs:
   Les identificateurs utilisés ne sont globalement pas homogènes et soit il existe une absence totale de style, soit trop de styles sont utilisés sans que cela soit justifié.
