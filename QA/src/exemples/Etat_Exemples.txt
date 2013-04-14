@@ -1,6 +1,14 @@
 Nom d'état
-  refusé
-	verouillé
-	EnCoursDeFermeTURE
-	ouvert
-	créé
+  Porte 
+    créée
+    verouillée
+    ouverte
+
+    ENPanne
+    ENCoursDeDOuverTURE
+    ouvertURE
+
+  PorteurDeBadge
+    groupeAffecté 
+		badgeAffecté
+		dansUnBatiment

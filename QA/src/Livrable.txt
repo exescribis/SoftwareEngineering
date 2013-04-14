@@ -33,7 +33,10 @@ $Auteur:
   Le ou les auteurs du document, qu'il s'agisse de personnes physiques ou morale, ne sont pas indiquées clairement ou de manière appropriées.
 
 $Copyright:
-  Les indications de copyrights associées livrées sont inappropriées, trop imprécises ou manquantes, ou ne peuvent pas être clairement associées à une ou plusieurs des ressources livrées. 
+  Les indications de copyrights associées livrées sont inappropriées, trop imprécises ou manquantes, ou ne peuvent pas être clairement associées à une ou plusieurs des ressources livrées.
+
+$Date:
+  Une des dates mentionnées semble être incorrectes, non mise à jours, ou une date semble manquante.  
 
 $VersionLivrable:
   L'identification de la version du livrable semble être manquant, incorrect ou inadapté au status de livrable.

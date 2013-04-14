@@ -65,6 +65,7 @@ $Navigabilite:
   
 $Cardinalite:
   Une ou plusieurs cardinalites sont manquantes, non justifiées ou erronées.
+  Commentaire: Toutes les cardinalites devraient être décrites dans un diagramme de classes. Souvent le manque de cardinalité correspond à l'absence de reflexion et ainsi à l'absence de validation du modèle. 
 
 $CardinaliteInversee:
   Une ou plusieurs cardinalites semblent être inversées ou sinon il s'agit peut être d'erreurs de cardinalités.
