@@ -1,14 +1,15 @@
-RULE PACKAGES (19)
+RULE PACKAGES (20)
 =================
 * [CasDUtilisation](#casdutilisation) (12 rules)
 * [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
 * [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (2 rules)
 * [Classe](#classe) (23 rules)
 * [Deploiement](#deploiement) (1 rules)
-* [Diagramme](#diagramme) (8 rules)
+* [Diagramme](#diagramme) (9 rules)
 * [Document](#document) (7 rules)
+* [Etat](#etat) (20 rules)
 * [Exigence](#exigence) (10 rules)
-* [Livrable](#livrable) (10 rules)
+* [Livrable](#livrable) (13 rules)
 * [Nomenclature](#nomenclature) (22 rules)
 * [Scenario](#scenario) (20 rules)
 * [Sequence](#sequence) (1 rules)
@@ -20,7 +21,7 @@ RULE PACKAGES (19)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (400)
+RULES (423)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -29,7 +30,9 @@ RULES (400)
 * [ActionConcrete](#actionconcrete) from package [Scenario](#scenario)
 * [ActionMetier](#actionmetier) from package [Scenario](#scenario)
 * [AggregationNonJustifie](#aggregationnonjustifie) from package [Classe](#classe)
+* [AmbiguiteTransition](#ambiguitetransition) from package [Etat](#etat)
 * [ArticleInDefini](#articleindefini) from package [TexteTechnique](#textetechnique)
+* [Auteur](#auteur) from package [Livrable](#livrable)
 * [ButCU](#butcu) from package [CasDUtilisation](#casdutilisation)
 * [CUAuxiliaireDecore](#cuauxiliairedecore) from package [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)
 * [CUExigenceFonctionnelle](#cuexigencefonctionnelle) from package [TracabiliteExigence](#tracabiliteexigence)
@@ -44,10 +47,14 @@ RULES (400)
 * [Completude](#completude) from package [TexteTechnique](#textetechnique)
 * [Complexite](#complexite) from package [TexteTechnique](#textetechnique)
 * [CompositionUnique](#compositionunique) from package [Classe](#classe)
+* [ConfusionEvenementAction](#confusionevenementaction) from package [Etat](#etat)
+* [ConfusionNomEtatEvenement](#confusionnometatevenement) from package [Etat](#etat)
 * [Connecteur](#connecteur) from package [Nomenclature](#nomenclature)
 * [ContenuPauvre](#contenupauvre) from package [Diagramme](#diagramme)
 * [Contexte](#contexte) from package [TexteTechnique](#textetechnique)
+* [Copyright](#copyright) from package [Livrable](#livrable)
 * [Couleurs](#couleurs) from package [Diagramme](#diagramme)
+* [CouvertureAutomate](#couvertureautomate) from package [Etat](#etat)
 * [Date](#date) from package [Nomenclature](#nomenclature)
 * [DecompositionSousSysteme](#decompositionsoussysteme) from package [Systeme](#systeme)
 * [DefautDejaMentionne](#defautdejamentionne) from package [Livrable](#livrable)
@@ -57,7 +64,10 @@ RULES (400)
 * [DescriptionExigence](#descriptionexigence) from package [Exigence](#exigence)
 * [DescriptionFigure](#descriptionfigure) from package [Document](#document)
 * [Disposition](#disposition) from package [Diagramme](#diagramme)
+* [DuplicationEtat](#duplicationetat) from package [Etat](#etat)
 * [EnteteDocument](#entetedocument) from package [Document](#document)
+* [EtatCree](#etatcree) from package [Etat](#etat)
+* [EtatManquant](#etatmanquant) from package [Etat](#etat)
 * [Exemple](#exemple) from package [TexteTechnique](#textetechnique)
 * [ExigenceIncoherente](#exigenceincoherente) from package [Exigence](#exigence)
 * [ExigenceInvalide](#exigenceinvalide) from package [Exigence](#exigence)
@@ -85,7 +95,9 @@ RULES (400)
 * [IntermediaireAction](#intermediaireaction) from package [Scenario](#scenario)
 * [Interpretation](#interpretation) from package [TexteTechnique](#textetechnique)
 * [Invalide](#invalide) from package [TexteTechnique](#textetechnique)
+* [IterationEtats](#iterationetats) from package [Etat](#etat)
 * [Justification](#justification) from package [TexteTechnique](#textetechnique)
+* [JustificationEtat](#justificationetat) from package [Etat](#etat)
 * [Langage](#langage) from package [TexteTechnique](#textetechnique)
 * [Legende](#legende) from package [Document](#document)
 * [LimiteDuSysteme](#limitedusysteme) from package [Systeme](#systeme)
@@ -289,6 +301,8 @@ RULES (400)
 * [NomAttribut](#nomattribut) from package [Classe](#classe)
 * [NomCU](#nomcu) from package [CasDUtilisation](#casdutilisation)
 * [NomClasse](#nomclasse) from package [Classe](#classe)
+* [NomDiagramme](#nomdiagramme) from package [Diagramme](#diagramme)
+* [NomEtat](#nometat) from package [Etat](#etat)
 * [NomObjet](#nomobjet) from package [Classe](#classe)
 * [NomOperation](#nomoperation) from package [Classe](#classe)
 * [NomParametre](#nomparametre) from package [Classe](#classe)
@@ -297,11 +311,14 @@ RULES (400)
 * [NomScenario](#nomscenario) from package [Scenario](#scenario)
 * [NomScenarioInstantie](#nomscenarioinstantie) from package [Scenario](#scenario)
 * [NomSysteme](#nomsysteme) from package [Systeme](#systeme)
+* [NomTransition](#nomtransition) from package [Etat](#etat)
+* [NomTransitionInutile](#nomtransitioninutile) from package [Etat](#etat)
 * [NomenclatureActeur](#nomenclatureacteur) from package [CasDUtilisation](#casdutilisation)
 * [NomenclatureAssociation](#nomenclatureassociation) from package [Classe](#classe)
 * [NomenclatureAttribut](#nomenclatureattribut) from package [Classe](#classe)
 * [NomenclatureCU](#nomenclaturecu) from package [CasDUtilisation](#casdutilisation)
 * [NomenclatureClasse](#nomenclatureclasse) from package [Classe](#classe)
+* [NomenclatureEtat](#nomenclatureetat) from package [Etat](#etat)
 * [NomenclatureLivrable](#nomenclaturelivrable) from package [Livrable](#livrable)
 * [NomenclatureMethode](#nomenclaturemethode) from package [Classe](#classe)
 * [NomenclatureObjet](#nomenclatureobjet) from package [Classe](#classe)
@@ -309,6 +326,7 @@ RULES (400)
 * [NomenclatureParametre](#nomenclatureparametre) from package [Classe](#classe)
 * [NomenclatureRole](#nomenclaturerole) from package [Classe](#classe)
 * [NomenclatureScenario](#nomenclaturescenario) from package [Scenario](#scenario)
+* [NomenclatureTransition](#nomenclaturetransition) from package [Etat](#etat)
 * [NonAbstraction](#nonabstraction) from package [TexteTechnique](#textetechnique)
 * [NonHumain](#nonhumain) from package [CasDUtilisation](#casdutilisation)
 * [NonLivre](#nonlivre) from package [Livrable](#livrable)
@@ -329,6 +347,7 @@ RULES (400)
 * [PresenceObjet](#presenceobjet) from package [Scenario](#scenario)
 * [ProprieteExigenceInadaptee](#proprieteexigenceinadaptee) from package [Exigence](#exigence)
 * [Protocole](#protocole) from package [Deploiement](#deploiement)
+* [Puit](#puit) from package [Etat](#etat)
 * [Redondance](#redondance) from package [TexteTechnique](#textetechnique)
 * [ReferenceScenario](#referencescenario) from package [Scenario](#scenario)
 * [Relation](#relation) from package [CasDUtilisation](#casdutilisation)
@@ -345,6 +364,7 @@ RULES (400)
 * [SequenceDActions](#sequencedactions) from package [Scenario](#scenario)
 * [SousExigence](#sousexigence) from package [Exigence](#exigence)
 * [SousTypageActeur](#soustypageacteur) from package [CasDUtilisation](#casdutilisation)
+* [SpecificationTransition](#specificationtransition) from package [Etat](#etat)
 * [StarUML1](#staruml1) from package [UMLStarUML](#umlstaruml)
 * [StarUML10](#staruml10) from package [UMLStarUML](#umlstaruml)
 * [StarUML11](#staruml11) from package [UMLStarUML](#umlstaruml)
@@ -395,12 +415,15 @@ RULES (400)
 * [SurExgigence](#surexgigence) from package [Exigence](#exigence)
 * [Surcharge](#surcharge) from package [Diagramme](#diagramme)
 * [Surcodification](#surcodification) from package [Valeur](#valeur)
+* [SyntaxeTransition](#syntaxetransition) from package [Etat](#etat)
 * [TailleFigure](#taillefigure) from package [Document](#document)
 * [Temps](#temps) from package [TexteTechnique](#textetechnique)
 * [TermeMetier](#termemetier) from package [TexteTechnique](#textetechnique)
 * [TexteSection](#textesection) from package [TexteTechnique](#textetechnique)
 * [TitreDiagramme](#titrediagramme) from package [Diagramme](#diagramme)
 * [TitreFigure](#titrefigure) from package [Document](#document)
+* [TransitionInitialeAutomatique](#transitioninitialeautomatique) from package [Etat](#etat)
+* [TransitionManquante](#transitionmanquante) from package [Etat](#etat)
 * [Trigramme](#trigramme) from package [TexteTechnique](#textetechnique)
 * [TypeDExigence](#typedexigence) from package [Exigence](#exigence)
 * [TypeDeDiagramme](#typedediagramme) from package [Diagramme](#diagramme)
@@ -409,6 +432,7 @@ RULES (400)
 * [TypeValeurIncorrect](#typevaleurincorrect) from package [Valeur](#valeur)
 * [UniteTempsEspaceCU](#unitetempsespacecu) from package [CasDUtilisation](#casdutilisation)
 * [UniteValeur](#unitevaleur) from package [Valeur](#valeur)
+* [UtiliteEtat](#utiliteetat) from package [Etat](#etat)
 * [ValeurCollection](#valeurcollection) from package [Valeur](#valeur)
 * [ValeurComposite](#valeurcomposite) from package [Valeur](#valeur)
 * [ValeurConcrete](#valeurconcrete) from package [Valeur](#valeur)
@@ -551,7 +575,7 @@ From package [Classe](#classe)
 
   Le nom d'une classe doit normallement correspondre Ã  une forme nominale au singulier.
 
-* **Commentaire:**  Une classe reprÃ©sente gÃ©nÃ©ralement un concept et les concepts sont gÃ©nÃ©ralement identifiÃ©s par des noms communs. Le nom de la classe est au singulier car il fait rÃ©fÃ©rence au concept et non pas Ã  l'extension de la classe. Il s'agit lÃ  d'une diffÃ©rence importante avec les noms de tables des bases de donnÃ©es car dans ce cas il est fait rÃ©fÃ©rences Ã  l'extension, c'est Ã  dire Ã  l'ensemble des instances contenues dans la table.
+* **Commentaire:**  Une classe reprÃ©sente gÃ©nÃ©ralement un concept et les concepts sont gÃ©nÃ©ralement identifiÃ©s par des noms communs au singulier. Le nom de la classe est au singulier car il fait rÃ©fÃ©rence au concept et non pas Ã  l'extension de la classe. Il s'agit lÃ  d'une diffÃ©rence importante avec les noms de tables des bases de donnÃ©es car dans ce cas il est fait rÃ©fÃ©rences Ã  l'extension, c'est Ã  dire Ã  l'ensemble des instances contenues dans la table.
 
 NomenclatureClasse
 -------------------
@@ -675,13 +699,15 @@ From package [Classe](#classe)
 
   Une ou plusieurs cardinalites sont manquantes, non justifiÃ©es ou erronÃ©es.
 
+* **Commentaire:**  Toutes les cardinalites devraient Ãªtre dÃ©crites dans un diagramme de classes. Souvent le manque de cardinalitÃ© correspond Ã  l'absence de reflexion et ainsi Ã  l'absence de validation du modÃ¨le. 
+
 CardinaliteInversee
 -------------------
 From package [Classe](#classe)  
 
   Une ou plusieurs cardinalites semblent Ãªtre inversÃ©es ou sinon il s'agit peut Ãªtre d'erreurs de cardinalitÃ©s.
 
-* **Commentaire:**  Cette erreur est rencontrÃ©e de maniÃ¨re relativement frÃ©quente lorsque l'auteur du modÃ¨le confond les conventions UML avec les conventions utilisÃ©es dans d'autres langages de modÃ©lisation.
+* **Commentaire:**  Cette erreur est rencontrÃ©e de maniÃ¨re relativement frÃ©quente lorsque l'auteur du modÃ¨le confond les conventions UML avec les conventions utilisÃ©es dans d'autres langages de modÃ©lisation. GÃ©nÃ©ralement ce dÃ©faut est associÃ© Ã©galement Ã  l'utilisation de constante "n", ce qui n'est pas non plus correct en UML (cf $CardinaliteNM:).
 
 CardinaliteNM
 -------------------
@@ -723,7 +749,21 @@ From package [Deploiement](#deploiement)
 
 Diagramme
 ====================================================
-8 rules: [Densite](#densite) [Disposition](#disposition) [Couleurs](#couleurs) [Chevauchements](#chevauchements) [Surcharge](#surcharge) [ContenuPauvre](#contenupauvre) [TitreDiagramme](#titrediagramme) [TypeDeDiagramme](#typedediagramme) 
+9 rules: [NomDiagramme](#nomdiagramme) [TitreDiagramme](#titrediagramme) [Densite](#densite) [Disposition](#disposition) [Couleurs](#couleurs) [Chevauchements](#chevauchements) [Surcharge](#surcharge) [ContenuPauvre](#contenupauvre) [TypeDeDiagramme](#typedediagramme) 
+
+NomDiagramme
+-------------------
+From package [Diagramme](#diagramme)  
+
+  Le nom des diagrammes doit reflÃªter ce qu'ils modÃ©lisent et peuvent donc utilement faire rÃ©fÃ©rence Ã  un modÃ¨le, Ã  un artÃ©fact, etc. Le type de diagramme (cf $TypeDeDiagramme) peut Ã©galement Ãªtre utilement insÃ©rÃ© dans ce titre.
+
+* **Commentaire:**  Le type de diagramme est peut gÃ©nÃ©ralement Ãªtre aisement infÃ©rÃ© en regardant le diagramme, mais si le nom du diagramme est utilisÃ© comme titre de figure et que ce dernier est dans une liste de figure, il est intÃ©ressant de disposer de cette information. Le modÃ¨le ou artÃ©fact auquel fait rÃ©fÃ©rence le diagramme est parfois facile a infÃ©rer via le contexte dans lequel le diagramme est disposÃ©, mais hors de ce contexte cette information est perdue et il est donc essentiel d'indiquer "Ã  quoi" correspond le diagramme.
+
+TitreDiagramme
+-------------------
+From package [Diagramme](#diagramme)  
+
+  (cf $NomDiagramme) TODO: to be removed
 
 Densite
 -------------------
@@ -760,14 +800,6 @@ ContenuPauvre
 From package [Diagramme](#diagramme)  
 
   Le contenu du diagramme est trop pauvre pour que ce dernier soit rÃ©ellement pertinent. Soit le diagramme manque de dÃ©tails soit l'existence du diagramme ou plus simplement son indroduction dans un document pourrait Ãªtre mise en cause ; c'est le cas si l'information contenue dans le diagramme peut Ãªtre dÃ©rivÃ©e Ã  partir d'autres Ã©lÃ©ments dÃ©jÃ  prÃ©sents dans le document et d'une certaine maniÃ¨re "n'apporte rien".
-
-TitreDiagramme
--------------------
-From package [Diagramme](#diagramme)  
-
-  Le titre des diagrammes doit refleter ce qu'ils modÃ©lisent et peuvent donc utilement faire rÃ©fÃ©rence Ã  un modÃ¨le, Ã  un artÃ©fact, etc. Le type de diagramme (cf $TypeDeDiagramme) peut Ã©galement Ãªtre utilement insÃ©rÃ© dans ce titre si ce titre va figurer par la suite dans une liste de figures.
-
-* **Commentaire:**  Le type de diagramme est peut gÃ©nÃ©ralement Ãªtre aisement infÃ©rÃ© en regardant le diagramme, mais si le titre du diagramme est utilisÃ© comme titre de figure et que ce dernier est dans une liste de figure, il est intÃ©ressant de disposer de cette information. Le modÃ¨le ou artÃ©fact auquel fait rÃ©fÃ©rence le diagramme est parfois facile a infÃ©rer via le contexte dans lequel le diagramme est disposÃ©, mais hors de ce contexte cette information est perdue et il est donc essentiel d'indiquer "Ã  quoi" correspond le diagramme.
 
 TypeDeDiagramme
 -------------------
@@ -845,6 +877,159 @@ From package [Document](#document)
   La rÃ©solution de l'image ou de la figure n'est pas satisfaisant
 
 
+Etat
+====================================================
+20 rules: [NomEtat](#nometat) [NomenclatureEtat](#nomenclatureetat) [NomTransition](#nomtransition) [NomenclatureTransition](#nomenclaturetransition) [NomTransitionInutile](#nomtransitioninutile) [JustificationEtat](#justificationetat) [UtiliteEtat](#utiliteetat) [EtatManquant](#etatmanquant) [EtatCree](#etatcree) [DuplicationEtat](#duplicationetat) [SpecificationTransition](#specificationtransition) [SyntaxeTransition](#syntaxetransition) [ConfusionEvenementAction](#confusionevenementaction) [ConfusionNomEtatEvenement](#confusionnometatevenement) [TransitionInitialeAutomatique](#transitioninitialeautomatique) [TransitionManquante](#transitionmanquante) [Puit](#puit) [AmbiguiteTransition](#ambiguitetransition) [IterationEtats](#iterationetats) [CouvertureAutomate](#couvertureautomate) 
+
+NomEtat
+-------------------
+From package [Etat](#etat)  
+
+  Le nom d'un état doit faire référence explicitement à la période de temps dans lequel l'objet se trouve dans l'état. 
+
+* **Commentaire:**  Contrairement aux cas des noms de classes ou d'opérations qui correspondent à des catégories linguistiques caractéristiques (respectivement forme nominale et forme verbale), il n'y a pas de correspoIl n'y a pas de correspondance siml D'un point de vue linguistique cela correspond généralement à un participe passé, à une forme basée sur la réalisation future, passée ou présente d'une action (avec des préfixes tels que "EnCoursDe", "EnAttenteDe", etc.), ou a des formes en "-ing" en anglais.
+
+* **Exemple:**  Par exemple un document sera dans l'état "Modifié" (participe passé), "EnCoursDeModification", ou encore "EnAttenteDeValidation". 
+
+NomenclatureEtat
+-------------------
+From package [Etat](#etat)  
+
+  TODO 
+
+NomTransition
+-------------------
+From package [Etat](#etat)  
+
+  TODO
+
+NomenclatureTransition
+-------------------
+From package [Etat](#etat)  
+
+  TODO
+
+NomTransitionInutile
+-------------------
+From package [Etat](#etat)  
+
+  Les noms de certaines transitions semblent inutiles, trop génériques, ou inappropriés.
+
+* **Commentaire:**  Il n'est généralement pas nécessaire de nommer les transitions dans la mesure où celles-ci sont décrites intégralement par les gardes, les événements, les actions et résultats qui leur sont associés. Leur donner un nom peut éventuellement être pratique si l'on utilise des outils de transformations, ou que l'on veut référencer de manière directe une transition, mais généralement les transitions se passent de noms.
+
+JustificationEtat
+-------------------
+From package [Etat](#etat)  
+
+  La presence ou l'absence d'un ou plusieurs états n'est pas justifiées ou pourrait être remise en cause.
+
+* **Commentaire:**  Un état correspond normallement à une durée de temps "significative" pour l'objet ou le système et pendant laquelle le système va avoir un comportement différent par rapport à son environement exterieur durant cet état. Ce n'est donc pas la notion absolue de temps qui défini la notion d'état mais le fait que pendant la période considérée l'objet ou le système à un comportement différent. 
+
+UtiliteEtat
+-------------------
+From package [Etat](#etat)  
+
+  L'utilité d'un ou plusieurs états n'est pas claire et certains devraient peut être être supprimés (cf $JustificationEtat).
+
+* **Commentaire:**  Chaque état doit pouvoir être justifié par rapport au comportement du système ou de l'objet (cf $JustificationEtat). Si un état n'est pas "perceptible" depuis il est peut être préférable de supprimer celui-ci de reporter les informations correspondantes sur une ou des transitions.
+
+* **Exemple:**  Dans le cas d'un système d'ouverture de porte automatique l'état "EnCoursDOuverture" n'est peut être pas pertinent si on ne prend pas en compte l'ensemble des anomalies ou cas particuliers qui peuvent se passer pendant cet "instant". Si ces éléments ne sont pas pertinents, une action "ouvrir" sur une transition sera suffisante (cf $EtatManquant). De la même manière l'état "EnregistrerLAccesDUnePersonne" est sans doute une action sur une transition plutot qu'un état.
+
+EtatManquant
+-------------------
+From package [Etat](#etat)  
+
+  Un ou des états semblent manquantx pour modéliser le comportement de l'objet ou du système (cf $JustificationEtat).
+
+* **Commentaire:**  Le comportement du système n'est peut être pas décrits de manière suffisemment fine et il n'est peut être pas possible avec la machine à état décrite de différentier des comportements pourtant différents de l'objet ou du système à des instants différents (cf $JustificationEtat). Parfois, le problème peut provenir d'une situation modélisée par une transition alors qu'il devrait s'agir d'un état. Une transition est réputée être immédiate, mais si des évenements peuvent survenir pendant cette transition et avoir un effet sur le système alors un état est clairement manquant. 
+
+* **Exemple:**  Dans le cas d'un système d'ouverture de porte automatique, si l'on s'intéresse aux différents cas d'exceptions, il sera sans doute nécessaire de créer un état "EnCoursDOuverture" car pendant que la porte s'ouvre un objet ou une personne peut la bloquer par exemple et changer donc l'état du système. On pourra ainsi modéliser que la porte est considérée dans l'état "PorteBloquée"  au bout d'un certain temps, qu'elle essaie au contraire de se refermer, etc. L'utilité de tels états dépend entièrement de l'intention de la modélisation (cf $JustificationEtat)(cf $UtiliteEtat).
+
+EtatCree
+-------------------
+From package [Etat](#etat)  
+
+  Il n'est a a priori pas nécessaire d'introduire un état nommé "Créé" dans un diagramme d'état car c'est à cela que correspond l'état initial de l'automate.
+
+DuplicationEtat
+-------------------
+From package [Etat](#etat)  
+
+  Deux états semblent correspondre au même état.
+
+SpecificationTransition
+-------------------
+From package [Etat](#etat)  
+
+  La specification d'une ou plusieurs transitions est manquante ou n'est pas appropriée.
+
+* **Commentaire:**  Sauf si le diagramme d'état est dans un état très préliminaire, il est nécessaire de spécifier en détails l'intégralité des transitions (sauf éventuellement celle qui part de l'état initial (cf $TransitionInitialeAutomatique) et celles qui vont vers l'état final. La specification de chaque transition doit se faire en respectant la syntaxe des expressions de transitions (cf $SyntaxeTransition). Notons qu'il est très utile de décrire les transitions, mais généralement pas de les nommer (cf $NomTransitionInutile). 
+
+SyntaxeTransition
+-------------------
+From package [Etat](#etat)  
+
+  La syntaxe des expressions de transitions n'est pas respectée et/ou il existe une ou plusieurs confusions possibles entre les gardes, les événements déclencheurs our déclenchés ou les actions executées. 
+
+* **Commentaire:**  Les transitions entre deux états doivent être décorées par des expressions de la forme <evenement1> "[" <garde> "]" / <action> ^ <evenement2> où <evenement1> exprime l'évenement provoquant la transition, <garde> exprime la condition éventuelle devant être vérifiée pour que la transition ait lieu, <action> indique l'action a executer lors de la tranisition et <evenement2> l'évenement déclenché.
+
+ConfusionEvenementAction
+-------------------
+From package [Etat](#etat)  
+
+  Il semble qu'une confusion soit faite sur une ou plusieurs transitions entre les évenements provoquant les transitions et les actions réalisées lorsque ces transitions sont opérées. Ce problème peut être lié à une mauvaise compréhension du fonctionnement des machines à état ou à une méconnaissance de la syntaxe des expressions de transitions (cf $SyntaxeTransition:).
+
+ConfusionNomEtatEvenement
+-------------------
+From package [Etat](#etat)  
+
+  Il semble qu'une confusion soit faite entre le nom d'une ou plusieurs transitions et les évenements provoquant ces transitions.
+
+TransitionInitialeAutomatique
+-------------------
+From package [Etat](#etat)  
+
+  Il n'est pas nécessaire de décorer la transition qui va de l'état initial à un état nommé et en tout état de cause l'évenement correspondant à cette transition ne peut pas correspondre à l'évenement de création de l'objet.
+
+TransitionManquante
+-------------------
+From package [Etat](#etat)  
+
+  Une ou des transitions semble être manquantes.
+
+* **Commentaire:**  Ce peut être pour modéliser des conditions alternatives, des transitions s'opérant au bout d'un certain temps si aucun événement ne survient, des transitions correspondant à des cas d'exception.
+
+Puit
+-------------------
+From package [Etat](#etat)  
+
+  Il existe un ou plusieurs états sans transitions sortantes et il ne semble pas que cette situation corresponde à une modélisation réaliste. Des transitions vers l'état final ou des transitions iteratives sont sans doute manquantes (cf $IterationEtats)(cf $TransitionManquante).
+
+* **Commentaire:**  Tant que l'objet ou le système est dans un état, cet objet est en vie et il a donc un comportement. Généralement l'objet ou le système peut revenir dans un état précédent.
+
+AmbiguiteTransition
+-------------------
+From package [Etat](#etat)  
+
+  Parmis les transitions sortantes d'un ou plusieurs états, il n'est pas nécessairement évident de savoir par quelles transitions l'objet sortira d'un état, soit parceque les événements ou gardes sont exprimées de manière trop ambigues, soit parcequ'il existe un chevauchement entre les conditions exprimées par les gardes, soit parces que spécifications des transistions sont inexistantes ou trop pauvrement documentées (cf $SpecificationTransition).
+
+IterationEtats
+-------------------
+From package [Etat](#etat)  
+
+  Les transitions ne permettent pas d'itérations entre les différents états alors que c'est le comportement de l'objet ou du système présente cette caractéristique (cf $TransitionManquante).
+
+* **Exemple:**  Une automate d'une porte d'acces a un batiment doit modeliser de multiple entrées successives et certaines transitions de la machine a état forme nécessairement un cycle.
+
+CouvertureAutomate
+-------------------
+From package [Etat](#etat)  
+
+  L'automate décrit ne couvre qu'une partie du comportement de l'objet ou du système modélisé. Il manque différents états et transitions (cf $EtatManquant)(cf $TransitionManquante).
+
+* **Commentaire:**  Plusieurs explications peuvent être à la source de ce défaut. (1) Le modèle n'est peut être tout simplement pas suffisemment détaillé. (2) Les cas d'exceptions ne sont peut être pas suffisemment pris en compte. (3) Il n'est peut être pas compris qu'un automate ne représente pas un scénario particulier parmis n, mais au contraire couvre l'intégralité du comportement de l'objet tout cas confondu (contrairement aux diagrammes de communication ou aux diagrammes de sequence les automates et diagrammes d'états qui se focalisent sur 1 scenario mais n objets).
+
+
 Exigence
 ====================================================
 10 rules: [IdentificateurExigence](#identificateurexigence) [ExigenceIncoherente](#exigenceincoherente) [ExigenceInvalide](#exigenceinvalide) [SurExgigence](#surexgigence) [SousExigence](#sousexigence) [StatusNonDefinitif](#statusnondefinitif) [ProprieteExigenceInadaptee](#proprieteexigenceinadaptee) [DescriptionExigence](#descriptionexigence) [TypeDExigence](#typedexigence) [ExigencesMultiples](#exigencesmultiples) 
@@ -912,13 +1097,15 @@ From package [Exigence](#exigence)
 
 Livrable
 ====================================================
-10 rules: [NomenclatureLivrable](#nomenclaturelivrable) [DelaiLivrable](#delailivrable) [FormatLivrable](#formatlivrable) [DescriptifLivrable](#descriptiflivrable) [PackagingLivrable](#packaginglivrable) [NonLivre](#nonlivre) [MiseAJourVersion](#miseajourversion) [GestionDeVersions](#gestiondeversions) [VersionLivrable](#versionlivrable) [DefautDejaMentionne](#defautdejamentionne) 
+13 rules: [NomenclatureLivrable](#nomenclaturelivrable) [DelaiLivrable](#delailivrable) [FormatLivrable](#formatlivrable) [DescriptifLivrable](#descriptiflivrable) [PackagingLivrable](#packaginglivrable) [NonLivre](#nonlivre) [MiseAJourVersion](#miseajourversion) [GestionDeVersions](#gestiondeversions) [Auteur](#auteur) [Copyright](#copyright) [Date](#date) [VersionLivrable](#versionlivrable) [DefautDejaMentionne](#defautdejamentionne) 
 
 NomenclatureLivrable
 -------------------
 From package [Livrable](#livrable)  
 
-  Le nom d'un ou de plusieurs ressources livrÃ©es n'est pas conforme Ã  aux rÃ¨gles de nomenclatures.
+  Le nom d'un ou de plusieurs ressources livrÃ©es n'est pas conforme aux rÃ¨gles spÃ©cifiÃ©es (cf $PackagingLivrable).
+
+	Commentaire: Les livraisons sont des points clÃ©s de la vie d'un produit logiciel et l'attention qui doit y Ãªtre portÃ©e est extrÃ¨me. Ne pas respecter des rÃ¨gles de nomenclature spÃ©cifiÃ©es auparavant est un problÃ¨me important. D'une part cela montre que l'organisation productrice n'est pas capable de suivre des rÃ¨gles Ã©lÃ©mentaires, d'autre par cela rend impossible le traitement automatique des Ã©lÃ©ments livrÃ©s par l'organization cliente. 
 
 DelaiLivrable
 -------------------
@@ -938,7 +1125,7 @@ From package [Livrable](#livrable)
 
   Le descriptif d'un ou plusieurs livrable est manquant, incomplet ou incohÃ©rent.
 
-* **Commentaire:**  Dans le cas oÃ¹ un livrable coomposite est livrÃ©, c'est Ã  dire que le livrable est formÃ© de diffÃ©rents artefacts, par exemple rassemblÃ©s dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrÃ©s mais Ã©galement les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifeste, ou de tout autre artefact clairement identifiable.
+* **Commentaire:**  Dans le cas oÃ¹ un livrable composite est livrÃ©, c'est Ã  dire que le livrable est formÃ© de diffÃ©rents artefacts, par exemple rassemblÃ©s dans une archive, il est indispensable d'ajoindre un descriptif du contenu du livrable en mentionnant quels sont les artefacts livrÃ©s mais Ã©galement les relations qui les lient. Ce descriptif peut prendre la forme d'un fichier "README", d'un manifeste, ou de tout autre artefact clairement identifiable.
 
 PackagingLivrable
 -------------------
@@ -948,7 +1135,7 @@ From package [Livrable](#livrable)
 
 * **Commentaire:**  L'activitÃ© de packaging est Ã  la charge du producteur et non pas Ã  celle du client. Ce dernier est en droit est droit d'attendre un produit livrÃ©, assemblÃ©, conditionnÃ©, et gÃ©nÃ©ralement directement utilisable. C'est le client qui connait mieux le produit qu'il livre, sa structure et ses composants, et c'est Ã  lui que revient l'effort du packaging car cela fait partie intÃ©grante de la production.   
 
-* **Exemple:**  Si un fichier .pdf est demandÃ© ou une structure prÃ©cise en terme de fichier dans une archive .zip est demandÃ©, il est indispensable de respecter ces consignes et de livrer ce qui est demandÃ© sous la forme demandÃ©.
+* **Exemple:**  Si un fichier .pdf est demandÃ© ou une structure prÃ©cise en terme de fichiers dans une archive .zip est demandÃ©, il est absolument indispensable de respecter ces consignes et de livrer ce qui est demandÃ© sous la forme demandÃ©e.
 
 NonLivre
 -------------------
@@ -969,6 +1156,24 @@ From package [Livrable](#livrable)
   La gestion des versions semble inexistante, instatisfaisante ou prÃ©sente des dÃ©faults.
 
 * **Commentaire:**  La gestion de versions est un des aspects essentiels pour la rÃ©ussite des projets. La gestion de version est l'un des Ã©lÃ©ments essentiels pour passer du niveau initial et "chaotique" au niveau rÃ©pÃ©table du modÃ¨le CMM. Il existe de nombreux cas documentÃ©s de projets de grande envergure dont l'Ã©chec Ã  Ã©tÃ© directement pu Ãªtre directement et explicitement reliÃ© Ã  l'absence d'une gestion de versions cohÃ©rente et systÃ¨matique.
+
+Auteur
+-------------------
+From package [Livrable](#livrable)  
+
+  Le ou les auteurs du document, qu'il s'agisse de personnes physiques ou morale, ne sont pas indiquÃ©es clairement ou de maniÃ¨re appropriÃ©es.
+
+Copyright
+-------------------
+From package [Livrable](#livrable)  
+
+  Les indications de copyrights associÃ©es livrÃ©es sont inappropriÃ©es, trop imprÃ©cises ou manquantes, ou ne peuvent pas Ãªtre clairement associÃ©es Ã  une ou plusieurs des ressources livrÃ©es.
+
+Date
+-------------------
+From package [Nomenclature](#nomenclature)  
+
+  Une des dates mentionnÃ©es semble Ãªtre incorrectes, non mise Ã  jours, ou une date semble manquante.  
 
 VersionLivrable
 -------------------
@@ -1055,6 +1260,8 @@ From package [Nomenclature](#nomenclature)
 
   Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas Ãªtre utilisÃ© dans un identificateur dans la mesure ou l'objet identifiÃ© n'est pas clairement conceptualisÃ© ou nommÃ©.
 
+* **Commentaire:**  un identificateur correspond normallement Ã  un concept ou Ã  une entitÃ©e particuliÃ¨re dÃ©finie et il existe gÃ©nÃ©ralement un terme dÃ©crivant ce concept, en tout cas dans un vocabulaire mÃ©tier ou dans un jargon particulier. Si ce n'est pas le cas on peut se poser la question de la rÃ©alitÃ© ou de l'utilitÃ© ou de la rÃ©alitÃ© de ce concept. Si le concept est effectivement utile, dans ce cas il est gÃ©nÃ©ralement prÃ©fÃ©rable de l'associer Ã  un mot existant ou Ã  l'une de ses dÃ©rivations (et Ã  ajouter ces termes dans le glossaire), plutot que d'introduire des connecteurs. TrÃ¨s souvent l'utilisation de connecteurs correspond Ã  une justaposition non rÃ©flechie d'Ã©lÃ©ments. Un identificateur composÃ© par des connecteurs peut correspondre Ã©galement Ã  des pratiques de programmation ou de modÃ©lisation problÃ©matiques qu'il s'agira soit d'Ã©liminer, soit de documenter avec soin.
+
 HomogeneiteIdentificateurs
 -------------------
 From package [Nomenclature](#nomenclature)  
@@ -1099,7 +1306,7 @@ Date
 -------------------
 From package [Nomenclature](#nomenclature)  
 
-
+  Une des dates mentionnÃ©es semble Ãªtre incorrectes, non mise Ã  jours, ou une date semble manquante.  
 
 MajMin
 -------------------
