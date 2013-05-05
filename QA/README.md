@@ -1,4 +1,4 @@
-RULE PACKAGES (20)
+﻿RULE PACKAGES (20)
 =================
 * [CasDUtilisation](#casdutilisation) (12 rules)
 * [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
