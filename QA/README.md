@@ -7,9 +7,9 @@ RULE PACKAGES (20)
 * [Deploiement](#deploiement) (1 rules)
 * [Diagramme](#diagramme) (9 rules)
 * [Document](#document) (7 rules)
-* [Etat](#etat) (20 rules)
+* [Etat](#etat) (21 rules)
 * [Exigence](#exigence) (10 rules)
-* [Livrable](#livrable) (13 rules)
+* [Livrable](#livrable) (17 rules)
 * [Nomenclature](#nomenclature) (22 rules)
 * [Scenario](#scenario) (20 rules)
 * [Sequence](#sequence) (1 rules)
@@ -21,7 +21,7 @@ RULE PACKAGES (20)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (423)
+RULES (428)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -59,6 +59,9 @@ RULES (423)
 * [DecompositionSousSysteme](#decompositionsoussysteme) from package [Systeme](#systeme)
 * [DefautDejaMentionne](#defautdejamentionne) from package [Livrable](#livrable)
 * [DelaiLivrable](#delailivrable) from package [Livrable](#livrable)
+* [Deltas](#deltas) from package [Livrable](#livrable)
+* [DeltasGraphiques](#deltasgraphiques) from package [Livrable](#livrable)
+* [DeltasTextuels](#deltastextuels) from package [Livrable](#livrable)
 * [Densite](#densite) from package [Diagramme](#diagramme)
 * [DescriptifLivrable](#descriptiflivrable) from package [Livrable](#livrable)
 * [DescriptionExigence](#descriptionexigence) from package [Exigence](#exigence)
@@ -67,6 +70,7 @@ RULES (423)
 * [DuplicationEtat](#duplicationetat) from package [Etat](#etat)
 * [EnteteDocument](#entetedocument) from package [Document](#document)
 * [EtatCree](#etatcree) from package [Etat](#etat)
+* [EtatInitial](#etatinitial) from package [Etat](#etat)
 * [EtatManquant](#etatmanquant) from package [Etat](#etat)
 * [Exemple](#exemple) from package [TexteTechnique](#textetechnique)
 * [ExigenceIncoherente](#exigenceincoherente) from package [Exigence](#exigence)
@@ -356,6 +360,7 @@ RULES (423)
 * [Resolution](#resolution) from package [Document](#document)
 * [Responsabilites](#responsabilites) from package [Scenario](#scenario)
 * [ResultatConcret](#resultatconcret) from package [Valeur](#valeur)
+* [ResumeModifications](#resumemodifications) from package [Livrable](#livrable)
 * [RetourInexplique](#retourinexplique) from package [Scenario](#scenario)
 * [RetourManquant](#retourmanquant) from package [Scenario](#scenario)
 * [RoleAssociation](#roleassociation) from package [Classe](#classe)
@@ -879,7 +884,7 @@ From package [Document](#document)
 
 Etat
 ====================================================
-20 rules: [NomEtat](#nometat) [NomenclatureEtat](#nomenclatureetat) [NomTransition](#nomtransition) [NomenclatureTransition](#nomenclaturetransition) [NomTransitionInutile](#nomtransitioninutile) [JustificationEtat](#justificationetat) [UtiliteEtat](#utiliteetat) [EtatManquant](#etatmanquant) [EtatCree](#etatcree) [DuplicationEtat](#duplicationetat) [SpecificationTransition](#specificationtransition) [SyntaxeTransition](#syntaxetransition) [ConfusionEvenementAction](#confusionevenementaction) [ConfusionNomEtatEvenement](#confusionnometatevenement) [TransitionInitialeAutomatique](#transitioninitialeautomatique) [TransitionManquante](#transitionmanquante) [Puit](#puit) [AmbiguiteTransition](#ambiguitetransition) [IterationEtats](#iterationetats) [CouvertureAutomate](#couvertureautomate) 
+21 rules: [NomEtat](#nometat) [NomenclatureEtat](#nomenclatureetat) [NomTransition](#nomtransition) [NomenclatureTransition](#nomenclaturetransition) [NomTransitionInutile](#nomtransitioninutile) [EtatInitial](#etatinitial) [JustificationEtat](#justificationetat) [UtiliteEtat](#utiliteetat) [EtatManquant](#etatmanquant) [EtatCree](#etatcree) [DuplicationEtat](#duplicationetat) [SpecificationTransition](#specificationtransition) [SyntaxeTransition](#syntaxetransition) [ConfusionEvenementAction](#confusionevenementaction) [ConfusionNomEtatEvenement](#confusionnometatevenement) [TransitionInitialeAutomatique](#transitioninitialeautomatique) [TransitionManquante](#transitionmanquante) [Puit](#puit) [AmbiguiteTransition](#ambiguitetransition) [IterationEtats](#iterationetats) [CouvertureAutomate](#couvertureautomate) 
 
 NomEtat
 -------------------
@@ -917,6 +922,12 @@ From package [Etat](#etat)
 
 * **Commentaire:**  Il n'est g�n�ralement pas n�cessaire de nommer les transitions dans la mesure o� celles-ci sont d�crites int�gralement par les gardes, les �v�nements, les actions et r�sultats qui leur sont associ�s. Leur donner un nom peut �ventuellement �tre pratique si l'on utilise des outils de transformations, ou que l'on veut r�f�rencer de mani�re directe une transition, mais g�n�ralement les transitions se passent de noms.
 
+EtatInitial
+-------------------
+From package [Etat](#etat)  
+
+  L'�tat initial est manquant.
+
 JustificationEtat
 -------------------
 From package [Etat](#etat)  
@@ -939,7 +950,7 @@ EtatManquant
 -------------------
 From package [Etat](#etat)  
 
-  Un ou des �tats semblent manquantx pour mod�liser le comportement de l'objet ou du syst�me (cf $JustificationEtat).
+  Un ou des �tats semblent manquants pour mod�liser le comportement de l'objet ou du syst�me (cf $JustificationEtat).
 
 * **Commentaire:**  Le comportement du syst�me n'est peut �tre pas d�crits de mani�re suffisemment fine et il n'est peut �tre pas possible avec la machine � �tat d�crite de diff�rentier des comportements pourtant diff�rents de l'objet ou du syst�me � des instants diff�rents (cf $JustificationEtat). Parfois, le probl�me peut provenir d'une situation mod�lis�e par une transition alors qu'il devrait s'agir d'un �tat. Une transition est r�put�e �tre imm�diate, mais si des �venements peuvent survenir pendant cette transition et avoir un effet sur le syst�me alors un �tat est clairement manquant. 
 
@@ -1097,7 +1108,7 @@ From package [Exigence](#exigence)
 
 Livrable
 ====================================================
-13 rules: [NomenclatureLivrable](#nomenclaturelivrable) [DelaiLivrable](#delailivrable) [FormatLivrable](#formatlivrable) [DescriptifLivrable](#descriptiflivrable) [PackagingLivrable](#packaginglivrable) [NonLivre](#nonlivre) [MiseAJourVersion](#miseajourversion) [GestionDeVersions](#gestiondeversions) [Auteur](#auteur) [Copyright](#copyright) [Date](#date) [VersionLivrable](#versionlivrable) [DefautDejaMentionne](#defautdejamentionne) 
+17 rules: [NomenclatureLivrable](#nomenclaturelivrable) [DelaiLivrable](#delailivrable) [FormatLivrable](#formatlivrable) [DescriptifLivrable](#descriptiflivrable) [PackagingLivrable](#packaginglivrable) [NonLivre](#nonlivre) [Auteur](#auteur) [Copyright](#copyright) [DefautDejaMentionne](#defautdejamentionne) [Date](#date) [GestionDeVersions](#gestiondeversions) [VersionLivrable](#versionlivrable) [MiseAJourVersion](#miseajourversion) [ResumeModifications](#resumemodifications) [Deltas](#deltas) [DeltasTextuels](#deltastextuels) [DeltasGraphiques](#deltasgraphiques) 
 
 NomenclatureLivrable
 -------------------
@@ -1105,7 +1116,7 @@ From package [Livrable](#livrable)
 
   Le nom d'un ou de plusieurs ressources livrées n'est pas conforme aux règles spécifiées (cf $PackagingLivrable).
 
-	Commentaire: Les livraisons sont des points clés de la vie d'un produit logiciel et l'attention qui doit y être portée est extrème. Ne pas respecter des règles de nomenclature spécifiées auparavant est un problème important. D'une part cela montre que l'organisation productrice n'est pas capable de suivre des règles élémentaires, d'autre par cela rend impossible le traitement automatique des éléments livrés par l'organization cliente. 
+* **Commentaire:**  Les livraisons sont des points clés de la vie d'un produit logiciel et l'attention qui doit y être portée est extrème. Ne pas respecter des règles de nomenclature spécifiées auparavant est un problème important. D'une part cela montre que l'organisation productrice n'est pas capable de suivre des règles élémentaires, d'autre par cela rend impossible le traitement automatique des éléments livrés par l'organization cliente. 
 
 DelaiLivrable
 -------------------
@@ -1143,20 +1154,6 @@ From package [Livrable](#livrable)
 
   Un ou des artefacts, ou des parties d'artefacts non pas été livrés et la livraison n'est donc pas conforme aux résultats attendus.
 
-MiseAJourVersion
--------------------
-From package [Livrable](#livrable)  
-
-  Un numéro de version est incorrect ou ne semble pas avoir mis à jour, ce qui est un problème essentiel du point de vue de la gestion de versions (cf $GestionDeVersions).
-
-GestionDeVersions
--------------------
-From package [Livrable](#livrable)  
-
-  La gestion des versions semble inexistante, instatisfaisante ou présente des défaults.
-
-* **Commentaire:**  La gestion de versions est un des aspects essentiels pour la réussite des projets. La gestion de version est l'un des éléments essentiels pour passer du niveau initial et "chaotique" au niveau répétable du modèle CMM. Il existe de nombreux cas documentés de projets de grande envergure dont l'échec à été directement pu être directement et explicitement relié à l'absence d'une gestion de versions cohérente et systèmatique.
-
 Auteur
 -------------------
 From package [Livrable](#livrable)  
@@ -1169,11 +1166,27 @@ From package [Livrable](#livrable)
 
   Les indications de copyrights associées livrées sont inappropriées, trop imprécises ou manquantes, ou ne peuvent pas être clairement associées à une ou plusieurs des ressources livrées.
 
+DefautDejaMentionne
+-------------------
+From package [Livrable](#livrable)  
+
+  Un ou des défauts ont déjà été mentionnés dans un audit précédent et n'ont pas été corrigés ou amendés dans le livrable courant. 
+
+* **Commentaire:**  Cette situation est inacceptable car elle remet en cause le processus d'évolution et le principe même d'audit. Si les défauts détectés au cours des audits successives ne sont pas commentés, pris en compte ou corrigés, ils risquent d'être impossible de converger vers un produit final de qualité. Par ailleurs, les audits ayant un coût non négligeable, devoir redétecter des défauts déjà mentionnés constitue à la fois une perte de temps pour l'équipe qualité, mais marque également une dégradation de la confiance par rapport à la capacité de l'équipe de production de délivrer un produit final. 
+
 Date
 -------------------
 From package [Nomenclature](#nomenclature)  
 
   Une des dates mentionnées semble être incorrectes, non mise à jours, ou une date semble manquante.  
+
+GestionDeVersions
+-------------------
+From package [Livrable](#livrable)  
+
+  La gestion des versions semble inexistante, instatisfaisante ou présente des défaults.
+
+* **Commentaire:**  La gestion de versions est un des aspects essentiels pour la réussite des projets. La gestion de version est l'un des éléments essentiels pour passer du niveau initial et "chaotique" au niveau répétable du modèle CMM. Il existe de nombreux cas documentés de projets de grande envergure dont l'échec à été directement pu être directement et explicitement relié à l'absence d'une gestion de versions cohérente et systèmatique.
 
 VersionLivrable
 -------------------
@@ -1183,13 +1196,43 @@ From package [Livrable](#livrable)
 
 * **Commentaire:**  Il est important de distinguer le système de versionnement pour les artefacts internes au projet (par exemple le code source, les modèles, etc), du système de versionnement utilisé pour les livraisons. Ce dernier système etant exposé à l'exterieur et visible par des tierces parties, un soin particulier doit être apportés aux interprétations pouvant être associés à ce système et aux identifiants correspondants. (cf $GestionDeVersions)
 
-DefautDejaMentionne
+MiseAJourVersion
 -------------------
 From package [Livrable](#livrable)  
 
-  Un ou des défauts ont déjà été mentionnés dans un audit précédent et n'ont pas été corrigés ou amendés dans le livrable courant. 
+  Un numéro de version est incorrect ou ne semble pas avoir mis à jour, ce qui est un problème essentiel du point de vue de la gestion de versions (cf $GestionDeVersions).
 
-* **Commentaire:**  Cette situation est inacceptable car elle remet en cause le processus d'évolution et le principe même d'audit. Si les défauts détectés au cours des audits successives ne sont pas commentés, pris en compte ou corrigés, ils risquent d'être impossible de converger vers un produit final de qualité. Par ailleurs, les audits ayant un coût non négligeable, devoir redétecter des défauts déjà mentionnés constitue à la fois une perte de temps pour l'équipe qualité, mais marque également une dégradation de la confiance par rapport à la capacité de l'équipe de production de délivrer un produit final. 
+ResumeModifications
+-------------------
+From package [Livrable](#livrable)  
+
+  Le ou les artefacts devraient contenir un résumé des modifications apportées. Si c'est déjà le cas, le résumé pas assez structuré, trop ou pas assez précis, ou plus généralement inadapté au contexte courant.
+
+* **Commentaire:**  Le ou les artefacts peuvent utilement comporter différents deltas in situ (cf. $Deltas), mais leur dissemination dans les artefacts et leur nombre rend généralement nécessaire l'ajout d'un résumé des modifications. Ce résumé peut de plus comporter des éléments décrivant l'intention des modifications, alors que les deltas sont généralement seulement des éléments factuels concernant les différences entre versions successives.  
+
+Deltas
+-------------------
+From package [Livrable](#livrable)  
+
+  Les "deltas" entre versions ne sont pas indiqués de manière appropriée.
+
+* **Commentaire:**  Dans le cadre de l'évolution d'un document et de relectures successives par exemple, il est nécessaire de mentionner quelles modifications ont été apportées. Contrairement au résumé des modifications (cf $ResumeModifications) qui est localisé à un endroit pré-défini et qui peut mentionner l'intention des modifications, les deltas montrent ces modifications in situ dans le corps d'un ou de plusieurs artefacts (cf ResumeModifications). Concrétemment il s'agit de signaler les éléments ajoutés, modifiés ou supprimés. Différentes techniques peuvent être utilisées selon le granularité des éléments considérés et le type des d'artefacts considérés (cf $DeltasTextuels)(cf $DeltasGraphiques).
+
+DeltasTextuels
+-------------------
+From package [Livrable](#livrable)  
+
+  Les parties du texte ayant été ajoutées/supprimées/modifiées devraient être rendus explicites dans le corps du document ou du texte considéré.
+
+* **Commentaire:**  Ceci se fait traditionnellement via du surlignage, des textes barrés, des "barres de marges", etc. Dans le cas de modifications plus importantes il peut être utile d'utiliser des balises de début et de fin d'ajout par exemple. Les editeurs de documents classiques tel qu'OpenOffice ou Word permettent propose généralement des options de "suivi des modifications". 
+
+DeltasGraphiques
+-------------------
+From package [Livrable](#livrable)  
+
+  Les éléments d'un graphique ayant été ajoutés/supprimés/modifiés devraient être rendus explicites.
+
+* **Commentaire:**  Utiliser par exemples des couleurs ou des notes associés aux éléments graphiques. Il peut être nécessaire de fournir une légende (par exemple en début de document ou dans un contexte global) pour que les conventions utilisées soient comprises de tous.
 
 
 Nomenclature
@@ -1528,9 +1571,9 @@ ObjetClassifie
 -------------------
 From package [Sequence](#sequence)  
 
-  Un ou plusieurs objets n'indiquent pas de manière satisfaisante la classe dont il sont à l'origine.
+  Un ou plusieurs objets n'indiquent pas de manière satisfaisante la classe dont ils sont à l'origine.
 
-  modelio: le champ "base" de certains objets n'a pas été renseigné correctement
+* **Commentaire:**  Dans Modelio ce problème peut correspondre au fait que le champ "base" de certains objets n'a pas été renseigné correctement.
 
 
 StyleEssentiel
@@ -1595,11 +1638,15 @@ From package [TexteTechnique](#textetechnique)
 
   Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
 
+* **Commentaire:**  Le niveau d'exigence en terme de qualité des textes dépend des artéfacts et de leur status. Les textes figurant dans des livrables sont des éléments dépassant le contexte de la sphére proche de l'auteur et une attention plus importante doit être apportées aux différents éléments de langages. 
+
 Orthographe
 -------------------
 From package [TexteTechnique](#textetechnique)  
 
   Le texte comporte une ou plusieurs fautes d'orthographe. 
+
+* **Commentaire:**  (cf $Langage).
 
 Ponctuation
 -------------------
@@ -1607,7 +1654,7 @@ From package [TexteTechnique](#textetechnique)
 
   Les règles de ponctuation associées au langage utilisé ne sont pas respectées. 
 
-  -- Pour la langue française voir par exemple l'url suivante http://www.la-ponctuation.com/
+* **Commentaire:**  Pour la langue française voir par exemple l'url suivante http://www.la-ponctuation.com/
 
 Grammaire
 -------------------
@@ -1619,7 +1666,9 @@ Style
 -------------------
 From package [TexteTechnique](#textetechnique)  
 
-  Le style du texte est inappoprié. Par exemple le style est trop "télégraphique", trop verbeux, trop technique, etc. 
+  Le style du texte est inappoprié. 
+
+* **Exemple:**  Par exemple le style peut être trop "télégraphique", trop verbeux, trop technique, etc. 
 
 Formatage
 -------------------
@@ -3279,7 +3328,9 @@ Surcodification
 -------------------
 From package [Valeur](#valeur)  
 
-  L'utilisation de "codes" ne semble pas correspondre à la réalité du métier ou peut impliquer une charge cognitive inutilement élevée dans le cas d'interfaces personne systeme. Par exemple un code est demandé à un acteur dans une interaction personne système sans que cet utilisateur aie, de part ses caractéristique et celle de son rôle, l'ensemble des codes "en tête".
+  L'utilisation de "codes" ne semble pas correspondre à la réalité du métier ou peut impliquer une charge cognitive inutilement élevée dans le cas d'interfaces personne systeme. 
+
+* **Exemple:**  Par exemple un code est demandé à un acteur dans une interaction personne système sans que cet utilisateur aie, de part ses caractéristique et celle de son rôle, l'ensemble des codes "en tête".
 
 UniteValeur
 -------------------
