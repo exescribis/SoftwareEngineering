@@ -26,3 +26,4 @@
   Gérer le materiel ( badges, points d'acces, ...) qui est deffectueux et doit être changé
   badgeUnique: Une et une seule personne peut utiliser un même badge
   Administrateur et Superviseur possède un compte avec mot de passe
+  Les ordinateurs présents dans les bâtiments sont eux aussi dotés d'un lecteur de badge

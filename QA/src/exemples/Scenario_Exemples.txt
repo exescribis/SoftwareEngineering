@@ -34,6 +34,30 @@
    3/ Marc tape '128652946'.
    4/ Le système affiche 'Nouveau groupe créé'.
 
+   1/ UFRSystème demande le groupe dans lequel la personne sera ajouté. 2
+   2/ Chang sélectionne le numéro du groupe, le groupe numéro 2.  
+   3/ UFRSystème demande le numéro de la personne à ajouter. 
+   4/ Chang selectionne la personne numéro 4 dans la liste qui lui est proposé. 
+   5/ UFRSystème ajoute la personne 4 dans le groupe
+ 
+   1/ UFRSystème demande le numéro du groupe. 
+   2/ Gérard saisie "2". 
+   3/ UFRSystème recherche si le groupe 2 existe. 
+   4/ UFRSystème demande le code du/des bâtiments concernées.
+   5/ Gérard saisie "IM2AG". 
+   6/ UFRSystème vérifie que le/les bâtiments existe(nt). 
+   7/ UFRSystème demande de saisir le nom des périodes à ajouter. 
+   8/ Gérard saisie "PeriodeEtudiants". 
+   9/ UFRSystème demande de saisir le nom des périodes à retirer.
+   10/ Gérard saisie "VacancesNoel". 
+   11/ UFRSystème affiche que l’ajout a fonctionné
+
+   1/ Guillaume porteur de badge se présente devant l'odinateur PC026. 
+	 2/ SystemeIMAG affiche sur l'ordinateur PC026 que l'ordinateur est disponible. 
+	 3/ Guillaume porteur de badge introduit son badge, badge026, dans l'ordinateur PC026. 
+	 4/ SystemeIMAG lit le badge026 et authentifie Guillaume porteur de badge sur l'ordinateur PC026. 
+	 5/ Guillaume porteur de badge peut utiliser l'ordinateur PC026. 
+
 # Le scenario suivant est interressant car il permet de montrer les objectifs des scenarios externes
 # (1) séparer les responsabilités système/acteur
 # (2) illustrer le cas d'utilsation pour validation

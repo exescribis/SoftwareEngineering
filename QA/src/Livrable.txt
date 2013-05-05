@@ -2,7 +2,7 @@
 
 $NomenclatureLivrable:
   Le nom d'un ou de plusieurs ressources livrées n'est pas conforme aux règles spécifiées (cf $PackagingLivrable).
-	Commentaire: Les livraisons sont des points clés de la vie d'un produit logiciel et l'attention qui doit y être portée est extrème. Ne pas respecter des règles de nomenclature spécifiées auparavant est un problème important. D'une part cela montre que l'organisation productrice n'est pas capable de suivre des règles élémentaires, d'autre par cela rend impossible le traitement automatique des éléments livrés par l'organization cliente. 
+  Commentaire: Les livraisons sont des points clés de la vie d'un produit logiciel et l'attention qui doit y être portée est extrème. Ne pas respecter des règles de nomenclature spécifiées auparavant est un problème important. D'une part cela montre que l'organisation productrice n'est pas capable de suivre des règles élémentaires, d'autre par cela rend impossible le traitement automatique des éléments livrés par l'organization cliente. 
 
 $DelaiLivrable:
   Le ou les délais de livraison n'ont pas été respectés.
@@ -22,27 +22,44 @@ $PackagingLivrable:
 $NonLivre:
   Un ou des artefacts, ou des parties d'artefacts non pas été livrés et la livraison n'est donc pas conforme aux résultats attendus.
 
-$MiseAJourVersion:
-  Un numéro de version est incorrect ou ne semble pas avoir mis à jour, ce qui est un problème essentiel du point de vue de la gestion de versions (cf $GestionDeVersions).
-  
-$GestionDeVersions:
-  La gestion des versions semble inexistante, instatisfaisante ou présente des défaults.
-  Commentaire: La gestion de versions est un des aspects essentiels pour la réussite des projets. La gestion de version est l'un des éléments essentiels pour passer du niveau initial et "chaotique" au niveau répétable du modèle CMM. Il existe de nombreux cas documentés de projets de grande envergure dont l'échec à été directement pu être directement et explicitement relié à l'absence d'une gestion de versions cohérente et systèmatique.
-
 $Auteur:
   Le ou les auteurs du document, qu'il s'agisse de personnes physiques ou morale, ne sont pas indiquées clairement ou de manière appropriées.
 
 $Copyright:
   Les indications de copyrights associées livrées sont inappropriées, trop imprécises ou manquantes, ou ne peuvent pas être clairement associées à une ou plusieurs des ressources livrées.
-
-$Date:
-  Une des dates mentionnées semble être incorrectes, non mise à jours, ou une date semble manquante.  
-
-$VersionLivrable:
-  L'identification de la version du livrable semble être manquant, incorrect ou inadapté au status de livrable.
-  Commentaire: Il est important de distinguer le système de versionnement pour les artefacts internes au projet (par exemple le code source, les modèles, etc), du système de versionnement utilisé pour les livraisons. Ce dernier système etant exposé à l'exterieur et visible par des tierces parties, un soin particulier doit être apportés aux interprétations pouvant être associés à ce système et aux identifiants correspondants. (cf $GestionDeVersions)
   
 $DefautDejaMentionne:
   Un ou des défauts ont déjà été mentionnés dans un audit précédent et n'ont pas été corrigés ou amendés dans le livrable courant. 
   Commentaire: Cette situation est inacceptable car elle remet en cause le processus d'évolution et le principe même d'audit. Si les défauts détectés au cours des audits successives ne sont pas commentés, pris en compte ou corrigés, ils risquent d'être impossible de converger vers un produit final de qualité. Par ailleurs, les audits ayant un coût non négligeable, devoir redétecter des défauts déjà mentionnés constitue à la fois une perte de temps pour l'équipe qualité, mais marque également une dégradation de la confiance par rapport à la capacité de l'équipe de production de délivrer un produit final. 
 
+$Date:
+  Une des dates mentionnées semble être incorrectes, non mise à jours, ou une date semble manquante.  
+
+#== Version
+
+$GestionDeVersions:
+  La gestion des versions semble inexistante, instatisfaisante ou présente des défaults.
+  Commentaire: La gestion de versions est un des aspects essentiels pour la réussite des projets. La gestion de version est l'un des éléments essentiels pour passer du niveau initial et "chaotique" au niveau répétable du modèle CMM. Il existe de nombreux cas documentés de projets de grande envergure dont l'échec à été directement pu être directement et explicitement relié à l'absence d'une gestion de versions cohérente et systèmatique.
+
+$VersionLivrable:
+  L'identification de la version du livrable semble être manquant, incorrect ou inadapté au status de livrable.
+  Commentaire: Il est important de distinguer le système de versionnement pour les artefacts internes au projet (par exemple le code source, les modèles, etc), du système de versionnement utilisé pour les livraisons. Ce dernier système etant exposé à l'exterieur et visible par des tierces parties, un soin particulier doit être apportés aux interprétations pouvant être associés à ce système et aux identifiants correspondants. (cf $GestionDeVersions)
+
+$MiseAJourVersion:
+  Un numéro de version est incorrect ou ne semble pas avoir mis à jour, ce qui est un problème essentiel du point de vue de la gestion de versions (cf $GestionDeVersions).
+
+$ResumeModifications:
+  Le ou les artefacts devraient contenir un résumé des modifications apportées. Si c'est déjà le cas, le résumé pas assez structuré, trop ou pas assez précis, ou plus généralement inadapté au contexte courant.
+  Commentaire: Le ou les artefacts peuvent utilement comporter différents deltas in situ (cf. $Deltas), mais leur dissemination dans les artefacts et leur nombre rend généralement nécessaire l'ajout d'un résumé des modifications. Ce résumé peut de plus comporter des éléments décrivant l'intention des modifications, alors que les deltas sont généralement seulement des éléments factuels concernant les différences entre versions successives.  
+
+$Deltas:
+  Les "deltas" entre versions ne sont pas indiqués de manière appropriée.
+  Commentaire: Dans le cadre de l'évolution d'un document et de relectures successives par exemple, il est nécessaire de mentionner quelles modifications ont été apportées. Contrairement au résumé des modifications (cf $ResumeModifications) qui est localisé à un endroit pré-défini et qui peut mentionner l'intention des modifications, les deltas montrent ces modifications in situ dans le corps d'un ou de plusieurs artefacts (cf ResumeModifications). Concrétemment il s'agit de signaler les éléments ajoutés, modifiés ou supprimés. Différentes techniques peuvent être utilisées selon le granularité des éléments considérés et le type des d'artefacts considérés (cf $DeltasTextuels)(cf $DeltasGraphiques).
+
+$DeltasTextuels:
+  Les parties du texte ayant été ajoutées/supprimées/modifiées devraient être rendus explicites dans le corps du document ou du texte considéré.
+  Commentaire: Ceci se fait traditionnellement via du surlignage, des textes barrés, des "barres de marges", etc. Dans le cas de modifications plus importantes il peut être utile d'utiliser des balises de début et de fin d'ajout par exemple. Les editeurs de documents classiques tel qu'OpenOffice ou Word permettent propose généralement des options de "suivi des modifications". 
+
+$DeltasGraphiques:
+  Les éléments d'un graphique ayant été ajoutés/supprimés/modifiés devraient être rendus explicites.
+  Commentaire: Utiliser par exemples des couleurs ou des notes associés aux éléments graphiques. Il peut être nécessaire de fournir une légende (par exemple en début de document ou dans un contexte global) pour que les conventions utilisées soient comprises de tous.

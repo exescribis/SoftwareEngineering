@@ -3,19 +3,22 @@
 
 $Langage:
   Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
+  Commentaire: Le niveau d'exigence en terme de qualité des textes dépend des artéfacts et de leur status. Les textes figurant dans des livrables sont des éléments dépassant le contexte de la sphére proche de l'auteur et une attention plus importante doit être apportées aux différents éléments de langages. 
 
 $Orthographe:
   Le texte comporte une ou plusieurs fautes d'orthographe. 
+  Commentaire: (cf $Langage).
 
 $Ponctuation:
   Les règles de ponctuation associées au langage utilisé ne sont pas respectées. 
-  -- Pour la langue française voir par exemple l'url suivante http://www.la-ponctuation.com/
+  Commentaire: Pour la langue française voir par exemple l'url suivante http://www.la-ponctuation.com/
 
 $Grammaire:
   La grammaire du langage n'est pas respectée.
 
 $Style:
-  Le style du texte est inappoprié. Par exemple le style est trop "télégraphique", trop verbeux, trop technique, etc. 
+  Le style du texte est inappoprié. 
+  Exemple: Par exemple le style peut être trop "télégraphique", trop verbeux, trop technique, etc. 
   
 $Formatage:
   Le formatage du texte n'est pas adéquat.
