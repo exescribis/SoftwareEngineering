@@ -1,4 +1,4 @@
-ï»¿RULE PACKAGES (20)
+RULE PACKAGES (20)
 =================
 * [CasDUtilisation](#casdutilisation) (12 rules)
 * [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
@@ -890,11 +890,11 @@ NomEtat
 -------------------
 From package [Etat](#etat)  
 
-  Le nom d'un état doit faire référence explicitement à la période de temps dans lequel l'objet se trouve dans l'état. 
+  Le nom d'un Ã©tat doit faire rÃ©fÃ©rence explicitement Ã  la pÃ©riode de temps dans lequel l'objet se trouve dans l'Ã©tat. 
 
-* **Commentaire:**  Contrairement aux cas des noms de classes ou d'opérations qui correspondent à des catégories linguistiques caractéristiques (respectivement forme nominale et forme verbale), il n'y a pas de correspoIl n'y a pas de correspondance siml D'un point de vue linguistique cela correspond généralement à un participe passé, à une forme basée sur la réalisation future, passée ou présente d'une action (avec des préfixes tels que "EnCoursDe", "EnAttenteDe", etc.), ou a des formes en "-ing" en anglais.
+* **Commentaire:**  Contrairement aux cas des noms de classes ou d'opÃ©rations qui correspondent Ã  des catÃ©gories linguistiques caractÃ©ristiques (respectivement forme nominale et forme verbale), il n'y a pas de correspoIl n'y a pas de correspondance siml D'un point de vue linguistique cela correspond gÃ©nÃ©ralement Ã  un participe passÃ©, Ã  une forme basÃ©e sur la rÃ©alisation future, passÃ©e ou prÃ©sente d'une action (avec des prÃ©fixes tels que "EnCoursDe", "EnAttenteDe", etc.), ou a des formes en "-ing" en anglais.
 
-* **Exemple:**  Par exemple un document sera dans l'état "Modifié" (participe passé), "EnCoursDeModification", ou encore "EnAttenteDeValidation". 
+* **Exemple:**  Par exemple un document sera dans l'Ã©tat "ModifiÃ©" (participe passÃ©), "EnCoursDeModification", ou encore "EnAttenteDeValidation". 
 
 NomenclatureEtat
 -------------------
@@ -918,127 +918,127 @@ NomTransitionInutile
 -------------------
 From package [Etat](#etat)  
 
-  Les noms de certaines transitions semblent inutiles, trop génériques, ou inappropriés.
+  Les noms de certaines transitions semblent inutiles, trop gÃ©nÃ©riques, ou inappropriÃ©s.
 
-* **Commentaire:**  Il n'est généralement pas nécessaire de nommer les transitions dans la mesure où celles-ci sont décrites intégralement par les gardes, les événements, les actions et résultats qui leur sont associés. Leur donner un nom peut éventuellement être pratique si l'on utilise des outils de transformations, ou que l'on veut référencer de manière directe une transition, mais généralement les transitions se passent de noms.
+* **Commentaire:**  Il n'est gÃ©nÃ©ralement pas nÃ©cessaire de nommer les transitions dans la mesure oÃ¹ celles-ci sont dÃ©crites intÃ©gralement par les gardes, les Ã©vÃ©nements, les actions et rÃ©sultats qui leur sont associÃ©s. Leur donner un nom peut Ã©ventuellement Ãªtre pratique si l'on utilise des outils de transformations, ou que l'on veut rÃ©fÃ©rencer de maniÃ¨re directe une transition, mais gÃ©nÃ©ralement les transitions se passent de noms.
 
 EtatInitial
 -------------------
 From package [Etat](#etat)  
 
-  L'état initial est manquant.
+  L'Ã©tat initial est manquant.
 
 JustificationEtat
 -------------------
 From package [Etat](#etat)  
 
-  La presence ou l'absence d'un ou plusieurs états n'est pas justifiées ou pourrait être remise en cause.
+  La presence ou l'absence d'un ou plusieurs Ã©tats n'est pas justifiÃ©es ou pourrait Ãªtre remise en cause.
 
-* **Commentaire:**  Un état correspond normallement à une durée de temps "significative" pour l'objet ou le système et pendant laquelle le système va avoir un comportement différent par rapport à son environement exterieur durant cet état. Ce n'est donc pas la notion absolue de temps qui défini la notion d'état mais le fait que pendant la période considérée l'objet ou le système à un comportement différent. 
+* **Commentaire:**  Un Ã©tat correspond normallement Ã  une durÃ©e de temps "significative" pour l'objet ou le systÃ¨me et pendant laquelle le systÃ¨me va avoir un comportement diffÃ©rent par rapport Ã  son environement exterieur durant cet Ã©tat. Ce n'est donc pas la notion absolue de temps qui dÃ©fini la notion d'Ã©tat mais le fait que pendant la pÃ©riode considÃ©rÃ©e l'objet ou le systÃ¨me Ã  un comportement diffÃ©rent. 
 
 UtiliteEtat
 -------------------
 From package [Etat](#etat)  
 
-  L'utilité d'un ou plusieurs états n'est pas claire et certains devraient peut être être supprimés (cf $JustificationEtat).
+  L'utilitÃ© d'un ou plusieurs Ã©tats n'est pas claire et certains devraient peut Ãªtre Ãªtre supprimÃ©s (cf $JustificationEtat).
 
-* **Commentaire:**  Chaque état doit pouvoir être justifié par rapport au comportement du système ou de l'objet (cf $JustificationEtat). Si un état n'est pas "perceptible" depuis il est peut être préférable de supprimer celui-ci de reporter les informations correspondantes sur une ou des transitions.
+* **Commentaire:**  Chaque Ã©tat doit pouvoir Ãªtre justifiÃ© par rapport au comportement du systÃ¨me ou de l'objet (cf $JustificationEtat). Si un Ã©tat n'est pas "perceptible" depuis il est peut Ãªtre prÃ©fÃ©rable de supprimer celui-ci de reporter les informations correspondantes sur une ou des transitions.
 
-* **Exemple:**  Dans le cas d'un système d'ouverture de porte automatique l'état "EnCoursDOuverture" n'est peut être pas pertinent si on ne prend pas en compte l'ensemble des anomalies ou cas particuliers qui peuvent se passer pendant cet "instant". Si ces éléments ne sont pas pertinents, une action "ouvrir" sur une transition sera suffisante (cf $EtatManquant). De la même manière l'état "EnregistrerLAccesDUnePersonne" est sans doute une action sur une transition plutot qu'un état.
+* **Exemple:**  Dans le cas d'un systÃ¨me d'ouverture de porte automatique l'Ã©tat "EnCoursDOuverture" n'est peut Ãªtre pas pertinent si on ne prend pas en compte l'ensemble des anomalies ou cas particuliers qui peuvent se passer pendant cet "instant". Si ces Ã©lÃ©ments ne sont pas pertinents, une action "ouvrir" sur une transition sera suffisante (cf $EtatManquant). De la mÃªme maniÃ¨re l'Ã©tat "EnregistrerLAccesDUnePersonne" est sans doute une action sur une transition plutot qu'un Ã©tat.
 
 EtatManquant
 -------------------
 From package [Etat](#etat)  
 
-  Un ou des états semblent manquants pour modéliser le comportement de l'objet ou du système (cf $JustificationEtat).
+  Un ou des Ã©tats semblent manquants pour modÃ©liser le comportement de l'objet ou du systÃ¨me (cf $JustificationEtat).
 
-* **Commentaire:**  Le comportement du système n'est peut être pas décrits de manière suffisemment fine et il n'est peut être pas possible avec la machine à état décrite de différentier des comportements pourtant différents de l'objet ou du système à des instants différents (cf $JustificationEtat). Parfois, le problème peut provenir d'une situation modélisée par une transition alors qu'il devrait s'agir d'un état. Une transition est réputée être immédiate, mais si des évenements peuvent survenir pendant cette transition et avoir un effet sur le système alors un état est clairement manquant. 
+* **Commentaire:**  Le comportement du systÃ¨me n'est peut Ãªtre pas dÃ©crits de maniÃ¨re suffisemment fine et il n'est peut Ãªtre pas possible avec la machine Ã  Ã©tat dÃ©crite de diffÃ©rentier des comportements pourtant diffÃ©rents de l'objet ou du systÃ¨me Ã  des instants diffÃ©rents (cf $JustificationEtat). Parfois, le problÃ¨me peut provenir d'une situation modÃ©lisÃ©e par une transition alors qu'il devrait s'agir d'un Ã©tat. Une transition est rÃ©putÃ©e Ãªtre immÃ©diate, mais si des Ã©venements peuvent survenir pendant cette transition et avoir un effet sur le systÃ¨me alors un Ã©tat est clairement manquant. 
 
-* **Exemple:**  Dans le cas d'un système d'ouverture de porte automatique, si l'on s'intéresse aux différents cas d'exceptions, il sera sans doute nécessaire de créer un état "EnCoursDOuverture" car pendant que la porte s'ouvre un objet ou une personne peut la bloquer par exemple et changer donc l'état du système. On pourra ainsi modéliser que la porte est considérée dans l'état "PorteBloquée"  au bout d'un certain temps, qu'elle essaie au contraire de se refermer, etc. L'utilité de tels états dépend entièrement de l'intention de la modélisation (cf $JustificationEtat)(cf $UtiliteEtat).
+* **Exemple:**  Dans le cas d'un systÃ¨me d'ouverture de porte automatique, si l'on s'intÃ©resse aux diffÃ©rents cas d'exceptions, il sera sans doute nÃ©cessaire de crÃ©er un Ã©tat "EnCoursDOuverture" car pendant que la porte s'ouvre un objet ou une personne peut la bloquer par exemple et changer donc l'Ã©tat du systÃ¨me. On pourra ainsi modÃ©liser que la porte est considÃ©rÃ©e dans l'Ã©tat "PorteBloquÃ©e"  au bout d'un certain temps, qu'elle essaie au contraire de se refermer, etc. L'utilitÃ© de tels Ã©tats dÃ©pend entiÃ¨rement de l'intention de la modÃ©lisation (cf $JustificationEtat)(cf $UtiliteEtat).
 
 EtatCree
 -------------------
 From package [Etat](#etat)  
 
-  Il n'est a a priori pas nécessaire d'introduire un état nommé "Créé" dans un diagramme d'état car c'est à cela que correspond l'état initial de l'automate.
+  Il n'est a a priori pas nÃ©cessaire d'introduire un Ã©tat nommÃ© "CrÃ©Ã©" dans un diagramme d'Ã©tat car c'est Ã  cela que correspond l'Ã©tat initial de l'automate.
 
 DuplicationEtat
 -------------------
 From package [Etat](#etat)  
 
-  Deux états semblent correspondre au même état.
+  Deux Ã©tats semblent correspondre au mÃªme Ã©tat.
 
 SpecificationTransition
 -------------------
 From package [Etat](#etat)  
 
-  La specification d'une ou plusieurs transitions est manquante ou n'est pas appropriée.
+  La specification d'une ou plusieurs transitions est manquante ou n'est pas appropriÃ©e.
 
-* **Commentaire:**  Sauf si le diagramme d'état est dans un état très préliminaire, il est nécessaire de spécifier en détails l'intégralité des transitions (sauf éventuellement celle qui part de l'état initial (cf $TransitionInitialeAutomatique) et celles qui vont vers l'état final. La specification de chaque transition doit se faire en respectant la syntaxe des expressions de transitions (cf $SyntaxeTransition). Notons qu'il est très utile de décrire les transitions, mais généralement pas de les nommer (cf $NomTransitionInutile). 
+* **Commentaire:**  Sauf si le diagramme d'Ã©tat est dans un Ã©tat trÃ¨s prÃ©liminaire, il est nÃ©cessaire de spÃ©cifier en dÃ©tails l'intÃ©gralitÃ© des transitions (sauf Ã©ventuellement celle qui part de l'Ã©tat initial (cf $TransitionInitialeAutomatique) et celles qui vont vers l'Ã©tat final. La specification de chaque transition doit se faire en respectant la syntaxe des expressions de transitions (cf $SyntaxeTransition). Notons qu'il est trÃ¨s utile de dÃ©crire les transitions, mais gÃ©nÃ©ralement pas de les nommer (cf $NomTransitionInutile). 
 
 SyntaxeTransition
 -------------------
 From package [Etat](#etat)  
 
-  La syntaxe des expressions de transitions n'est pas respectée et/ou il existe une ou plusieurs confusions possibles entre les gardes, les événements déclencheurs our déclenchés ou les actions executées. 
+  La syntaxe des expressions de transitions n'est pas respectÃ©e et/ou il existe une ou plusieurs confusions possibles entre les gardes, les Ã©vÃ©nements dÃ©clencheurs our dÃ©clenchÃ©s ou les actions executÃ©es. 
 
-* **Commentaire:**  Les transitions entre deux états doivent être décorées par des expressions de la forme <evenement1> "[" <garde> "]" / <action> ^ <evenement2> où <evenement1> exprime l'évenement provoquant la transition, <garde> exprime la condition éventuelle devant être vérifiée pour que la transition ait lieu, <action> indique l'action a executer lors de la tranisition et <evenement2> l'évenement déclenché.
+* **Commentaire:**  Les transitions entre deux Ã©tats doivent Ãªtre dÃ©corÃ©es par des expressions de la forme <evenement1> "[" <garde> "]" / <action> ^ <evenement2> oÃ¹ <evenement1> exprime l'Ã©venement provoquant la transition, <garde> exprime la condition Ã©ventuelle devant Ãªtre vÃ©rifiÃ©e pour que la transition ait lieu, <action> indique l'action a executer lors de la tranisition et <evenement2> l'Ã©venement dÃ©clenchÃ©.
 
 ConfusionEvenementAction
 -------------------
 From package [Etat](#etat)  
 
-  Il semble qu'une confusion soit faite sur une ou plusieurs transitions entre les évenements provoquant les transitions et les actions réalisées lorsque ces transitions sont opérées. Ce problème peut être lié à une mauvaise compréhension du fonctionnement des machines à état ou à une méconnaissance de la syntaxe des expressions de transitions (cf $SyntaxeTransition:).
+  Il semble qu'une confusion soit faite sur une ou plusieurs transitions entre les Ã©venements provoquant les transitions et les actions rÃ©alisÃ©es lorsque ces transitions sont opÃ©rÃ©es. Ce problÃ¨me peut Ãªtre liÃ© Ã  une mauvaise comprÃ©hension du fonctionnement des machines Ã  Ã©tat ou Ã  une mÃ©connaissance de la syntaxe des expressions de transitions (cf $SyntaxeTransition:).
 
 ConfusionNomEtatEvenement
 -------------------
 From package [Etat](#etat)  
 
-  Il semble qu'une confusion soit faite entre le nom d'une ou plusieurs transitions et les évenements provoquant ces transitions.
+  Il semble qu'une confusion soit faite entre le nom d'une ou plusieurs transitions et les Ã©venements provoquant ces transitions.
 
 TransitionInitialeAutomatique
 -------------------
 From package [Etat](#etat)  
 
-  Il n'est pas nécessaire de décorer la transition qui va de l'état initial à un état nommé et en tout état de cause l'évenement correspondant à cette transition ne peut pas correspondre à l'évenement de création de l'objet.
+  Il n'est pas nÃ©cessaire de dÃ©corer la transition qui va de l'Ã©tat initial Ã  un Ã©tat nommÃ© et en tout Ã©tat de cause l'Ã©venement correspondant Ã  cette transition ne peut pas correspondre Ã  l'Ã©venement de crÃ©ation de l'objet.
 
 TransitionManquante
 -------------------
 From package [Etat](#etat)  
 
-  Une ou des transitions semble être manquantes.
+  Une ou des transitions semble Ãªtre manquantes.
 
-* **Commentaire:**  Ce peut être pour modéliser des conditions alternatives, des transitions s'opérant au bout d'un certain temps si aucun événement ne survient, des transitions correspondant à des cas d'exception.
+* **Commentaire:**  Ce peut Ãªtre pour modÃ©liser des conditions alternatives, des transitions s'opÃ©rant au bout d'un certain temps si aucun Ã©vÃ©nement ne survient, des transitions correspondant Ã  des cas d'exception.
 
 Puit
 -------------------
 From package [Etat](#etat)  
 
-  Il existe un ou plusieurs états sans transitions sortantes et il ne semble pas que cette situation corresponde à une modélisation réaliste. Des transitions vers l'état final ou des transitions iteratives sont sans doute manquantes (cf $IterationEtats)(cf $TransitionManquante).
+  Il existe un ou plusieurs Ã©tats sans transitions sortantes et il ne semble pas que cette situation corresponde Ã  une modÃ©lisation rÃ©aliste. Des transitions vers l'Ã©tat final ou des transitions iteratives sont sans doute manquantes (cf $IterationEtats)(cf $TransitionManquante).
 
-* **Commentaire:**  Tant que l'objet ou le système est dans un état, cet objet est en vie et il a donc un comportement. Généralement l'objet ou le système peut revenir dans un état précédent.
+* **Commentaire:**  Tant que l'objet ou le systÃ¨me est dans un Ã©tat, cet objet est en vie et il a donc un comportement. GÃ©nÃ©ralement l'objet ou le systÃ¨me peut revenir dans un Ã©tat prÃ©cÃ©dent.
 
 AmbiguiteTransition
 -------------------
 From package [Etat](#etat)  
 
-  Parmis les transitions sortantes d'un ou plusieurs états, il n'est pas nécessairement évident de savoir par quelles transitions l'objet sortira d'un état, soit parceque les événements ou gardes sont exprimées de manière trop ambigues, soit parcequ'il existe un chevauchement entre les conditions exprimées par les gardes, soit parces que spécifications des transistions sont inexistantes ou trop pauvrement documentées (cf $SpecificationTransition).
+  Parmis les transitions sortantes d'un ou plusieurs Ã©tats, il n'est pas nÃ©cessairement Ã©vident de savoir par quelles transitions l'objet sortira d'un Ã©tat, soit parceque les Ã©vÃ©nements ou gardes sont exprimÃ©es de maniÃ¨re trop ambigues, soit parcequ'il existe un chevauchement entre les conditions exprimÃ©es par les gardes, soit parces que spÃ©cifications des transistions sont inexistantes ou trop pauvrement documentÃ©es (cf $SpecificationTransition).
 
 IterationEtats
 -------------------
 From package [Etat](#etat)  
 
-  Les transitions ne permettent pas d'itérations entre les différents états alors que c'est le comportement de l'objet ou du système présente cette caractéristique (cf $TransitionManquante).
+  Les transitions ne permettent pas d'itÃ©rations entre les diffÃ©rents Ã©tats alors que c'est le comportement de l'objet ou du systÃ¨me prÃ©sente cette caractÃ©ristique (cf $TransitionManquante).
 
-* **Exemple:**  Une automate d'une porte d'acces a un batiment doit modeliser de multiple entrées successives et certaines transitions de la machine a état forme nécessairement un cycle.
+* **Exemple:**  Une automate d'une porte d'acces a un batiment doit modeliser de multiple entrÃ©es successives et certaines transitions de la machine a Ã©tat forme nÃ©cessairement un cycle.
 
 CouvertureAutomate
 -------------------
 From package [Etat](#etat)  
 
-  L'automate décrit ne couvre qu'une partie du comportement de l'objet ou du système modélisé. Il manque différents états et transitions (cf $EtatManquant)(cf $TransitionManquante).
+  L'automate dÃ©crit ne couvre qu'une partie du comportement de l'objet ou du systÃ¨me modÃ©lisÃ©. Il manque diffÃ©rents Ã©tats et transitions (cf $EtatManquant)(cf $TransitionManquante).
 
-* **Commentaire:**  Plusieurs explications peuvent être à la source de ce défaut. (1) Le modèle n'est peut être tout simplement pas suffisemment détaillé. (2) Les cas d'exceptions ne sont peut être pas suffisemment pris en compte. (3) Il n'est peut être pas compris qu'un automate ne représente pas un scénario particulier parmis n, mais au contraire couvre l'intégralité du comportement de l'objet tout cas confondu (contrairement aux diagrammes de communication ou aux diagrammes de sequence les automates et diagrammes d'états qui se focalisent sur 1 scenario mais n objets).
+* **Commentaire:**  Plusieurs explications peuvent Ãªtre Ã  la source de ce dÃ©faut. (1) Le modÃ¨le n'est peut Ãªtre tout simplement pas suffisemment dÃ©taillÃ©. (2) Les cas d'exceptions ne sont peut Ãªtre pas suffisemment pris en compte. (3) Il n'est peut Ãªtre pas compris qu'un automate ne reprÃ©sente pas un scÃ©nario particulier parmis n, mais au contraire couvre l'intÃ©gralitÃ© du comportement de l'objet tout cas confondu (contrairement aux diagrammes de communication ou aux diagrammes de sequence les automates et diagrammes d'Ã©tats qui se focalisent sur 1 scenario mais n objets).
 
 
 Exigence
