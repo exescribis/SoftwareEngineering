@@ -23,6 +23,15 @@ $IntentionScenario:
 $SequenceDActions:
   Le scenario n'est pas décrit sous forme d'une séquence d'actions clairement identifiables et repréable au sein d'une séquence.
 
+$Action:
+  La phrase ne correspond pas à une action du système ou d'un acteur (cf $SequenceDActions)(cf $SujetAction).
+
+$ActionVersPrecondition:
+  La description du scenario comporte des éléments qui semblent relever des préconditions associés au scénario, plutôt qu'à des actions.
+
+$ActionVersPostcondition:
+  La description du scenario comporte des éléments qui semblent relever des postconditions associés au scénario, plutôt qu'à des actions.
+
 $SujetAction:
   La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur).   
 

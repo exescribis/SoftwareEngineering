@@ -8,6 +8,10 @@ OUTFILE=${OUTDIR?}/README.md
 echo `ls $SRCFILESPATTERN | wc -l` source files 
 
 gawk '
+    #==================================================================================
+    #    META-MODEL
+    #==================================================================================
+
     # RULE_TO_PACKAGE: RULENAME -> PACKAGENAME
     # RULE_TO_TEXTS:   RULENAME -> TEXT (OFS TEXT) *
     # PACKAGE_TO_RULELIST : PACKAGENAME -> RULENAME (" " RULENAME)*  
@@ -17,6 +21,10 @@ gawk '
       return (text ? text sep : "") item 
     }
        
+    #==================================================================================
+    #    PARSING
+    #==================================================================================
+    
     /^\$.*:[ \t]*$/   {
       #------ rule header -----------
       gsub(/^\$/,"") ; gsub(/:[ \t]*$/,"") 
@@ -43,10 +51,15 @@ gawk '
     
     {
       #------ rule paragraph ----
+      
+      #--- deal with inner sections
       gsub(/^  Commentaires?:/,"* **Commentaire:** ") ;
       gsub(/^  Exemples?:/,"* **Exemple:** ") ;
       gsub(/^  Remarques?:/,"* **Remarque:** ") ;
       gsub(/^  Observations?:/,"* **Observation:** ") ;
+      
+      #--- deal with cf references
+      # TODO gsub(/\( *cf *$([^\) ]+\ *)/, "cf $1" ) ;
 
       paragraph=$0 
       RULE_TO_TEXTS[RULENAME] = add(RULE_TO_TEXTS[RULENAME],paragraph,"\n\n") 
@@ -55,9 +68,17 @@ gawk '
     
     
 
+    
+    
+    
+    #==================================================================================
+    #    OUTPUT IN .md FORMAT
+    #==================================================================================
+
     function nameToUrl(name) {
       return "[" name "](#" tolower(name) ")" 
     }
+
     
     function print_packageIndex(    _i,_rulelist,_nbrules,_packagename,_packagerules) {
       print "RULE PACKAGES (" NBPACKAGES ")" 

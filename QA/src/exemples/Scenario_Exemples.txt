@@ -53,10 +53,14 @@
    11/ UFRSystème affiche que l’ajout a fonctionné
 
    1/ Guillaume porteur de badge se présente devant l'odinateur PC026. 
-	 2/ SystemeIMAG affiche sur l'ordinateur PC026 que l'ordinateur est disponible. 
-	 3/ Guillaume porteur de badge introduit son badge, badge026, dans l'ordinateur PC026. 
-	 4/ SystemeIMAG lit le badge026 et authentifie Guillaume porteur de badge sur l'ordinateur PC026. 
-	 5/ Guillaume porteur de badge peut utiliser l'ordinateur PC026. 
+   2/ SystemeIMAG affiche sur l'ordinateur PC026 que l'ordinateur est disponible. 
+   3/ Guillaume porteur de badge introduit son badge, badge026, dans l'ordinateur PC026. 
+   4/ SystemeIMAG lit le badge026 et authentifie Guillaume porteur de badge sur l'ordinateur PC026. 
+   5/ Guillaume porteur de badge peut utiliser l'ordinateur PC026. 
+ 
+   1/ Gilles Martin qui est précedemment entré dans le batiment F320 pour lequel il avait une autorisation valide, passe son badge sur le lecteur B003. L'ordinateur présentait alors une interface indiquant l'attente d'une connexion.
+   2/ CyberUFR lit les informations du badge et authentifie l'utilisateur et ses autorisations. Il indique pendant ce temps une interface sur l'ordinateur indiquant l'état en cours de validation de la machine. 
+   3/ CyberUFR indique sur l'interface de l'ordinateur la validation de l'autorisation et démarre la session de l'utilisateur 
 
 # Le scenario suivant est interressant car il permet de montrer les objectifs des scenarios externes
 # (1) séparer les responsabilités système/acteur

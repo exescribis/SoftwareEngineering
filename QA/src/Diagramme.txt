@@ -26,6 +26,11 @@ $Surcharge:
 $ContenuPauvre:
   Le contenu du diagramme est trop pauvre pour que ce dernier soit réellement pertinent. Soit le diagramme manque de détails soit l'existence du diagramme ou plus simplement son indroduction dans un document pourrait être mise en cause ; c'est le cas si l'information contenue dans le diagramme peut être dérivée à partir d'autres éléments déjà présents dans le document et d'une certaine manière "n'apporte rien".
 
+$ContenuHeterogene:
+  Le contenu du diagramme est hétérogène et il n'est pas facile de comprendre quelle est la cohérence entre les différents éléments présentés.
+  Commentaire: Dans le cas de modèle non triviaux, un même modèle peut comporter trop d'élément pour étre représenté graphiquement en un seul diagramme est il est donc souhaitable de fournir plusieurs vues sur le modèles sous la forme de différents diagrammes. Chaque vue doit être consistente et correspondre à une intention particulière. La répartition des éléments dans les différents diagrammes doivent pouvoir être justifié.
+  Exemple: Si un modèle de cas d'utilisation est complexe, différents diagrammes de cas d'utilisation doivent certainement être créés. La manière de regrouper les différents cas d'utilisation en diagrammes doit pouvoir être justifié. 
+
 $TypeDeDiagramme:
   Le type de diagramme n'est pas explicite. 
   Commentaire: On peut par exemple considérer les types de diagrammes suivants: 

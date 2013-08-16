@@ -5,6 +5,9 @@ $Langage:
   Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
   Commentaire: Le niveau d'exigence en terme de qualité des textes dépend des artéfacts et de leur status. Les textes figurant dans des livrables sont des éléments dépassant le contexte de la sphére proche de l'auteur et une attention plus importante doit être apportées aux différents éléments de langages. 
 
+$Langues:
+  Des éléments en différentes langues cohabitent au sein d'une même phrase, d'un même texte ou d'un même identificateur, sans pour autant que cela soit justifié.
+
 $Orthographe:
   Le texte comporte une ou plusieurs fautes d'orthographe. 
   Commentaire: (cf $Langage).

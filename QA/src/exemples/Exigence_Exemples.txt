@@ -27,3 +27,5 @@
   badgeUnique: Une et une seule personne peut utiliser un même badge
   Administrateur et Superviseur possède un compte avec mot de passe
   Les ordinateurs présents dans les bâtiments sont eux aussi dotés d'un lecteur de badge
+  Remise Badge: Lorsqu'un badge est remis, la date et l'heure de remise sont indiquée / Durée Badge: Un bagde provisoire et possède une date-heure de fin de validité / Badge Provisoire: Un badge visiteur est valable une journée
+  Les utilisateurs du système sont très transitoirement des visiteurs.
