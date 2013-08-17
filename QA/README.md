@@ -5,30 +5,33 @@ RULE PACKAGES (20)
 * [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (2 rules)
 * [Classe](#classe) (23 rules)
 * [Deploiement](#deploiement) (1 rules)
-* [Diagramme](#diagramme) (9 rules)
-* [Document](#document) (7 rules)
+* [Diagramme](#diagramme) (10 rules)
+* [Document](#document) (19 rules)
 * [Etat](#etat) (21 rules)
 * [Exigence](#exigence) (10 rules)
 * [Livrable](#livrable) (17 rules)
 * [Nomenclature](#nomenclature) (22 rules)
-* [Scenario](#scenario) (20 rules)
+* [Scenario](#scenario) (23 rules)
 * [Sequence](#sequence) (1 rules)
 * [StyleEssentiel](#styleessentiel) (3 rules)
 * [Systeme](#systeme) (4 rules)
-* [TexteTechnique](#textetechnique) (35 rules)
+* [TexteTechnique](#textetechnique) (36 rules)
 * [TracabiliteExigence](#tracabiliteexigence) (2 rules)
 * [UMLModelio](#umlmodelio) (187 rules)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (428)
+RULES (445)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
 * [ActeurSujet](#acteursujet) from package [CasDUtilisation](#casdutilisation)
+* [Action](#action) from package [Scenario](#scenario)
 * [ActionAtomique](#actionatomique) from package [Scenario](#scenario)
 * [ActionConcrete](#actionconcrete) from package [Scenario](#scenario)
 * [ActionMetier](#actionmetier) from package [Scenario](#scenario)
+* [ActionVersPostcondition](#actionverspostcondition) from package [Scenario](#scenario)
+* [ActionVersPrecondition](#actionversprecondition) from package [Scenario](#scenario)
 * [AggregationNonJustifie](#aggregationnonjustifie) from package [Classe](#classe)
 * [AmbiguiteTransition](#ambiguitetransition) from package [Etat](#etat)
 * [ArticleInDefini](#articleindefini) from package [TexteTechnique](#textetechnique)
@@ -50,6 +53,7 @@ RULES (428)
 * [ConfusionEvenementAction](#confusionevenementaction) from package [Etat](#etat)
 * [ConfusionNomEtatEvenement](#confusionnometatevenement) from package [Etat](#etat)
 * [Connecteur](#connecteur) from package [Nomenclature](#nomenclature)
+* [ContenuHeterogene](#contenuheterogene) from package [Diagramme](#diagramme)
 * [ContenuPauvre](#contenupauvre) from package [Diagramme](#diagramme)
 * [Contexte](#contexte) from package [TexteTechnique](#textetechnique)
 * [Copyright](#copyright) from package [Livrable](#livrable)
@@ -88,12 +92,14 @@ RULES (428)
 * [HeritageActeur](#heritageacteur) from package [CasDUtilisation](#casdutilisation)
 * [Homogeneite](#homogeneite) from package [TexteTechnique](#textetechnique)
 * [HomogeneiteIdentificateurs](#homogeneiteidentificateurs) from package [Nomenclature](#nomenclature)
+* [HomogeneiteTitreSection](#homogeneitetitresection) from package [Document](#document)
 * [HypotheseNonValidee](#hypothesenonvalidee) from package [TexteTechnique](#textetechnique)
 * [Identificateur](#identificateur) from package [TexteTechnique](#textetechnique)
 * [IdentificateurExigence](#identificateurexigence) from package [Exigence](#exigence)
 * [ImbricationInutile](#imbricationinutile) from package [TexteTechnique](#textetechnique)
 * [IncludeMultiple](#includemultiple) from package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 * [Incoherence](#incoherence) from package [TexteTechnique](#textetechnique)
+* [IndexDesFigures](#indexdesfigures) from package [Document](#document)
 * [IntentionScenario](#intentionscenario) from package [Scenario](#scenario)
 * [InteractionProscrite](#interactionproscrite) from package [Nomenclature](#nomenclature)
 * [IntermediaireAction](#intermediaireaction) from package [Scenario](#scenario)
@@ -103,7 +109,9 @@ RULES (428)
 * [Justification](#justification) from package [TexteTechnique](#textetechnique)
 * [JustificationEtat](#justificationetat) from package [Etat](#etat)
 * [Langage](#langage) from package [TexteTechnique](#textetechnique)
-* [Legende](#legende) from package [Document](#document)
+* [Langues](#langues) from package [TexteTechnique](#textetechnique)
+* [LecturePlan](#lectureplan) from package [Document](#document)
+* [LegendeFigure](#legendefigure) from package [Document](#document)
 * [LimiteDuSysteme](#limitedusysteme) from package [Systeme](#systeme)
 * [LiteralEnumeration](#literalenumeration) from package [Valeur](#valeur)
 * [MAJ-MAJ](#maj-maj) from package [Nomenclature](#nomenclature)
@@ -334,6 +342,7 @@ RULES (428)
 * [NonAbstraction](#nonabstraction) from package [TexteTechnique](#textetechnique)
 * [NonHumain](#nonhumain) from package [CasDUtilisation](#casdutilisation)
 * [NonLivre](#nonlivre) from package [Livrable](#livrable)
+* [NumerotationSection](#numerotationsection) from package [Document](#document)
 * [ObjetClassifie](#objetclassifie) from package [Sequence](#sequence)
 * [Orthographe](#orthographe) from package [TexteTechnique](#textetechnique)
 * [OrthographeIdentificateur](#orthographeidentificateur) from package [Nomenclature](#nomenclature)
@@ -344,7 +353,10 @@ RULES (428)
 * [PasDeRelationEntreCU](#pasderelationentrecu) from package [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)
 * [PhraseMalConstruite](#phrasemalconstruite) from package [TexteTechnique](#textetechnique)
 * [Pipe](#pipe) from package [TexteTechnique](#textetechnique)
-* [PlanDesiquilibre](#plandesiquilibre) from package [Document](#document)
+* [PlanDesequilibre](#plandesequilibre) from package [Document](#document)
+* [PlanDesequilibreEnPages](#plandesequilibreenpages) from package [Document](#document)
+* [PlanDesequilibreEnProfondeur](#plandesequilibreenprofondeur) from package [Document](#document)
+* [PlanTropProfond](#plantropprofond) from package [Document](#document)
 * [Ponctuation](#ponctuation) from package [TexteTechnique](#textetechnique)
 * [Portrait](#portrait) from package [Nomenclature](#nomenclature)
 * [Precision](#precision) from package [TexteTechnique](#textetechnique)
@@ -353,11 +365,12 @@ RULES (428)
 * [Protocole](#protocole) from package [Deploiement](#deploiement)
 * [Puit](#puit) from package [Etat](#etat)
 * [Redondance](#redondance) from package [TexteTechnique](#textetechnique)
+* [ReferenceFigure](#referencefigure) from package [Document](#document)
 * [ReferenceScenario](#referencescenario) from package [Scenario](#scenario)
 * [Relation](#relation) from package [CasDUtilisation](#casdutilisation)
 * [RelationsCUIncoherentes](#relationscuincoherentes) from package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 * [RerefenceAmbigue](#rerefenceambigue) from package [TexteTechnique](#textetechnique)
-* [Resolution](#resolution) from package [Document](#document)
+* [ResolutionFigure](#resolutionfigure) from package [Document](#document)
 * [Responsabilites](#responsabilites) from package [Scenario](#scenario)
 * [ResultatConcret](#resultatconcret) from package [Valeur](#valeur)
 * [ResumeModifications](#resumemodifications) from package [Livrable](#livrable)
@@ -366,6 +379,8 @@ RULES (428)
 * [RoleAssociation](#roleassociation) from package [Classe](#classe)
 * [RoleClasse](#roleclasse) from package [Classe](#classe)
 * [RoleDansPatron](#roledanspatron) from package [Nomenclature](#nomenclature)
+* [SectionOrpheline](#sectionorpheline) from package [Document](#document)
+* [SectionTropProfonde](#sectiontropprofonde) from package [Document](#document)
 * [SequenceDActions](#sequencedactions) from package [Scenario](#scenario)
 * [SousExigence](#sousexigence) from package [Exigence](#exigence)
 * [SousTypageActeur](#soustypageacteur) from package [CasDUtilisation](#casdutilisation)
@@ -427,6 +442,8 @@ RULES (428)
 * [TexteSection](#textesection) from package [TexteTechnique](#textetechnique)
 * [TitreDiagramme](#titrediagramme) from package [Diagramme](#diagramme)
 * [TitreFigure](#titrefigure) from package [Document](#document)
+* [TitreHorsContexte](#titrehorscontexte) from package [Document](#document)
+* [TitreSectionNeutre](#titresectionneutre) from package [Document](#document)
 * [TransitionInitialeAutomatique](#transitioninitialeautomatique) from package [Etat](#etat)
 * [TransitionManquante](#transitionmanquante) from package [Etat](#etat)
 * [Trigramme](#trigramme) from package [TexteTechnique](#textetechnique)
@@ -754,7 +771,7 @@ From package [Deploiement](#deploiement)
 
 Diagramme
 ====================================================
-9 rules: [NomDiagramme](#nomdiagramme) [TitreDiagramme](#titrediagramme) [Densite](#densite) [Disposition](#disposition) [Couleurs](#couleurs) [Chevauchements](#chevauchements) [Surcharge](#surcharge) [ContenuPauvre](#contenupauvre) [TypeDeDiagramme](#typedediagramme) 
+10 rules: [NomDiagramme](#nomdiagramme) [TitreDiagramme](#titrediagramme) [Densite](#densite) [Disposition](#disposition) [Couleurs](#couleurs) [Chevauchements](#chevauchements) [Surcharge](#surcharge) [ContenuPauvre](#contenupauvre) [ContenuHeterogene](#contenuheterogene) [TypeDeDiagramme](#typedediagramme) 
 
 NomDiagramme
 -------------------
@@ -806,6 +823,16 @@ From package [Diagramme](#diagramme)
 
   Le contenu du diagramme est trop pauvre pour que ce dernier soit réellement pertinent. Soit le diagramme manque de détails soit l'existence du diagramme ou plus simplement son indroduction dans un document pourrait être mise en cause ; c'est le cas si l'information contenue dans le diagramme peut être dérivée à partir d'autres éléments déjà présents dans le document et d'une certaine manière "n'apporte rien".
 
+ContenuHeterogene
+-------------------
+From package [Diagramme](#diagramme)  
+
+  Le contenu du diagramme est hétérogène et il n'est pas facile de comprendre quelle est la cohérence entre les différents éléments présentés.
+
+* **Commentaire:**  Dans le cas de modèle non triviaux, un même modèle peut comporter trop d'élément pour étre représenté graphiquement en un seul diagramme est il est donc souhaitable de fournir plusieurs vues sur le modèles sous la forme de différents diagrammes. Chaque vue doit être consistente et correspondre à une intention particulière. La répartition des éléments dans les différents diagrammes doivent pouvoir être justifié.
+
+* **Exemple:**  Si un modèle de cas d'utilisation est complexe, différents diagrammes de cas d'utilisation doivent certainement être créés. La manière de regrouper les différents cas d'utilisation en diagrammes doit pouvoir être justifié. 
+
 TypeDeDiagramme
 -------------------
 From package [Diagramme](#diagramme)  
@@ -837,7 +864,7 @@ From package [Diagramme](#diagramme)
 
 Document
 ====================================================
-7 rules: [EnteteDocument](#entetedocument) [PlanDesiquilibre](#plandesiquilibre) [TitreFigure](#titrefigure) [DescriptionFigure](#descriptionfigure) [Legende](#legende) [TailleFigure](#taillefigure) [Resolution](#resolution) 
+19 rules: [EnteteDocument](#entetedocument) [PlanDesequilibre](#plandesequilibre) [PlanDesequilibreEnPages](#plandesequilibreenpages) [PlanDesequilibreEnProfondeur](#plandesequilibreenprofondeur) [PlanTropProfond](#plantropprofond) [SectionTropProfonde](#sectiontropprofonde) [SectionOrpheline](#sectionorpheline) [LecturePlan](#lectureplan) [HomogeneiteTitreSection](#homogeneitetitresection) [TitreSectionNeutre](#titresectionneutre) [TitreHorsContexte](#titrehorscontexte) [NumerotationSection](#numerotationsection) [IndexDesFigures](#indexdesfigures) [TitreFigure](#titrefigure) [DescriptionFigure](#descriptionfigure) [ReferenceFigure](#referencefigure) [LegendeFigure](#legendefigure) [TailleFigure](#taillefigure) [ResolutionFigure](#resolutionfigure) 
 
 EnteteDocument
 -------------------
@@ -845,17 +872,129 @@ From package [Document](#document)
 
   Le titre, sous titre, ou plus généralement l'identification du document est manquant, inapproprié ou non conforme.
 
-PlanDesiquilibre
+* **Commentaire:**  Dans certains contextes l'entête du document doit suivre un certain format et standard imposé par la structure dans laquelle ce document est produit et/ou évalué.
+
+* **Exemple:**  Pour un rapport de stage, on s'attend à trouver le nom du stagiaire, l'entreprise d'accueil, la période du stage, le contexte dans lequel il s'est déroulé, le titre ou l'identificateur du projet, etc. 
+
+* **Exemple:**  Pour une thèse de doctorat, le format est généralement imposé par l'université d'accueil et l'entête du document doit être conforme aux règles établies. 
+
+PlanDesequilibre
 -------------------
 From package [Document](#document)  
 
-  Le plan du document doit être mieux équilibré en terme de longueur relative des sections.
+  Le plan est deséquilibré soit en nombre de pages (cf $PlanDesequilibreEnPages), soit en termes de profondeur (cf $PlanDesequilibreEnProfondeur).
+
+PlanDesequilibreEnPages
+-------------------
+From package [Document](#document)  
+
+  Le plan du document doit être mieux équilibré en terme de longueur relative des sections en termes de pages. 
+
+* **Commentaire:**  Dans la pluspart des documents les sections rédigées qui constituent le corps du document doivent être de taille relativement similaire en nombre de pages. Sont exclues de cette règle les sections particulières comme les annexes, les introductions, les conclusions, les sections techniques telles que les abbréviations, les sections automatiquement générées par un outil, etc.
+
+* **Commentaire:**  Lors de l'évaluation d'un plan (et plus généralement d'un document), vérifier que le plan est équilibré est une opération aisé. Ce défaut sera donc souvent détecté si l'on n'y prend garde.
+
+* **Exemple:**  Sur un document de 70 pages on évitera par exemple d'avoir une section 3 rédigée de 50 pages 
+
+(section 3) suivie d'une section 4 de 6 pages car cela refléte souvent une mauvaise organisation du contenu. Ici la section 3 représente plus des 2/3 du documents et elle devrait sans doute être scindée. Les sous sections 3.1, 3.2, 3.3 pourrait être "remontées" d'un niveau (e.g. 3, 4, 5), quitte à ajouter auparavant une section expliquant le contenu de chacune de ces sections. Une telle opération peut régler les problèmes associés à un plan trop profond (cf $PlanTropProfond) ou à un plan déséqulibré en profondeur (cf $PlanDesequilibreEnProfondeur).
+
+PlanDesequilibreEnProfondeur
+-------------------
+From package [Document](#document)  
+
+  La hierarchie des sections et sous sections n'est pas suffisemment "balancée" et certaines sous sections sont par exemple profondes alors que d'autres sont très plates.
+
+* **Exemple:**  La section 2 comporte 2.1 et 2.2 alors que la section 3 comporte des sous sections telles que 3.1.2.1.a 
+
+* **Commentaire:**  ce défaut survient souvent comme une conséquence d'un plan déséquilibré en nombre de pages (cf $PlanDesequilibreEnPages).
+
+PlanTropProfond
+-------------------
+From package [Document](#document)  
+
+  Le plan du document tel qu'il est présenté révèle le document dans une trop grande profondeur.
+
+* **Exemple:**  Le plan montre des sections telles que 2.4.2.3.2.a. Même si toute les sections atteignent ce niveau de profondeur, celle-ci est trop importante. 
+
+* **Commentaire:**  Les traitements de textes permettent généralement de limiter le nombre de niveaux affichés dans le plan du document. Via ce mécanisme de filtrage, le document peut comporter des sous sections profondes (cf $SectionTropProfonde) sans que le plan soit lui même trop profond. 
+
+* **Commentaire:**  Pour une lecture du plan aisée (cf $LecturePlan) on ne devrait pas afficher plus de 2 ou 3 niveaux de profondeurs dans les sections. 
+
+* **Commentaire:**  Si le document est un document de référence, cette règle ne s'applique peut être pas car le plan peut faire office d'index et peut être utilisé pour montrer l'intégralité des sous sections du document et des concepts associés.
+
+SectionTropProfonde
+-------------------
+From package [Document](#document)  
+
+  Le document comporte une ou des sections trop profondes.
+
+* **Exemple:**  S'il ne s'agit pas d'un document de référence, une section 2.4.2.3.2.a reflête certainement une structuration trop profonde.
+
+* **Commentaire:**  Le plan du document peut masquer des sections profondes (cf $PlanTropProfond).
+
+SectionOrpheline
+-------------------
+From package [Document](#document)  
+
+  Une sous section ne peut pas être seule à l'intérieure d'une section.
+
+* **Exemple:**  Dans la section 2.3 la section 2.3.1, si elle existe, ne peut être seule. On devrait avoir une sous section 2.3.2 et eventuellement d'autres sous-sections au même niveau (e.g. 2.3.3, 2.3.4, etc.).
+
+LecturePlan
+-------------------
+From package [Document](#document)  
+
+  Un ou plusieurs defauts rendent le plan difficilement "lisible".
+
+* **Commentaire:**  Le plan décrit l'architecture du document et doit rendre très explicite à la fois sa structure, mais aussi via les différents termes utilisés dans les titres des sous sections, les concepts intervenants dans le document.
+
+HomogeneiteTitreSection
+-------------------
+From package [Document](#document)  
+
+  Les titres des sections ne sont pas homogénes.
+
+* **Exemple:**  La présence ou non d'articles doit être uniforme entre sections similaires. Ce n'est pas le cas ici pour les titres suivants: "3.1 Conception", "3.2 La réalisation", "3.3 Test de l'application". 
+
+TitreSectionNeutre
+-------------------
+From package [Document](#document)  
+
+  Le titre d'une ou plusieurs sections n'est pas neutre et comporte par exemple une forme interrogative ou affirmative.
+
+* **Exemple:**  "3.2 Comment le logiciel a été deployé ?"
+
+* **Commentaire:**  Les formes interrogatives réthoriques sont généralement à proscrire dans les documents techniques. 
+
+TitreHorsContexte
+-------------------
+From package [Document](#document)  
+
+  Le titre d'une section ou plusieurs sections sont difficiles à comprendre hors contexte ou dans le seul contexte du plan.
+
+* **Commentaire:**  il est généralement préférable d'éliminer l'utilisation de sigles dans le titre d'une section si ce sigle n'a pas été défini dans le résumé du document ou à un niveau global. La lecture du plan est en effet rendue plus difficile (cf $LecturePlan) alors que l'on devrait pouvoir à partir du plan comprendre l'architecture et le contenu global du document.
+
+* **Exemple:**  "3.2 Intégration à UOP" pourrait être remplacée par "Intégration dans l'Unité Opérationelle de Planification (UOP)".
+
+NumerotationSection
+-------------------
+From package [Document](#document)  
+
+  La numérotation des sections comporte un ou plusieurs défauts.
+
+* **Exemple:**  2.3.a suivi de 2.3.2
+
+IndexDesFigures
+-------------------
+From package [Document](#document)  
+
+  Le document ne comporte pas d'index des figures alors que cet élément semble pertinent pour ce document.
 
 TitreFigure
 -------------------
 From package [Document](#document)  
 
-  Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés, ou explicite par exemple parceque le titre de la figure sera difficile à interpréter dans la liste des figures par exemple.
+  Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés, ou explicite par exemple parceque le titre de la figure sera difficile à interpréter dans l'index des figures par exemple.
 
 DescriptionFigure
 -------------------
@@ -863,7 +1002,13 @@ From package [Document](#document)
 
   Une ou des figures ne sont pas documentée(s) ou décrite(s) ; il semble utile de décrire pourquoi telle ou telle figure est présentée, quels sont les éléments qui y sont représentés, pourquoi ceux-ci ont été séléctionnés, etc.
 
-Legende
+ReferenceFigure
+-------------------
+From package [Document](#document)  
+
+  Une ou plusieurs figures ne sont pas référencées dans le texte.
+
+LegendeFigure
 -------------------
 From package [Document](#document)  
 
@@ -875,11 +1020,11 @@ From package [Document](#document)
 
   Certains éléments de la figure sont inadaptés et sont soit trop gros, soit trop petits, nuisant ainsi à la lisibilité de la figure.
 
-Resolution
+ResolutionFigure
 -------------------
 From package [Document](#document)  
 
-  La résolution de l'image ou de la figure n'est pas satisfaisant
+  La résolution de l'image ou de la figure n'est pas satisfaisante.
 
 
 Etat
@@ -1414,7 +1559,7 @@ From package [Nomenclature](#nomenclature)
 
 Scenario
 ====================================================
-20 rules: [NomScenario](#nomscenario) [NomenclatureScenario](#nomenclaturescenario) [NomScenarioInstantie](#nomscenarioinstantie) [IntentionScenario](#intentionscenario) [SequenceDActions](#sequencedactions) [SujetAction](#sujetaction) [SujetInstancie](#sujetinstancie) [IntermediaireAction](#intermediaireaction) [ActionAtomique](#actionatomique) [ActionConcrete](#actionconcrete) [ParametreConcret](#parametreconcret) [ActionMetier](#actionmetier) [MessageInexplique](#messageinexplique) [TypeDeMessage](#typedemessage) [ValeurDeRetour](#valeurderetour) [RetourInexplique](#retourinexplique) [RetourManquant](#retourmanquant) [Responsabilites](#responsabilites) [ReferenceScenario](#referencescenario) [PresenceObjet](#presenceobjet) 
+23 rules: [NomScenario](#nomscenario) [NomenclatureScenario](#nomenclaturescenario) [NomScenarioInstantie](#nomscenarioinstantie) [IntentionScenario](#intentionscenario) [SequenceDActions](#sequencedactions) [Action](#action) [ActionVersPrecondition](#actionversprecondition) [ActionVersPostcondition](#actionverspostcondition) [SujetAction](#sujetaction) [SujetInstancie](#sujetinstancie) [IntermediaireAction](#intermediaireaction) [ActionAtomique](#actionatomique) [ActionConcrete](#actionconcrete) [ParametreConcret](#parametreconcret) [ActionMetier](#actionmetier) [MessageInexplique](#messageinexplique) [TypeDeMessage](#typedemessage) [ValeurDeRetour](#valeurderetour) [RetourInexplique](#retourinexplique) [RetourManquant](#retourmanquant) [Responsabilites](#responsabilites) [ReferenceScenario](#referencescenario) [PresenceObjet](#presenceobjet) 
 
 NomScenario
 -------------------
@@ -1447,6 +1592,24 @@ SequenceDActions
 From package [Scenario](#scenario)  
 
   Le scenario n'est pas décrit sous forme d'une séquence d'actions clairement identifiables et repréable au sein d'une séquence.
+
+Action
+-------------------
+From package [Scenario](#scenario)  
+
+  La phrase ne correspond pas à une action du système ou d'un acteur (cf $SequenceDActions)(cf $SujetAction).
+
+ActionVersPrecondition
+-------------------
+From package [Scenario](#scenario)  
+
+  La description du scenario comporte des éléments qui semblent relever des préconditions associés au scénario, plutôt qu'à des actions.
+
+ActionVersPostcondition
+-------------------
+From package [Scenario](#scenario)  
+
+  La description du scenario comporte des éléments qui semblent relever des postconditions associés au scénario, plutôt qu'à des actions.
 
 SujetAction
 -------------------
@@ -1630,7 +1793,7 @@ From package [Systeme](#systeme)
 
 TexteTechnique
 ====================================================
-35 rules: [Langage](#langage) [Orthographe](#orthographe) [Ponctuation](#ponctuation) [Grammaire](#grammaire) [Style](#style) [Formatage](#formatage) [Abbreviation](#abbreviation) [ArticleInDefini](#articleindefini) [RerefenceAmbigue](#rerefenceambigue) [Vocabulaire](#vocabulaire) [Glossaire](#glossaire) [TermeMetier](#termemetier) [Identificateur](#identificateur) [Temps](#temps) [Contexte](#contexte) [PhraseMalConstruite](#phrasemalconstruite) [ImbricationInutile](#imbricationinutile) [TexteSection](#textesection) [Trigramme](#trigramme) [Justification](#justification) [Subjectif](#subjectif) [Precision](#precision) [Redondance](#redondance) [Paraphrase](#paraphrase) [Incoherence](#incoherence) [Completude](#completude) [Invalide](#invalide) [Homogeneite](#homogeneite) [Exemple](#exemple) [Sujet](#sujet) [Complexite](#complexite) [Interpretation](#interpretation) [NonAbstraction](#nonabstraction) [HypotheseNonValidee](#hypothesenonvalidee) [Pipe](#pipe) 
+36 rules: [Langage](#langage) [Langues](#langues) [Orthographe](#orthographe) [Ponctuation](#ponctuation) [Grammaire](#grammaire) [Style](#style) [Formatage](#formatage) [Abbreviation](#abbreviation) [ArticleInDefini](#articleindefini) [RerefenceAmbigue](#rerefenceambigue) [Vocabulaire](#vocabulaire) [Glossaire](#glossaire) [TermeMetier](#termemetier) [Identificateur](#identificateur) [Temps](#temps) [Contexte](#contexte) [PhraseMalConstruite](#phrasemalconstruite) [ImbricationInutile](#imbricationinutile) [TexteSection](#textesection) [Trigramme](#trigramme) [Justification](#justification) [Subjectif](#subjectif) [Precision](#precision) [Redondance](#redondance) [Paraphrase](#paraphrase) [Incoherence](#incoherence) [Completude](#completude) [Invalide](#invalide) [Homogeneite](#homogeneite) [Exemple](#exemple) [Sujet](#sujet) [Complexite](#complexite) [Interpretation](#interpretation) [NonAbstraction](#nonabstraction) [HypotheseNonValidee](#hypothesenonvalidee) [Pipe](#pipe) 
 
 Langage
 -------------------
@@ -1639,6 +1802,12 @@ From package [TexteTechnique](#textetechnique)
   Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
 
 * **Commentaire:**  Le niveau d'exigence en terme de qualité des textes dépend des artéfacts et de leur status. Les textes figurant dans des livrables sont des éléments dépassant le contexte de la sphére proche de l'auteur et une attention plus importante doit être apportées aux différents éléments de langages. 
+
+Langues
+-------------------
+From package [TexteTechnique](#textetechnique)  
+
+  Des éléments en différentes langues cohabitent au sein d'une même phrase, d'un même texte ou d'un même identificateur, sans pour autant que cela soit justifié.
 
 Orthographe
 -------------------
@@ -3330,7 +3499,7 @@ From package [Valeur](#valeur)
 
   L'utilisation de "codes" ne semble pas correspondre à la réalité du métier ou peut impliquer une charge cognitive inutilement élevée dans le cas d'interfaces personne systeme. 
 
-  Exemple:  Par exemple un code est demandé à un acteur dans une interaction personne système sans que cet utilisateur aie, de part ses caractéristique et celle de son rôle, l'ensemble des codes "en tête".
+* **Exemple:**  Par exemple un code est demandé à un acteur dans une interaction personne système sans que cet utilisateur aie, de part ses caractéristique et celle de son rôle, l'ensemble des codes "en tête".
 
 UniteValeur
 -------------------
