@@ -1,22 +1,26 @@
 #=Exigence
 
 $NomExigence:
-  Le nom de l'exigence ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans ce nom.
+  Le nom de l'exigence doit faire clairement référence à une exigence, le type de cette exigence doit si possible transparaître dans le nom ; le nom doit autant que possible faire référence à des termes défini dans les glossaires.
+  Commentaire: Il est généralement préférable de donner aux exigences un nom plutôt qu'un numéro car le nom est significatif. Par ailleurs utiliser un numéro implique de garder un "compteur" pour s'assurer qu'un numéro ne sera pas réutilisé.   
+  
+$NomenclatureExigence:
+  Le nom d'un exigence doit être de préférence en style MajMin (cf $MajMin).
   
 $ExigenceIncoherente:
-  L'exigence est incohérente avec une autre exigence decrite avant ou après.
+  L'exigence est incohérente avec une autre exigence décrite avant ou après.
   
 $ExigenceInvalide:
   L'exigence n'est pas ou ne semble pas être valide par rapport aux besoins exprimés par le client.
 
 $SurExgigence:
-  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client  ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
+  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
   
 $SousExigence:
-  La l'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
+  L'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
 
 $StatusNonDefinitif:
-  L'utilisation de la valeur "définitive" pour l'attribut stabilité doit être reservée aux versions revisées, stables, et dont la qualité à été prouvée.
+  L'utilisation de la valeur "définitive" pour l'attribut "maturité" doit être reservée aux versions revisées, stables, et dont la qualité à été prouvée.
   
 $ProprieteExigenceInadaptee:
   La valeur de la propriété associée à l'exigence semble inadaptée.
