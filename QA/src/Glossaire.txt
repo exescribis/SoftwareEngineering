@@ -32,12 +32,36 @@ $ReferenceTermeInconnu:
   
 $DefinitionMultipleTerme:
   Un terme est défini plusieurs fois dans un même glossaire.
+  Commentaire: L'objectif d'un glossaire est de définir les termes de manière non ambigüe, en tout cas dans le cadre d'un glossaire et il est donc nécessaire de n'avoir qu'une seule définition.
+  
+$DefinitionAmbigueTerme:
+  La définition associée au terme semble ambigue ou fait référence à difféents sens. Une signification unique et précise doit être donnée.
+  Commentaire: Dans un dictionnaire plusieurs significations sont traditionnellement associées à un terme, car la pluspart des termes sont polysémiques. Dans un glossaire, on cherche au contraire à éviter les ambiguités et à indiquer de manière explicite quelle est la signification retenue dans le contexte associé à l'utilisation du glossaire. Un glossaire est un vocabulaire contrôlé.
+# Application : Une application est à la fois une activité pour laquelle des moyens informatiques sont utilisés et le moyen informatique utilisé pour l'activité en question
+
 
 $TermesCroises:
   Les definitions des termes dans un glossaire doivent faire référence aux autres termes de ce glossaire ou d'autres glossaires.
+#  !!!???
+#   Par ailleurs il y a relatiment peu de références dans la définition des termes, ce qui indique un symptome negatif.
+
   
 $DefinitionTermeTropGenerale:
   La définition proposée pour un terme est trop générale par rapport au contexte associé au glossaire dans lequel le terme est défini.
 
 $TermesAlternatifs:
   Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le cadre du projet considéré. 
+  
+# !!!??? 
+#  Actif -> Qui est activé.   (sans définition d'activé)  
+# Ne permet pas de savoir de quoi il s'agit car "activé" n'est pas défini.
+
+# !!!???
+#  Alerté -> Avertir ...
+#  l'état mot et le verbe ne correspondent pas éxactemetnt à la même chose
+  
+#!!!???
+#  Capteurs : Organe qui élabore, à partir d'une grandeur physique, une autre grandeur physique, souvent de nature électrique, utilisable à des fins de mesure ou de commande.
+#  Il est plus utile de définir le vocabulaire propre au domaine, et encore plus utile propre au système à développer.
+  
+
