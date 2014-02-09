@@ -39,5 +39,5 @@ $TermesCroises:
 $DefinitionTermeTropGenerale:
   La définition proposée pour un terme est trop générale par rapport au contexte associé au glossaire dans lequel le terme est défini.
 
-$TermeAlternatifs:
+$TermesAlternatifs:
   Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le cadre du projet considéré. 
