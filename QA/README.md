@@ -1,4 +1,4 @@
-RULE PACKAGES (20)
+RULE PACKAGES (21)
 =================
 * [CasDUtilisation](#casdutilisation) (12 rules)
 * [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
@@ -9,6 +9,7 @@ RULE PACKAGES (20)
 * [Document](#document) (19 rules)
 * [Etat](#etat) (21 rules)
 * [Exigence](#exigence) (10 rules)
+* [Glossaire](#glossaire) (13 rules)
 * [Livrable](#livrable) (17 rules)
 * [Nomenclature](#nomenclature) (22 rules)
 * [Scenario](#scenario) (23 rules)
@@ -21,7 +22,7 @@ RULE PACKAGES (20)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (445)
+RULES (458)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -47,6 +48,7 @@ RULES (445)
 * [CardinaliteInversee](#cardinaliteinversee) from package [Classe](#classe)
 * [CardinaliteNM](#cardinalitenm) from package [Classe](#classe)
 * [Chevauchements](#chevauchements) from package [Diagramme](#diagramme)
+* [ClassificationTerme](#classificationterme) from package [Glossaire](#glossaire)
 * [Completude](#completude) from package [TexteTechnique](#textetechnique)
 * [Complexite](#complexite) from package [TexteTechnique](#textetechnique)
 * [CompositionUnique](#compositionunique) from package [Classe](#classe)
@@ -62,6 +64,9 @@ RULES (445)
 * [Date](#date) from package [Nomenclature](#nomenclature)
 * [DecompositionSousSysteme](#decompositionsoussysteme) from package [Systeme](#systeme)
 * [DefautDejaMentionne](#defautdejamentionne) from package [Livrable](#livrable)
+* [DefinitionMultipleTerme](#definitionmultipleterme) from package [Glossaire](#glossaire)
+* [DefinitionTerme](#definitionterme) from package [Glossaire](#glossaire)
+* [DefinitionTermeTropGenerale](#definitiontermetropgenerale) from package [Glossaire](#glossaire)
 * [DelaiLivrable](#delailivrable) from package [Livrable](#livrable)
 * [Deltas](#deltas) from package [Livrable](#livrable)
 * [DeltasGraphiques](#deltasgraphiques) from package [Livrable](#livrable)
@@ -81,6 +86,7 @@ RULES (445)
 * [ExigenceInvalide](#exigenceinvalide) from package [Exigence](#exigence)
 * [ExigencesMultiples](#exigencesmultiples) from package [Exigence](#exigence)
 * [FormatLivrable](#formatlivrable) from package [Livrable](#livrable)
+* [FormatReferenceTerme](#formatreferenceterme) from package [Glossaire](#glossaire)
 * [FormatValeur](#formatvaleur) from package [Valeur](#valeur)
 * [Formatage](#formatage) from package [TexteTechnique](#textetechnique)
 * [FormeNominale](#formenominale) from package [Nomenclature](#nomenclature)
@@ -331,6 +337,7 @@ RULES (445)
 * [NomenclatureCU](#nomenclaturecu) from package [CasDUtilisation](#casdutilisation)
 * [NomenclatureClasse](#nomenclatureclasse) from package [Classe](#classe)
 * [NomenclatureEtat](#nomenclatureetat) from package [Etat](#etat)
+* [NomenclatureGlossaire](#nomenclatureglossaire) from package [Glossaire](#glossaire)
 * [NomenclatureLivrable](#nomenclaturelivrable) from package [Livrable](#livrable)
 * [NomenclatureMethode](#nomenclaturemethode) from package [Classe](#classe)
 * [NomenclatureObjet](#nomenclatureobjet) from package [Classe](#classe)
@@ -338,6 +345,7 @@ RULES (445)
 * [NomenclatureParametre](#nomenclatureparametre) from package [Classe](#classe)
 * [NomenclatureRole](#nomenclaturerole) from package [Classe](#classe)
 * [NomenclatureScenario](#nomenclaturescenario) from package [Scenario](#scenario)
+* [NomenclatureTerme](#nomenclatureterme) from package [Glossaire](#glossaire)
 * [NomenclatureTransition](#nomenclaturetransition) from package [Etat](#etat)
 * [NonAbstraction](#nonabstraction) from package [TexteTechnique](#textetechnique)
 * [NonHumain](#nonhumain) from package [CasDUtilisation](#casdutilisation)
@@ -367,6 +375,9 @@ RULES (445)
 * [Redondance](#redondance) from package [TexteTechnique](#textetechnique)
 * [ReferenceFigure](#referencefigure) from package [Document](#document)
 * [ReferenceScenario](#referencescenario) from package [Scenario](#scenario)
+* [ReferenceTermeInconnu](#referencetermeinconnu) from package [Glossaire](#glossaire)
+* [ReferenceTermePrincipal](#referencetermeprincipal) from package [Glossaire](#glossaire)
+* [ReferenceVersTerme](#referenceversterme) from package [Glossaire](#glossaire)
 * [Relation](#relation) from package [CasDUtilisation](#casdutilisation)
 * [RelationsCUIncoherentes](#relationscuincoherentes) from package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 * [RerefenceAmbigue](#rerefenceambigue) from package [TexteTechnique](#textetechnique)
@@ -438,7 +449,10 @@ RULES (445)
 * [SyntaxeTransition](#syntaxetransition) from package [Etat](#etat)
 * [TailleFigure](#taillefigure) from package [Document](#document)
 * [Temps](#temps) from package [TexteTechnique](#textetechnique)
+* [TermeAGlossaire](#termeaglossaire) from package [Glossaire](#glossaire)
+* [TermeAlternatifs](#termealternatifs) from package [Glossaire](#glossaire)
 * [TermeMetier](#termemetier) from package [TexteTechnique](#textetechnique)
+* [TermesCroises](#termescroises) from package [Glossaire](#glossaire)
 * [TexteSection](#textesection) from package [TexteTechnique](#textetechnique)
 * [TitreDiagramme](#titrediagramme) from package [Diagramme](#diagramme)
 * [TitreFigure](#titrefigure) from package [Document](#document)
@@ -484,7 +498,7 @@ NomenclatureActeur
 -------------------
 From package [CasDUtilisation](#casdutilisation)  
 
-  Les nom des acteurs doivent être de préférences en MajMin (cf $MajMin).
+  Les nom des acteurs doivent être de préférence en MajMin (cf $MajMin).
 
 NomCU
 -------------------
@@ -1249,6 +1263,95 @@ ExigencesMultiples
 From package [Exigence](#exigence)  
 
   Le texte fait référence à plusieurs exigences simultanément et/ou les descriptions de ces exigences devraient être séparées.
+
+
+Glossaire
+====================================================
+13 rules: [NomenclatureGlossaire](#nomenclatureglossaire) [NomenclatureTerme](#nomenclatureterme) [DefinitionTerme](#definitionterme) [TermeAGlossaire](#termeaglossaire) [ClassificationTerme](#classificationterme) [ReferenceVersTerme](#referenceversterme) [FormatReferenceTerme](#formatreferenceterme) [ReferenceTermePrincipal](#referencetermeprincipal) [ReferenceTermeInconnu](#referencetermeinconnu) [DefinitionMultipleTerme](#definitionmultipleterme) [TermesCroises](#termescroises) [DefinitionTermeTropGenerale](#definitiontermetropgenerale) [TermeAlternatifs](#termealternatifs) 
+
+NomenclatureGlossaire
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Le nom des glossaires doivent être de préférence en style MajMin (cf $MajMin).
+
+NomenclatureTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Le nom d'un terme doit être de préférence en style MajMin (cf $MajMin).
+
+* **Commentaire:**  Cette convention peut être fort utile pour faire ressortir dans un texte l'utilisation des termes définis dans un glossaire et donc pour renforcer le fait que ce terme à été utilisé de manière consciente et raisonnée.   
+
+DefinitionTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  La définition d'un terme doit être relativement courte et concise et écrite dans un style similaire à celui que l'on pourrait trouver dans un dictionnaire. Généralement une telle définition commence par une forme nominale définissant la nature du terme. Ce n'est pas une phrase avec un verbe.
+
+* **Exemple:**  Si un verbe est défini une définition pourrait commencer par "action de ...". S'il s'agit d'un participe passé, la définition pourrait commercer par "état ...". S'il s'agit d'un concept ou d'un objet, celui-ci est catégorisé par rapport à une taxonomie supérieur. Par exemple une "fourchette" pourrait être défini comme "ustensile permettant ...".
+
+TermeAGlossaire
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Un ou des termes devraient être ajoutés dans l'un des glossaires dans la mesure où s'agit d'un terme spécifique ou d'un concept important.
+
+ClassificationTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Le terme dans lequel le glossaire apparait n'est pas le plus approprié. 
+
+ReferenceVersTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Une ou plusieurs expressions correspondent à des termes dans le glossaire (ou à des synonymes de ces termes) et devraient donc être remplacé par une référence vers ce terme (principal) (cf $FormatReferenceTerme).
+
+FormatReferenceTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Lorsqu'un terme défini dans un glossaire est utilisé dans un texte une référence vers ce terme doit être créé sous la forme du terme tel que défini dans le glossaire et entre crochets. Dans le cas de termes au pluriel la marque du pluriel suivra immédiatement la référence. Les cas particuliers pourront être traités grace aux "alternatives" associés à un terme dans un glossaire.
+
+* **Exemple:**  Les [Terme]s sont dans des [GlossairePredefini]s mais ce n'est qu'un [Exemple]. 
+
+ReferenceTermePrincipal
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Les références à des termes du glossaire doivent référencer le terme principal plutôt que ses alternatives. 
+
+ReferenceTermeInconnu
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Un terme est référencé mais n'est défini dans aucun glossaire.
+
+DefinitionMultipleTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Un terme est défini plusieurs fois dans un même glossaire.
+
+TermesCroises
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Les definitions des termes dans un glossaire doivent faire référence aux autres termes de ce glossaire ou d'autres glossaires.
+
+DefinitionTermeTropGenerale
+-------------------
+From package [Glossaire](#glossaire)  
+
+  La définition proposée pour un terme est trop générale par rapport au contexte associé au glossaire dans lequel le terme est défini.
+
+TermeAlternatifs
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le cadre du projet considéré. 
 
 
 Livrable

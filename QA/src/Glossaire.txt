@@ -1,0 +1,43 @@
+#=Glossaire
+
+$NomenclatureGlossaire:
+  Le nom des glossaires doivent être de préférence en style MajMin (cf $MajMin).
+  
+$NomenclatureTerme:
+  Le nom d'un terme doit être de préférence en style MajMin (cf $MajMin).
+  Commentaire: Cette convention peut être fort utile pour faire ressortir dans un texte l'utilisation des termes définis dans un glossaire et donc pour renforcer le fait que ce terme à été utilisé de manière consciente et raisonnée.   
+  
+$DefinitionTerme:
+  La définition d'un terme doit être relativement courte et concise et écrite dans un style similaire à celui que l'on pourrait trouver dans un dictionnaire. Généralement une telle définition commence par une forme nominale définissant la nature du terme. Ce n'est pas une phrase avec un verbe.
+  Exemples: Si un verbe est défini une définition pourrait commencer par "action de ...". S'il s'agit d'un participe passé, la définition pourrait commercer par "état ...". S'il s'agit d'un concept ou d'un objet, celui-ci est catégorisé par rapport à une taxonomie supérieur. Par exemple une "fourchette" pourrait être défini comme "ustensile permettant ...".
+    
+$TermeAGlossaire:
+  Un ou des termes devraient être ajoutés dans l'un des glossaires dans la mesure où s'agit d'un terme spécifique ou d'un concept important.
+  
+$ClassificationTerme:
+  Le terme dans lequel le glossaire apparait n'est pas le plus approprié. 
+  
+$ReferenceVersTerme:
+  Une ou plusieurs expressions correspondent à des termes dans le glossaire (ou à des synonymes de ces termes) et devraient donc être remplacé par une référence vers ce terme (principal) (cf $FormatReferenceTerme).
+
+$FormatReferenceTerme:
+  Lorsqu'un terme défini dans un glossaire est utilisé dans un texte une référence vers ce terme doit être créé sous la forme du terme tel que défini dans le glossaire et entre crochets. Dans le cas de termes au pluriel la marque du pluriel suivra immédiatement la référence. Les cas particuliers pourront être traités grace aux "alternatives" associés à un terme dans un glossaire.
+  Exemples: Les [Terme]s sont dans des [GlossairePredefini]s mais ce n'est qu'un [Exemple]. 
+
+$ReferenceTermePrincipal:
+  Les références à des termes du glossaire doivent référencer le terme principal plutôt que ses alternatives. 
+
+$ReferenceTermeInconnu:
+  Un terme est référencé mais n'est défini dans aucun glossaire.
+  
+$DefinitionMultipleTerme:
+  Un terme est défini plusieurs fois dans un même glossaire.
+
+$TermesCroises:
+  Les definitions des termes dans un glossaire doivent faire référence aux autres termes de ce glossaire ou d'autres glossaires.
+  
+$DefinitionTermeTropGenerale:
+  La définition proposée pour un terme est trop générale par rapport au contexte associé au glossaire dans lequel le terme est défini.
+
+$TermeAlternatifs:
+  Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le cadre du projet considéré. 
