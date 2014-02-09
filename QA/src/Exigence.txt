@@ -1,7 +1,7 @@
 #=Exigence
 
-$IdentificateurExigence:
-  L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.
+$NomExigence:
+  Le nom de l'exigence ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans ce nom.
   
 $ExigenceIncoherente:
   L'exigence est incohérente avec une autre exigence decrite avant ou après.
