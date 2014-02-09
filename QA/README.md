@@ -8,8 +8,8 @@ RULE PACKAGES (21)
 * [Diagramme](#diagramme) (10 rules)
 * [Document](#document) (19 rules)
 * [Etat](#etat) (21 rules)
-* [Exigence](#exigence) (10 rules)
-* [Glossaire](#glossaire) (13 rules)
+* [Exigence](#exigence) (11 rules)
+* [Glossaire](#glossaire) (14 rules)
 * [Livrable](#livrable) (17 rules)
 * [Nomenclature](#nomenclature) (22 rules)
 * [Scenario](#scenario) (23 rules)
@@ -17,12 +17,12 @@ RULE PACKAGES (21)
 * [StyleEssentiel](#styleessentiel) (3 rules)
 * [Systeme](#systeme) (4 rules)
 * [TexteTechnique](#textetechnique) (36 rules)
-* [TracabiliteExigence](#tracabiliteexigence) (2 rules)
+* [Tracabilite](#tracabilite) (3 rules)
 * [UMLModelio](#umlmodelio) (187 rules)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (458)
+RULES (461)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -39,9 +39,9 @@ RULES (458)
 * [Auteur](#auteur) from package [Livrable](#livrable)
 * [ButCU](#butcu) from package [CasDUtilisation](#casdutilisation)
 * [CUAuxiliaireDecore](#cuauxiliairedecore) from package [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)
-* [CUExigenceFonctionnelle](#cuexigencefonctionnelle) from package [TracabiliteExigence](#tracabiliteexigence)
+* [CUExigenceFonctionnelle](#cuexigencefonctionnelle) from package [Tracabilite](#tracabilite)
 * [CUPrimaireAGauche](#cuprimaireagauche) from package [StyleEssentiel](#styleessentiel)
-* [CURoleExigences](#curoleexigences) from package [TracabiliteExigence](#tracabiliteexigence)
+* [CURoleExigences](#curoleexigences) from package [Tracabilite](#tracabilite)
 * [CUSeulementPrimaire](#cuseulementprimaire) from package [StyleEssentiel](#styleessentiel)
 * [CardinalVsOrdinal](#cardinalvsordinal) from package [Valeur](#valeur)
 * [Cardinalite](#cardinalite) from package [Classe](#classe)
@@ -64,6 +64,7 @@ RULES (458)
 * [Date](#date) from package [Nomenclature](#nomenclature)
 * [DecompositionSousSysteme](#decompositionsoussysteme) from package [Systeme](#systeme)
 * [DefautDejaMentionne](#defautdejamentionne) from package [Livrable](#livrable)
+* [DefinitionAmbigueTerme](#definitionambigueterme) from package [Glossaire](#glossaire)
 * [DefinitionMultipleTerme](#definitionmultipleterme) from package [Glossaire](#glossaire)
 * [DefinitionTerme](#definitionterme) from package [Glossaire](#glossaire)
 * [DefinitionTermeTropGenerale](#definitiontermetropgenerale) from package [Glossaire](#glossaire)
@@ -86,6 +87,7 @@ RULES (458)
 * [ExigenceInvalide](#exigenceinvalide) from package [Exigence](#exigence)
 * [ExigencesMultiples](#exigencesmultiples) from package [Exigence](#exigence)
 * [FormatLivrable](#formatlivrable) from package [Livrable](#livrable)
+* [FormatReferenceLignes](#formatreferencelignes) from package [Tracabilite](#tracabilite)
 * [FormatReferenceTerme](#formatreferenceterme) from package [Glossaire](#glossaire)
 * [FormatValeur](#formatvaleur) from package [Valeur](#valeur)
 * [Formatage](#formatage) from package [TexteTechnique](#textetechnique)
@@ -101,7 +103,6 @@ RULES (458)
 * [HomogeneiteTitreSection](#homogeneitetitresection) from package [Document](#document)
 * [HypotheseNonValidee](#hypothesenonvalidee) from package [TexteTechnique](#textetechnique)
 * [Identificateur](#identificateur) from package [TexteTechnique](#textetechnique)
-* [IdentificateurExigence](#identificateurexigence) from package [Exigence](#exigence)
 * [ImbricationInutile](#imbricationinutile) from package [TexteTechnique](#textetechnique)
 * [IncludeMultiple](#includemultiple) from package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 * [Incoherence](#incoherence) from package [TexteTechnique](#textetechnique)
@@ -321,6 +322,7 @@ RULES (458)
 * [NomClasse](#nomclasse) from package [Classe](#classe)
 * [NomDiagramme](#nomdiagramme) from package [Diagramme](#diagramme)
 * [NomEtat](#nometat) from package [Etat](#etat)
+* [NomExigence](#nomexigence) from package [Exigence](#exigence)
 * [NomObjet](#nomobjet) from package [Classe](#classe)
 * [NomOperation](#nomoperation) from package [Classe](#classe)
 * [NomParametre](#nomparametre) from package [Classe](#classe)
@@ -337,6 +339,7 @@ RULES (458)
 * [NomenclatureCU](#nomenclaturecu) from package [CasDUtilisation](#casdutilisation)
 * [NomenclatureClasse](#nomenclatureclasse) from package [Classe](#classe)
 * [NomenclatureEtat](#nomenclatureetat) from package [Etat](#etat)
+* [NomenclatureExigence](#nomenclatureexigence) from package [Exigence](#exigence)
 * [NomenclatureGlossaire](#nomenclatureglossaire) from package [Glossaire](#glossaire)
 * [NomenclatureLivrable](#nomenclaturelivrable) from package [Livrable](#livrable)
 * [NomenclatureMethode](#nomenclaturemethode) from package [Classe](#classe)
@@ -450,8 +453,8 @@ RULES (458)
 * [TailleFigure](#taillefigure) from package [Document](#document)
 * [Temps](#temps) from package [TexteTechnique](#textetechnique)
 * [TermeAGlossaire](#termeaglossaire) from package [Glossaire](#glossaire)
-* [TermeAlternatifs](#termealternatifs) from package [Glossaire](#glossaire)
 * [TermeMetier](#termemetier) from package [TexteTechnique](#textetechnique)
+* [TermesAlternatifs](#termesalternatifs) from package [Glossaire](#glossaire)
 * [TermesCroises](#termescroises) from package [Glossaire](#glossaire)
 * [TexteSection](#textesection) from package [TexteTechnique](#textetechnique)
 * [TitreDiagramme](#titrediagramme) from package [Diagramme](#diagramme)
@@ -1202,19 +1205,27 @@ From package [Etat](#etat)
 
 Exigence
 ====================================================
-10 rules: [IdentificateurExigence](#identificateurexigence) [ExigenceIncoherente](#exigenceincoherente) [ExigenceInvalide](#exigenceinvalide) [SurExgigence](#surexgigence) [SousExigence](#sousexigence) [StatusNonDefinitif](#statusnondefinitif) [ProprieteExigenceInadaptee](#proprieteexigenceinadaptee) [DescriptionExigence](#descriptionexigence) [TypeDExigence](#typedexigence) [ExigencesMultiples](#exigencesmultiples) 
+11 rules: [NomExigence](#nomexigence) [NomenclatureExigence](#nomenclatureexigence) [ExigenceIncoherente](#exigenceincoherente) [ExigenceInvalide](#exigenceinvalide) [SurExgigence](#surexgigence) [SousExigence](#sousexigence) [StatusNonDefinitif](#statusnondefinitif) [ProprieteExigenceInadaptee](#proprieteexigenceinadaptee) [DescriptionExigence](#descriptionexigence) [TypeDExigence](#typedexigence) [ExigencesMultiples](#exigencesmultiples) 
 
-IdentificateurExigence
+NomExigence
 -------------------
 From package [Exigence](#exigence)  
 
-  L'identificateur ne fait pas clairement référence à une exigence et/ou le type de cette exigence ne transparaît pas vraiment dans l'identificateur.
+  Le nom de l'exigence doit faire clairement référence à une exigence, le type de cette exigence doit si possible transparaître dans le nom ; le nom doit autant que possible faire référence à des termes défini dans les glossaires.
+
+* **Commentaire:**  Il est généralement préférable de donner aux exigences un nom plutôt qu'un numéro car le nom est significatif. Par ailleurs utiliser un numéro implique de garder un "compteur" pour s'assurer qu'un numéro ne sera pas réutilisé.   
+
+NomenclatureExigence
+-------------------
+From package [Exigence](#exigence)  
+
+  Le nom d'un exigence doit être de préférence en style MajMin (cf $MajMin).
 
 ExigenceIncoherente
 -------------------
 From package [Exigence](#exigence)  
 
-  L'exigence est incohérente avec une autre exigence decrite avant ou après.
+  L'exigence est incohérente avec une autre exigence décrite avant ou après.
 
 ExigenceInvalide
 -------------------
@@ -1226,19 +1237,19 @@ SurExgigence
 -------------------
 From package [Exigence](#exigence)  
 
-  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client  ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
+  La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
 
 SousExigence
 -------------------
 From package [Exigence](#exigence)  
 
-  La l'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
+  L'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
 
 StatusNonDefinitif
 -------------------
 From package [Exigence](#exigence)  
 
-  L'utilisation de la valeur "définitive" pour l'attribut stabilité doit être reservée aux versions revisées, stables, et dont la qualité à été prouvée.
+  L'utilisation de la valeur "définitive" pour l'attribut "maturité" doit être reservée aux versions revisées, stables, et dont la qualité à été prouvée.
 
 ProprieteExigenceInadaptee
 -------------------
@@ -1267,7 +1278,7 @@ From package [Exigence](#exigence)
 
 Glossaire
 ====================================================
-13 rules: [NomenclatureGlossaire](#nomenclatureglossaire) [NomenclatureTerme](#nomenclatureterme) [DefinitionTerme](#definitionterme) [TermeAGlossaire](#termeaglossaire) [ClassificationTerme](#classificationterme) [ReferenceVersTerme](#referenceversterme) [FormatReferenceTerme](#formatreferenceterme) [ReferenceTermePrincipal](#referencetermeprincipal) [ReferenceTermeInconnu](#referencetermeinconnu) [DefinitionMultipleTerme](#definitionmultipleterme) [TermesCroises](#termescroises) [DefinitionTermeTropGenerale](#definitiontermetropgenerale) [TermeAlternatifs](#termealternatifs) 
+14 rules: [NomenclatureGlossaire](#nomenclatureglossaire) [NomenclatureTerme](#nomenclatureterme) [DefinitionTerme](#definitionterme) [TermeAGlossaire](#termeaglossaire) [ClassificationTerme](#classificationterme) [ReferenceVersTerme](#referenceversterme) [FormatReferenceTerme](#formatreferenceterme) [ReferenceTermePrincipal](#referencetermeprincipal) [ReferenceTermeInconnu](#referencetermeinconnu) [DefinitionMultipleTerme](#definitionmultipleterme) [DefinitionAmbigueTerme](#definitionambigueterme) [TermesCroises](#termescroises) [DefinitionTermeTropGenerale](#definitiontermetropgenerale) [TermesAlternatifs](#termesalternatifs) 
 
 NomenclatureGlossaire
 -------------------
@@ -1335,6 +1346,16 @@ From package [Glossaire](#glossaire)
 
   Un terme est défini plusieurs fois dans un même glossaire.
 
+* **Commentaire:**  L'objectif d'un glossaire est de définir les termes de manière non ambigüe, en tout cas dans le cadre d'un glossaire et il est donc nécessaire de n'avoir qu'une seule définition.
+
+DefinitionAmbigueTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  La définition associée au terme semble ambigue ou fait référence à difféents sens. Une signification unique et précise doit être donnée.
+
+* **Commentaire:**  Dans un dictionnaire plusieurs significations sont traditionnellement associées à un terme, car la pluspart des termes sont polysémiques. Dans un glossaire, on cherche au contraire à éviter les ambiguités et à indiquer de manière explicite quelle est la signification retenue dans le contexte associé à l'utilisation du glossaire. Un glossaire est un vocabulaire contrôlé.
+
 TermesCroises
 -------------------
 From package [Glossaire](#glossaire)  
@@ -1347,7 +1368,7 @@ From package [Glossaire](#glossaire)
 
   La définition proposée pour un terme est trop générale par rapport au contexte associé au glossaire dans lequel le terme est défini.
 
-TermeAlternatifs
+TermesAlternatifs
 -------------------
 From package [Glossaire](#glossaire)  
 
@@ -2139,19 +2160,29 @@ From package [TexteTechnique](#textetechnique)
   Une confusion est faite entre la description/representation/identification d'un objet et cet objet lui même.
 
 
-TracabiliteExigence
+Tracabilite
 ====================================================
-2 rules: [CUExigenceFonctionnelle](#cuexigencefonctionnelle) [CURoleExigences](#curoleexigences) 
+3 rules: [FormatReferenceLignes](#formatreferencelignes) [CUExigenceFonctionnelle](#cuexigencefonctionnelle) [CURoleExigences](#curoleexigences) 
+
+FormatReferenceLignes
+-------------------
+From package [Tracabilite](#tracabilite)  
+
+  La référence à une ligne <L> d'une ressource <R> se fait de la manière suivante :  [<R>#<L>]. Plusieurs lignes d'une même ressources peuvent être séparées par des virgules, et un interval de lignes peut être constitué en utilisant un '-'. Plusieurs ressources différentes peuvent être séparées par un point virgule. 
+
+* **Commentaire:**  Les espaces ne sont pas autorisés.
+
+* **Exemple:**  [R001#2,4-5;B002#34] est équivalent à [R001#2][R001#4][R001#5][B002#34]
 
 CUExigenceFonctionnelle
 -------------------
-From package [TracabiliteExigence](#tracabiliteexigence)  
+From package [Tracabilite](#tracabilite)  
 
   La relation entre un (ou plusieurs) cas d'utilisation et les exigences fonctionnelles ne sont pas clairs et/ou le cas d'utilisation ne semble pas justifié par une exigence fonctionnelle. 
 
 CURoleExigences
 -------------------
-From package [TracabiliteExigence](#tracabiliteexigence)  
+From package [Tracabilite](#tracabilite)  
 
   Le role joué par les exigences reliées au cas d'utilisation n'est pas clair, et il n'est par exemple pas facile de déterminer quelles sont les types des exigences via leur nom, quelles sont l'exigence fonctionnelle principale réalisée par le cas d'utilisation, etc.
 
