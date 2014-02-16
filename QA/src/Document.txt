@@ -10,6 +10,9 @@ $EnteteDocument:
 
 
 #== Plan  
+$TableDesMatieres:
+  Le plan du document doit être explicité par une table des matières.
+  
 $PlanDesequilibre:
   Le plan est deséquilibré soit en nombre de pages (cf $PlanDesequilibreEnPages), soit en termes de profondeur (cf $PlanDesequilibreEnProfondeur).
 
@@ -67,7 +70,7 @@ $NumerotationSection:
 #== Figures
 
 $IndexDesFigures:
-  Le document ne comporte pas d'index des figures alors que cet élément semble pertinent pour ce document.
+  Un index des figures doit être inclus dans le document.
   
 $TitreFigure:
   Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés, ou explicite par exemple parceque le titre de la figure sera difficile à interpréter dans l'index des figures par exemple.
@@ -87,7 +90,9 @@ $TailleFigure:
 $ResolutionFigure:
   La résolution de l'image ou de la figure n'est pas satisfaisante.
 
-  
-  
+#== Tables
+$IndexDesTables:
+    Un index des tavles doit être inclus dans le document.
+
   
   
