@@ -1,0 +1,44 @@
+Cycle de vie
+============
+Les paquetages de règles ci-dessous correspondent à différentes étapes dans le cycle de vie du logiciel.
+
+Modelisation
+------------
+* [Glossaire](#glossaire)
+* [Exigence](#exigence)
+* [Systeme](#systeme)
+* [CasDUtilisation](#casdutilisation) 
+** [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) 
+** [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) 
+** [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)
+** [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel)
+** [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:)
+** [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire)
+* [Scenario](#scenario)
+* [Sequence](#sequence)
+* [Valeur](#valeur)
+* [Tache](#tache) 
+* [Classe](#classe)
+* [Etat](#etat)
+* [Deploiement](#deploiement)
+
+Les paquetages ci-dessous sont liés à des outils :
+* [UMLModelio](#umlmodelio)
+* [UMLStarUML](#umlstaruml) 
+
+Implémentation
+--------------
+* [BaseDeDonnees](#basededonnees) 
+* [ProgrammationWeb](#programmationweb)
+
+Divers
+======
+Les paquetages de règles ci-dessous sont généralement orthogonaux au cycle de vie et peuvent être utilisé tout au long du projet.
+
+* [TexteTechnique](#textetechnique)
+* [Nomenclature](#nomenclature)
+* [Diagramme](#diagramme)
+* [Tracabilite](#tracabilite) 
+* [Document](#document)
+* [Livrable](#livrable)
+

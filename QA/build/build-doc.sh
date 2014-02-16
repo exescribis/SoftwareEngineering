@@ -2,10 +2,13 @@
 THISDIR=`dirname $0`
 SRCDIR=${THISDIR?}/../src
 SRCFILESPATTERN=${SRCDIR?}/*.txt
+HEADERFILE=${THISDIR?}/../src/plan/plan.txt
 OUTDIR=${THISDIR?}/..
 OUTFILE=${OUTDIR?}/README.md
 
 echo `ls $SRCFILESPATTERN | wc -l` source files 
+
+cat ${HEADERFILE?} > ${OUTFILE?}
 
 gawk '
     #==================================================================================
@@ -81,21 +84,22 @@ gawk '
 
     
     function print_packageIndex(    _i,_rulelist,_nbrules,_packagename,_packagerules) {
-      print "RULE PACKAGES (" NBPACKAGES ")" 
-      print "=================" ;
+      print "PAQUETAGE DE REGLES"
+      print "===================" ;
+      print NBPACKAGES "paquetages triès par ordre alphabétique."
       for (_i = 1; _i <= NBPACKAGES; _i++) {
         _packagename = PACKAGENAMES[_i] 
         _rulelist = PACKAGE_TO_RULELIST[_packagename] 
         _nbrules = split(_rulelist,_packagerules," ") 
-        print "* " nameToUrl(_packagename) " (" _nbrules " rules)"
+        print " " nameToUrl(_packagename) " (" _nbrules " rules)"
         # print "    =" _rulelist "=" 
       }
       print ""
     }
     
     function print_ruleIndex(       _i,_packageurl) {
-      print "RULES (" NBRULES ")"
-      print "================" 
+      print "REGLES (" NBRULES ")"
+      print "======" 
       for (_i = 1; _i <= NBRULES; _i++) {
         _packageurl = nameToUrl(RULE_TO_PACKAGE[RULENAMES[_i]])
         print "* " nameToUrl(RULENAMES[_i]) " from package " _packageurl 
@@ -106,7 +110,7 @@ gawk '
       print "" 
       print rulename   
       print "-------------------" 
-      print "From package " nameToUrl(RULE_TO_PACKAGE[rulename]) "  " 
+      print "Dans le paquetage " nameToUrl(RULE_TO_PACKAGE[rulename]) "  " 
       print ""  
       print RULE_TO_TEXTS[rulename] ;      
     }
@@ -154,7 +158,7 @@ gawk '
     
     ' \
   ${SRCFILESPATTERN} \
-  > ${OUTFILE?}
+  >> ${OUTFILE?}
   
 wc -l ${OUTFILE?}
   

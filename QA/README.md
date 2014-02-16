@@ -1,35 +1,80 @@
-RULE PACKAGES (27)
-=================
-* [BaseDeDonnees](#basededonnees) (9 rules)
-* [CasDUtilisation](#casdutilisation) (13 rules)
-* [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
-* [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (1 rules)
-* [CasDUtilisation_StyleDecore](#casdutilisation_styledecore) (1 rules)
-* [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel) (1 rules)
-* [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:) (1 rules)
-* [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire) (1 rules)
-* [Classe](#classe) (23 rules)
-* [Deploiement](#deploiement) (1 rules)
-* [Diagramme](#diagramme) (10 rules)
-* [Document](#document) (21 rules)
-* [Etat](#etat) (21 rules)
-* [Exigence](#exigence) (14 rules)
-* [Glossaire](#glossaire) (18 rules)
-* [Livrable](#livrable) (17 rules)
-* [Nomenclature](#nomenclature) (22 rules)
-* [ProgrammationWeb](#programmationweb) (2 rules)
-* [Scenario](#scenario) (23 rules)
-* [Sequence](#sequence) (1 rules)
-* [Systeme](#systeme) (4 rules)
-* [Tache](#tache) (5 rules)
-* [TexteTechnique](#textetechnique) (36 rules)
-* [Tracabilite](#tracabilite) (3 rules)
-* [UMLModelio](#umlmodelio) (187 rules)
-* [UMLStarUML](#umlstaruml) (38 rules)
-* [Valeur](#valeur) (17 rules)
+Cycle de vie
+============
+Les paquetages de règles ci-dessous correspondent à différentes étapes dans le cycle de vie du logiciel.
 
-RULES (487)
-================
+Modelisation
+------------
+* [Glossaire](#glossaire)
+* [Exigence](#exigence)
+* [Systeme](#systeme)
+* [CasDUtilisation](#casdutilisation) 
+** [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) 
+** [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) 
+** [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)
+** [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel)
+** [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:)
+** [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire)
+* [Scenario](#scenario)
+* [Sequence](#sequence)
+* [Valeur](#valeur)
+* [Tache](#tache) 
+* [Classe](#classe)
+* [Etat](#etat)
+* [Deploiement](#deploiement)
+
+Les paquetages ci-dessous sont liés à des outils :
+* [UMLModelio](#umlmodelio)
+* [UMLStarUML](#umlstaruml) 
+
+Implémentation
+--------------
+* [BaseDeDonnees](#basededonnees) 
+* [ProgrammationWeb](#programmationweb)
+
+Divers
+======
+Les paquetages de règles ci-dessous sont généralement orthogonaux au cycle de vie et peuvent être utilisé tout au long du projet.
+
+* [TexteTechnique](#textetechnique)
+* [Nomenclature](#nomenclature)
+* [Diagramme](#diagramme)
+* [Tracabilite](#tracabilite) 
+* [Document](#document)
+* [Livrable](#livrable)
+
+PAQUETAGE DE REGLES
+===================
+27paquetages tri�s par ordre alphab�tique.
+ [BaseDeDonnees](#basededonnees) (9 rules)
+ [CasDUtilisation](#casdutilisation) (13 rules)
+ [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
+ [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (1 rules)
+ [CasDUtilisation_StyleDecore](#casdutilisation_styledecore) (1 rules)
+ [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel) (1 rules)
+ [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:) (1 rules)
+ [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire) (1 rules)
+ [Classe](#classe) (23 rules)
+ [Deploiement](#deploiement) (1 rules)
+ [Diagramme](#diagramme) (10 rules)
+ [Document](#document) (21 rules)
+ [Etat](#etat) (21 rules)
+ [Exigence](#exigence) (14 rules)
+ [Glossaire](#glossaire) (18 rules)
+ [Livrable](#livrable) (17 rules)
+ [Nomenclature](#nomenclature) (22 rules)
+ [ProgrammationWeb](#programmationweb) (2 rules)
+ [Scenario](#scenario) (23 rules)
+ [Sequence](#sequence) (1 rules)
+ [Systeme](#systeme) (4 rules)
+ [Tache](#tache) (5 rules)
+ [TexteTechnique](#textetechnique) (36 rules)
+ [Tracabilite](#tracabilite) (3 rules)
+ [UMLModelio](#umlmodelio) (187 rules)
+ [UMLStarUML](#umlstaruml) (38 rules)
+ [Valeur](#valeur) (17 rules)
+
+REGLES (487)
+======
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
 * [ActeurSujet](#acteursujet) from package [CasDUtilisation](#casdutilisation)
@@ -525,7 +570,7 @@ BaseDeDonnees
 
 NomRelation
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Le nom d'une relation doit correspondre à une forme nominale plurielle. Par ailleurs les termes utilisés dans le nom doivent généralement être définis dans le glossaire. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.
 
@@ -537,19 +582,19 @@ From package [BaseDeDonnees](#basededonnees)
 
 NomenclatureRelation
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Le nom d'une relation doit être en style MajMin (cf $MajMin).
 
 NomRelationGlossaire
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Les termes utilisés dans le nom des relations doivent être définis dans le glossaire. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
 
 NomColonne
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Dans une relation, le nom de chaque colonne doit correspondre à une forme nominale correspondant à l'attribut ou au concept représenté, sauf eventuellement pour les colonnes représentant une valeur booléenne auxquel cas une forme verbale peut être acceptable. Par ailleurs les termes utilisés dans le nom doivent être définis dans le glossaire. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.
 
@@ -559,13 +604,13 @@ From package [BaseDeDonnees](#basededonnees)
 
 NomenclatureColonne
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Le nom d'une relation doit être en style minMaj (cf $minMaj).
 
 NomColonneGlossaire
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Les termes utilisés dans le nom des colonnes des relations doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
 
@@ -575,19 +620,19 @@ $NomCleEtrangere
 
 Schema1FN
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Le schéma de la base de données doit être en 1ère forme normale.
 
 Schema2FN
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Le schéma de la base de données doit être en Zème forme normale.
 
 Schema3FN
 -------------------
-From package [BaseDeDonnees](#basededonnees)  
+Dans le paquetage [BaseDeDonnees](#basededonnees)  
 
   Le schéma de la base de données doit être en 3ème forme normale.
 
@@ -598,25 +643,25 @@ CasDUtilisation
 
 NomActeur
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter). La notion d'acteur est définie par le rôle joué par l'acteur par rapport au système et non pas par la position de la personne jouant ce role à un moment donné dans une organisation.
 
 NomenclatureActeur
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Les nom des acteurs doivent être de préférence en MajMin (cf $MajMin).
 
 NomActeurGlossaire
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Les termes utilisés dans le nom d'un acteur doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
 
 NomCU
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale.
 
@@ -626,7 +671,7 @@ $NomCUGlossaire
 
 NomenclatureCU
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Le nom des cas d'utilisation doivent être en MajMin (cf $MajMin).
 
@@ -634,19 +679,19 @@ From package [CasDUtilisation](#casdutilisation)
 
 NomActeurInstancie
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Les noms des personnes jouant le role d'acteur doivent dans des scénarios instanciés doivent être à la fois particuliers pour être mémotechniques mais aussi représenter la diversité culturelle associé au contexte du système et du projet associé.
 
 ActeurSujet
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Le nom de l'acteur principal associé à un cas d'utilisation doit être le sujet de la forme verbale correspondant au nom du cas d'utilisation.
 
 ButCU
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Un ou plusieurs cas d'utilisation ne correspondent pas à un but de l'acteur principal ou ne sont pas nommés pour refléter cet aspect. Un cas d'utilisation doit correspondre à un objectif "métier" de l'acteur principal et les différentes interactions que ce dernier entreprent avec le système dans ce contexte doivent lui premettre de réaliser un but ultime. Si le métier le veux le cas d'utilisation peut correspondre à la réalisation d'un but intermediaire, et ce afin d'accomoder la règle d'unité de lieu et d'espace (cf $UniteTempsEspaceCU), mais la notion de but reste néanmoins valide.
 
@@ -656,31 +701,31 @@ From package [CasDUtilisation](#casdutilisation)
 
 UniteTempsEspaceCU
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Un ou plusieurs cas d'utilisation ne correspondent pas à une unité de temps et d'espaces par rapport à l'utilisation entre l'acteur principal et le systeme.
 
 Relation
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Pas de relation entre acteurs sauf éventuellement une spécialisation.
 
 HeritageActeur
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Un acteur spécifique peut réaliser tous les CU de l'acteur qu'il spécialise. 
 
 SousTypageActeur
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise.
 
 NonHumain
 -------------------
-From package [CasDUtilisation](#casdutilisation)  
+Dans le paquetage [CasDUtilisation](#casdutilisation)  
 
   Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
 
@@ -691,13 +736,13 @@ CasDUtilisation_ModeleDetaille
 
 RelationsCUIncoherentes
 -------------------
-From package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)  
+Dans le paquetage [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)  
 
   Les relations de dépendences <<includes>> et <<extends>> existant entre cas d'utilisations ne sont pas cohérentes avec les descriptions détaillées de ceux-ci
 
 IncludeMultiple
 -------------------
-From package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)  
+Dans le paquetage [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)  
 
   Un cas d'utilisation inclu via une relation dépendence <<includes>> doit l'être dans au moins deux cas d'utilisation.
 
@@ -708,7 +753,7 @@ CasDUtilisation_ModelePreliminaire
 
 PasDeRelationEntreCU
 -------------------
-From package [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)  
+Dans le paquetage [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)  
 
   L'utilisation de relations entre cas d'utilisation n'est recommandée.
 
@@ -719,7 +764,7 @@ CasDUtilisation_StyleDecore
 
 CUAuxiliaireDecore
 -------------------
-From package [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)  
+Dans le paquetage [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)  
 
   Le stéréotype auxilaire doit être associé aux acteurs auxillaires.
 
@@ -730,7 +775,7 @@ CasDUtilisation_StyleEssentiel
 
 StyleEssentiel
 -------------------
-From package [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel)  
+Dans le paquetage [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel)  
 
   La description du scenario ne doit pas faire de références inutiles à la manière dont les acteurs et le système intéragissent dans le détail, sachant que l'objectif d'un cas d'utilisation essentiel n'est pas de décrire des exigences sur une ou des interfaces personnes systèmes. 
 
@@ -741,7 +786,7 @@ CasDUtilisation_StyleGaucheDroite:
 
 CUPrimaireAGauche
 -------------------
-From package [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:)  
+Dans le paquetage [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:)  
 
   Les acteurs primaires doivent être représentés à gauche du système, les acteurs secondaires à droite.
 
@@ -752,7 +797,7 @@ CasDUtilisation_StylePrimaire
 
 CUSeulementPrimaire
 -------------------
-From package [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire)  
+Dans le paquetage [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire)  
 
   Seuls les acteurs primaires doivent être representés dans les diagrammes de cas d'utilisation.
 
@@ -763,7 +808,7 @@ Classe
 
 NomClasse
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom d'une classe doit normallement correspondre à une forme nominale au singulier.
 
@@ -771,13 +816,13 @@ From package [Classe](#classe)
 
 NomenclatureClasse
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom des classes doivent être dans le style MajMin (cf $MajMin).
 
 NomAttribut
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom d'un attribut doit normallement correspondre à une forme nominale ou éventuellement à un forme verbale lorsque le type de l'attribut correspond à un booleen.
 
@@ -787,13 +832,13 @@ From package [Classe](#classe)
 
 NomenclatureAttribut
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom de ou des attributs doivent être en style minMaj (cf $MinMaj).
 
 NomObjet
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom d'un objet doit correspondre à une forme nominale et doit permettre autant que possible de déterminer le nom de la classe auquel il appartient. Il peut prendre par exemple (1) soit la forme d'un nom propre, (2) soit d'un identifiant naturel, (3) soit d'un rôle qu'il joue au sein du système ou dans le cadre d'une interaction donnée, (4) soit d'une forme derivée à partir de la classe à laquelle appartient l'objet.  
 
@@ -803,13 +848,13 @@ From package [Classe](#classe)
 
 NomenclatureObjet
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Un nom de ou des objets doivent être en style minMaj (cf $MinMaj).
 
 NomOperation
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom d'une opération doit normallement correspondre à une forme verbale dont le "sujet" est l'objet auquel l'opération s'applique.
 
@@ -817,19 +862,19 @@ From package [Classe](#classe)
 
 NomenclatureOperation
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom de ou des operations doivent être en style minMaj (cf $MinMaj).
 
 NomenclatureMethode
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom de ou des methodes doivent être en style minMaj (cf $MinMaj).
 
 NomParametre
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom du ou des paramètres formels doivent correspondre à des formes nominales et désigner les rôles que les valeurs des paramètres vont jouer dans le cadre de l'opération ou de la méthode concernée. 
 
@@ -837,13 +882,13 @@ From package [Classe](#classe)
 
 NomenclatureParametre
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom de ou des methodes doivent être en style minMaj (cf $MinMaj).
 
 NomRole
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom d'un rôle doit normallement correspondre à une forme nominale et en tout état de cause à un rôle que peuvent jouer le ou les objets destination du rôle.
 
@@ -851,43 +896,43 @@ From package [Classe](#classe)
 
 NomenclatureRole
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom de ou des roles doivent être en style minMaj (cf $MinMaj).
 
 NomAssociation
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom de l'association doit a priori correspondre à une forme verbale ; les objets jouant le rôle de sources pour cette association jouant le rôle de "sujets" de cette forme verbale.
 
 NomenclatureAssociation
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom de ou des associations devrait être en style MajMin (cf $MajMin).
 
 RoleClasse
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom d'une classe semble correspondre à un rôle ou inversement ; la modélisation pourrait être revue.  
 
 RoleAssociation
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Le nom du rôle semble être interverti par rapport à un nom d'association ou vice versa.
 
 Navigabilite
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Un ou plusieurs roles portent des indications de navigabilite sans que cela semble justifié ou cohérent.
 
 Cardinalite
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Une ou plusieurs cardinalites sont manquantes, non justifiées ou erronées.
 
@@ -895,7 +940,7 @@ From package [Classe](#classe)
 
 CardinaliteInversee
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Une ou plusieurs cardinalites semblent être inversées ou sinon il s'agit peut être d'erreurs de cardinalités.
 
@@ -903,7 +948,7 @@ From package [Classe](#classe)
 
 CardinaliteNM
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   En UML les cardinalités minimales ou maximales doivent être formées des constantes entières positives ou * comme cardinalité maximale. Alors que 0..n n'est pas correct en UML par contre 0,4-6,9-* est correct.
 
@@ -915,13 +960,13 @@ $Composition1
 
 CompositionUnique
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   Il existe à partir d'une classe "de composants" plusieurs associations de composition avec une cardinalité minimale de 1 alors que cela n'est pas possible car un objet "composant" ne peut être dans plusieurs composites à la fois. Les cardinalités minimales doivent être 0 sur toute les associations de compositions.
 
 AggregationNonJustifie
 -------------------
-From package [Classe](#classe)  
+Dans le paquetage [Classe](#classe)  
 
   L'utilisation d'une ou plusieurs associations d'aggregation ne semble pas adaptée ou l'intérêt d'utiliser de telles modélisations ne semble pas pertinent sans justification explicite.
 
@@ -934,7 +979,7 @@ Deploiement
 
 Protocole
 -------------------
-From package [Deploiement](#deploiement)  
+Dans le paquetage [Deploiement](#deploiement)  
 
   Le nom de l'association ou du lien devrait faire référence à un protocole de communication.
 
@@ -945,7 +990,7 @@ Diagramme
 
 NomDiagramme
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   Le nom des diagrammes doit reflêter ce qu'ils modélisent et peuvent donc utilement faire référence à un modèle, à un artéfact, etc. Le type de diagramme (cf $TypeDeDiagramme) peut également être utilement inséré dans ce titre.
 
@@ -953,49 +998,49 @@ From package [Diagramme](#diagramme)
 
 TitreDiagramme
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   (cf $NomDiagramme) TODO: to be removed
 
 Densite
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   La densite des éléments dans la diagramme est soit trop importante soit insuffisante et le diagramme pourrait utilement être compacté ou au contraire étendu.
 
 Disposition
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   La disposition spatiale des différents éléments graphiques dans le diagramme n'est pas conventionelle, nuit à la lisibilité du diagramme et/ou devrait être améliorée ou optimisée.
 
 Couleurs
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   L'utilisation des couleurs n'est pas optimale et pourrait être améliorée soit en diminuant, soit en augmentant le nombre des couleurs, soit en rendant explicites leur signification dans le diagramme par exemple via une note.
 
 Chevauchements
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   De nombreux chevauchements d'éléments graphiques rendent la lecture du diagramme difficile.
 
 Surcharge
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   Le diagramme comporte trop d'éléments graphiques et/ou textuels.
 
 ContenuPauvre
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   Le contenu du diagramme est trop pauvre pour que ce dernier soit réellement pertinent. Soit le diagramme manque de détails soit l'existence du diagramme ou plus simplement son indroduction dans un document pourrait être mise en cause ; c'est le cas si l'information contenue dans le diagramme peut être dérivée à partir d'autres éléments déjà présents dans le document et d'une certaine manière "n'apporte rien".
 
 ContenuHeterogene
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   Le contenu du diagramme est hétérogène et il n'est pas facile de comprendre quelle est la cohérence entre les différents éléments présentés.
 
@@ -1005,7 +1050,7 @@ From package [Diagramme](#diagramme)
 
 TypeDeDiagramme
 -------------------
-From package [Diagramme](#diagramme)  
+Dans le paquetage [Diagramme](#diagramme)  
 
   Le type de diagramme n'est pas explicite. 
 
@@ -1038,7 +1083,7 @@ Document
 
 EnteteDocument
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Le titre, sous titre, ou plus généralement l'identification du document est manquant, inapproprié ou non conforme.
 
@@ -1050,19 +1095,19 @@ From package [Document](#document)
 
 TableDesMatieres
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Le plan du document doit être explicité par une table des matières.
 
 PlanDesequilibre
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Le plan est deséquilibré soit en nombre de pages (cf $PlanDesequilibreEnPages), soit en termes de profondeur (cf $PlanDesequilibreEnProfondeur).
 
 PlanDesequilibreEnPages
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Le plan du document doit être mieux équilibré en terme de longueur relative des sections en termes de pages. 
 
@@ -1076,7 +1121,7 @@ From package [Document](#document)
 
 PlanDesequilibreEnProfondeur
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   La hierarchie des sections et sous sections n'est pas suffisemment "balancée" et certaines sous sections sont par exemple profondes alors que d'autres sont très plates.
 
@@ -1086,7 +1131,7 @@ From package [Document](#document)
 
 PlanTropProfond
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Le plan du document tel qu'il est présenté révèle le document dans une trop grande profondeur.
 
@@ -1100,7 +1145,7 @@ From package [Document](#document)
 
 SectionTropProfonde
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Le document comporte une ou des sections trop profondes.
 
@@ -1110,7 +1155,7 @@ From package [Document](#document)
 
 SectionOrpheline
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Une sous section ne peut pas être seule à l'intérieure d'une section.
 
@@ -1118,7 +1163,7 @@ From package [Document](#document)
 
 LecturePlan
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Un ou plusieurs defauts rendent le plan difficilement "lisible".
 
@@ -1126,7 +1171,7 @@ From package [Document](#document)
 
 HomogeneiteTitreSection
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Les titres des sections ne sont pas homogénes.
 
@@ -1134,7 +1179,7 @@ From package [Document](#document)
 
 TitreSectionNeutre
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Le titre d'une ou plusieurs sections n'est pas neutre et comporte par exemple une forme interrogative ou affirmative.
 
@@ -1144,7 +1189,7 @@ From package [Document](#document)
 
 TitreHorsContexte
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Le titre d'une section ou plusieurs sections sont difficiles à comprendre hors contexte ou dans le seul contexte du plan.
 
@@ -1154,7 +1199,7 @@ From package [Document](#document)
 
 NumerotationSection
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   La numérotation des sections comporte un ou plusieurs défauts.
 
@@ -1162,49 +1207,49 @@ From package [Document](#document)
 
 IndexDesFigures
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Un index des figures doit être inclus dans le document.
 
 TitreFigure
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Une ou des figures n'ont pas de titres ou leurs titres ne sont pas appropriés, ou explicite par exemple parceque le titre de la figure sera difficile à interpréter dans l'index des figures par exemple.
 
 DescriptionFigure
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Une ou des figures ne sont pas documentée(s) ou décrite(s) ; il semble utile de décrire pourquoi telle ou telle figure est présentée, quels sont les éléments qui y sont représentés, pourquoi ceux-ci ont été séléctionnés, etc.
 
 ReferenceFigure
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Une ou plusieurs figures ne sont pas référencées dans le texte.
 
 LegendeFigure
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Les symboles ou conventions utilisées dans la où les figures ne sont pas explicités et une légende pourrait remédier à ce problème, ou si une légende est présente celle-ci n'est pas adéquate ou complète.
 
 TailleFigure
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   Certains éléments de la figure sont inadaptés et sont soit trop gros, soit trop petits, nuisant ainsi à la lisibilité de la figure.
 
 ResolutionFigure
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
   La résolution de l'image ou de la figure n'est pas satisfaisante.
 
 IndexDesTables
 -------------------
-From package [Document](#document)  
+Dans le paquetage [Document](#document)  
 
     Un index des tavles doit être inclus dans le document.
 
@@ -1215,7 +1260,7 @@ Etat
 
 NomEtat
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Le nom d'un état doit faire référence explicitement à la période de temps dans lequel l'objet se trouve dans l'état. 
 
@@ -1225,25 +1270,25 @@ From package [Etat](#etat)
 
 NomenclatureEtat
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   TODO 
 
 NomTransition
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   TODO
 
 NomenclatureTransition
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   TODO
 
 NomTransitionInutile
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Les noms de certaines transitions semblent inutiles, trop génériques, ou inappropriés.
 
@@ -1251,13 +1296,13 @@ From package [Etat](#etat)
 
 EtatInitial
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   L'état initial est manquant.
 
 JustificationEtat
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   La presence ou l'absence d'un ou plusieurs états n'est pas justifiées ou pourrait être remise en cause.
 
@@ -1265,7 +1310,7 @@ From package [Etat](#etat)
 
 UtiliteEtat
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   L'utilité d'un ou plusieurs états n'est pas claire et certains devraient peut être être supprimés (cf $JustificationEtat).
 
@@ -1275,7 +1320,7 @@ From package [Etat](#etat)
 
 EtatManquant
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Un ou des états semblent manquants pour modéliser le comportement de l'objet ou du système (cf $JustificationEtat).
 
@@ -1285,19 +1330,19 @@ From package [Etat](#etat)
 
 EtatCree
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Il n'est a a priori pas nécessaire d'introduire un état nommé "Créé" dans un diagramme d'état car c'est à cela que correspond l'état initial de l'automate.
 
 DuplicationEtat
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Deux états semblent correspondre au même état.
 
 SpecificationTransition
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   La specification d'une ou plusieurs transitions est manquante ou n'est pas appropriée.
 
@@ -1305,7 +1350,7 @@ From package [Etat](#etat)
 
 SyntaxeTransition
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   La syntaxe des expressions de transitions n'est pas respectée et/ou il existe une ou plusieurs confusions possibles entre les gardes, les événements déclencheurs our déclenchés ou les actions executées. 
 
@@ -1313,25 +1358,25 @@ From package [Etat](#etat)
 
 ConfusionEvenementAction
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Il semble qu'une confusion soit faite sur une ou plusieurs transitions entre les évenements provoquant les transitions et les actions réalisées lorsque ces transitions sont opérées. Ce problème peut être lié à une mauvaise compréhension du fonctionnement des machines à état ou à une méconnaissance de la syntaxe des expressions de transitions (cf $SyntaxeTransition:).
 
 ConfusionNomEtatEvenement
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Il semble qu'une confusion soit faite entre le nom d'une ou plusieurs transitions et les évenements provoquant ces transitions.
 
 TransitionInitialeAutomatique
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Il n'est pas nécessaire de décorer la transition qui va de l'état initial à un état nommé et en tout état de cause l'évenement correspondant à cette transition ne peut pas correspondre à l'évenement de création de l'objet.
 
 TransitionManquante
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Une ou des transitions semble être manquantes.
 
@@ -1339,7 +1384,7 @@ From package [Etat](#etat)
 
 Puit
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Il existe un ou plusieurs états sans transitions sortantes et il ne semble pas que cette situation corresponde à une modélisation réaliste. Des transitions vers l'état final ou des transitions iteratives sont sans doute manquantes (cf $IterationEtats)(cf $TransitionManquante).
 
@@ -1347,13 +1392,13 @@ From package [Etat](#etat)
 
 AmbiguiteTransition
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Parmis les transitions sortantes d'un ou plusieurs états, il n'est pas nécessairement évident de savoir par quelles transitions l'objet sortira d'un état, soit parceque les événements ou gardes sont exprimées de manière trop ambigues, soit parcequ'il existe un chevauchement entre les conditions exprimées par les gardes, soit parces que spécifications des transistions sont inexistantes ou trop pauvrement documentées (cf $SpecificationTransition).
 
 IterationEtats
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   Les transitions ne permettent pas d'itérations entre les différents états alors que c'est le comportement de l'objet ou du système présente cette caractéristique (cf $TransitionManquante).
 
@@ -1361,7 +1406,7 @@ From package [Etat](#etat)
 
 CouvertureAutomate
 -------------------
-From package [Etat](#etat)  
+Dans le paquetage [Etat](#etat)  
 
   L'automate décrit ne couvre qu'une partie du comportement de l'objet ou du système modélisé. Il manque différents états et transitions (cf $EtatManquant)(cf $TransitionManquante).
 
@@ -1374,7 +1419,7 @@ Exigence
 
 NomExigence
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   Le nom de l'exigence doit faire clairement référence à une exigence ; le type de cette exigence doit si possible transparaître dans le nom ; le nom doit autant que possible faire référence à des termes définis dans les glossaires.
 
@@ -1382,7 +1427,7 @@ From package [Exigence](#exigence)
 
 NomExigenceFonctionnelle
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   Le nom d'une exigence fonctionnelle doit débuter par un verbe à l'infinitif. Cette règle est cohérente avec la règle correspondante pour les cas d'utilisation (cf $NomCasUtilisation).
 
@@ -1392,13 +1437,13 @@ From package [Exigence](#exigence)
 
 NomenclatureExigence
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   Le nom d'un exigence doit être en style MajMin (cf $MajMin).
 
 DefinitionExigence
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   Le définition d'une exigence doit ennoncer de manière claire et concise une contrainte imposée sur le système à développer ou sur le processus de développement de ce système. La définition doit se limiter à l'expression de cette contrainte. Une exigences ne doit pas entre autre décrire un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des parties prenantes, etc. Certaines de ces informations peuvent être utiles dans certains cas, mais dans ce cas il faut les consigner dans une ou des notes associées à l'exigence.
 
@@ -1406,7 +1451,7 @@ From package [Exigence](#exigence)
 
 DefinitionExigenceFonctionnelle
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   Sachant qu'ne exigence fonctionnelle correspond à une fonctionnalité du système destinées à un ou plusieurs acteurs, la définition d'une telle exigence peut utilement être rédigée sous la forme "[SSS] doit permettre à [AAA] de ..." où [AAA] est le nom du système, [AAA] le nom de l'acteur ou des acteurs et ... définit la fonctionnalité proposée. 
 
@@ -1416,7 +1461,7 @@ From package [Exigence](#exigence)
 
 ExigencesMultiples
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   Le texte fait référence à plusieurs exigences simultanément et/ou les descriptions de ces exigences devraient être séparées. Cette séparation peut être nécessaire par exemple pour clairement identifier le type de chaque sous-exigence, pour attribuer à chacune de ces sous-exigences des propriétés différentes, par exemple des priorités différentes, etc. 
 
@@ -1426,37 +1471,37 @@ From package [Exigence](#exigence)
 
 ExigenceIncoherente
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   L'exigence est incohérente avec une autre exigence décrite avant ou après.
 
 ExigenceInvalide
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   L'exigence n'est pas ou ne semble pas être valide par rapport aux besoins exprimés par le client.
 
 SurExgigence
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   La description de l'exigence comporte un ou des éléments plus restrictifs que ceux exprimés par le client ou certaines contraintes exprimées ne semblent pas strictement nécessaires.
 
 SousExigence
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   L'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
 
 TypeDExigence
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   Le type de l'exigence n'est pas correct ou la phrase contient différentes exigences de types différents.
 
 PrioriteExigence
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   La priorite associée à une exigence doit être clairement exprimée et ce séparemment de la définition de l'exigence qui elle doit être neutre par rapport à cet aspect.
 
@@ -1466,13 +1511,13 @@ From package [Exigence](#exigence)
 
 StatusNonDefinitif
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   L'utilisation de la valeur "définitive" pour l'attribut "maturité" doit être reservée aux versions revisées, stables, et dont la qualité à été prouvée.
 
 ProprieteExigenceInadaptee
 -------------------
-From package [Exigence](#exigence)  
+Dans le paquetage [Exigence](#exigence)  
 
   La valeur de la propriété associée à l'exigence semble inadaptée.
 
@@ -1483,19 +1528,19 @@ Glossaire
 
 NomenclatureGlossaire
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Le nom des glossaires doit être en style MajMin (cf $MajMin).
 
 NomTerme
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Le nom d'un terme doit être au singulier s'il s'agit d'un nom.
 
 NomenclatureTerme
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Le nom d'un terme doit être de préférence en style MajMin (cf $MajMin).
 
@@ -1503,7 +1548,7 @@ From package [Glossaire](#glossaire)
 
 TermeTropCompose
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Le nom du terme est composé de plusieurs mots ou sous-termes mais certains de ceux-ci semblent ne pas être pertinents ou nécessaire dans la composition totale. Il est préférable de les enlever pour rester à des termes essentiels.
 
@@ -1513,7 +1558,7 @@ From package [Glossaire](#glossaire)
 
 TermeFlou
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Le terme correspond à une notion floue ou subjective dans le domaine considéré ou la définition associée au terme est trop floue ou subjective pour pouvoir être exploitable. S'il s'agit d'un terme général définir ce terme n'est peut être pas nécessaire, ou au contraire il s'agit peut être d'une notion importante pour lequel un terme plus précis devra être trouvé.
 
@@ -1521,7 +1566,7 @@ From package [Glossaire](#glossaire)
 
 DefinitionTerme
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   La définition d'un terme doit être relativement courte et concise et écrite dans un style similaire à celui que l'on pourrait trouver dans un dictionnaire. Généralement une telle définition commence par une forme nominale définissant la nature du terme. Ce n'est pas une phrase avec un verbe.
 
@@ -1529,7 +1574,7 @@ From package [Glossaire](#glossaire)
 
 DefinitionTermeAQuestions
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   De part les zone d'ombres qu'elle comporte la définition d'un terme pose un certain nombre de questions alors qu'une définition devrait uniquement apporter des réponses.
 
@@ -1539,7 +1584,7 @@ From package [Glossaire](#glossaire)
 
 DefinitionAmbigueTerme
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   La définition associée au terme semble ambigue ou fait référence à différents sens. Une signification unique et précise doit être donnée.
 
@@ -1547,19 +1592,19 @@ From package [Glossaire](#glossaire)
 
 DefinitionTermeTropGenerale
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   La définition proposée pour un terme est trop générale par rapport au contexte associé au glossaire dans lequel le terme est défini.
 
 TermeAGlossaire
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Un ou des termes devraient être ajoutés dans l'un des glossaires dans la mesure où s'agit d'un terme spécifique ou d'un concept important.
 
 ClassificationTerme
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Le terme dans lequel le glossaire apparait n'est pas le plus approprié. 
 
@@ -1567,7 +1612,7 @@ From package [Glossaire](#glossaire)
 
 TermesAlternatifs
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. 
 
@@ -1577,13 +1622,13 @@ From package [Glossaire](#glossaire)
 
 ReferenceVersTerme
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Une ou plusieurs expressions correspondent à des termes dans le glossaire (ou à des synonymes de ces termes) et devraient donc être remplacé par une référence vers ce terme (principal) (cf $FormatReferenceTerme).
 
 FormatReferenceTerme
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Lorsqu'un terme défini dans un glossaire est utilisé dans un texte une référence vers ce terme doit être créé sous la forme du terme tel que défini dans le glossaire et entre crochets. Dans le cas de termes au pluriel la marque du pluriel suivra immédiatement la référence. Les cas particuliers pourront être traités grace aux "alternatives" associés à un terme dans un glossaire.
 
@@ -1591,19 +1636,19 @@ From package [Glossaire](#glossaire)
 
 ReferenceTermePrincipal
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Les références à des termes du glossaire doivent référencer le terme principal plutôt que ses alternatives. 
 
 ReferenceTermeInconnu
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Un terme est référencé mais n'est défini dans aucun glossaire.
 
 DefinitionMultipleTerme
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Un terme semble être défini plusieurs fois dans le même glossaire, (1) soit parcequ'il s'agit du même nom ou d'une déclinaison du même nom, (2) soit parceque les définitions associées aux deux temes sont si proches qu'il semble que les deux termes sont en fait des synonymes. Dans les deux cas, la solution semble être soit de fusionner les termes et leur définitions, doit de clarifier explicitement la définition de chacun des termes. 
 
@@ -1611,7 +1656,7 @@ From package [Glossaire](#glossaire)
 
 TermesCroises
 -------------------
-From package [Glossaire](#glossaire)  
+Dans le paquetage [Glossaire](#glossaire)  
 
   Les definitions des termes dans un glossaire doivent faire référence aux autres termes de ce glossaire ou d'autres glossaires.
 
@@ -1622,7 +1667,7 @@ Livrable
 
 NomenclatureLivrable
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Le nom d'un ou de plusieurs ressources livrées n'est pas conforme aux règles spécifiées (cf $PackagingLivrable).
 
@@ -1630,19 +1675,19 @@ From package [Livrable](#livrable)
 
 DelaiLivrable
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Le ou les délais de livraison n'ont pas été respectés.
 
 FormatLivrable
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Le format des ressources livrées n'est pas conforme aux attentes (cf $PackagingLivrable).
 
 DescriptifLivrable
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Le descriptif d'un ou plusieurs livrable est manquant, incomplet ou incohérent.
 
@@ -1650,7 +1695,7 @@ From package [Livrable](#livrable)
 
 PackagingLivrable
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Le packaging du livrable, c'est à dire la manière dont les différents artéfacts ou éléments on été assemblés et conditionnés ne correspond pas aux attentes, ne sont pas conforme aux éventuels critères spécifiés ou requière de la part du client un effort supplémentaire de conditionnement ou déconditionnement qui doit lui être épargné. 
 
@@ -1660,25 +1705,25 @@ From package [Livrable](#livrable)
 
 NonLivre
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Un ou des artefacts, ou des parties d'artefacts non pas été livrés et la livraison n'est donc pas conforme aux résultats attendus.
 
 Auteur
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Le ou les auteurs du document, qu'il s'agisse de personnes physiques ou morale, ne sont pas indiquées clairement ou de manière appropriées.
 
 Copyright
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Les indications de copyrights associées livrées sont inappropriées, trop imprécises ou manquantes, ou ne peuvent pas être clairement associées à une ou plusieurs des ressources livrées.
 
 DefautDejaMentionne
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Un ou des défauts ont déjà été mentionnés dans un audit précédent et n'ont pas été corrigés ou amendés dans le livrable courant. 
 
@@ -1686,13 +1731,13 @@ From package [Livrable](#livrable)
 
 Date
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Une des dates mentionnées semble être incorrectes, non mise à jours, ou une date semble manquante.  
 
 GestionDeVersions
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   La gestion des versions semble inexistante, instatisfaisante ou présente des défaults.
 
@@ -1700,7 +1745,7 @@ From package [Livrable](#livrable)
 
 VersionLivrable
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   L'identification de la version du livrable semble être manquant, incorrect ou inadapté au status de livrable.
 
@@ -1708,13 +1753,13 @@ From package [Livrable](#livrable)
 
 MiseAJourVersion
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Un numéro de version est incorrect ou ne semble pas avoir mis à jour, ce qui est un problème essentiel du point de vue de la gestion de versions (cf $GestionDeVersions).
 
 ResumeModifications
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Le ou les artefacts devraient contenir un résumé des modifications apportées. Si c'est déjà le cas, le résumé pas assez structuré, trop ou pas assez précis, ou plus généralement inadapté au contexte courant.
 
@@ -1722,7 +1767,7 @@ From package [Livrable](#livrable)
 
 Deltas
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Les "deltas" entre versions ne sont pas indiqués de manière appropriée.
 
@@ -1730,7 +1775,7 @@ From package [Livrable](#livrable)
 
 DeltasTextuels
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Les parties du texte ayant été ajoutées/supprimées/modifiées devraient être rendus explicites dans le corps du document ou du texte considéré.
 
@@ -1738,7 +1783,7 @@ From package [Livrable](#livrable)
 
 DeltasGraphiques
 -------------------
-From package [Livrable](#livrable)  
+Dans le paquetage [Livrable](#livrable)  
 
   Les éléments d'un graphique ayant été ajoutés/supprimés/modifiés devraient être rendus explicites.
 
@@ -1751,7 +1796,7 @@ Nomenclature
 
 Abbreviation
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables.
 
@@ -1761,7 +1806,7 @@ From package [TexteTechnique](#textetechnique)
 
 OrthographeIdentificateur
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Une ou plusieurs fautes d'orthographes sont présents dans un ou plusieurs identificateurs.
 
@@ -1769,7 +1814,7 @@ From package [Nomenclature](#nomenclature)
 
 Identificateur
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
 
@@ -1777,7 +1822,7 @@ From package [TexteTechnique](#textetechnique)
 
 Trigramme
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Un trigramme (cf $Trigramme) doit être utilisé pour reférencer une partie prenante.
 
@@ -1791,25 +1836,25 @@ From package [TexteTechnique](#textetechnique)
 
 FormeNominale
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Une forme nominale doit être utilisée pour référencer l'objet considéré.
 
 FormeVerbale
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Une forme verbale doit être utilisée pour référencer l'objet considéré.
 
 Generique
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Le ou les termes utilisés sont trop génériques et ne fournissent pas d'information ou des termes plus spécifiques sont peut être disponibles dans le vocabulaire du domaine.
 
 Connecteur
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
 
@@ -1817,7 +1862,7 @@ From package [Nomenclature](#nomenclature)
 
 HomogeneiteIdentificateurs
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Les identificateurs utilisés ne sont globalement pas homogènes et soit il existe une absence totale de style, soit trop de styles sont utilisés sans que cela soit justifié.
 
@@ -1827,7 +1872,7 @@ From package [Nomenclature](#nomenclature)
 
 Trigramme
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Un trigramme (cf $Trigramme) doit être utilisé pour reférencer une partie prenante.
 
@@ -1841,7 +1886,7 @@ From package [TexteTechnique](#textetechnique)
 
 Portrait
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Chaque partie prenante doit être identifiée visuellement pas un portrait unique la représentant de face ou de profil mais permettant son identification sans ambiguité. Sont donc à proscrire tout icones, graphiques, ou représentation de personnages fictifs ne correspondant pas à la partie prenante.
 
@@ -1849,7 +1894,7 @@ From package [Nomenclature](#nomenclature)
 
 NomPersonne
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Chaque personne est identifiée par son (ou ses) prénom(s) d'usage suivi et de son (ou ses) nom(s) d'usage orthographiés systématiquement de la même manière et séparés systématiquement par la même ponctuation. Pour distinguer le (ou les) nom(s) ceux-ci sont écrits en majuscules. Lorsque nécessaire, et si un champ n'est pas prévu spécifiquement à cet effet, m'utilisation de trigramme se fera après chaque partie prenante entre parenthèses.
 
@@ -1857,13 +1902,13 @@ From package [Nomenclature](#nomenclature)
 
 Date
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Une des dates mentionnées semble être incorrectes, non mise à jours, ou une date semble manquante.  
 
 MajMin
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Un ou des identificateurs devraient être dans le style MajMin c'est à dire correspondre à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une majuscule. L'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.
 
@@ -1871,7 +1916,7 @@ From package [Nomenclature](#nomenclature)
 
 minMaj
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Un ou des identificateurs devraient être dans le style minMaj c'est à dire correspond à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une minuscule. LL'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.
 
@@ -1879,43 +1924,43 @@ From package [Nomenclature](#nomenclature)
 
 StyleSIdentificateur
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Différents styles d'intentificateurs sont utilisés sans pour autant que l'on puisse déterminer dans quelles conditions ces styles varient, s'ils sont utilisés de manière consistentes ou non. C'est le cas par exemple lorsque certains indentificateurs sont issues à la fois de styles MajMin, min_min, MAJ_MAJ, ou dans toutes autres combinaisons ad-hoc.
 
 min_min
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   TODO.
 
 min-min
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   TODO.
 
 MAJ-MAJ
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   TODO.
 
 MAJ_MAJ
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   TODO.
 
 RoleDansPatron
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Le role joué par un objet ou une classe dans le patron n'est pas facilement identifiable.
 
 InteractionProscrite
 -------------------
-From package [Nomenclature](#nomenclature)  
+Dans le paquetage [Nomenclature](#nomenclature)  
 
   Une ou des interactions entre couches ne sont pas conformes aux règles établies par le patron.
 
@@ -1928,13 +1973,13 @@ ProgrammationWeb
 
 NomPageJSP
 -------------------
-From package [ProgrammationWeb](#programmationweb)  
+Dans le paquetage [ProgrammationWeb](#programmationweb)  
 
   ... TBD ...
 
 NomFichierCSS
 -------------------
-From package [ProgrammationWeb](#programmationweb)  
+Dans le paquetage [ProgrammationWeb](#programmationweb)  
 
   ... TBD ...
 
@@ -1945,13 +1990,13 @@ Scenario
 
 NomScenario
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Chaque scenario doit être nommé et le nom d'un scénario doit si possible faire référence explicitement au cas d'utilisation qu'il réalise ainsi que dans la mesure du possible à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario et un résumé décrira le contenu ou l'intention du scénario (cf $IntentionScenario). 
 
 NomenclatureScenario
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Le nom d'un scenario doit a priori être en style minMaj (cf $MinMaj).
 
@@ -1959,49 +2004,49 @@ From package [Scenario](#scenario)
 
 NomScenarioInstantie
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées. Si trop d'information sont à décrire, il peut être préférable de numéroter les scénario et de définir leur contenu via le résumé du scénario.
 
 IntentionScenario
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Si un scénario est décrit de manière détaillée sous la forme d'une séquence d'actions, le "résumé" associé au scénario doit principalement décrire l'intention du scénario et positionner celui-ci par rapport aux autres scénarii correspondant au même cas d'utilisation. 
 
 SequenceDActions
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Le scenario n'est pas décrit sous forme d'une séquence d'actions clairement identifiables et repréable au sein d'une séquence.
 
 Action
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La phrase ne correspond pas à une action du système ou d'un acteur (cf $SequenceDActions)(cf $SujetAction).
 
 ActionVersPrecondition
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La description du scenario comporte des éléments qui semblent relever des préconditions associés au scénario, plutôt qu'à des actions.
 
 ActionVersPostcondition
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La description du scenario comporte des éléments qui semblent relever des postconditions associés au scénario, plutôt qu'à des actions.
 
 SujetAction
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur).   
 
 SujetInstancie
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Le sujet des phrases d'actions doivent correspondre à chaque fois à un acteur instancié ou un système instancié et ces sujets doivent faire référence autant que possible à des éléments de modèles définis par ailleurs.
 
@@ -2011,7 +2056,7 @@ From package [Scenario](#scenario)
 
 IntermediaireAction
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La ou les actions doivent être reformulées de manière à ce que le sujet de l'action soit clairement identifié (cf $SujetAction) même si des intermediaires peuvent figurer dans l'action à titre d'illustration et/ou pour donner des détails quand aux interactions concretes entres les acteurs et le systeme.
 
@@ -2021,7 +2066,7 @@ From package [Scenario](#scenario)
 
 ActionAtomique
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Certaines descriptions d'actions font références implicitement ou explicitement (via des connecteurs "et" par exemple) à plusieurs actions atomiques qui devraient décomposées.
 
@@ -2029,13 +2074,13 @@ From package [Scenario](#scenario)
 
 ActionConcrete
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   L'action ou les actions ne sont pas décrites de manières suffisemment concrètes, soit en terme des moyens utilisés pour les interactions, soit en termes des informations échangées.
 
 ParametreConcret
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Les paramètres des actions doivent avoir des valeurs concrétes (cf $ValeurConcrete).   
 
@@ -2043,7 +2088,7 @@ From package [Scenario](#scenario)
 
 ActionMetier
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La description de l'action doit faire référence à des termes métiers et ne doit pas comporter par exemple de détails techniques inutiles ou ne correspondant pas au niveau d'abstraction du scénario.
 
@@ -2051,13 +2096,13 @@ From package [Scenario](#scenario)
 
 MessageInexplique
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La raison menant au déclenchement du message n'est pas facilement compréhensible ou devrait être explicitée.
 
 TypeDeMessage
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Il n'est pas clair si le message correspond à l'invocation d'une opération ou à une valeur de retour.
 
@@ -2065,7 +2110,7 @@ From package [Scenario](#scenario)
 
 ValeurDeRetour
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Le message devrait correspondre à une valeur de retour et non pas à l'invocation d'une opération. 
 
@@ -2073,7 +2118,7 @@ From package [Scenario](#scenario)
 
 RetourInexplique
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Il n'est pas facile de comprendre à quelle invocation d'opération ce message, qui semble correspondre à une valeur de retour, doit être associé.
 
@@ -2081,13 +2126,13 @@ From package [Scenario](#scenario)
 
 RetourManquant
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Il n'est pas facile de comprendre quel et le retour associé à l'invocation d'une opération soit parcequ'il ne semble pas être fait mention d'un tel retour, soit parceque plusieurs messages pouvant correspondre à des retours sont des candidats potentiels.
 
 Responsabilites
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La répartition des responsabilités entre objets n'est pas claire ou ne semble pas être logique.
 
@@ -2095,7 +2140,7 @@ From package [Scenario](#scenario)
 
 ReferenceScenario
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   Le diagramme de séquence ou de communication n'est pas clairement identifié, ou si cet identificateur existe, celui-ci n'est pas en lien direct et systèmatique avec l'identificateur du scenario qu'il représente. La tracabilité entre representation graphique et textuelle des scenarios n'est pas assurée.
 
@@ -2103,7 +2148,7 @@ From package [Scenario](#scenario)
 
 PresenceObjet
 -------------------
-From package [Scenario](#scenario)  
+Dans le paquetage [Scenario](#scenario)  
 
   La raison de la présence de l'objet dans le diagramme n'est pas clairement explicitée, ou ne semble pas logique. Pour qu'un objet soit dans un diagramme correspondant à un scénario il doit soit être (1) préxister au scénario, (2) soit être créé dans le cadre du scénario, (3) soit correspondre à un objet retourné par une opération, (3) soit figurer comme paramêtre d'une opération. Dans le cas (3) et (4) au moins un résultat ou paramètre doit faire référence au nom de l'objet.
 
@@ -2114,7 +2159,7 @@ Sequence
 
 ObjetClassifie
 -------------------
-From package [Sequence](#sequence)  
+Dans le paquetage [Sequence](#sequence)  
 
   Un ou plusieurs objets n'indiquent pas de manière satisfaisante la classe dont ils sont à l'origine.
 
@@ -2127,25 +2172,25 @@ Systeme
 
 NomSysteme
 -------------------
-From package [Systeme](#systeme)  
+Dans le paquetage [Systeme](#systeme)  
 
   Les noms des systèmes et des sous-systèmes doivent clairement reflêter leur rôle et/ou la décomposition réalisée, ne doivent pas être générique (par exemple "Systeme" est à éviter), et doivent clairement montrer leur status de systèmes (par exemple SystemeDeGestionDesBatiment est correct alors que Batiment ne l'est pas).
 
 DecompositionSousSysteme
 -------------------
-From package [Systeme](#systeme)  
+Dans le paquetage [Systeme](#systeme)  
 
   La décomposition en termes de sous systèmes ne semble pas adéquate, pas équilibrée et/ou pas justifiée.
 
 SurDecomposition
 -------------------
-From package [Systeme](#systeme)  
+Dans le paquetage [Systeme](#systeme)  
 
   La décomposition en sous-systèmes fait apparaître trop de sous-systèmes sans pour autant que ceux-ci semblent justifiés et/ou il serait peut être pertinent de les regrouper en sous-systèmes plus "gros", quitte éventuellement à réaliser une décomposition hiérarchique.
 
 LimiteDuSysteme
 -------------------
-From package [Systeme](#systeme)  
+Dans le paquetage [Systeme](#systeme)  
 
   Les limites du systeme ne sont pas clairement identifiées et/ou il n'est pas clairement établi quel est le rôle exact du système dans la situation décrite.
 
@@ -2156,7 +2201,7 @@ Tache
 
 NomTache
 -------------------
-From package [Tache](#tache)  
+Dans le paquetage [Tache](#tache)  
 
   Dans un modèle de tâches, le nom des tâches doit correspondre à une forme verbale à l'infinitif et les tâches correspondant à des cas d'utilisation doivent suivre les règles correspondantes (cf $NomCU). De plus le nom des tâches doit faire référence autant que possible aux termes définis dans le glossaire.
 
@@ -2164,7 +2209,7 @@ From package [Tache](#tache)
 
 NomenclatureTache
 -------------------
-From package [Tache](#tache)  
+Dans le paquetage [Tache](#tache)  
 
   Le nom des tâches doit être en style MajMin (cf $MajMin).
 
@@ -2172,7 +2217,7 @@ From package [Tache](#tache)
 
 TacheComposite2
 -------------------
-From package [Tache](#tache)  
+Dans le paquetage [Tache](#tache)  
 
   Une tâche composite doit comporter au moins deux sous-tâches.
 
@@ -2180,13 +2225,13 @@ From package [Tache](#tache)
 
 TacheElementaire
 -------------------
-From package [Tache](#tache)  
+Dans le paquetage [Tache](#tache)  
 
   Une tâche élementaire ne peut pas être une tâche abstraite.
 
 TypeTacheComposite
 -------------------
-From package [Tache](#tache)  
+Dans le paquetage [Tache](#tache)  
 
   Une tâche composite est (1) soit abstraite, (2) soit du même type que toutes ses sous-tâches.
 
@@ -2197,7 +2242,7 @@ TexteTechnique
 
 Langage
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte comporte un ou plusieurs éléments de langages incorrects et/ou peu appropriés au contexte du document.
 
@@ -2205,13 +2250,13 @@ From package [TexteTechnique](#textetechnique)
 
 Langues
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Des éléments en différentes langues cohabitent au sein d'une même phrase, d'un même texte ou d'un même identificateur, sans pour autant que cela soit justifié.
 
 Orthographe
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte comporte une ou plusieurs fautes d'orthographe. 
 
@@ -2219,7 +2264,7 @@ From package [TexteTechnique](#textetechnique)
 
 Ponctuation
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Les règles de ponctuation associées au langage utilisé ne sont pas respectées. 
 
@@ -2227,13 +2272,13 @@ From package [TexteTechnique](#textetechnique)
 
 Grammaire
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   La grammaire du langage n'est pas respectée.
 
 Style
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le style du texte est inappoprié. 
 
@@ -2241,13 +2286,13 @@ From package [TexteTechnique](#textetechnique)
 
 Formatage
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le formatage du texte n'est pas adéquat.
 
 Abbreviation
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte comporte une ou plusieurs abbréviations et/ou acronymes n'étant pas définis/nécessaires/compréhensibles et/ou indispensables.
 
@@ -2257,13 +2302,13 @@ From package [TexteTechnique](#textetechnique)
 
 ArticleInDefini
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Un article défini est utilisé (par exemple "le", "au", ...) sans que le ou les objets referencés soit clairement identifiés ou un article indéfini est utilisé (par exemple "un" , "des" , ...) alors que ce devrait être un article défini.
 
 RerefenceAmbigue
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Une référence ambigüe est faite à un objet. Ce peut être une référence via un article défini (e.g. "le"),
 
@@ -2271,25 +2316,25 @@ From package [TexteTechnique](#textetechnique)
 
 Vocabulaire
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   L'utilisation des termes utilisés ne semble pas systèmatique ou il est difficile de déterminer quelles combinaisons de termes sont spécifiques au domaine considéré ou l'utilisation de synonymes et/ou de paraphrases est inadapté. 
 
 Glossaire
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Un ou des termes potentiellement spécifiques à un domaine particulier sont utilisés sans que ceux-ci soient présentant dans un glossaire ou l'utilisation de ces termes dans le texte ne semble pas compatible avec la définition donnée dans le glossaire.
 
 TermeMetier
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Un ou des termes utilisés ne semble(nt) pas être conformes au vocabulaire utilisé par les experts membres du métier considéré ou un terme plus précis semble être disponible dans ce domaine.
 
 Identificateur
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Les identificateurs doivent être clairs, compréhensibles en dehors de leur contexte immédiat, doivent reflêter les objets auquels ils font références et ne pas constituer de paraphrases complexes de l'objet auquel ils font référencent.
 
@@ -2297,37 +2342,37 @@ From package [TexteTechnique](#textetechnique)
 
 Temps
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le temps (passé, présent, futur ...) ou la modalité (devoir, pouvoir, savoir, ...) associé à un ou plusieurs éléments de la phrase est inadapté, incorrect, flou, et/ou à préciser.  
 
 Contexte
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Certains éléments du texte ne sont pas facilement interprétables en l'absence d'un contexte clairement défini ou la dépendance par rapport à ce contexte devrait être limitée.
 
 PhraseMalConstruite
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Une ou plusieurs phrases sont mal construites, trop longues, non achevées, contiennent trop d'imbrications, d'enchainements et/ou de références ambigües.
 
 ImbricationInutile
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Les éléments d'imbrications telles que les parenthèses, les guillemets, les tirets, les deux points, et autres types de ponctuations devraient être remplacés par des structures de phrases plus explicitant. 
 
 TexteSection
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Les titres des sections et de sous-sections ne doivent s'enchainer sans qu'un texte d'introduction ou de liaison ne les séparent.
 
 Trigramme
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Un trigramme (cf $Trigramme) doit être utilisé pour reférencer une partie prenante.
 
@@ -2341,97 +2386,97 @@ From package [TexteTechnique](#textetechnique)
 
 Justification
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   L'information fournie n'est pas claire ou n'est pas justifiée. 
 
 Subjectif
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte fait référence à un ou des éléments pouvant être interpretée de manière subjective, imprécise et/ou non quantifiable.  
 
 Precision
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte comporte des termes flous ou trop imprécis par rapport au contexte du document. Par exemple le connecteur "ou" peut être interpretée comme étant exclusif ou non. 
 
 Redondance
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte comporte des éléments redondants entre eux ou par rapport à d'autres descriptions. 
 
 Paraphrase
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte comporte des paraphrases qui n'apportent rien, donne une impression de redite, ou le sentiment d'un certain malaise lié à l'envie de re-phraser des concepts non définis ou mal exprimés auparavant. Il peut aussi s'agir d'une figure ou d'un titre de figure qui ne fait que "rephraser" la même information sans plus value réelle.
 
 Incoherence
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte comporte des éléments pouvant se révéler incohérents entre eux ou par rapport à d'autres descriptions. 
 
 Completude
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte est trop incomplet ou ne fait pas référence à tous les objets pertinents dans l'univers du discours.
 
 Invalide
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   La texte fait référence à une propriété, un objet, ou un fait pouvant être jugé invalide ou irréaliste.
 
 Homogeneite
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte fourni n'est pas homogène avec les descriptions suivantes et précédentes faisant références à des objets similaires.
 
 Exemple
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le status d'exemple, d'illustration ou de cas général n'est pas explicite et/ou il est souhaitable de séparer de manière explicite les éléments qui releve de l'illustration ou du cas général.
 
 Sujet
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le sujet de la phrase n'est pas clair, peu explicite ou erroné.
 
 Complexite
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   La formulation de la phrase est inutilement complexe et peut être simplifée.
 
 Interpretation
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   La phrase est difficile a interpretée et/ou peut être interpretée de manière inadéquate, erronée et/ou ambigüe.
 
 NonAbstraction
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Le texte ou le modèle comporte un ou plusieurs éléments faisant référence à des concepts ou objets correspondant à des niveaux d'abstractions différents et/ou trop détaillés. Le niveau d'abstraction devrait être homogène globalement et le fait que certaines parties soient très détaillées et d'autres plus abstraites pose problème si cela n'est pas justifié par ailleurs.
 
 HypotheseNonValidee
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Une hypothèse est faite implicitement ou explicitement sans pour autant que cette hypothèse ai été validée. 
 
 Pipe
 -------------------
-From package [TexteTechnique](#textetechnique)  
+Dans le paquetage [TexteTechnique](#textetechnique)  
 
   Une confusion est faite entre la description/representation/identification d'un objet et cet objet lui même.
 
@@ -2442,7 +2487,7 @@ Tracabilite
 
 FormatReferenceLignes
 -------------------
-From package [Tracabilite](#tracabilite)  
+Dans le paquetage [Tracabilite](#tracabilite)  
 
   La référence à une ligne <L> d'une ressource <R> se fait de la manière suivante :  [<R>#<L>]. Plusieurs lignes d'une même ressources peuvent être séparées par des virgules, et un interval de lignes peut être constitué en utilisant un '-'. Plusieurs ressources différentes peuvent être séparées par un point virgule. 
 
@@ -2452,13 +2497,13 @@ From package [Tracabilite](#tracabilite)
 
 CUExigenceFonctionnelle
 -------------------
-From package [Tracabilite](#tracabilite)  
+Dans le paquetage [Tracabilite](#tracabilite)  
 
   La relation entre un (ou plusieurs) cas d'utilisation et les exigences fonctionnelles ne sont pas clairs et/ou le cas d'utilisation ne semble pas justifié par une exigence fonctionnelle. 
 
 CURoleExigences
 -------------------
-From package [Tracabilite](#tracabilite)  
+Dans le paquetage [Tracabilite](#tracabilite)  
 
   Le role joué par les exigences reliées au cas d'utilisation n'est pas clair, et il n'est par exemple pas facile de déterminer quelles sont les types des exigences via leur nom, quelles sont l'exigence fonctionnelle principale réalisée par le cas d'utilisation, etc.
 
@@ -2469,1123 +2514,1123 @@ UMLModelio
 
 ModelioR1000
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A Model Element cannot abstract itself.
 
 ModelioR1010
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The top Partitions of an Activity must not have a Super-Partition.
 
 ModelioR1020
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The source and the target of a Flow must be contained in the same Structured Activity Node.
 
 ModelioR1030
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The source and the target of a Flow must be owned by the same Activity.
 
 ModelioR1040
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Activity Parameter Node must be represeneted by a Behavior Parameter owned by the same Activity.
 
 ModelioR1050
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Activity Parameter Node cannot have both incoming and outgoing edges.
 
 ModelioR1060
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Activity Parameter Nodes with no incoming flow and one or more outgoing flow must have a Behavior Parameter with “In” or “In/Out” parameter passing mode.
 
 ModelioR1070
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Activity Parameter Nodes with no outgoing flow and one or more incoming flow must have a Behavior Parameter with “Out” or “In/Out” parameter passing mode.
 
 ModelioR1080
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All Partitions of the same nesting level must represent Parts of the same Classifier.
 
 ModelioR1090
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If a Sub-Partition is non-external and represents a Classifier then the represented Classifier must be nested in the Classifier represented by its Super-Partition or be the extremity of a Composition with the latter.
 
 ModelioR1100
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If a Sub-Partition represents a Part nested in a Classifier then its Super-Partition must represent the Classifier or an instance of the latter.
 
 ModelioR1110
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There must be one to one correspondence between: (A) the Pins of a Call Behavior Action, and (B) the In, Out, InOut or Return Behavior Parameters of the called Behaviour.
 
 ModelioR1130
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The type and the maximum cardinality of a Call Action'’s Pin must match the type and max multiplicity of the represented Parameter.
 
 ModelioR1140
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There must be one to one correspondence between: (A) the Pins of a Call Operation Action, and (B) the In, Inout, Out and Return parameters of the called Operation.
 
 ModelioR1150
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The Call Operation Action or Send Signal Action has more than one target Pin.
 
 ModelioR1160
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A target Pin can only be owned by Call Operation Actions and Send Signal Actions
 
 ModelioR1170
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The type of the target Pin must be the same as the type that owns the Operation.
 
 ModelioR1180
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Control Flows may not have Object Nodes at either end, except for Object Nodes with control type.
 
 ModelioR1190
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The Decision-Merge Node is used both as a Decision node and as a Merge node at the same time.
 
 ModelioR1200
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The edges coming into and out of a Decision Merge Node must be either all Object Flows or all Control Flows.
 
 ModelioR1230
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Only Control Flows can have Initial Nodes as their source.
 
 ModelioR1250
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If a Fork/Join Node has an Object Flow in its incoming edges, it must have an Object Flow in its outgoing edges and vice versa. The same applies for Control Flows.
 
 ModelioR1280
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Object Flows may not have Actions at either end.
 
 ModelioR1290
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Object Nodes connected by an Object Flow, with optionally intervening control nodes, must have compatible types. In particular, the downstream Object Node type must be the same or a super type of the upstream Object Node type.
 
 ModelioR1300
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Object Nodes connected by an Object Flow, with optionally intervening control nodes, must have the same upper bounds.
 
 ModelioR1310
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An edge with constant weight may not target an Object Node, or lead to an Object Node downstream with no intervening actions and with an upper bound less than the weight.
 
 ModelioR1320
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Object Flow must not be simultaneusly multi-cast and multi-receive.
 
 ModelioR1350
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If an Object Node has a ‘'Selection behavior’‘, then the ’‘Ordering’‘ of the Object Node is ordered and vice versa.
 
 ModelioR1360
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Input Pins may have outgoing edges only when both the following conditions are met: (1) they are on Actions that are Structured Nodes, and (2) these edges must target a Node contained by the Structured Node.
 
 ModelioR1370
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Output Pins may have incoming edges only when both the following conditions are met: (1) they are on Actions that are Structured Nodes, and (2) these edges must come from a node contained by the Structured Node.
 
 ModelioR1380
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There must be one to one correspondence between: (A) the Pins of a Send Signal Action, and (B) the attributes of the sent Signal.
 
 ModelioR1390
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The max cardinality of an argument Pin must be the same as for the represented Attribute.
 
 ModelioR1400
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Activity Parameter Node can only belong to an Activity.
 
 ModelioR1410
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Only one Association End of an Association can be aggregate or composite.
 
 ModelioR1420
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Actors and UseCases can only have binary Associations.
 
 ModelioR1430
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Multiplicities of an AssociationEnd must be consistent: MultiplicityMin cannot be ‘*’ and MultiplicityMin must be inferior to MultiplicityMax.
 
 ModelioR1440
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   AssociationEnds cannot be composite on n-ary Associations.
 
 ModelioR1450
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If an association is a composition, then the opposite maximum multiplicity must be 1.
 
 ModelioR1460
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A public association oriented from a public Classifier cannot be linked to a private or protected Classifier.
 
 ModelioR1470
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The name of an AssociationEnd’s qualifiers must be unique.
 
 ModelioR1480
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Attribute must be typed by a primitive type.
 
 ModelioR1490
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In an instance, the type of an instantiated attribute must be in the instantiated class or in its parent classes.
 
 ModelioR1500
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In an instance, the name of an instantiated attribute must be the same as the corresponding attribute.
 
 ModelioR1520
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The name of a BindableInstance must be unique in it Classifier.
 
 ModelioR1530
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An association or a port should have a name.
 
 ModelioR1540
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A BindableInstance’s RepresentedFeature must not refer itself, directly or indirectly.
 
 ModelioR1550
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If a BinbdableInstance has a type and has a represented feature, the type of the instance must be compatible with the type of this feature.
 
 ModelioR1560
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Sub classes of an active class must be active.
 
 ModelioR1570
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A class cannot represent more than one ClassAssociation.
 
 ModelioR1580
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Attributes, Associations and Operations cannot simultaneously be abstract and class.
 
 ModelioR1590
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Primitive GeneralClass cannot have associations.
 
 ModelioR1600
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A primitive class cannot have collaborations.
 
 ModelioR1610
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A primitive class cannot have state machines.
 
 ModelioR1620
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A non-abstract Classifier cannot have abstract methods.
 
 ModelioR1640
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A maximum of one ElementImport must exist between a NameSpace and another NameSpace or between an Operation and a NameSpace.
 
 ModelioR1650
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Enumeration cannot be abstract.
 
 ModelioR1660
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An enumeration is always prilmitive.
 
 ModelioR1670
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   EnumlerationLitteral defined in an Enumeration must have an unique name.
 
 ModelioR1680
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   For a Call-type Event, the ‘Called operation’ field must be defined, whereas the ‘Instanciated signal’ must be empty.
 
 ModelioR1690
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The ‘Expression’ field for a Change-type Event must be defined, whereas the ‘Called operation’ and ‘Instanciated signal’ fields must be empty.
 
 ModelioR1700
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The ‘Instantiated signal’ field for a signal-type Event must be defined, whereas the ‘Called operation’ and ‘Expression’ fields must be empty.
 
 ModelioR1710
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The ‘Expression’ field for a Time-type Event must be defined, whereas the ‘Called operation’ and ‘Instanciated signal’ fields must be empty.
 
 ModelioR1720
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An abstract NameSpace should only inherit from an abstract NameSpace.
 
 ModelioR1730
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A generalisation must be created between two model elements of the same type, except in the case of a signal, which can specialize a Signal or a Class.
 
 ModelioR1740
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An InformationFlow should convey information.
 
 ModelioR1750
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Repetition of names is forbidden for all AtrributeLinks.
 
 ModelioR1760
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There cannot be inconsistency in the multiplicities of an Instance
 
 ModelioR1780
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The name of an Instance must be unique in its NameSpace.
 
 ModelioR1790
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An instance must have a name, or the instantiation association must be defined.
 
 ModelioR1800
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If an Operator is of type opt, loop, break or neg, there cannot be more than one Operand.
 
 ModelioR1810
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An actual Gate on an InteractionUse must reference a formal Gate contained by the referenced Interaction.
 
 ModelioR1820
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A gate cannot cover a lifeline.
 
 ModelioR1830
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A PartDecomposition cannot receive ‘create’ or ‘destroy’ messages.
 
 ModelioR1860
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In an interface, the visibility of all Features must be public.
 
 ModelioR1870
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An interface cannot be implemented twice by the same class or the same component.
 
 ModelioR1910
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A Link that instantiates an association must be coherent with this association.
 
 ModelioR1950
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Messages of type ‘reply’ cannot invoke an Operation.
 
 ModelioR1960
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A message must have the same name as the invoked Operation.
 
 ModelioR1970
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A TemplateParameterSubstitution must reference a TemplateParameter.
 
 ModelioR1980
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The names of a Classifier’s Attributes and AssociationEnds must be unique.
 
 ModelioR1990
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The name of a Classifier’s inherited Attributes and Roles must be unique.
 
 ModelioR2010
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In a Dictionary, the name of each element must be unique.
 
 ModelioR2030
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In a PropertyContainer, the name of each EnumerationPropertyType must be unique.
 
 ModelioR2050
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Some elements must have a name.
 
 ModelioR2060
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The name of a NameSpace must be unique in its NameSpace.
 
 ModelioR2080
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In a PropertySet, the name of each Property must be unique.
 
 ModelioR2100
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In a EnumerationPropertyType, the name of each PropertyEnumerationLiteral must be unique.
 
 ModelioR2120
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In a PropertyContainer, the name of each PropertySet must be unique.
 
 ModelioR2140
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In a PropertyContainer, the name of each PropertyType must be unique.
 
 ModelioR2160
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In an Analyst Container, the name of each element must be unique.
 
 ModelioR2170
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The name of a Behavior must be unique in its NameSpace.
 
 ModelioR2180
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   No cycles can exist in a NameSpace inheritance graph.
 
 ModelioR2190
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A maximum of one generalization may exist between two namespaces.
 
 ModelioR2200
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A NameSpace cannot both derive and import another NameSpace.
 
 ModelioR2210
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A leaf NameSpace cannot be derived.
 
 ModelioR2220
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A leaf NameSpace cannot be abstract.
 
 ModelioR2230
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A root NameSpace cannot inherit from any other NameSpace.
 
 ModelioR2240
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There can be no inter-package/inter-component dependency cycle.
 
 ModelioR2250
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All operations in a Classifier must have a different signature from inherited public and protected operations. Except for constructor, destructor and redefined operations.
 
 ModelioR2260
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Each Operation in a Classifer must have a different signature.
 
 ModelioR2270
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All an Operation’s Collaborations must have a different name.
 
 ModelioR2330
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All an Operation’s Parameters must have a different name.
 
 ModelioR2340
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A redefined Operation must belong to a parent or an implemented Interface of the owner of the Operation.
 
 ModelioR2350
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A private Operation cannot be redefined.
 
 ModelioR2360
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The visibility of an Operation cannot be greater than that of the Operations it redefines.
 
 ModelioR2370
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A class (static) Operation cannot be redefined.
 
 ModelioR2380
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An abstract Operation must not redefine a concrete Operation.
 
 ModelioR2390
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A constructor cannot have return parameters.
 
 ModelioR2400
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A destructor cannot have any kind of parameters.
 
 ModelioR2410
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An operation cannot own both ‘create’ and ‘destroy’ stereotypes.
 
 ModelioR2420
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Operation must have the same signature as the Operation it redefines.
 
 ModelioR2430
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All an Operation’s StateMachines must have a different name.
 
 ModelioR2440
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Operation cannot belong to an Enumeration.
 
 ModelioR2450
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A package cannot have inheritance links.
 
 ModelioR2470
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A maximum of one PackageImport link may exist between a NameSpace and a Package.
 
 ModelioR2500
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An ‘out’ Parameter cannot have a default value.
 
 ModelioR2510
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There cannot be any direct link between two Class Ports.
 
 ModelioR2520
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If a Port runs a delegation towards an internal part, it must provide at least one interface.
 
 ModelioR2530
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If a Port receives a delegation from an internal part, it must provide at least one interface.
 
 ModelioR2540
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The interfaces provided by a port must be implemented by the Class that types the Port.
 
 ModelioR2550
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If a Port is a behavior port, its provided interfaces must be implemented by the Class it belongs to.
 
 ModelioR2560
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A behavior Port must provide at least one interface.
 
 ModelioR2570
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   If a Port is a behavior port, the type of the port must be either the Class it belongs to or undefined.
 
 ModelioR2580
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A region cannot contain more than one deep history state.
 
 ModelioR2590
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A region cannot contains more than one initial state.
 
 ModelioR2600
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A state machine or a state cannot have two states with the same name.
 
 ModelioR2610
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Only submachine states can have connection point references.
 
 ModelioR2620
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Submachine states should not have entry or exit pseudo states defined.
 
 ModelioR2630
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A region cannot contain more than one shallow history state.
 
 ModelioR2640
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The context of a state machine cannot be an interface.
 
 ModelioR2650
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The context of a protocol state machine must be a Classifier.
 
 ModelioR2660
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A state in a protocol state machine cannot have entry, exit, or do activity actions.
 
 ModelioR2670
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A protocol state machine cannot have history vertexes.
 
 ModelioR2680
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The number of parameter of a TaggedValue must be the same as the number of parameter defined in the TaggedValue declaration.
 
 ModelioR2690
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An element cannot have a TemplateBinding towards itself.
 
 ModelioR2700
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A TemplateBinding can only substitute each TemplateParameter of the instantiated element once.
 
 ModelioR2720
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A TemplateBinding must be created between two elements of the same type or between a Class and a DataType.
 
 ModelioR2730
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A TemplateBinding must substitute all the TemplateParameters of the instanciated template element, and the TemplateParameterSubstitution must be defines in the same order as the TemplateParameters.
 
 ModelioR2740
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   In a TemplateBinding, the TemplateParameterSubstitution must belong to the instantiated template element.
 
 ModelioR2750
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A transition from a fork or join pseudo state should not have guards or triggers.
 
 ModelioR2760
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A fork segment must always target a state.
 
 ModelioR2770
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A join segment must always originate from a state.
 
 ModelioR2780
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Transitions outgoing pseudostates may not have a trigger (except for those coming out of the initial pseudostate).
 
 ModelioR2790
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A transition from one region to another in the same immediate enclosing composite state is not allowed.
 
 ModelioR2800
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An initial vertex can have at most one outgoing transition.
 
 ModelioR2810
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   History vertices can have at most one outgoing transition.
 
 ModelioR2820
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The target of a transition cannot be an initial vertex.
 
 ModelioR2830
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   The source of a transition cannot be a final vertex.
 
 ModelioR2840
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A transition should have only one of Processed, Effects, or BehaviorEffet defined.
 
 ModelioR2850
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An element cannot have a usage dependency towards itself.
 
 ModelioR2860
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A maximum of one dependency may exist between two use cases.
 
 ModelioR2870
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There must be no cycle in use cases << extend >> dependency graph.
 
 ModelioR2880
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There must be no cycle in use cases << include >> dependency graph.
 
 ModelioR2890
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A communication link cannot have the same actor or use case as its source and target.
 
 ModelioR2900
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An << extend >> use case dependency must reference at least one extension point.
 
 ModelioR2910
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An << extend >> use case dependency can only reference the target’s extension points.
 
 ModelioR2920
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Extension points can only be referenced by an << extend >> use case dependency.
 
 ModelioR2930
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Message and CommunicationMessage cannot have both Signal and Operation properties defined.
 
 ModelioR2940
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All transitions incoming a join vertex must originate in different regions of an orthogonal state.
 
 ModelioR2950
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All transitions outgoing a fork vertex must target states in different regions of an orthogonal state.
 
 ModelioR2960
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Synonym, antonym, homonym, context, and kind-of dependencies can only link two terms.
 
 ModelioR2970
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An Assigned dependency must be from an Actor, an Interface, a Package, or a Process, toward a Goal.
 
 ModelioR2980
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A Measure dependency must be from a ModelElement toward a Goal.
 
 ModelioR2990
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A Guarantee dependency must be from a Requirement toward a Goal.
 
 ModelioR3000
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Positive influence and Negative influence dependencies must be between two Goals.
 
 ModelioR3010
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A refers dependency must be between a Business Rule and a Term.
 
 ModelioR3020
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A related dependency must be must be between two Business Rules or two Terms.
 
 ModelioR3030
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A refine dependency must be between either: 1) from a Model Element or a Requirement towards a Requirement 2) from a Business Rule, an Activity or an Operation towards a Business Rule.
 
 ModelioR3040
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   An implement dependency must be from a Process or a Class towards a Business Rule.
 
 ModelioR3050
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A part dependency must be between two Requirements or between two Goals.
 
 ModelioR3060
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A satisfy or verify dependency must be from a ModelElement towards a Requirement.
 
 ModelioR3070
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A derive dependency must be from a UseCase or a Requirement towards a Requirement.
 
 ModelioR3080
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All FlowNodes should be part of a sequence starting with a StartEvent and finishing with an EndEvent.
 
 ModelioR3090
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A SequenceFlow cannot have its source or target in different Pools.
 
 ModelioR3100
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A SequcneFlow in a SubProcess must have its origin and target in the same SubProcess.
 
 ModelioR3110
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A SequenceFlow cannot target a StartEvent nor have an EndEvent as its source.
 
 ModelioR3130
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A MessageFlow cannot target a StartEvent or an IntermediateThrowEvent, nor have an EndEvent or an IntermediateCatchEvent as its source.
 
 ModelioR3140
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All outgoing SequenceFlow from an EventBasedGateway or a ParallelGateway must have its guard properties empty.
 
 ModelioR3150
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A MessageFlow cannot link two elements in the same lane.
 
 ModelioR3160
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A MessageFlow cannot have a Gateway as its source or target.
 
 ModelioR3170
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   Inclusive Gateway,Complex Gateway and Parallel Gateway must have at least two outgoing Sequence Flows.
 
 ModelioR3180
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A FlowElement (and respectively a BaseElement) cannot have a SequenceFlow (respectively a MessageFlow) towards itself.
 
 ModelioR3190
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A DataAssociation cannot target a DataInput nor have a DataOutput as its source.
 
 ModelioR3220
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A SequenceFlow outgoing from an EventBasedGateway must target an IntermediaryCatchEvent.
 
 ModelioR3230
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   All SequenceFlows outgoing from an ExclusiveGateway must have a guard, except for the default SequenceFlow.
 
 ModelioR3240
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   There can only be one sequence in a Process, a SubProcess or a Pool.
 
 ModelioR3250
 -------------------
-From package [UMLModelio](#umlmodelio)  
+Dans le paquetage [UMLModelio](#umlmodelio)  
 
   A Process, a SubProcess, or a Pool should have at least one StartEvent and one EndEvent.
 
@@ -3596,229 +3641,229 @@ UMLStarUML
 
 StarUML1
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   AssociationEnds within an Association must have unique names. --- Association
 
 StarUML2
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Two or more Aggregations or Composite AssociationEnds cannot exist within an Association. --- Association
 
 StarUML3
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Parameters must have unique names. --- BehavioralFeature
 
 StarUML4
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Attributes of the same name cannot exist within a Classifier. --- Classifier
 
 StarUML5
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   AssociationEnds on the other side must have unique names. --- Classifier
 
 StarUML6
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   An Attribute cannot have the same name as the Association on the other side, or as elements included in Classifier. --- Classifier
 
 StarUML7
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   AssociationEnd on the other side cannot have the same name as elements included in Classifier or its Attribute name. --- Classifier
 
 StarUML8
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Root element cannot have elements that are more generalized than itself. --- GeneralizableElement
 
 StarUML9
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Leaf element cannot have elements that are more specialized than itself. --- GeneralizableElement
 
 StarUML10
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Looped inheritance structure is not allowed. --- GeneralizableElement
 
 StarUML11
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   All features of interfaces must be public. --- Interface
 
 StarUML12
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   ComponentInstance must accurately assign a component as its origin. --- ComponentInstance
 
 StarUML13
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   NodeInstance must accurately assign a node as its origin. --- NodeInstance
 
 StarUML14
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   AssociationEndRole must be connected with ClassifierRole. --- AssociationEndRole
 
 StarUML15
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   ClassifierRole cannot have its own features. --- ClassifierRole
 
 StarUML16
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   ClassifierRole cannot become the ClassifierRole for another ClassifierRole. --- ClassifierRole
 
 StarUML17
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Sender and receiver of a message must participate in the collaboration that constitutes the interaction context. --- Message
 
 StarUML18
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Actor can only have associations that are connected to UseCase, Class or Subsystem. --- Actor
 
 StarUML19
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   CompositeState can have a maximum of one initial state only. --- CompositeState
 
 StarUML20
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   CompositeState can have a maximum of one deep history only. --- CompositeState
 
 StarUML21
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   CompositeState can have a maximum of one shallow history only. --- CompositeState
 
 StarUML22
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Concurrent composite state must contain a minimum of two composite states. --- CompositeState
 
 StarUML23
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Concurrent state can only have composite state as its sub state. --- CompositeState
 
 StarUML24
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Final state cannot have outgoing transition. --- FinalState
 
 StarUML25
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Initial state can have a maximum of one outgoing transition and cannot have incoming transition. --- Pseudostate
 
 StarUML26
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   History state can have a maximum of one outgoing transition. --- Pseudostate
 
 StarUML27
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Junction vertex must have a minimum of one incoming transition and one outgoing transition each. --- Pseudostate
 
 StarUML28
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Choice vertex must have a minimum of one incoming transition and one outgoing transition each. --- Pseudostate
 
 StarUML29
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   StateMachine can be integrated either with Classifier or with BehavioralFeature. --- StateMachine
 
 StarUML30
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Top state must always be composite state. --- StateMachine
 
 StarUML31
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   No state can contain top state. --- StateMachine
 
 StarUML32
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Top state cannot have outgoing transition. --- StateMachine
 
 StarUML33
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   SubmachineState cannot have concurrency. --- SubmachineState
 
 StarUML34
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Transition that points to Pseudostate cannot have Trigger. --- Transition
 
 StarUML35
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   ActivityGraph can express dynamic behavior of Package, Classifier or BehavioralFeature. --- ActivityGraph
 
 StarUML36
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   ActionState cannot have internal transition, exit action or do activity. --- ActionState
 
 StarUML37
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   Outgoing transition of ActionState cannot have trigger event. --- ActionState
 
 StarUML38
 -------------------
-From package [UMLStarUML](#umlstaruml)  
+Dans le paquetage [UMLStarUML](#umlstaruml)  
 
   SubactivityState must have connection to ActivityGraph. --- SubactivityState
 
@@ -3829,7 +3874,7 @@ Valeur
 
 ResultatConcret
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Il est nécessaire de donner des valeurs concrètes aux résultats (cf $ValeurConcrete).
 
@@ -3837,7 +3882,7 @@ From package [Valeur](#valeur)
 
 ValeurConcrete
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Il est nécessaire d'utiliser des valeurs concrète, correspondant à des valeurs scalaires précises, à des identificateurs d'objets ou à des valeurs structurées. Les valeurs scalaires ou identificateurs d'objets peuvent être définis de manière globale et il est utile de les utiliser de manière cohérente et identique à la fois dans les descriptions textuelles et dans les diagrammes.
 
@@ -3847,7 +3892,7 @@ From package [Valeur](#valeur)
 
 ParametreObjet
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Un ou des paramétres prennent des valeurs scalaires alors qu'ils devrait plutôt correspondre à des objets et que des noms d'objets doivent donc être fourni (cf $NomObjet).
 
@@ -3855,7 +3900,7 @@ From package [Valeur](#valeur)
 
 AbusDeString
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Une utilisation abusive du type string est faite dans la modélisation.
 
@@ -3863,13 +3908,13 @@ From package [Valeur](#valeur)
 
 FormatValeur
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Le format de la valeur semble incorrect, imprécis, incohérent ou non défini.
 
 TypeValeur
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Il n'est pas facile d'inférer quel est le type de la valeur ou le type de valeur inféré ne semble pas être correct ou suffisemment précis.
 
@@ -3879,19 +3924,19 @@ From package [Valeur](#valeur)
 
 TypeValeurIncorrect
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Le type de la valeur fournie semble incorrect par rapport au type attendu par exemple par une variable, un parametre formel ou un type de résultat. Le problème peut provenir du fait que la valeur correspond par exemple au resultat d'une opération et que le nom de l'opération ne semble par cohérent avec ce type de retour. 
 
 ValeurInexpliquee
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Il n'est pas facile de comprendre ce que la valeur signifie, d'où elle provient et/ou comment elle est calculée/produite.
 
 ValeurConstante
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   TODO
 
@@ -3899,13 +3944,13 @@ From package [Valeur](#valeur)
 
 ValeurReflechie
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   Une ou plusieurs valeurs semblent totalement factices et ne pas résulter d'une reflexion approfondie. Des valeurs comme 123456 ou 001 reflêtent généralement l'absence de reflexion de la part d'un auteur et parfois de telles valeurs ne sont pas réalistes.
 
 Surcodification
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   L'utilisation de "codes" ne semble pas correspondre à la réalité du métier ou peut impliquer une charge cognitive inutilement élevée dans le cas d'interfaces personne systeme. 
 
@@ -3913,37 +3958,37 @@ From package [Valeur](#valeur)
 
 UniteValeur
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   TODO
 
 CardinalVsOrdinal
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   TODO
 
 ValeurPlausible
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   TODO
 
 ValeurComposite
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   TODO
 
 ValeurCollection
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   TODO
 
 LiteralEnumeration
 -------------------
-From package [Valeur](#valeur)  
+Dans le paquetage [Valeur](#valeur)  
 
   TODO
 
