@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="" version="3">
+  <DEPS>
+    <ID name="" mc="ExternDocument" uid="8414117c-16b2-4be4-a25b-a86e55c098d9"/>
+    <FOREIGNID name="HtmlStylesheet" mc="ExternDocumentType" uid="eac188f6-7f63-4251-9465-b117732b4398"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="" mc="ExternDocument" uid="8414117c-16b2-4be4-a25b-a86e55c098d9"/>
+    <PID name="TemplateDictionnaires" mc="Artifact" uid="f9d8a984-5691-47f1-afe5-0782d898be4b"/>
+    <ATTRIBUTES>
+      <ATT name="MimeType"><![CDATA[text/css]]></ATT>
+      <ATT name="Path"><![CDATA[C:\DEV\Modelio3Workspace\AssurAuto\.runtime\richnotes\8414117c-16b2-4be4-a25b-a86e55c098d9.css]]></ATT>
+      <ATT name="Abstract"></ATT>
+      <ATT name="Name"></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Type">
+        <FOREIGNID name="HtmlStylesheet" mc="ExternDocumentType" uid="eac188f6-7f63-4251-9465-b117732b4398"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

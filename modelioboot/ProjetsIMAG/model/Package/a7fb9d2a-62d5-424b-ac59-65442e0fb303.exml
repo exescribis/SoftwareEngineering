@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TemplatesDeRapports" version="3">
+  <DEPS>
+    <ID name="TemplatesDeRapports" mc="Package" uid="a7fb9d2a-62d5-424b-ac59-65442e0fb303"/>
+    <COMPID name="TemplateAnalyseEtConception" mc="Artifact" uid="8b06f4c4-e686-4dad-950e-91d6752e1d48"/>
+    <COMPID name="TemplateCasDUtilisation" mc="Artifact" uid="07aabcb7-15d0-46ce-ad94-b5656941aa4a"/>
+    <COMPID name="TemplateDictionnaires" mc="Artifact" uid="f9d8a984-5691-47f1-afe5-0782d898be4b"/>
+    <COMPID name="TemplateExigences" mc="Artifact" uid="a69e15bc-10f8-4a0e-ac73-fc23dff8f91b"/>
+    <FOREIGNID name="DocumentPublisher.DocumentFolder" mc="Stereotype" uid="01ec0f70-0000-12d5-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TemplatesDeRapports" mc="Package" uid="a7fb9d2a-62d5-424b-ac59-65442e0fb303"/>
+    <PID name="ProjetsIMAG" mc="Package" uid="efba0cc0-c274-4043-9fd6-fa87e43e1714"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TemplatesDeRapports]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="TemplateDictionnaires" mc="Artifact" uid="f9d8a984-5691-47f1-afe5-0782d898be4b"/>
+        <COMPID name="TemplateExigences" mc="Artifact" uid="a69e15bc-10f8-4a0e-ac73-fc23dff8f91b"/>
+        <COMPID name="TemplateCasDUtilisation" mc="Artifact" uid="07aabcb7-15d0-46ce-ad94-b5656941aa4a"/>
+        <COMPID name="TemplateAnalyseEtConception" mc="Artifact" uid="8b06f4c4-e686-4dad-950e-91d6752e1d48"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="DocumentPublisher.DocumentFolder" mc="Stereotype" uid="01ec0f70-0000-12d5-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

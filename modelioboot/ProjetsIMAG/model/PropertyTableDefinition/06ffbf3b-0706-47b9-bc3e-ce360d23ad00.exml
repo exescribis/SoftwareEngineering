@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ProprietesDesExigences" version="3">
+  <DEPS>
+    <ID name="ProprietesDesExigences" mc="PropertyTableDefinition" uid="06ffbf3b-0706-47b9-bc3e-ce360d23ad00"/>
+    <EXTID name="CodeReference" mc="PropertyType" uid="d7e8c057-0c19-46a9-9307-10436576efbf"/>
+    <EXTID name="Entre1Et4" mc="EnumeratedPropertyType" uid="6eb34117-2b6f-4d35-9d2b-c6cb6b37ef55"/>
+    <EXTID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ProprietesDesExigences" mc="PropertyTableDefinition" uid="06ffbf3b-0706-47b9-bc3e-ce360d23ad00"/>
+    <PID name="SchemaDesProprietes" mc="PropertyContainer" uid="010276c9-263f-4662-b5fe-b90d1e696e3b"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[ProprietesDesExigences]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Type" mc="PropertyDefinition" uid="db921c91-d43d-4f4e-98ea-703226249379"/>
+          <PID name="ProprietesDesExigences" mc="PropertyTableDefinition" uid="06ffbf3b-0706-47b9-bc3e-ce360d23ad00"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Type]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Priorité" mc="PropertyDefinition" uid="839b912a-a8c3-43d6-885f-9912a3030585"/>
+          <PID name="ProprietesDesExigences" mc="PropertyTableDefinition" uid="06ffbf3b-0706-47b9-bc3e-ce360d23ad00"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Priorité]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Entre1Et4" mc="EnumeratedPropertyType" uid="6eb34117-2b6f-4d35-9d2b-c6cb6b37ef55"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Références" mc="PropertyDefinition" uid="3b99348d-25c8-4856-a442-f7886291ae9a"/>
+          <PID name="ProprietesDesExigences" mc="PropertyTableDefinition" uid="06ffbf3b-0706-47b9-bc3e-ce360d23ad00"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Références]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="CodeReference" mc="PropertyType" uid="d7e8c057-0c19-46a9-9307-10436576efbf"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Maturité" mc="PropertyDefinition" uid="2d2e4cfa-b0bf-49e8-a476-4150b320a423"/>
+          <PID name="ProprietesDesExigences" mc="PropertyTableDefinition" uid="06ffbf3b-0706-47b9-bc3e-ce360d23ad00"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[1]]></ATT>
+            <ATT name="Name"><![CDATA[Maturité]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="Entre1Et4" mc="EnumeratedPropertyType" uid="6eb34117-2b6f-4d35-9d2b-c6cb6b37ef55"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

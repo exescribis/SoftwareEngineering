@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ProjetsIMAG" version="3">
+  <DEPS>
+    <ID name="ProjetsIMAG" mc="Package" uid="efba0cc0-c274-4043-9fd6-fa87e43e1714"/>
+    <COMPID name="TemplateDeStructure" mc="Package" uid="7980ef70-af9d-49cd-ba6f-a9d1321bbee5"/>
+    <COMPID name="TemplatesDeRapports" mc="Package" uid="a7fb9d2a-62d5-424b-ac59-65442e0fb303"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ProjetsIMAG" mc="Package" uid="efba0cc0-c274-4043-9fd6-fa87e43e1714"/>
+    <PID name="ProjetsIMAG" mc="Project" uid="f7bf4b5e-8f5e-4150-937e-6b788f337138"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ProjetsIMAG]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="TemplatesDeRapports" mc="Package" uid="a7fb9d2a-62d5-424b-ac59-65442e0fb303"/>
+        <COMPID name="TemplateDeStructure" mc="Package" uid="7980ef70-af9d-49cd-ba6f-a9d1321bbee5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

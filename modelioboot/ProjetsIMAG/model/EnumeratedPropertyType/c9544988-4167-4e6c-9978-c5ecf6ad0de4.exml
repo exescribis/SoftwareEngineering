@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TypeDeReunion" version="3">
+  <DEPS>
+    <ID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+    <PID name="SchemaDesProprietes" mc="PropertyContainer" uid="010276c9-263f-4662-b5fe-b90d1e696e3b"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[TypeDeReunion]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Interview" mc="PropertyEnumerationLitteral" uid="d2597724-0212-47d3-943e-511a246ff9cb"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Interview]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Analyse" mc="PropertyEnumerationLitteral" uid="f21b71cc-e7e2-4ab1-a997-90467db079f9"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Analyse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Conception" mc="PropertyEnumerationLitteral" uid="7e828682-fa40-4486-a617-58ca8abd199a"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Conception]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Audit" mc="PropertyEnumerationLitteral" uid="fcc9fe4c-c080-4a02-a4d9-e2ff2150dedf"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Audit]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Qualité" mc="PropertyEnumerationLitteral" uid="84ac2901-c3c3-48c0-8f22-0e69b91d6f85"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Qualité]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Plannification" mc="PropertyEnumerationLitteral" uid="6d26c701-b43a-40df-8aeb-b7061bf5a2f8"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Plannification]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Retrospective" mc="PropertyEnumerationLitteral" uid="e03e24c5-f36b-43f7-80b7-7fb2bf1e4484"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Retrospective]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Validation" mc="PropertyEnumerationLitteral" uid="316aaf6b-0f0f-4142-8b01-218b9a2158f7"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Validation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Démonstration" mc="PropertyEnumerationLitteral" uid="7e905e58-bcb1-4d71-9119-689279bab512"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Démonstration]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Scénario" mc="PropertyEnumerationLitteral" uid="2e3f8370-c44c-4435-9f9c-1ff3bdaa5029"/>
+          <PID name="TypeDeReunion" mc="EnumeratedPropertyType" uid="c9544988-4167-4e6c-9978-c5ecf6ad0de4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Scénario]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

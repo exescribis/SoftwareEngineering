@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TypeDeProbleme" version="3">
+  <DEPS>
+    <ID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+    <PID name="SchemaDesProprietes" mc="PropertyContainer" uid="010276c9-263f-4662-b5fe-b90d1e696e3b"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[TypeDeProbleme]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Question" mc="PropertyEnumerationLitteral" uid="fe9fa11a-66a7-457a-ab7b-9189eb86b554"/>
+          <PID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Question]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Hypothese" mc="PropertyEnumerationLitteral" uid="9e98e01e-22b7-48e0-9aea-fec07f70deb9"/>
+          <PID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Hypothese]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Réponse" mc="PropertyEnumerationLitteral" uid="efb8e3de-41e1-4df8-a6f4-bbc33d724721"/>
+          <PID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Réponse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Défaut" mc="PropertyEnumerationLitteral" uid="d0b007e9-ccfd-47b6-a992-48e94cff4996"/>
+          <PID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Défaut]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Amélioration" mc="PropertyEnumerationLitteral" uid="c866b45e-13d1-430f-b92c-c0bf22ab66e6"/>
+          <PID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Amélioration]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Item" mc="PropertyEnumerationLitteral" uid="37f533cf-137b-42cd-91ec-1db24594554d"/>
+          <PID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Item]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Tâche" mc="PropertyEnumerationLitteral" uid="6d4bdaa2-14aa-461c-934a-97f4c831acd3"/>
+          <PID name="TypeDeProbleme" mc="EnumeratedPropertyType" uid="f5014739-c5bc-4422-a7a2-42638212a680"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Tâche]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

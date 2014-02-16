@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TypeDExigence" version="3">
+  <DEPS>
+    <ID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+    <PID name="SchemaDesProprietes" mc="PropertyContainer" uid="010276c9-263f-4662-b5fe-b90d1e696e3b"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[TypeDExigence]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="Fonctionnelle" mc="PropertyEnumerationLitteral" uid="f51430ed-6771-44b1-8b36-27b36199e807"/>
+          <PID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Fonctionnelle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Cohérence" mc="PropertyEnumerationLitteral" uid="12966c5f-dfcd-43c5-86eb-c3b30117ed75"/>
+          <PID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Cohérence]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Performance" mc="PropertyEnumerationLitteral" uid="3c3c8e91-ee7c-460f-b7ea-81ee864e908a"/>
+          <PID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Performance]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Sécurité" mc="PropertyEnumerationLitteral" uid="38fe2bf1-c4c4-4ee6-8b2e-3d1ed94b9ece"/>
+          <PID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Sécurité]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Interfaces" mc="PropertyEnumerationLitteral" uid="f4ba8d5a-5304-48d7-bbb2-2b4c55cc3c0f"/>
+          <PID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Interfaces]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Développement" mc="PropertyEnumerationLitteral" uid="3a19858b-6b15-4ba5-a9e2-2ef5d85eb3f2"/>
+          <PID name="TypeDExigence" mc="EnumeratedPropertyType" uid="710d9553-3c40-4ddd-8c6a-be284871151e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Développement]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

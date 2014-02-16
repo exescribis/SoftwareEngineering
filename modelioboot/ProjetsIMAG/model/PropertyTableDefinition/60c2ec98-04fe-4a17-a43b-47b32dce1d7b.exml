@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ProprietesDesVocabulaires" version="3">
+  <DEPS>
+    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+    <EXTID name="CodeReference" mc="PropertyType" uid="d7e8c057-0c19-46a9-9307-10436576efbf"/>
+    <FOREIGNID name="Integer" mc="PropertyType" uid="01a40888-0000-002d-0000-000000000000"/>
+    <FOREIGNID name="MultiText" mc="PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+    <FOREIGNID name="Text" mc="PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+    <PID name="SchemaDesProprietes" mc="PropertyContainer" uid="010276c9-263f-4662-b5fe-b90d1e696e3b"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[ProprietesDesVocabulaires]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Owned">
+        <OBJECT>
+          <ID name="Références" mc="PropertyDefinition" uid="00db48ac-5dcf-462c-ad11-34077be03663"/>
+          <PID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Références]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="CodeReference" mc="PropertyType" uid="d7e8c057-0c19-46a9-9307-10436576efbf"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Abbréviation" mc="PropertyDefinition" uid="45df9770-ce9d-4c1d-ba87-20a78ffac051"/>
+          <PID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Abbréviation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Text" mc="PropertyType" uid="01a40888-0000-002a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Alternatives" mc="PropertyDefinition" uid="30840a04-3f68-45da-a608-91e842c869bd"/>
+          <PID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Alternatives]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="MultiText" mc="PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Maturité" mc="PropertyDefinition" uid="f30cd0a0-1c53-4218-8bd3-72806af0e9ab"/>
+          <PID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"><![CDATA[1]]></ATT>
+            <ATT name="Name"><![CDATA[Maturité]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Integer" mc="PropertyType" uid="01a40888-0000-002d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Exemples" mc="PropertyDefinition" uid="abd7c46c-8a2f-4a26-b329-6eac534d3e81"/>
+          <PID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+          <ATTRIBUTES>
+            <ATT name="IsEditable">true</ATT>
+            <ATT name="DefaultValue"></ATT>
+            <ATT name="Name"><![CDATA[Exemples]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="MultiText" mc="PropertyType" uid="00080cf0-0000-00cf-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

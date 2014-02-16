@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="" version="3">
+  <DEPS>
+    <ID name="" mc="ExternDocument" uid="f51637af-b916-4084-b7c7-8787c346d227"/>
+    <FOREIGNID name="OdtStylesheet" mc="ExternDocumentType" uid="700e74c8-e6d1-410f-960e-d8d1715b08ed"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="" mc="ExternDocument" uid="f51637af-b916-4084-b7c7-8787c346d227"/>
+    <PID name="TemplateDictionnaires" mc="Artifact" uid="f9d8a984-5691-47f1-afe5-0782d898be4b"/>
+    <ATTRIBUTES>
+      <ATT name="MimeType"><![CDATA[application/vnd.oasis.opendocument.text]]></ATT>
+      <ATT name="Path"><![CDATA[C:\DEV\Modelio3Workspace\AssurAuto\.runtime\richnotes\f51637af-b916-4084-b7c7-8787c346d227.odt]]></ATT>
+      <ATT name="Abstract"></ATT>
+      <ATT name="Name"></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Type">
+        <FOREIGNID name="OdtStylesheet" mc="ExternDocumentType" uid="700e74c8-e6d1-410f-960e-d8d1715b08ed"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

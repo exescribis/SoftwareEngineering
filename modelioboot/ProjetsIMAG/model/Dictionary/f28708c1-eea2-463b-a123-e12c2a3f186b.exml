@@ -1,0 +1,1019 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="VocabulaireDesProjetsIMAG" version="3">
+  <DEPS>
+    <ID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+    <EXTID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+    <FOREIGNID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+    <PID name="ProjetsIMAG" mc="AnalystProject" uid="bf2bec03-a40d-43a0-8827-a205dae2a769"/>
+    <ATTRIBUTES>
+      <ATT name="Definition"></ATT>
+      <ATT name="Name"><![CDATA[VocabulaireDesProjetsIMAG]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedTerm">
+        <OBJECT>
+          <ID name="Systeme" mc="Term" uid="fce18870-a66a-4664-a6dd-189a9aad5206"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Logiciel devant être fourni par l'[EquipeProjet] à l'[EquipeCliente] dans le cadre du projet.]]></ATT>
+            <ATT name="Name"><![CDATA[Systeme]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="5e45315c-e5e1-4cd1-b7d1-625fccd9824f"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Wed Feb 12 21:07:07 CET 2014
+Abbréviation=
+Maturité=1
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="EquipeProjet" mc="Term" uid="f5056564-d957-45f9-a96b-d8f1ee84ddc5"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Ensemble des membres chargés du dévelopement du [Systeme] dans le cadre d'une convention passée avec l'[EquipeCliente].]]></ATT>
+            <ATT name="Name"><![CDATA[EquipeProjet]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="2ac03a98-9e48-45be-a5a2-814b820a7514"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Sun Jan 26 20:19:41 CET 2014
+Abbréviation=
+Maturité=1
+Alternatives=
+Références=-
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="EquipeCliente" mc="Term" uid="fe663db4-826f-4f5a-bc39-6ef86f242f4d"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Ensemble des parties prenantes intéressées par l'utilisation et l'existence du [Systeme].]]></ATT>
+            <ATT name="Name"><![CDATA[EquipeCliente]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="b5c47faf-9ac4-4207-a159-4c21dc5ee299"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Sun Jan 26 20:19:44 CET 2014
+Abbréviation=
+Maturité=1
+Alternatives=
+Références=-
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Probleme" mc="Term" uid="1a6c3386-1e06-4285-b691-e8bc97c87803"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Elément de gestion de projet pouvant mener à une unité de travail et être décrit dans une [NoteDeLlivraison].]]></ATT>
+            <ATT name="Name"><![CDATA[Probleme]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="b375125f-35b2-460e-89bd-cc0a5390ef38"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Wed Feb 12 21:07:10 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=-
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b2e13e74-2813-4acd-9a0e-4d0444a77bc6"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[La notion de [problème] est abstraite mais regroupe différents types concrets. Entre autre les [Hypothèse]s, les [Question]s, les [Défaut]s, les [Amélioration]s, les  ]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Question" mc="Term" uid="428cc5c5-3ec5-441b-8875-5fd6a3779263"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[[Probleme] prenant la forme d'une question émise par l'[EquipeProjet] concernant le [Systeme] à déveloper.]]></ATT>
+            <ATT name="Name"><![CDATA[Question]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="c2e6c711-357f-4e42-9ce9-1a955c5eb5fd"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Wed Feb 12 21:30:50 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=-
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Dependency" uid="00d8076b-58b3-4a2c-a60b-8f217f6f15af"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="Probleme" mc="Term" uid="1a6c3386-1e06-4285-b691-e8bc97c87803"/>
+                      <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="93b37209-dfc9-4b66-9401-940ad4963592"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Les [question]s peuvent concerner et référencer différents éléments fournis par l'[équipe cliente] ou porter plus généralement sur des éléments du système à développer.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Hypothese" mc="Term" uid="040f67e8-be0b-4a27-9f10-2491c512ee54"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[[Probleme] prenant la forme d'une hypothèse émise par l'[EquipeProjet] afin de pouvoir continuer de déveloper le travail.]]></ATT>
+            <ATT name="Name"><![CDATA[Hypothese]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="a895cd82-d7b2-49e4-b382-550a855489bd"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Wed Feb 12 21:30:45 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Dependency" uid="7cf6a523-f9b9-4b60-899b-548ac5057c27"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="Probleme" mc="Term" uid="1a6c3386-1e06-4285-b691-e8bc97c87803"/>
+                      <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f6fae2cc-bfe9-41f2-82b3-82084db244ca"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Une [hypothèse] fait typiquement suite à une ou plusieurs [questions] et permet à l'[équipe de développement] de continuer à travailler en l'absence de [réponse] de la part de l'[équipe cliente].]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Reponse" mc="Term" uid="412ae84b-26a6-4778-9dc8-c7d726f7e2aa"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[[Probleme] prenant la forme d'une réponse à une question et pouvant donc donner lieu à une nouvelle unité de travail.]]></ATT>
+            <ATT name="Name"><![CDATA[Reponse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="dc028ed5-2881-4e8a-a55a-7bfe26c25398"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Sun Jan 26 19:26:26 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Dependency" uid="3fa62734-9f66-48e3-bebb-476d49da01ab"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="Probleme" mc="Term" uid="1a6c3386-1e06-4285-b691-e8bc97c87803"/>
+                      <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e3e21755-6b46-457a-abeb-0abc687b9182"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Defaut" mc="Term" uid="6e93737c-6394-45bb-b1ed-88dd06540f27"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[[Probleme] identifié dans le [Systeme] développé et correspondant par exemple à un défaut de qualité, à un bug, à une fonctionalité mal implémentée, etc.]]></ATT>
+            <ATT name="Name"><![CDATA[Defaut]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="c0fb81cb-5a6c-463b-843d-aadf826a0e24"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Thu Jan 30 22:02:39 CET 2014
+Abbréviation=
+Maturité=1
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Dependency" uid="fbbb6bcf-6bda-4eb2-b94d-ec08f1ef8ce8"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="Probleme" mc="Term" uid="1a6c3386-1e06-4285-b691-e8bc97c87803"/>
+                      <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c5963892-2895-4cce-8432-d28e1f87d044"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Les [défauts] peuvent être détectés par l'[équipe projet], par une équipe qualité, ou par l'[équipe cliente]. Les [défaut]s émis par l'[équipe cliente] correspondent à des [livrable]s.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="20f0ef0b-d4c4-4b32-9908-f821e0a17aee"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Les "bugs" sont des cas particuliers de défauts.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Amelioration" mc="Term" uid="3ba8e779-81ff-4e6d-bfff-17b2e4b878d2"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[[Probleme] correspondant à une demande d'amérioration émise par l'[EquipeCliente] concernant le [Systeme] développé.
+]]></ATT>
+            <ATT name="Name"><![CDATA[Amelioration]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="00ac927f-3696-41e4-81d4-8fcdbd18d2ca"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Sun Jan 26 19:26:26 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Dependency" uid="c6b1e397-a38b-4bfc-bc54-f6e3efe78676"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="Probleme" mc="Term" uid="1a6c3386-1e06-4285-b691-e8bc97c87803"/>
+                      <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ead2d7d2-9b3d-4a23-805d-79510bf95000"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Une (demande) d'[amélioration] est normallement émise par l'[équipe client] suite à la [livraison] d'un [livrable] donné.
+ ]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Item" mc="Term" uid="d5e45362-db20-4443-9753-910f8fddc4da"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[[Probleme] correspondant à une demande d'ajout de nouvelles fonctions ou groupe de fonctions.]]></ATT>
+            <ATT name="Name"><![CDATA[Item]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="3a9e738b-319d-4acd-9cb4-d0c15c9eccf4"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Sun Jan 26 19:26:26 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Dependency" uid="70d06a2d-b697-43a1-85ae-39ba783dd612"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="Probleme" mc="Term" uid="1a6c3386-1e06-4285-b691-e8bc97c87803"/>
+                      <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="0192cb89-3d3a-4e8e-86c5-232334646039"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Contrairement aux [defaut]s et aux [amélioration] 
+
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Tache" mc="Term" uid="b1b6f6d0-6de1-4720-9792-bff2a387901b"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[[Probleme] menant lieu à une unité de travail.]]></ATT>
+            <ATT name="Name"><![CDATA[Tache]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="f51c9838-944c-474a-8079-0004dd7f3889"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Sun Jan 26 19:26:26 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Dependency" uid="f4677be0-2d3a-49f7-a8ce-3fbb894ad5a9"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="DependsOnId"></ATT>
+                  <ATT name="DependsOnName"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="Probleme" mc="Term" uid="1a6c3386-1e06-4285-b691-e8bc97c87803"/>
+                      <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6d647af1-ace4-4e8e-8a09-a7c3a51721e9"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Les [tâche]s permettent de gérer les problèmes et les unités de travail ne relevant pas des autres catégories telles que les [questions], les [défaut]s, les [amélioration]s, les [item]s, etc. Les tâches peuvent être visible ou pas dans un [note de livraison].
+ ]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Livrable" mc="Term" uid="1a52758c-d5f2-4201-a9dd-110da7018a64"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Artefact livré par l'[EquipeProjet] à l'[EquipeCliente] sous des conditions contractuelles définies au préalable.]]></ATT>
+            <ATT name="Name"><![CDATA[Livrable]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="66b993a9-b825-43f7-b46b-ee82d82dbc72"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Wed Feb 12 21:06:52 CET 2014
+Abbréviation=
+Maturité=1
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="NoteDeLivraison" mc="Term" uid="9d856b0a-354f-4e2e-a168-f66fd6b69055"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Elément d'un [Livrable]; liste des [Probleme]s relatids au [livrable].]]></ATT>
+            <ATT name="Name"><![CDATA[NoteDeLivraison]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="dfcd6d95-3a58-4f23-aa6f-ae6a75f86a64"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Sun Jan 26 19:26:26 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Livraison" mc="Term" uid="150a4317-2e11-4185-a2bd-60d5a0aa6c3e"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Action entreprise par l'[EquipeProjet] permettant de transmettre à l'[EquipeCliente] un [Livrable].]]></ATT>
+            <ATT name="Name"><![CDATA[Livraison]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="a473f032-3ac4-4514-a4e5-a637b3c6ebad"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Wed Feb 12 21:32:32 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Trigramme" mc="Term" uid="acf1e618-da95-46ae-a871-03f1a8b34bf1"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Séquence de trois lettres majsucules faisant référence de 
+manière unique à tout intervenant dans le cadre du projet.]]></ATT>
+            <ATT name="Name"><![CDATA[Trigramme]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="ef0d8b03-36fd-4a43-b4b9-00bf9c3ac0f8"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Wed Feb 12 21:28:37 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a70787fe-7303-494d-ad6a-f6ac93381a74"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[La première règle appliquée est de concaténer (1) la première lettre du premier prénom, (2) la première lettre du premier nom de famille, et (3) la dernière lettre du premier nom de famille. Si le [Trigramme] est déjà utilisé l'avant dernière lettre du nom est utilisée en place de la dernière et ainsi de suite.
+La liste des [Trigrammes] et le nom des personnes associées est généralement défini dans le vocabulaire du projet.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ResponsableDeProjet" mc="Term" uid="db905b87-28e0-4244-8ab3-cbb224d15f27"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Membre de l’[EquipeProjet] ayant le pouvoir décisionel final au sein du projet. Il est responsable de la bonne conduite du projet et constitue l’interface privilégiée entre l’[EquipeCliente] et l’[EquipeProjet].]]></ATT>
+            <ATT name="Name"><![CDATA[ResponsableDeProjet]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="0a978f20-1663-4dc8-8c5c-d4552f1bb96f"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Fri Feb 14 15:48:35 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ResponsableQualite" mc="Term" uid="166200d9-fb2e-4b4e-8646-2b03294b0bf8"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Membre de l’[EquipeProjet] dont le rôle est d'assurer la qualité du produit, de définir et maintenir des objectifs de qualité, et de faire respecter les différentes règles qualité tout au long du projet.]]></ATT>
+            <ATT name="Name"><![CDATA[ResponsableQualite]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="da4297ae-b1e5-4741-8f4c-b1599e2a97d9"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Fri Feb 14 15:49:06 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ResponsableArtefacts" mc="Term" uid="8f3fbf3f-4d7b-4c35-a9df-7ac44b647454"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Version">0</ATT>
+            <ATT name="Definition"><![CDATA[Membre de l’[EquipeProjet] ayant pour charge d'assurer les [Livraison]s à l’[EquipeCliente]. Il a également la charge de s'assurer de la disponibilité de tous artefacts nécessaires lors d'audits, de réunions internes, etc.]]></ATT>
+            <ATT name="Name"><![CDATA[ResponsableArtefacts]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="AnalystProperties">
+              <OBJECT>
+                <ID name="" mc="AnalystPropertyTable" uid="54c490be-e4bb-493d-a514-9488c77e7206"/>
+                <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+                <ATTRIBUTES>
+                  <ATT name="name"></ATT>
+                  <ATT name="content"><![CDATA[#Fri Feb 14 15:49:18 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="AnalystPropertyTable" uid="eadf3dc5-2894-43b7-b0b4-af76830722c6"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="name"></ATT>
+            <ATT name="content"><![CDATA[#Sun Jan 26 19:26:26 CET 2014
+Maturité=1
+Abbréviation=
+Alternatives=
+Références=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <ID name="ProprietesDesVocabulaires" mc="PropertyTableDefinition" uid="60c2ec98-04fe-4a17-a43b-47b32dce1d7b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="Scope.Editor.SavedState" mc="PropertyTable" uid="847a219d-f4e0-4663-a636-a255a4a39daf"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="name"><![CDATA[Scope.Editor.SavedState]]></ATT>
+            <ATT name="content"><![CDATA[#Sun Jan 26 20:28:27 CET 2014
+SCOPE.COLUMN_HEADER.columnWidth.resizableByDefault=true
+SCOPE.COLUMN_HEADER.rowHeight.defaultSize=20
+SCOPE.BODY.rowHeight.sizes=0\:36,1\:33,2\:33,3\:35,4\:30,5\:28,6\:47,7\:36,8\:32,9\:32,10\:41,11\:32,12\:41,
+SCOPE.CORNER.columnWidth.resizableByDefault=true
+SCOPE.COLUMN_HEADER.columnWidth.percentageSizing=false
+SCOPE.COLUMN_HEADER.rowHeight.percentageSizing=false
+SCOPE.CORNER.columnWidth.percentageSizing=false
+SCOPE.BODY.columnWidth.resizableByDefault=true
+SCOPE.BODY.columnWidth.defaultSize=100
+SCOPE.ROW_HEADER.columnWidth.percentageSizing=false
+SCOPE.BODY.rowHeight.resizableByDefault=true
+SCOPE.ROW_HEADER.rowHeight.percentageSizing=false
+SCOPE.CORNER.columnWidth.defaultSize=100
+SCOPE.CORNER.rowHeight.defaultSize=20
+SCOPE.BODY.columnIndexOrder=0,1,2,3,4,5,
+SCOPE.ROW_HEADER.rowHeight.defaultSize=40
+SCOPE.BODY.rowHeight.defaultSize=20
+SCOPE.ROW_HEADER.columnWidth.defaultSize=40
+SCOPE.COLUMN_HEADER.rowHeight.resizableByDefault=true
+SCOPE.BODY.columnWidth.percentageSizing=false
+SCOPE.BODY.rowHeight.percentageSizing=false
+SCOPE.CORNER.rowHeight.resizableByDefault=true
+SCOPE.CORNER.rowHeight.percentageSizing=false
+SCOPE.BODY.columnWidth.sizes=0\:112,1\:336,
+SCOPE.COLUMN_HEADER.columnWidth.defaultSize=100
+SCOPE.ROW_HEADER.columnWidth.resizableByDefault=true
+SCOPE.ROW_HEADER.rowHeight.resizableByDefault=true
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="b0c3ace5-5ade-441c-9584-7cf5e92de879"/>
+          <PID name="VocabulaireDesProjetsIMAG" mc="Dictionary" uid="f28708c1-eea2-463b-a123-e12c2a3f186b"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Les termes définis ici correspondent à la gestion de projet telle que pratiquée par l'[équipe projet] en général est n'est pas spécifique au projet courant.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

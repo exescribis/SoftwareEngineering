@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Status" version="3">
+  <DEPS>
+    <ID name="Status" mc="EnumeratedPropertyType" uid="0564cc3c-3011-4811-aebd-8e6266c1f56c"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Status" mc="EnumeratedPropertyType" uid="0564cc3c-3011-4811-aebd-8e6266c1f56c"/>
+    <PID name="SchemaDesProprietes" mc="PropertyContainer" uid="010276c9-263f-4662-b5fe-b90d1e696e3b"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">Enumerate</ATT>
+      <ATT name="Name"><![CDATA[Status]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Litteral">
+        <OBJECT>
+          <ID name="créé" mc="PropertyEnumerationLitteral" uid="439a4a67-e5ab-4878-afcf-de81a06dc64a"/>
+          <PID name="Status" mc="EnumeratedPropertyType" uid="0564cc3c-3011-4811-aebd-8e6266c1f56c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[créé]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="aFaire" mc="PropertyEnumerationLitteral" uid="9fe547bb-57cc-4f28-8a05-85798129e8ab"/>
+          <PID name="Status" mc="EnumeratedPropertyType" uid="0564cc3c-3011-4811-aebd-8e6266c1f56c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[aFaire]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="enCours" mc="PropertyEnumerationLitteral" uid="df9f01df-5f2d-45d4-b361-fdcd8feebeb0"/>
+          <PID name="Status" mc="EnumeratedPropertyType" uid="0564cc3c-3011-4811-aebd-8e6266c1f56c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[enCours]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fermé" mc="PropertyEnumerationLitteral" uid="24a04856-2532-400e-94b5-b969cf4a581c"/>
+          <PID name="Status" mc="EnumeratedPropertyType" uid="0564cc3c-3011-4811-aebd-8e6266c1f56c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[fermé]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="annulé" mc="PropertyEnumerationLitteral" uid="61ba711b-c9ee-4144-a8f6-9f6e88cae346"/>
+          <PID name="Status" mc="EnumeratedPropertyType" uid="0564cc3c-3011-4811-aebd-8e6266c1f56c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[annulé]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="réouvert" mc="PropertyEnumerationLitteral" uid="96b7f1c5-85ca-4305-90a7-5d17f38b4c5f"/>
+          <PID name="Status" mc="EnumeratedPropertyType" uid="0564cc3c-3011-4811-aebd-8e6266c1f56c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[réouvert]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

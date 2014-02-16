@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CodeReference" version="3">
+  <DEPS>
+    <ID name="CodeReference" mc="PropertyType" uid="d7e8c057-0c19-46a9-9307-10436576efbf"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="CodeReference" mc="PropertyType" uid="d7e8c057-0c19-46a9-9307-10436576efbf"/>
+    <PID name="SchemaDesProprietes" mc="PropertyContainer" uid="010276c9-263f-4662-b5fe-b90d1e696e3b"/>
+    <ATTRIBUTES>
+      <ATT name="BaseType">String</ATT>
+      <ATT name="Name"><![CDATA[CodeReference]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
