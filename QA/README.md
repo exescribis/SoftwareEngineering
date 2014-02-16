@@ -1,4 +1,4 @@
-RULE PACKAGES (21)
+RULE PACKAGES (22)
 =================
 * [CasDUtilisation](#casdutilisation) (12 rules)
 * [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
@@ -6,23 +6,24 @@ RULE PACKAGES (21)
 * [Classe](#classe) (23 rules)
 * [Deploiement](#deploiement) (1 rules)
 * [Diagramme](#diagramme) (10 rules)
-* [Document](#document) (19 rules)
+* [Document](#document) (21 rules)
 * [Etat](#etat) (21 rules)
-* [Exigence](#exigence) (11 rules)
-* [Glossaire](#glossaire) (14 rules)
+* [Exigence](#exigence) (14 rules)
+* [Glossaire](#glossaire) (18 rules)
 * [Livrable](#livrable) (17 rules)
 * [Nomenclature](#nomenclature) (22 rules)
 * [Scenario](#scenario) (23 rules)
 * [Sequence](#sequence) (1 rules)
 * [StyleEssentiel](#styleessentiel) (3 rules)
 * [Systeme](#systeme) (4 rules)
+* [Tache](#tache) (2 rules)
 * [TexteTechnique](#textetechnique) (36 rules)
 * [Tracabilite](#tracabilite) (3 rules)
 * [UMLModelio](#umlmodelio) (187 rules)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (461)
+RULES (472)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -65,8 +66,11 @@ RULES (461)
 * [DecompositionSousSysteme](#decompositionsoussysteme) from package [Systeme](#systeme)
 * [DefautDejaMentionne](#defautdejamentionne) from package [Livrable](#livrable)
 * [DefinitionAmbigueTerme](#definitionambigueterme) from package [Glossaire](#glossaire)
+* [DefinitionExigence](#definitionexigence) from package [Exigence](#exigence)
+* [DefinitionExigenceFonctionnelle](#definitionexigencefonctionnelle) from package [Exigence](#exigence)
 * [DefinitionMultipleTerme](#definitionmultipleterme) from package [Glossaire](#glossaire)
 * [DefinitionTerme](#definitionterme) from package [Glossaire](#glossaire)
+* [DefinitionTermeAQuestions](#definitiontermeaquestions) from package [Glossaire](#glossaire)
 * [DefinitionTermeTropGenerale](#definitiontermetropgenerale) from package [Glossaire](#glossaire)
 * [DelaiLivrable](#delailivrable) from package [Livrable](#livrable)
 * [Deltas](#deltas) from package [Livrable](#livrable)
@@ -74,7 +78,6 @@ RULES (461)
 * [DeltasTextuels](#deltastextuels) from package [Livrable](#livrable)
 * [Densite](#densite) from package [Diagramme](#diagramme)
 * [DescriptifLivrable](#descriptiflivrable) from package [Livrable](#livrable)
-* [DescriptionExigence](#descriptionexigence) from package [Exigence](#exigence)
 * [DescriptionFigure](#descriptionfigure) from package [Document](#document)
 * [Disposition](#disposition) from package [Diagramme](#diagramme)
 * [DuplicationEtat](#duplicationetat) from package [Etat](#etat)
@@ -107,6 +110,7 @@ RULES (461)
 * [IncludeMultiple](#includemultiple) from package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 * [Incoherence](#incoherence) from package [TexteTechnique](#textetechnique)
 * [IndexDesFigures](#indexdesfigures) from package [Document](#document)
+* [IndexDesTables](#indexdestables) from package [Document](#document)
 * [IntentionScenario](#intentionscenario) from package [Scenario](#scenario)
 * [InteractionProscrite](#interactionproscrite) from package [Nomenclature](#nomenclature)
 * [IntermediaireAction](#intermediaireaction) from package [Scenario](#scenario)
@@ -323,6 +327,7 @@ RULES (461)
 * [NomDiagramme](#nomdiagramme) from package [Diagramme](#diagramme)
 * [NomEtat](#nometat) from package [Etat](#etat)
 * [NomExigence](#nomexigence) from package [Exigence](#exigence)
+* [NomExigenceFonctionnelle](#nomexigencefonctionnelle) from package [Exigence](#exigence)
 * [NomObjet](#nomobjet) from package [Classe](#classe)
 * [NomOperation](#nomoperation) from package [Classe](#classe)
 * [NomParametre](#nomparametre) from package [Classe](#classe)
@@ -331,6 +336,8 @@ RULES (461)
 * [NomScenario](#nomscenario) from package [Scenario](#scenario)
 * [NomScenarioInstantie](#nomscenarioinstantie) from package [Scenario](#scenario)
 * [NomSysteme](#nomsysteme) from package [Systeme](#systeme)
+* [NomTache](#nomtache) from package [Tache](#tache)
+* [NomTerme](#nomterme) from package [Glossaire](#glossaire)
 * [NomTransition](#nomtransition) from package [Etat](#etat)
 * [NomTransitionInutile](#nomtransitioninutile) from package [Etat](#etat)
 * [NomenclatureActeur](#nomenclatureacteur) from package [CasDUtilisation](#casdutilisation)
@@ -348,6 +355,7 @@ RULES (461)
 * [NomenclatureParametre](#nomenclatureparametre) from package [Classe](#classe)
 * [NomenclatureRole](#nomenclaturerole) from package [Classe](#classe)
 * [NomenclatureScenario](#nomenclaturescenario) from package [Scenario](#scenario)
+* [NomenclatureTache](#nomenclaturetache) from package [Tache](#tache)
 * [NomenclatureTerme](#nomenclatureterme) from package [Glossaire](#glossaire)
 * [NomenclatureTransition](#nomenclaturetransition) from package [Etat](#etat)
 * [NonAbstraction](#nonabstraction) from package [TexteTechnique](#textetechnique)
@@ -372,6 +380,7 @@ RULES (461)
 * [Portrait](#portrait) from package [Nomenclature](#nomenclature)
 * [Precision](#precision) from package [TexteTechnique](#textetechnique)
 * [PresenceObjet](#presenceobjet) from package [Scenario](#scenario)
+* [PrioriteExigence](#prioriteexigence) from package [Exigence](#exigence)
 * [ProprieteExigenceInadaptee](#proprieteexigenceinadaptee) from package [Exigence](#exigence)
 * [Protocole](#protocole) from package [Deploiement](#deploiement)
 * [Puit](#puit) from package [Etat](#etat)
@@ -450,10 +459,13 @@ RULES (461)
 * [Surcharge](#surcharge) from package [Diagramme](#diagramme)
 * [Surcodification](#surcodification) from package [Valeur](#valeur)
 * [SyntaxeTransition](#syntaxetransition) from package [Etat](#etat)
+* [TableDesMatieres](#tabledesmatieres) from package [Document](#document)
 * [TailleFigure](#taillefigure) from package [Document](#document)
 * [Temps](#temps) from package [TexteTechnique](#textetechnique)
 * [TermeAGlossaire](#termeaglossaire) from package [Glossaire](#glossaire)
+* [TermeFlou](#termeflou) from package [Glossaire](#glossaire)
 * [TermeMetier](#termemetier) from package [TexteTechnique](#textetechnique)
+* [TermeTropCompose](#termetropcompose) from package [Glossaire](#glossaire)
 * [TermesAlternatifs](#termesalternatifs) from package [Glossaire](#glossaire)
 * [TermesCroises](#termescroises) from package [Glossaire](#glossaire)
 * [TexteSection](#textesection) from package [TexteTechnique](#textetechnique)
@@ -881,7 +893,7 @@ From package [Diagramme](#diagramme)
 
 Document
 ====================================================
-19 rules: [EnteteDocument](#entetedocument) [PlanDesequilibre](#plandesequilibre) [PlanDesequilibreEnPages](#plandesequilibreenpages) [PlanDesequilibreEnProfondeur](#plandesequilibreenprofondeur) [PlanTropProfond](#plantropprofond) [SectionTropProfonde](#sectiontropprofonde) [SectionOrpheline](#sectionorpheline) [LecturePlan](#lectureplan) [HomogeneiteTitreSection](#homogeneitetitresection) [TitreSectionNeutre](#titresectionneutre) [TitreHorsContexte](#titrehorscontexte) [NumerotationSection](#numerotationsection) [IndexDesFigures](#indexdesfigures) [TitreFigure](#titrefigure) [DescriptionFigure](#descriptionfigure) [ReferenceFigure](#referencefigure) [LegendeFigure](#legendefigure) [TailleFigure](#taillefigure) [ResolutionFigure](#resolutionfigure) 
+21 rules: [EnteteDocument](#entetedocument) [TableDesMatieres](#tabledesmatieres) [PlanDesequilibre](#plandesequilibre) [PlanDesequilibreEnPages](#plandesequilibreenpages) [PlanDesequilibreEnProfondeur](#plandesequilibreenprofondeur) [PlanTropProfond](#plantropprofond) [SectionTropProfonde](#sectiontropprofonde) [SectionOrpheline](#sectionorpheline) [LecturePlan](#lectureplan) [HomogeneiteTitreSection](#homogeneitetitresection) [TitreSectionNeutre](#titresectionneutre) [TitreHorsContexte](#titrehorscontexte) [NumerotationSection](#numerotationsection) [IndexDesFigures](#indexdesfigures) [TitreFigure](#titrefigure) [DescriptionFigure](#descriptionfigure) [ReferenceFigure](#referencefigure) [LegendeFigure](#legendefigure) [TailleFigure](#taillefigure) [ResolutionFigure](#resolutionfigure) [IndexDesTables](#indexdestables) 
 
 EnteteDocument
 -------------------
@@ -894,6 +906,12 @@ From package [Document](#document)
 * **Exemple:**  Pour un rapport de stage, on s'attend à trouver le nom du stagiaire, l'entreprise d'accueil, la période du stage, le contexte dans lequel il s'est déroulé, le titre ou l'identificateur du projet, etc. 
 
 * **Exemple:**  Pour une thèse de doctorat, le format est généralement imposé par l'université d'accueil et l'entête du document doit être conforme aux règles établies. 
+
+TableDesMatieres
+-------------------
+From package [Document](#document)  
+
+  Le plan du document doit être explicité par une table des matières.
 
 PlanDesequilibre
 -------------------
@@ -1005,7 +1023,7 @@ IndexDesFigures
 -------------------
 From package [Document](#document)  
 
-  Le document ne comporte pas d'index des figures alors que cet élément semble pertinent pour ce document.
+  Un index des figures doit être inclus dans le document.
 
 TitreFigure
 -------------------
@@ -1042,6 +1060,12 @@ ResolutionFigure
 From package [Document](#document)  
 
   La résolution de l'image ou de la figure n'est pas satisfaisante.
+
+IndexDesTables
+-------------------
+From package [Document](#document)  
+
+    Un index des tavles doit être inclus dans le document.
 
 
 Etat
@@ -1205,21 +1229,59 @@ From package [Etat](#etat)
 
 Exigence
 ====================================================
-11 rules: [NomExigence](#nomexigence) [NomenclatureExigence](#nomenclatureexigence) [ExigenceIncoherente](#exigenceincoherente) [ExigenceInvalide](#exigenceinvalide) [SurExgigence](#surexgigence) [SousExigence](#sousexigence) [StatusNonDefinitif](#statusnondefinitif) [ProprieteExigenceInadaptee](#proprieteexigenceinadaptee) [DescriptionExigence](#descriptionexigence) [TypeDExigence](#typedexigence) [ExigencesMultiples](#exigencesmultiples) 
+14 rules: [NomExigence](#nomexigence) [NomExigenceFonctionnelle](#nomexigencefonctionnelle) [NomenclatureExigence](#nomenclatureexigence) [DefinitionExigence](#definitionexigence) [DefinitionExigenceFonctionnelle](#definitionexigencefonctionnelle) [ExigencesMultiples](#exigencesmultiples) [ExigenceIncoherente](#exigenceincoherente) [ExigenceInvalide](#exigenceinvalide) [SurExgigence](#surexgigence) [SousExigence](#sousexigence) [TypeDExigence](#typedexigence) [PrioriteExigence](#prioriteexigence) [StatusNonDefinitif](#statusnondefinitif) [ProprieteExigenceInadaptee](#proprieteexigenceinadaptee) 
 
 NomExigence
 -------------------
 From package [Exigence](#exigence)  
 
-  Le nom de l'exigence doit faire clairement référence à une exigence, le type de cette exigence doit si possible transparaître dans le nom ; le nom doit autant que possible faire référence à des termes défini dans les glossaires.
+  Le nom de l'exigence doit faire clairement référence à une exigence ; le type de cette exigence doit si possible transparaître dans le nom ; le nom doit autant que possible faire référence à des termes définis dans les glossaires.
 
 * **Commentaire:**  Il est généralement préférable de donner aux exigences un nom plutôt qu'un numéro car le nom est significatif. Par ailleurs utiliser un numéro implique de garder un "compteur" pour s'assurer qu'un numéro ne sera pas réutilisé.   
+
+NomExigenceFonctionnelle
+-------------------
+From package [Exigence](#exigence)  
+
+  Le nom d'une exigence fonctionnelle doit débuter par un verbe à l'infinitif. Cette règle est cohérente avec la règle correspondante pour les cas d'utilisation (cf $NomCasUtilisation).
+
+* **Commentaire:**  Cette règle permet de reflêter clairement qu'une exigence fonctionnelle correspond à une fonction devant pouvoir être exécutée par un acteur en utilisant le système.
+
+* **Exemple:**  "InscrireUneEquipe"
 
 NomenclatureExigence
 -------------------
 From package [Exigence](#exigence)  
 
-  Le nom d'un exigence doit être de préférence en style MajMin (cf $MajMin).
+  Le nom d'un exigence doit être en style MajMin (cf $MajMin).
+
+DefinitionExigence
+-------------------
+From package [Exigence](#exigence)  
+
+  Le définition d'une exigence doit ennoncer de manière claire et concise une contrainte imposée sur le système à développer ou sur le processus de développement de ce système. La définition doit se limiter à l'expression de cette contrainte. Une exigences ne doit pas entre autre décrire un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des parties prenantes, etc. Certaines de ces informations peuvent être utiles dans certains cas, mais dans ce cas il faut les consigner dans une ou des notes associées à l'exigence.
+
+* **Exemple:**  La phrase suivante "L'[EquipeTechniqueGaragis]" ayant une expérience de [Struts], il serait préférable d'utiliser [Struts] dans ce projet.". Cette phrase donne lieu à la définition d'exigence "DeveloppementStruts : [CyberGarage] doit être développé avec le framework [Struts]" avec la note indiquant la motivation suivante "Contexte: L'[EquipeTechniqueGaragis]" possède une expérience de [Struts]". Noter par ailleurs que la priorité associé à la forme modale "il serait préférable" a été extraite de la définition (cf !!!PrioritéExigence). 
+
+DefinitionExigenceFonctionnelle
+-------------------
+From package [Exigence](#exigence)  
+
+  Sachant qu'ne exigence fonctionnelle correspond à une fonctionnalité du système destinées à un ou plusieurs acteurs, la définition d'une telle exigence peut utilement être rédigée sous la forme "[SSS] doit permettre à [AAA] de ..." où [AAA] est le nom du système, [AAA] le nom de l'acteur ou des acteurs et ... définit la fonctionnalité proposée. 
+
+* **Exemple:**  "[CyberGarage] doit permettre au [ChefDeMagazin] d'enregistrer les [Piece]s qu'il fourni aux [Mecanicien]s lorsque ceux-ci lui demande".
+
+* **Commentaire:**  La première partie faisant intervenir le nom du système explicitement n'est pas obligatoire mais elle permet de rendre explicite le fait que le système réalise la fonction. Cela permet d'éliminer les phrases ambigues où le rôle du système n'est pas explicité. Par exemple la phrase suivante ne permet pas de savoir quel est le rôle exacte du système dans le processus décrit, et ainsi on ne peut pas vérifier qu'il s'agit d'un exigence fonctionnelle: "Le [ChefDeMagazin] fourni les [Piece]s aux [Mecanicien]s lorsque ceux-ci lui demande".
+
+ExigencesMultiples
+-------------------
+From package [Exigence](#exigence)  
+
+  Le texte fait référence à plusieurs exigences simultanément et/ou les descriptions de ces exigences devraient être séparées. Cette séparation peut être nécessaire par exemple pour clairement identifier le type de chaque sous-exigence, pour attribuer à chacune de ces sous-exigences des propriétés différentes, par exemple des priorités différentes, etc. 
+
+* **Commentaire:**  La définition d'une exigence doit être généralement courte et concise. De muliples lignes dans une exigences ou l'utilisation de connecteurs (et, ou, ";") peuvent facilement mener à des problèmes d'exigences multiples. Une seule phrase peut également correspondre à des exigences multiples. C'est le cas par exemple si l'on fait à la fois référence à ce que doit faire le système et que c'est l'objectif d'une partie de la phrase, et qu'une autre partie consiste à donner des indications de performances par exemple.   
+
+* **Exemple:**  
 
 ExigenceIncoherente
 -------------------
@@ -1245,6 +1307,22 @@ From package [Exigence](#exigence)
 
   L'exigence décrite n'est ne semble pas suffisemment restrictive par rapport à l'expression des besoins exprimées par le client ou par rapport à une situation jugée réaliste.
 
+TypeDExigence
+-------------------
+From package [Exigence](#exigence)  
+
+  Le type de l'exigence n'est pas correct ou la phrase contient différentes exigences de types différents.
+
+PrioriteExigence
+-------------------
+From package [Exigence](#exigence)  
+
+  La priorite associée à une exigence doit être clairement exprimée et ce séparemment de la définition de l'exigence qui elle doit être neutre par rapport à cet aspect.
+
+* **Commentaire:**  Une des difficultés concernant les priorités est que celles-ci doivent toujours être considérées les unes par rappot aux autres, et de plus les priorités doivent pouvoir être ajustées au cours d'un projet. La définition d'une exigence ne doit  pas comporter des formes modales tels que "devrait", "Il serait souhaitable que", "On souhaite que", etc. La définition doit au contraire exprimer la contrainte sur le système de manière impérative, la priorité faisant office de modulation. Cette séparation des préoccupations est importante en pratique car cela permet (1) d'avoir en un endroit clairement localisé et dumment codifié la liste des priorités et (2) de pouvoir changer si nécessaire ces priorités sans avoir à reformuler le texte des exigences.
+
+* **Exemple:**  La définition "DeveloppementJDBC: Il est serait utile que l'interface [JDBC] soit utilisée pour l'accès à la base de données" devra être réécrit "L'interface [JDBC] doit être utilisée pour l'éccès à la base de données" en indiquant dans l'attribut priorité la priorité correspondante après concertation éventuelle avec le client. 
+
 StatusNonDefinitif
 -------------------
 From package [Exigence](#exigence)  
@@ -1257,34 +1335,22 @@ From package [Exigence](#exigence)
 
   La valeur de la propriété associée à l'exigence semble inadaptée.
 
-DescriptionExigence
--------------------
-From package [Exigence](#exigence)  
-
-  Le texte ne décrit pas une exigence, mais par exemple un scénario, une suite d'actions, une caractéristique liée à l'exigence, des restrictions ou détails techniques non pertinents, des actions internes réalisées par le système et sans rapport avec les objectifs des utilisateurs, etc.
-
-TypeDExigence
--------------------
-From package [Exigence](#exigence)  
-
-  Le type de l'exigence n'est pas correct ou la phrase contient différentes exigences de types différents.
-
-ExigencesMultiples
--------------------
-From package [Exigence](#exigence)  
-
-  Le texte fait référence à plusieurs exigences simultanément et/ou les descriptions de ces exigences devraient être séparées.
-
 
 Glossaire
 ====================================================
-14 rules: [NomenclatureGlossaire](#nomenclatureglossaire) [NomenclatureTerme](#nomenclatureterme) [DefinitionTerme](#definitionterme) [TermeAGlossaire](#termeaglossaire) [ClassificationTerme](#classificationterme) [ReferenceVersTerme](#referenceversterme) [FormatReferenceTerme](#formatreferenceterme) [ReferenceTermePrincipal](#referencetermeprincipal) [ReferenceTermeInconnu](#referencetermeinconnu) [DefinitionMultipleTerme](#definitionmultipleterme) [DefinitionAmbigueTerme](#definitionambigueterme) [TermesCroises](#termescroises) [DefinitionTermeTropGenerale](#definitiontermetropgenerale) [TermesAlternatifs](#termesalternatifs) 
+18 rules: [NomenclatureGlossaire](#nomenclatureglossaire) [NomTerme](#nomterme) [NomenclatureTerme](#nomenclatureterme) [TermeTropCompose](#termetropcompose) [TermeFlou](#termeflou) [DefinitionTerme](#definitionterme) [DefinitionTermeAQuestions](#definitiontermeaquestions) [DefinitionAmbigueTerme](#definitionambigueterme) [DefinitionTermeTropGenerale](#definitiontermetropgenerale) [TermeAGlossaire](#termeaglossaire) [ClassificationTerme](#classificationterme) [TermesAlternatifs](#termesalternatifs) [ReferenceVersTerme](#referenceversterme) [FormatReferenceTerme](#formatreferenceterme) [ReferenceTermePrincipal](#referencetermeprincipal) [ReferenceTermeInconnu](#referencetermeinconnu) [DefinitionMultipleTerme](#definitionmultipleterme) [TermesCroises](#termescroises) 
 
 NomenclatureGlossaire
 -------------------
 From package [Glossaire](#glossaire)  
 
-  Le nom des glossaires doivent être de préférence en style MajMin (cf $MajMin).
+  Le nom des glossaires doit être en style MajMin (cf $MajMin).
+
+NomTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Le nom d'un terme doit être au singulier s'il s'agit d'un nom.
 
 NomenclatureTerme
 -------------------
@@ -1294,6 +1360,24 @@ From package [Glossaire](#glossaire)
 
 * **Commentaire:**  Cette convention peut être fort utile pour faire ressortir dans un texte l'utilisation des termes définis dans un glossaire et donc pour renforcer le fait que ce terme à été utilisé de manière consciente et raisonnée.   
 
+TermeTropCompose
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Le nom du terme est composé de plusieurs mots ou sous-termes mais certains de ceux-ci semblent ne pas être pertinents ou nécessaire dans la composition totale. Il est préférable de les enlever pour rester à des termes essentiels.
+
+* **Exemple:**  Dans "AjouterDansPanier" le terme essentiel est clairement "Panier", mais le composant "AjouterDans" semble superflu. Elle l'est en tout cas si la notion d'ajout à laquelle tout un chacun peut penser est différente du concept référencé par "AjouterDansPanier". Dans le contexte d'un système de contrôle d'accès "BatimentAAccesControle" pourrait certainement être simplifié en "Batiment" car dans ce contexte si les batiments auxquels on fait référence sont toujours ce type de batiment. C'est évidemment le cas dans une définition comme celle-ci: "BatimentAAccesControle : Bâtiment appartenant à une [Zone] nécessitant des [DroitDAcces]s pour y pénétrer."
+
+* **Commentaire:**  Dans l'exemple "AjouterDansPanier", il est probable qu'une confusion existe entre d'une part le nom du terme et d'autre par le nom d'une exigence, ou d'un cas d'utilisation. Ces derniers résultent naturellement de la composition de verbes (plus ou moins généraux, et pouvant donc être dans certains cas définis dans un glossaire) et de formes nominales définies dans des glossaires. 
+
+TermeFlou
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Le terme correspond à une notion floue ou subjective dans le domaine considéré ou la définition associée au terme est trop floue ou subjective pour pouvoir être exploitable. S'il s'agit d'un terme général définir ce terme n'est peut être pas nécessaire, ou au contraire il s'agit peut être d'une notion importante pour lequel un terme plus précis devra être trouvé.
+
+* **Exemple:**  Dans la définition suivante le terme "Mecanisme" est très flou, le terme "Adéquat" est subjectif, et la définition ne permet pas de clarifier ces aspects: "MecanismeAdequat : Un mécanisme adéquat permet de vérifier qu'une seule personne passe à la fois.". Dans ce cas il est sans doute important de trouver un terme plus précis permettant de caractériser cet élément qui semble important pour le fonctionnement du système. Par contre dans la définition suivante le terme est non seulement flou mais sans doute inutilement défini car trop général: "Information : Ensemble des messages circulant dans le [Systeme]". Ce terme peut certainement être supprimé.
+
 DefinitionTerme
 -------------------
 From package [Glossaire](#glossaire)  
@@ -1301,6 +1385,30 @@ From package [Glossaire](#glossaire)
   La définition d'un terme doit être relativement courte et concise et écrite dans un style similaire à celui que l'on pourrait trouver dans un dictionnaire. Généralement une telle définition commence par une forme nominale définissant la nature du terme. Ce n'est pas une phrase avec un verbe.
 
 * **Exemple:**  Si un verbe est défini une définition pourrait commencer par "action de ...". S'il s'agit d'un participe passé, la définition pourrait commercer par "état ...". S'il s'agit d'un concept ou d'un objet, celui-ci est catégorisé par rapport à une taxonomie supérieur. Par exemple une "fourchette" pourrait être défini comme "ustensile permettant ...".
+
+DefinitionTermeAQuestions
+-------------------
+From package [Glossaire](#glossaire)  
+
+  De part les zone d'ombres qu'elle comporte la définition d'un terme pose un certain nombre de questions alors qu'une définition devrait uniquement apporter des réponses.
+
+* **Exemple:**  Considérons la définition suivante: "Identifiant : Clé qui permet d'identifier de manière unique une [information]". Dans cette définition la notion de 'cle' est sans doute beaucoup plus obscure pour des non-informatitions que la notion d'identifiant et il est donc préférable soit d'éliminer cette définition (cf $TermeFlou), soit de la reformuler.
+
+* **Commentaire:**  L'objectif même des glossaires et de répondre à toutes les questions terminologiques. Il est donc indispensable de ne pas utiliser ni paraphrases inutiles (cf $Paraphrase) ni termes qui posent plus de questions qu'ils n'apportent de réponses. En cas de difficulté pour définir un terme, le recours à des exemples est tout à fait conseillé.
+
+DefinitionAmbigueTerme
+-------------------
+From package [Glossaire](#glossaire)  
+
+  La définition associée au terme semble ambigue ou fait référence à différents sens. Une signification unique et précise doit être donnée.
+
+* **Commentaire:**  Dans un dictionnaire plusieurs significations sont traditionnellement associées à un terme, car la pluspart des termes sont polysémiques. Dans un glossaire, on cherche au contraire à éviter les ambiguités et à indiquer de manière explicite quelle est la signification retenue dans le contexte associé à l'utilisation du glossaire. Un glossaire est un vocabulaire contrôlé.
+
+DefinitionTermeTropGenerale
+-------------------
+From package [Glossaire](#glossaire)  
+
+  La définition proposée pour un terme est trop générale par rapport au contexte associé au glossaire dans lequel le terme est défini.
 
 TermeAGlossaire
 -------------------
@@ -1313,6 +1421,18 @@ ClassificationTerme
 From package [Glossaire](#glossaire)  
 
   Le terme dans lequel le glossaire apparait n'est pas le plus approprié. 
+
+* **Exemple:**  Le trigramme associé à un membre de l'équipe projet devra figurer dans le glossaire du projet et non pas dans le glossaire du logiciel. 
+
+TermesAlternatifs
+-------------------
+From package [Glossaire](#glossaire)  
+
+  Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. 
+
+* **Commentaire:**  Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le cadre du projet considéré. Par ailleurs il ne faut pas confondre (1) d'une part les termes alternatifs à qui ont associe signfication que le principal et (2) les exemples qui eux sont des termes, des expressions, des artefacts ou des concepts plus spécifiques.
+
+* **Exemple:**  Dans le contexte d'un système de contrôle d'accès, un terme principal pourrait être "PorteurDeBadge" avec comme termes alternatifs "PossesseurDeBadge", "PersonneABadge", "Badgeur". Si le système permet de définir des types arbitraires de "PorteurDeBadge" les termes suivants sont alors naturellement simplement des exemples "Etudiant", "PersonnelAdministratif", "Technicien", etc.
 
 ReferenceVersTerme
 -------------------
@@ -1344,35 +1464,15 @@ DefinitionMultipleTerme
 -------------------
 From package [Glossaire](#glossaire)  
 
-  Un terme est défini plusieurs fois dans un même glossaire.
+  Un terme semble être défini plusieurs fois dans le même glossaire, (1) soit parcequ'il s'agit du même nom ou d'une déclinaison du même nom, (2) soit parceque les définitions associées aux deux temes sont si proches qu'il semble que les deux termes sont en fait des synonymes. Dans les deux cas, la solution semble être soit de fusionner les termes et leur définitions, doit de clarifier explicitement la définition de chacun des termes. 
 
-* **Commentaire:**  L'objectif d'un glossaire est de définir les termes de manière non ambigüe, en tout cas dans le cadre d'un glossaire et il est donc nécessaire de n'avoir qu'une seule définition.
-
-DefinitionAmbigueTerme
--------------------
-From package [Glossaire](#glossaire)  
-
-  La définition associée au terme semble ambigue ou fait référence à difféents sens. Une signification unique et précise doit être donnée.
-
-* **Commentaire:**  Dans un dictionnaire plusieurs significations sont traditionnellement associées à un terme, car la pluspart des termes sont polysémiques. Dans un glossaire, on cherche au contraire à éviter les ambiguités et à indiquer de manière explicite quelle est la signification retenue dans le contexte associé à l'utilisation du glossaire. Un glossaire est un vocabulaire contrôlé.
+* **Commentaire:**  L'objectif d'un glossaire est de définir les termes de manière non ambigüe, en tout cas dans le cadre d'un glossaire et il est donc nécessaire de n'avoir qu'une seule définition, par terme. Evidemment si deux termes sont "fusionnés", l'un prendre certainement le rôle de termes alternatifs. 
 
 TermesCroises
 -------------------
 From package [Glossaire](#glossaire)  
 
   Les definitions des termes dans un glossaire doivent faire référence aux autres termes de ce glossaire ou d'autres glossaires.
-
-DefinitionTermeTropGenerale
--------------------
-From package [Glossaire](#glossaire)  
-
-  La définition proposée pour un terme est trop générale par rapport au contexte associé au glossaire dans lequel le terme est défini.
-
-TermesAlternatifs
--------------------
-From package [Glossaire](#glossaire)  
-
-  Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le cadre du projet considéré. 
 
 
 Livrable
@@ -1913,6 +2013,27 @@ LimiteDuSysteme
 From package [Systeme](#systeme)  
 
   Les limites du systeme ne sont pas clairement identifiées et/ou il n'est pas clairement établi quel est le rôle exact du système dans la situation décrite.
+
+
+Tache
+====================================================
+2 rules: [NomTache](#nomtache) [NomenclatureTache](#nomenclaturetache) 
+
+NomTache
+-------------------
+From package [Tache](#tache)  
+
+  Dans un modèle de tâches, le nom des tâches doit correspondre à une forme verbale à l'infinitif et les tâches correspondant à des cas d'utilisation doivent suivre les règles correspondantes (cf $NomCU). De plus le nom des tâches doit faire référence autant que possibles aux termes définis dans le glossaire.
+
+* **Exemple:**  La tâche "ReserverUnePlace" correspond bien à une forme verbable. "Place" devrait probablement être dans le glossaire. Selon les cas "Reserver" ou "ReserverUnePlace" pourrait aussi y figurer si la signification associée n'est pas claire.
+
+NomenclatureTache
+-------------------
+From package [Tache](#tache)  
+
+  Le nom des tâches doit être en style MajMin (cf $MajMin).
+
+* **Commentaire:**  Certaines tâches correspondent à des cas d'utilisation et il est donc important d'utiliser la même règle (cf $NomenclatureCU).
 
 
 TexteTechnique
