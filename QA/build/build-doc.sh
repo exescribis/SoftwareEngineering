@@ -1,4 +1,4 @@
-#!/bin/sh
+ï»¿#!/bin/sh
 THISDIR=`dirname $0`
 SRCDIR=${THISDIR?}/../src
 SRCFILESPATTERN=${SRCDIR?}/*.txt
@@ -86,7 +86,7 @@ gawk '
     function print_packageIndex(    _i,_rulelist,_nbrules,_packagename,_packagerules) {
       print "PAQUETAGE DE REGLES"
       print "===================" ;
-      print NBPACKAGES "paquetages triès par ordre alphabétique."
+      print NBPACKAGES "paquetages triÃ©s par ordre alphabÃ©tique."
       for (_i = 1; _i <= NBPACKAGES; _i++) {
         _packagename = PACKAGENAMES[_i] 
         _rulelist = PACKAGE_TO_RULELIST[_packagename] 
@@ -102,7 +102,7 @@ gawk '
       print "======" 
       for (_i = 1; _i <= NBRULES; _i++) {
         _packageurl = nameToUrl(RULE_TO_PACKAGE[RULENAMES[_i]])
-        print "* " nameToUrl(RULENAMES[_i]) " from package " _packageurl 
+        print "* " nameToUrl(RULENAMES[_i]) " Paquetage : " _packageurl 
       }
     }
     
@@ -110,7 +110,7 @@ gawk '
       print "" 
       print rulename   
       print "-------------------" 
-      print "Dans le paquetage " nameToUrl(RULE_TO_PACKAGE[rulename]) "  " 
+      print "Paquetage :" nameToUrl(RULE_TO_PACKAGE[rulename]) "  " 
       print ""  
       print RULE_TO_TEXTS[rulename] ;      
     }

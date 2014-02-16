@@ -1,4 +1,4 @@
-Cycle de vie
+﻿Cycle de vie
 ============
 Les paquetages de règles ci-dessous correspondent à différentes étapes dans le cycle de vie du logiciel.
 
