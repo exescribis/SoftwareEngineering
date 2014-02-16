@@ -1,6 +1,7 @@
-RULE PACKAGES (22)
+RULE PACKAGES (23)
 =================
-* [CasDUtilisation](#casdutilisation) (12 rules)
+* [BaseDeDonnees](#basededonnees) (9 rules)
+* [CasDUtilisation](#casdutilisation) (13 rules)
 * [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
 * [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (2 rules)
 * [Classe](#classe) (23 rules)
@@ -23,7 +24,7 @@ RULE PACKAGES (22)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (475)
+RULES (485)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -319,11 +320,14 @@ RULES (475)
 * [ModelioR3250](#modelior3250) from package [UMLModelio](#umlmodelio)
 * [Navigabilite](#navigabilite) from package [Classe](#classe)
 * [NomActeur](#nomacteur) from package [CasDUtilisation](#casdutilisation)
+* [NomActeurGlossaire](#nomacteurglossaire) from package [CasDUtilisation](#casdutilisation)
 * [NomActeurInstancie](#nomacteurinstancie) from package [CasDUtilisation](#casdutilisation)
 * [NomAssociation](#nomassociation) from package [Classe](#classe)
 * [NomAttribut](#nomattribut) from package [Classe](#classe)
 * [NomCU](#nomcu) from package [CasDUtilisation](#casdutilisation)
 * [NomClasse](#nomclasse) from package [Classe](#classe)
+* [NomColonne](#nomcolonne) from package [BaseDeDonnees](#basededonnees)
+* [NomColonneGlossaire](#nomcolonneglossaire) from package [BaseDeDonnees](#basededonnees)
 * [NomDiagramme](#nomdiagramme) from package [Diagramme](#diagramme)
 * [NomEtat](#nometat) from package [Etat](#etat)
 * [NomExigence](#nomexigence) from package [Exigence](#exigence)
@@ -332,6 +336,8 @@ RULES (475)
 * [NomOperation](#nomoperation) from package [Classe](#classe)
 * [NomParametre](#nomparametre) from package [Classe](#classe)
 * [NomPersonne](#nompersonne) from package [Nomenclature](#nomenclature)
+* [NomRelation](#nomrelation) from package [BaseDeDonnees](#basededonnees)
+* [NomRelationGlossaire](#nomrelationglossaire) from package [BaseDeDonnees](#basededonnees)
 * [NomRole](#nomrole) from package [Classe](#classe)
 * [NomScenario](#nomscenario) from package [Scenario](#scenario)
 * [NomScenarioInstantie](#nomscenarioinstantie) from package [Scenario](#scenario)
@@ -345,6 +351,7 @@ RULES (475)
 * [NomenclatureAttribut](#nomenclatureattribut) from package [Classe](#classe)
 * [NomenclatureCU](#nomenclaturecu) from package [CasDUtilisation](#casdutilisation)
 * [NomenclatureClasse](#nomenclatureclasse) from package [Classe](#classe)
+* [NomenclatureColonne](#nomenclaturecolonne) from package [BaseDeDonnees](#basededonnees)
 * [NomenclatureEtat](#nomenclatureetat) from package [Etat](#etat)
 * [NomenclatureExigence](#nomenclatureexigence) from package [Exigence](#exigence)
 * [NomenclatureGlossaire](#nomenclatureglossaire) from package [Glossaire](#glossaire)
@@ -353,6 +360,7 @@ RULES (475)
 * [NomenclatureObjet](#nomenclatureobjet) from package [Classe](#classe)
 * [NomenclatureOperation](#nomenclatureoperation) from package [Classe](#classe)
 * [NomenclatureParametre](#nomenclatureparametre) from package [Classe](#classe)
+* [NomenclatureRelation](#nomenclaturerelation) from package [BaseDeDonnees](#basededonnees)
 * [NomenclatureRole](#nomenclaturerole) from package [Classe](#classe)
 * [NomenclatureScenario](#nomenclaturescenario) from package [Scenario](#scenario)
 * [NomenclatureTache](#nomenclaturetache) from package [Tache](#tache)
@@ -402,6 +410,9 @@ RULES (475)
 * [RoleAssociation](#roleassociation) from package [Classe](#classe)
 * [RoleClasse](#roleclasse) from package [Classe](#classe)
 * [RoleDansPatron](#roledanspatron) from package [Nomenclature](#nomenclature)
+* [Schema1FN](#schema1fn) from package [BaseDeDonnees](#basededonnees)
+* [Schema2FN](#schema2fn) from package [BaseDeDonnees](#basededonnees)
+* [Schema3FN](#schema3fn) from package [BaseDeDonnees](#basededonnees)
 * [SectionOrpheline](#sectionorpheline) from package [Document](#document)
 * [SectionTropProfonde](#sectiontropprofonde) from package [Document](#document)
 * [SequenceDActions](#sequencedactions) from package [Scenario](#scenario)
@@ -502,9 +513,82 @@ RULES (475)
 * [min_min](#min_min) from package [Nomenclature](#nomenclature)
 
 
+BaseDeDonnees
+====================================================
+9 rules: [NomRelation](#nomrelation) [NomenclatureRelation](#nomenclaturerelation) [NomRelationGlossaire](#nomrelationglossaire) [NomColonne](#nomcolonne) [NomenclatureColonne](#nomenclaturecolonne) [NomColonneGlossaire](#nomcolonneglossaire) [Schema1FN](#schema1fn) [Schema2FN](#schema2fn) [Schema3FN](#schema3fn) 
+
+NomRelation
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Le nom d'une relation doit correspondre à une forme nominale plurielle. Par ailleurs les termes utilisés dans le nom doivent généralement être définis dans le glossaire. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.
+
+* **Exemple:**  "LesPersonnes" ou "TheLoanedBooks"
+
+* **Commentaire:**  Contrairement au nom d'une classe (cf $NomClass) qui est une forme nominale au singuler, les relations correspondent à un ensemble d'entités. 
+
+* **Exemple:**  Les objets de classe "Personne" seront donc naturellement stockées dans la relation "LesPersonnes".
+
+NomenclatureRelation
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Le nom d'une relation doit être en style MajMin (cf $MajMin).
+
+NomRelationGlossaire
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Les termes utilisés dans le nom des relations doivent être définis dans le glossaire. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
+
+NomColonne
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Dans une relation, le nom de chaque colonne doit correspondre à une forme nominale correspondant à l'attribut ou au concept représenté, sauf eventuellement pour les colonnes représentant une valeur booléenne auxquel cas une forme verbale peut être acceptable. Par ailleurs les termes utilisés dans le nom doivent être définis dans le glossaire. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.
+
+* **Exemple:**  "adresse", "estArrive"
+
+  Commentaire
+
+NomenclatureColonne
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Le nom d'une relation doit être en style minMaj (cf $minMaj).
+
+NomColonneGlossaire
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Les termes utilisés dans le nom des colonnes des relations doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
+
+$NomCleEtrangere
+
+  Le nom des colonnes correspondant à des clés étrangères doit permettre d'identifier clairement le type d'entités référencés ainsi que la clé utilisé pour ce référencement.
+
+Schema1FN
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Le schéma de la base de données doit être en 1ère forme normale.
+
+Schema2FN
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Le schéma de la base de données doit être en Zème forme normale.
+
+Schema3FN
+-------------------
+From package [BaseDeDonnees](#basededonnees)  
+
+  Le schéma de la base de données doit être en 3ème forme normale.
+
+
 CasDUtilisation
 ====================================================
-12 rules: [NomActeur](#nomacteur) [NomenclatureActeur](#nomenclatureacteur) [NomCU](#nomcu) [NomenclatureCU](#nomenclaturecu) [NomActeurInstancie](#nomacteurinstancie) [ActeurSujet](#acteursujet) [ButCU](#butcu) [UniteTempsEspaceCU](#unitetempsespacecu) [Relation](#relation) [HeritageActeur](#heritageacteur) [SousTypageActeur](#soustypageacteur) [NonHumain](#nonhumain) 
+13 rules: [NomActeur](#nomacteur) [NomenclatureActeur](#nomenclatureacteur) [NomActeurGlossaire](#nomacteurglossaire) [NomCU](#nomcu) [NomenclatureCU](#nomenclaturecu) [NomActeurInstancie](#nomacteurinstancie) [ActeurSujet](#acteursujet) [ButCU](#butcu) [UniteTempsEspaceCU](#unitetempsespacecu) [Relation](#relation) [HeritageActeur](#heritageacteur) [SousTypageActeur](#soustypageacteur) [NonHumain](#nonhumain) 
 
 NomActeur
 -------------------
@@ -518,11 +602,21 @@ From package [CasDUtilisation](#casdutilisation)
 
   Les nom des acteurs doivent être de préférence en MajMin (cf $MajMin).
 
+NomActeurGlossaire
+-------------------
+From package [CasDUtilisation](#casdutilisation)  
+
+  Les termes utilisés dans le nom d'un acteur doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
+
 NomCU
 -------------------
 From package [CasDUtilisation](#casdutilisation)  
 
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale.
+
+$NomCUGlossaire  
+
+  Les termes utilisés dans le nom d'un cas d'utilisation doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
 
 NomenclatureCU
 -------------------
