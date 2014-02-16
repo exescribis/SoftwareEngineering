@@ -1,4 +1,4 @@
-﻿Cete page définie différentes règles de qualité pouvant être utilisées tout au long du cycle de vie du logiciel. Les règles sont rangées par paquetage, chaque paquetage correspond soit à une étape du cycle de vie ou sont au contraire transversaux. Certains paquetages correspondent à des règles vérifiées par des outils existants tel que Modelio ou StarUML. Utiliser la fonction "Search" de votre navigateur pour utiliser ce site.
+﻿Cette page définit différentes règles de qualité pouvant être utilisées tout au long du cycle de vie du logiciel. Les règles sont rangées par paquetage, chaque paquetage correspond soit à une étape du cycle de vie ou sont au contraire transversaux. Certains paquetages correspondent à des règles vérifiées par des outils existants tel que Modelio ou StarUML. Utiliser la fonction "Search" de votre navigateur pour utiliser ce site.
 
 Cycle de vie
 ============
