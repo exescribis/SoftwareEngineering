@@ -1,9 +1,13 @@
-RULE PACKAGES (24)
+RULE PACKAGES (27)
 =================
 * [BaseDeDonnees](#basededonnees) (9 rules)
 * [CasDUtilisation](#casdutilisation) (13 rules)
 * [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
-* [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (2 rules)
+* [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (1 rules)
+* [CasDUtilisation_StyleDecore](#casdutilisation_styledecore) (1 rules)
+* [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel) (1 rules)
+* [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:) (1 rules)
+* [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire) (1 rules)
 * [Classe](#classe) (23 rules)
 * [Deploiement](#deploiement) (1 rules)
 * [Diagramme](#diagramme) (10 rules)
@@ -16,7 +20,6 @@ RULE PACKAGES (24)
 * [ProgrammationWeb](#programmationweb) (2 rules)
 * [Scenario](#scenario) (23 rules)
 * [Sequence](#sequence) (1 rules)
-* [StyleEssentiel](#styleessentiel) (3 rules)
 * [Systeme](#systeme) (4 rules)
 * [Tache](#tache) (5 rules)
 * [TexteTechnique](#textetechnique) (36 rules)
@@ -41,11 +44,11 @@ RULES (487)
 * [ArticleInDefini](#articleindefini) from package [TexteTechnique](#textetechnique)
 * [Auteur](#auteur) from package [Livrable](#livrable)
 * [ButCU](#butcu) from package [CasDUtilisation](#casdutilisation)
-* [CUAuxiliaireDecore](#cuauxiliairedecore) from package [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)
+* [CUAuxiliaireDecore](#cuauxiliairedecore) from package [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)
 * [CUExigenceFonctionnelle](#cuexigencefonctionnelle) from package [Tracabilite](#tracabilite)
-* [CUPrimaireAGauche](#cuprimaireagauche) from package [StyleEssentiel](#styleessentiel)
+* [CUPrimaireAGauche](#cuprimaireagauche) from package [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:)
 * [CURoleExigences](#curoleexigences) from package [Tracabilite](#tracabilite)
-* [CUSeulementPrimaire](#cuseulementprimaire) from package [StyleEssentiel](#styleessentiel)
+* [CUSeulementPrimaire](#cuseulementprimaire) from package [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire)
 * [CardinalVsOrdinal](#cardinalvsordinal) from package [Valeur](#valeur)
 * [Cardinalite](#cardinalite) from package [Classe](#classe)
 * [CardinaliteInversee](#cardinaliteinversee) from package [Classe](#classe)
@@ -462,7 +465,7 @@ RULES (487)
 * [StarUML9](#staruml9) from package [UMLStarUML](#umlstaruml)
 * [StatusNonDefinitif](#statusnondefinitif) from package [Exigence](#exigence)
 * [Style](#style) from package [TexteTechnique](#textetechnique)
-* [StyleEssentiel](#styleessentiel) from package [StyleEssentiel](#styleessentiel)
+* [StyleEssentiel](#styleessentiel) from package [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel)
 * [StyleSIdentificateur](#stylesidentificateur) from package [Nomenclature](#nomenclature)
 * [Subjectif](#subjectif) from package [TexteTechnique](#textetechnique)
 * [Sujet](#sujet) from package [TexteTechnique](#textetechnique)
@@ -701,7 +704,7 @@ From package [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 
 CasDUtilisation_ModelePreliminaire
 ====================================================
-2 rules: [PasDeRelationEntreCU](#pasderelationentrecu) [CUAuxiliaireDecore](#cuauxiliairedecore) 
+1 rules: [PasDeRelationEntreCU](#pasderelationentrecu) 
 
 PasDeRelationEntreCU
 -------------------
@@ -709,11 +712,49 @@ From package [CasDUtilisation_ModelePreliminaire](#casdutilisation_modeleprelimi
 
   L'utilisation de relations entre cas d'utilisation n'est recommandée.
 
+
+CasDUtilisation_StyleDecore
+====================================================
+1 rules: [CUAuxiliaireDecore](#cuauxiliairedecore) 
+
 CUAuxiliaireDecore
 -------------------
-From package [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire)  
+From package [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)  
 
   Le stéréotype auxilaire doit être associé aux acteurs auxillaires.
+
+
+CasDUtilisation_StyleEssentiel
+====================================================
+1 rules: [StyleEssentiel](#styleessentiel) 
+
+StyleEssentiel
+-------------------
+From package [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel)  
+
+  La description du scenario ne doit pas faire de références inutiles à la manière dont les acteurs et le système intéragissent dans le détail, sachant que l'objectif d'un cas d'utilisation essentiel n'est pas de décrire des exigences sur une ou des interfaces personnes systèmes. 
+
+
+CasDUtilisation_StyleGaucheDroite:
+====================================================
+1 rules: [CUPrimaireAGauche](#cuprimaireagauche) 
+
+CUPrimaireAGauche
+-------------------
+From package [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:)  
+
+  Les acteurs primaires doivent être représentés à gauche du système, les acteurs secondaires à droite.
+
+
+CasDUtilisation_StylePrimaire
+====================================================
+1 rules: [CUSeulementPrimaire](#cuseulementprimaire) 
+
+CUSeulementPrimaire
+-------------------
+From package [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire)  
+
+  Seuls les acteurs primaires doivent être representés dans les diagrammes de cas d'utilisation.
 
 
 Classe
@@ -2078,29 +2119,6 @@ From package [Sequence](#sequence)
   Un ou plusieurs objets n'indiquent pas de manière satisfaisante la classe dont ils sont à l'origine.
 
 * **Commentaire:**  Dans Modelio ce problème peut correspondre au fait que le champ "base" de certains objets n'a pas été renseigné correctement.
-
-
-StyleEssentiel
-====================================================
-3 rules: [StyleEssentiel](#styleessentiel) [CUPrimaireAGauche](#cuprimaireagauche) [CUSeulementPrimaire](#cuseulementprimaire) 
-
-StyleEssentiel
--------------------
-From package [StyleEssentiel](#styleessentiel)  
-
-  La description du scenario ne doit pas faire de références inutiles à la manière dont les acteurs et le système intéragissent dans le détail, sachant que l'objectif d'un cas d'utilisation essentiel n'est pas de décrire des exigences sur une ou des interfaces personnes systèmes. 
-
-CUPrimaireAGauche
--------------------
-From package [StyleEssentiel](#styleessentiel)  
-
-  Les acteurs primaires doivent être représentés à gauche du système, les acteurs secondaires à droite.
-
-CUSeulementPrimaire
--------------------
-From package [StyleEssentiel](#styleessentiel)  
-
-  Seuls les acteurs primaires doivent être representés dans les diagrammes de cas d'utilisation.
 
 
 Systeme
