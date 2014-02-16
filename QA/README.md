@@ -16,14 +16,14 @@ RULE PACKAGES (22)
 * [Sequence](#sequence) (1 rules)
 * [StyleEssentiel](#styleessentiel) (3 rules)
 * [Systeme](#systeme) (4 rules)
-* [Tache](#tache) (2 rules)
+* [Tache](#tache) (5 rules)
 * [TexteTechnique](#textetechnique) (36 rules)
 * [Tracabilite](#tracabilite) (3 rules)
 * [UMLModelio](#umlmodelio) (187 rules)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (472)
+RULES (475)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -460,6 +460,8 @@ RULES (472)
 * [Surcodification](#surcodification) from package [Valeur](#valeur)
 * [SyntaxeTransition](#syntaxetransition) from package [Etat](#etat)
 * [TableDesMatieres](#tabledesmatieres) from package [Document](#document)
+* [TacheComposite2](#tachecomposite2) from package [Tache](#tache)
+* [TacheElementaire](#tacheelementaire) from package [Tache](#tache)
 * [TailleFigure](#taillefigure) from package [Document](#document)
 * [Temps](#temps) from package [TexteTechnique](#textetechnique)
 * [TermeAGlossaire](#termeaglossaire) from package [Glossaire](#glossaire)
@@ -479,6 +481,7 @@ RULES (472)
 * [TypeDExigence](#typedexigence) from package [Exigence](#exigence)
 * [TypeDeDiagramme](#typedediagramme) from package [Diagramme](#diagramme)
 * [TypeDeMessage](#typedemessage) from package [Scenario](#scenario)
+* [TypeTacheComposite](#typetachecomposite) from package [Tache](#tache)
 * [TypeValeur](#typevaleur) from package [Valeur](#valeur)
 * [TypeValeurIncorrect](#typevaleurincorrect) from package [Valeur](#valeur)
 * [UniteTempsEspaceCU](#unitetempsespacecu) from package [CasDUtilisation](#casdutilisation)
@@ -2017,13 +2020,13 @@ From package [Systeme](#systeme)
 
 Tache
 ====================================================
-2 rules: [NomTache](#nomtache) [NomenclatureTache](#nomenclaturetache) 
+5 rules: [NomTache](#nomtache) [NomenclatureTache](#nomenclaturetache) [TacheComposite2](#tachecomposite2) [TacheElementaire](#tacheelementaire) [TypeTacheComposite](#typetachecomposite) 
 
 NomTache
 -------------------
 From package [Tache](#tache)  
 
-  Dans un modèle de tâches, le nom des tâches doit correspondre à une forme verbale à l'infinitif et les tâches correspondant à des cas d'utilisation doivent suivre les règles correspondantes (cf $NomCU). De plus le nom des tâches doit faire référence autant que possibles aux termes définis dans le glossaire.
+  Dans un modèle de tâches, le nom des tâches doit correspondre à une forme verbale à l'infinitif et les tâches correspondant à des cas d'utilisation doivent suivre les règles correspondantes (cf $NomCU). De plus le nom des tâches doit faire référence autant que possible aux termes définis dans le glossaire.
 
 * **Exemple:**  La tâche "ReserverUnePlace" correspond bien à une forme verbable. "Place" devrait probablement être dans le glossaire. Selon les cas "Reserver" ou "ReserverUnePlace" pourrait aussi y figurer si la signification associée n'est pas claire.
 
@@ -2034,6 +2037,26 @@ From package [Tache](#tache)
   Le nom des tâches doit être en style MajMin (cf $MajMin).
 
 * **Commentaire:**  Certaines tâches correspondent à des cas d'utilisation et il est donc important d'utiliser la même règle (cf $NomenclatureCU).
+
+TacheComposite2
+-------------------
+From package [Tache](#tache)  
+
+  Une tâche composite doit comporter au moins deux sous-tâches.
+
+* **Commentaire:**  La décomposition de tâches en sous-tâches n'a d'intérêt que si plusieurs sous tâches existent.
+
+TacheElementaire
+-------------------
+From package [Tache](#tache)  
+
+  Une tâche élementaire ne peut pas être une tâche abstraite.
+
+TypeTacheComposite
+-------------------
+From package [Tache](#tache)  
+
+  Une tâche composite est (1) soit abstraite, (2) soit du même type que toutes ses sous-tâches.
 
 
 TexteTechnique
