@@ -1,4 +1,4 @@
-RULE PACKAGES (23)
+RULE PACKAGES (24)
 =================
 * [BaseDeDonnees](#basededonnees) (9 rules)
 * [CasDUtilisation](#casdutilisation) (13 rules)
@@ -13,6 +13,7 @@ RULE PACKAGES (23)
 * [Glossaire](#glossaire) (18 rules)
 * [Livrable](#livrable) (17 rules)
 * [Nomenclature](#nomenclature) (22 rules)
+* [ProgrammationWeb](#programmationweb) (2 rules)
 * [Scenario](#scenario) (23 rules)
 * [Sequence](#sequence) (1 rules)
 * [StyleEssentiel](#styleessentiel) (3 rules)
@@ -24,7 +25,7 @@ RULE PACKAGES (23)
 * [UMLStarUML](#umlstaruml) (38 rules)
 * [Valeur](#valeur) (17 rules)
 
-RULES (485)
+RULES (487)
 ================
 * [Abbreviation](#abbreviation) from package [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) from package [Valeur](#valeur)
@@ -332,8 +333,10 @@ RULES (485)
 * [NomEtat](#nometat) from package [Etat](#etat)
 * [NomExigence](#nomexigence) from package [Exigence](#exigence)
 * [NomExigenceFonctionnelle](#nomexigencefonctionnelle) from package [Exigence](#exigence)
+* [NomFichierCSS](#nomfichiercss) from package [ProgrammationWeb](#programmationweb)
 * [NomObjet](#nomobjet) from package [Classe](#classe)
 * [NomOperation](#nomoperation) from package [Classe](#classe)
+* [NomPageJSP](#nompagejsp) from package [ProgrammationWeb](#programmationweb)
 * [NomParametre](#nomparametre) from package [Classe](#classe)
 * [NomPersonne](#nompersonne) from package [Nomenclature](#nomenclature)
 * [NomRelation](#nomrelation) from package [BaseDeDonnees](#basededonnees)
@@ -1876,6 +1879,23 @@ From package [Nomenclature](#nomenclature)
   Une ou des interactions entre couches ne sont pas conformes aux règles établies par le patron.
 
 * **Commentaire:**  Dans certaines versions du patron MVC les controleurs jouent les intermediaires entre les modeles et les vues et les interactions directes entre ces couches sont interdites. Les modèles doivent être complétement indépendants des autres couches et donc ne connaître ni les controleurs, ni les vues mais peuvent intégagir entre eux. Les vues ou interfaces, qu'elles correspondent à des dispositifs d'entrée, de sorties, à des actuateurs ou à des capteurs, peuvent intéragir entre elles ou avec des controleurs. Les controleurs peuvent intéragir avec les controleurs, les vues et les modèles et jouent donc un rôle central. 
+
+
+ProgrammationWeb
+====================================================
+2 rules: [NomPageJSP](#nompagejsp) [NomFichierCSS](#nomfichiercss) 
+
+NomPageJSP
+-------------------
+From package [ProgrammationWeb](#programmationweb)  
+
+  ... TBD ...
+
+NomFichierCSS
+-------------------
+From package [ProgrammationWeb](#programmationweb)  
+
+  ... TBD ...
 
 
 Scenario
