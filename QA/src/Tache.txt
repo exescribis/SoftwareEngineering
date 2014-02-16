@@ -1,0 +1,10 @@
+#= Tache
+
+$NomTache:
+  Dans un modèle de tâches, le nom des tâches doit correspondre à une forme verbale à l'infinitif et les tâches correspondant à des cas d'utilisation doivent suivre les règles correspondantes (cf $NomCU). De plus le nom des tâches doit faire référence autant que possibles aux termes définis dans le glossaire.
+  Exemple: La tâche "ReserverUnePlace" correspond bien à une forme verbable. "Place" devrait probablement être dans le glossaire. Selon les cas "Reserver" ou "ReserverUnePlace" pourrait aussi y figurer si la signification associée n'est pas claire.
+
+$NomenclatureTache:
+  Le nom des tâches doit être en style MajMin (cf $MajMin).
+  Commentaires: Certaines tâches correspondent à des cas d'utilisation et il est donc important d'utiliser la même règle (cf $NomenclatureCU).
+
