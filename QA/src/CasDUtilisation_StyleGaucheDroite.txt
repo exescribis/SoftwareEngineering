@@ -1,3 +1,5 @@
+#= CasDUtilisation_StyleGaucheDroite:
+
 $CUPrimaireAGauche:
   Les acteurs primaires doivent être représentés à gauche du système, les acteurs secondaires à droite.
 
