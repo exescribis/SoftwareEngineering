@@ -8,12 +8,12 @@ Modelisation
 * [Exigence](#exigence)
 * [Systeme](#systeme)
 * [CasDUtilisation](#casdutilisation) 
-** [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) 
-** [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) 
-** [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)
-** [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel)
-** [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:)
-** [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire)
+  * [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) 
+  * [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) 
+  * [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)
+  * [CasDUtilisation_StyleEssentiel](#casdutilisation_styleessentiel)
+  * [CasDUtilisation_StyleGaucheDroite:](#casdutilisation_stylegauchedroite:)
+  * [CasDUtilisation_StylePrimaire](#casdutilisation_styleprimaire)
 * [Scenario](#scenario)
 * [Sequence](#sequence)
 * [Valeur](#valeur)
@@ -45,8 +45,8 @@ Les paquetages de règles ci-dessous sont généralement orthogonaux au cycle de
 PAQUETAGE DE REGLES
 ===================
 27paquetages triés par ordre alphabétique.
- [BaseDeDonnees](#basededonnees) (9 rules)
- [CasDUtilisation](#casdutilisation) (13 rules)
+ [BaseDeDonnees](#basededonnees) (10 rules)
+ [CasDUtilisation](#casdutilisation) (14 rules)
  [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
  [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (1 rules)
  [CasDUtilisation_StyleDecore](#casdutilisation_styledecore) (1 rules)
@@ -73,11 +73,12 @@ PAQUETAGE DE REGLES
  [UMLStarUML](#umlstaruml) (38 rules)
  [Valeur](#valeur) (17 rules)
 
-REGLES (487)
+REGLES (489)
 ======
 * [Abbreviation](#abbreviation) Paquetage : [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) Paquetage : [Valeur](#valeur)
 * [ActeurSujet](#acteursujet) Paquetage : [CasDUtilisation](#casdutilisation)
+* [ActeuronHumain](#acteuronhumain) Paquetage : [CasDUtilisation](#casdutilisation)
 * [Action](#action) Paquetage : [Scenario](#scenario)
 * [ActionAtomique](#actionatomique) Paquetage : [Scenario](#scenario)
 * [ActionConcrete](#actionconcrete) Paquetage : [Scenario](#scenario)
@@ -374,7 +375,9 @@ REGLES (487)
 * [NomAssociation](#nomassociation) Paquetage : [Classe](#classe)
 * [NomAttribut](#nomattribut) Paquetage : [Classe](#classe)
 * [NomCU](#nomcu) Paquetage : [CasDUtilisation](#casdutilisation)
+* [NomCUGlossaire](#nomcuglossaire) Paquetage : [CasDUtilisation](#casdutilisation)
 * [NomClasse](#nomclasse) Paquetage : [Classe](#classe)
+* [NomCleEtrangere](#nomcleetrangere) Paquetage : [BaseDeDonnees](#basededonnees)
 * [NomColonne](#nomcolonne) Paquetage : [BaseDeDonnees](#basededonnees)
 * [NomColonneGlossaire](#nomcolonneglossaire) Paquetage : [BaseDeDonnees](#basededonnees)
 * [NomDiagramme](#nomdiagramme) Paquetage : [Diagramme](#diagramme)
@@ -418,7 +421,6 @@ REGLES (487)
 * [NomenclatureTerme](#nomenclatureterme) Paquetage : [Glossaire](#glossaire)
 * [NomenclatureTransition](#nomenclaturetransition) Paquetage : [Etat](#etat)
 * [NonAbstraction](#nonabstraction) Paquetage : [TexteTechnique](#textetechnique)
-* [NonHumain](#nonhumain) Paquetage : [CasDUtilisation](#casdutilisation)
 * [NonLivre](#nonlivre) Paquetage : [Livrable](#livrable)
 * [NumerotationSection](#numerotationsection) Paquetage : [Document](#document)
 * [ObjetClassifie](#objetclassifie) Paquetage : [Sequence](#sequence)
@@ -449,7 +451,7 @@ REGLES (487)
 * [ReferenceTermeInconnu](#referencetermeinconnu) Paquetage : [Glossaire](#glossaire)
 * [ReferenceTermePrincipal](#referencetermeprincipal) Paquetage : [Glossaire](#glossaire)
 * [ReferenceVersTerme](#referenceversterme) Paquetage : [Glossaire](#glossaire)
-* [Relation](#relation) Paquetage : [CasDUtilisation](#casdutilisation)
+* [RelationCU](#relationcu) Paquetage : [CasDUtilisation](#casdutilisation)
 * [RelationsCUIncoherentes](#relationscuincoherentes) Paquetage : [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille)
 * [RerefenceAmbigue](#rerefenceambigue) Paquetage : [TexteTechnique](#textetechnique)
 * [ResolutionFigure](#resolutionfigure) Paquetage : [Document](#document)
@@ -566,7 +568,7 @@ REGLES (487)
 
 BaseDeDonnees
 ====================================================
-9 rules: [NomRelation](#nomrelation) [NomenclatureRelation](#nomenclaturerelation) [NomRelationGlossaire](#nomrelationglossaire) [NomColonne](#nomcolonne) [NomenclatureColonne](#nomenclaturecolonne) [NomColonneGlossaire](#nomcolonneglossaire) [Schema1FN](#schema1fn) [Schema2FN](#schema2fn) [Schema3FN](#schema3fn) 
+10 rules: [NomRelation](#nomrelation) [NomenclatureRelation](#nomenclaturerelation) [NomRelationGlossaire](#nomrelationglossaire) [NomColonne](#nomcolonne) [NomenclatureColonne](#nomenclaturecolonne) [NomColonneGlossaire](#nomcolonneglossaire) [NomCleEtrangere](#nomcleetrangere) [Schema1FN](#schema1fn) [Schema2FN](#schema2fn) [Schema3FN](#schema3fn) 
 
 NomRelation
 -------------------
@@ -614,7 +616,9 @@ Paquetage :[BaseDeDonnees](#basededonnees)
 
   Les termes utilisés dans le nom des colonnes des relations doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
 
-$NomCleEtrangere
+NomCleEtrangere
+-------------------
+Paquetage :[BaseDeDonnees](#basededonnees)  
 
   Le nom des colonnes correspondant à des clés étrangères doit permettre d'identifier clairement le type d'entités référencés ainsi que la clé utilisé pour ce référencement.
 
@@ -639,7 +643,7 @@ Paquetage :[BaseDeDonnees](#basededonnees)
 
 CasDUtilisation
 ====================================================
-13 rules: [NomActeur](#nomacteur) [NomenclatureActeur](#nomenclatureacteur) [NomActeurGlossaire](#nomacteurglossaire) [NomCU](#nomcu) [NomenclatureCU](#nomenclaturecu) [NomActeurInstancie](#nomacteurinstancie) [ActeurSujet](#acteursujet) [ButCU](#butcu) [UniteTempsEspaceCU](#unitetempsespacecu) [Relation](#relation) [HeritageActeur](#heritageacteur) [SousTypageActeur](#soustypageacteur) [NonHumain](#nonhumain) 
+14 rules: [NomActeur](#nomacteur) [NomenclatureActeur](#nomenclatureacteur) [NomActeurGlossaire](#nomacteurglossaire) [NomCU](#nomcu) [NomCUGlossaire](#nomcuglossaire) [NomenclatureCU](#nomenclaturecu) [NomActeurInstancie](#nomacteurinstancie) [ActeurSujet](#acteursujet) [ButCU](#butcu) [UniteTempsEspaceCU](#unitetempsespacecu) [RelationCU](#relationcu) [HeritageActeur](#heritageacteur) [SousTypageActeur](#soustypageacteur) [ActeuronHumain](#acteuronhumain) 
 
 NomActeur
 -------------------
@@ -665,7 +669,9 @@ Paquetage :[CasDUtilisation](#casdutilisation)
 
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale.
 
-$NomCUGlossaire  
+NomCUGlossaire
+-------------------
+Paquetage :[CasDUtilisation](#casdutilisation)  
 
   Les termes utilisés dans le nom d'un cas d'utilisation doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
 
@@ -705,7 +711,7 @@ Paquetage :[CasDUtilisation](#casdutilisation)
 
   Un ou plusieurs cas d'utilisation ne correspondent pas à une unité de temps et d'espaces par rapport à l'utilisation entre l'acteur principal et le systeme.
 
-Relation
+RelationCU
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
@@ -723,7 +729,7 @@ Paquetage :[CasDUtilisation](#casdutilisation)
 
   Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise.
 
-NonHumain
+ActeuronHumain
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 

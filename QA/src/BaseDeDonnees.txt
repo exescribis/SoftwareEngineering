@@ -27,7 +27,7 @@ $NomColonneGlossaire:
   Les termes utilisés dans le nom des colonnes des relations doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
   
 #== CleEtrangeres
-$NomCleEtrangere
+$NomCleEtrangere:
   Le nom des colonnes correspondant à des clés étrangères doit permettre d'identifier clairement le type d'entités référencés ainsi que la clé utilisé pour ce référencement.
   
 #== Schema

@@ -14,7 +14,7 @@ $NomActeurGlossaire:
 $NomCU:
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale.
 
-$NomCUGlossaire  
+$NomCUGlossaire:  
   Les termes utilisés dans le nom d'un cas d'utilisation doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
 
 $NomenclatureCU:
@@ -46,7 +46,7 @@ $UniteTempsEspaceCU:
 
 #== Diagramme:
 
-$Relation:
+$RelationCU:
   Pas de relation entre acteurs sauf éventuellement une spécialisation.
   
 $HeritageActeur:
@@ -55,7 +55,7 @@ $HeritageActeur:
 $SousTypageActeur:
   Un acteur spécifique est un cas particulier de l'acteur qu'il spécialise.
 
-$NonHumain:
+$ActeuronHumain:
   Les acteurs ne correspondants pas des humains doivent être représentés graphiquement avec le stéréotype non humain.
   
   
