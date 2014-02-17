@@ -4,7 +4,7 @@ Bienvenue dans ModelioZone. Cet espace contient différentes ressources pour mod
 
 Templates
 ---------
-Le répertoire "templates" contient des templates de documents pour la génération de rapport. Les indications pour installer un template sont également dans ce répertoire.
+Le répertoire "templates" contient des templates de document pour la génération de rapports. Les indications pour installer un template sont également dans ce répertoire.
 
 Styles
 ------
