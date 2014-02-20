@@ -651,13 +651,15 @@ NomActeur
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Le nom d'un acteur doit être une forme nominale, un terme métier, ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter). La notion d'acteur est définie par le rôle joué par l'acteur par rapport au système et non pas par la position de la personne jouant ce role à un moment donné dans une organisation.
+  Le nom d'un acteur doit être une forme nominale, un terme métier défini dans le glossaire (cf $NomCUGlossaire), ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter). La notion d'acteur est définie par le *rôle* joué par l'acteur par rapport au système et non pas par la *position* de l'acteur dans l'organisation.
+
+* **Exemple:**  "SpectateurDistant", "Superviseur" sont des noms potentiels d'acteurs. "Utilisateur" est trop générique. "Directeur" pourrait correspondre à une position dans une entreprise ; ce n'est pas forcemment un bon nom de role selon les cas.
 
 NomenclatureActeur
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Les nom des acteurs doivent être de préférence en MajMin (cf $MajMin).
+  Les nom des acteurs doivent être en style MajMin (cf $MajMin).
 
 NomActeurGlossaire
 -------------------
@@ -669,7 +671,9 @@ NomCU
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réalisé au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale.
+  Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réaliser au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale. Le nom du cas d'utilisation doit clairement faire référence à un but ($ActeurSujet).
+
+* **Exemple:**  "DeclarerLEntreeDUnVehicule"
 
 NomCUGlossaire
 -------------------
