@@ -8,4 +8,4 @@ Le répertoire "templates" contient des templates de document pour la générati
 
 Styles
 ------
-Le répertoire "styles" contient des styles de diagrammes. Grace à ces styles il est possible de changer très facilement l'apparence des diagrammes. De tels styles sont entre autre nécessaires par exemple pour les diagrammes de cas d'utilisation.
+Le répertoire "styles" contient des styles de diagrammes. 

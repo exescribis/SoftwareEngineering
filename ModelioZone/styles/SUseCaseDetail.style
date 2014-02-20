@@ -4,5 +4,5 @@ USECASE_INNERVIEWMODE=LIST
 USECASE_INTERNALSVIEWMODE=NONE
 USECASE_INNER_FONT=Arial, 8, 0
 USECASE_INNER_TEXTCOLOR=0 100 0
-basestyle=SCasDutilisation
-stylename=SCasDUtilisationDetail
+basestyle=SUseCase
+stylename=SUseCaseDetail
