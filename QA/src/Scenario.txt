@@ -3,54 +3,73 @@
 #== Nomenclature
 
 $NomScenario:
-  Chaque scenario doit être nommé et le nom d'un scénario doit si possible faire référence explicitement au cas d'utilisation qu'il réalise ainsi que dans la mesure du possible à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario et un résumé décrira le contenu ou l'intention du scénario (cf $IntentionScenario). 
+  Chaque scenario doit être nommé et le nom d'un scénario doit faire référence (1) au cas d'utilisation qu'il réalise et (2) à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario. Dans tous les cas un résumé décrira le contenu ou l'intention du scénario (cf $IntentionScenario). 
+  Exemple: "cloreDossier_Normal" et "cloreDossier_AnnulationClient" sont deux scénarii correspondants clairement au même cas d'utilisation "CloreDossier". Le premier scénario correspond au scénario dit "nominal". Si de nombreux scénarii devaient être associés au même cas d'utilisation et s'il est difficile de leur donner un nom court on peut avoir "cloreDossier_S1", "cloreDossier_S2", ... "cloreDossier_S12" par exemple.
 
 $NomenclatureScenario:
-  Le nom d'un scenario doit a priori être en style minMaj (cf $MinMaj).
-  Commentaire: Les scénarii devant être référencés par plusieurs autres éléments de modèles il est utile de nommer de manière précise les scénarii. Comme un scénarii est au niveau "objet", le style minMaj est recommandé et ce par opposition au style MajMin (cf $MajMin) recommandé pour les Cas d'Utilisation (cf $NomenclatureCU).  
+  Le nom d'un scenario doit être en style MinMajSouligne (cf $MinMajSouligne).
+  Commentaire: Les scénarii devant être référencés par plusieurs autres éléments de modèles il est utile de nommer de manière précise les scénarii. Comme un scénarii est au niveau "objet", le style minMajSougligne est recommandé et ce par opposition au style MajMin (cf $MajMin) recommandé pour les Cas d'Utilisation (cf $NomenclatureCU). L'utilisation du souligné peut être utile pour séparer le nom du cas d'utilisation du qualificatif correspondant au scénario.
+  Exemple: "cloreDossier_DechargeClient"  
 
+$NomScenarioGlossaire:
+  Les termes importants utilisés dans le nom des scénarii doivent être définis dans le glossaire. 
+  Exemple: Dans "cloreDossier_DechargeClient" il est peut être nécessaire de définir les termes suivants ou certains de ces termes: Decharge ou DechargeClient et/ou Client.
   
 $NomScenarioInstantie:
-  Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées. Si trop d'information sont à décrire, il peut être préférable de numéroter les scénario et de définir leur contenu via le résumé du scénario.
+  Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées. Si trop d'information sont à décrire, il peut être préférable de numéroter les scénario (cf $NomScenario) et de définir leur contenu via le résumé du scénario (cf $IntentionScenario).
+  
   
   
 #== Resume
 $IntentionScenario:
-  Si un scénario est décrit de manière détaillée sous la forme d'une séquence d'actions, le "résumé" associé au scénario doit principalement décrire l'intention du scénario et positionner celui-ci par rapport aux autres scénarii correspondant au même cas d'utilisation. 
-
+  Si un scénario est décrit de manière détaillée sous la forme d'une séquence d'actions, le "résumé" associé au scénario doit principalement (1) décrire l'intention du scénario, (2) positionner celui-ci par rapport aux autres scénarii correspondant au même cas d'utilisation, (3) introduire éventuellement les données et instances essentielles référencées dans le scénario.
+  
 #== Action
 
 $SequenceDActions:
-  Le scenario n'est pas décrit sous forme d'une séquence d'actions clairement identifiables et repréable au sein d'une séquence.
+  La description du scénario doit se faire strictement sous forme d'une séquence d'actions avec une seule action par ligne (cf $FormatAction).
+  Exemple: Les actions suivantes peuvent former une séquence valide (une action par ligne) "* [Mamadou] introduit sa [carteBancaire13] dans le [distributeur637] de [cyberBanqueDeLorient]", "* [cyberBanqueDeLorient] affiche l'[ecran17] sur le [distributeur637]", "* [Mamadou] introduit son code 7878", etc.
 
-$Action:
-  La phrase ne correspond pas à une action du système ou d'un acteur (cf $SequenceDActions)(cf $SujetAction).
+$FormatAction:
+  Une action doit être décrite sous forme d'une ligne de texte commençant par un asterisque ("*")
+  Commentaire: "* [paul] s'identifie auprès de [cyberCompetition]." doit être suivie d'un saut de ligne.
+  
+# $Action:
+#  La phrase ne correspond pas à une action du système ou d'un acteur (cf $SequenceDActions)(cf $SujetAction).
 
-$ActionVersPrecondition:
-  La description du scenario comporte des éléments qui semblent relever des préconditions associés au scénario, plutôt qu'à des actions.
 
-$ActionVersPostcondition:
-  La description du scenario comporte des éléments qui semblent relever des postconditions associés au scénario, plutôt qu'à des actions.
+# $ActionVersPrecondition:
+#   La description du scenario comporte des éléments qui semblent relever des préconditions associés au scénario, plutôt qu'à des actions.
+
+# $ActionVersPostcondition:
+#   La description du scenario comporte des éléments qui semblent relever des postconditions associés au scénario, plutôt qu'à des actions.
 
 $SujetAction:
-  La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur).   
-
-$SujetInstancie:
-  Le sujet des phrases d'actions doivent correspondre à chaque fois à un acteur instancié ou un système instancié et ces sujets doivent faire référence autant que possible à des éléments de modèles définis par ailleurs.
+  Le sujet d'une action apparaissant dans un scénario doit (1) soit être le système (2) soit un des acteurs intervenants dans le cas d'utilisation. Dans tous les cas il doit être explicitement identifié. 
+  Commentaire: S'il s'agit d'une action intervenant dans une description de scénario instancié il s'agira impérativement d'une instance (cf $SujetActionInstancie).
+  Commentaire: Cela veut dire qu'une action prend soit la forme "* [unSystemeInstancie] ... " soit la forme "* [unActeurInstancie] ... "
+  Exemple: "* [cyberKebabLondres] affiche l'[ecran112] demandant à [bree] de valider sa [commande1223]"
+  Exemple: "* [bree] valide la [commande1223] grace à [cyberKebabLondres]" 
+  
+$SujetActionInstancie:
+  Le sujet des phrases d'actions doivent correspondre à chaque fois (1) soit à un acteur instancié, (2) soit à  un système instancié.
+  et ces sujets doivent faire référence autant que possible à des éléments de modèles définis par ailleurs.
   Commentaire: Dans un scenario instancié il est important d'instancier les acteurs et le système dans la mesure ou ces scénarii doivent être aussi concrets que possible pour pouvoir être validés par les différents intervenants. Par ailleurs, donner référencer des acteurs ou systèmes instanciés permet de décrire les caractéristiques de ces derniers plus en détails et par exemple de définir leur profil utilisateur lorsqu'il s'agit d'acteurs humains. Faire référence à un système instancié permet également de situer le scénario dans un contexte plus précis, en prenant en compte par exemple l'état du système instancié (qui pourrait en effet correspondre à un état particulier). Un tel degré de précision peu se réveler fort utile dans le cadre de l'élaboration de tests à partir   
-  Exemple: "Le système" devrait être remplacé par "cyberBatimentIMAG" si le système que l'on considère dans le scénario instancié correspond à l'instantiation du système CyberBatiment. Pour être plus précis, CyberBatiment est vu comme une classe de système pouvant être instantié (installé, configuré, etc.) dans différents contextes et maintenant de fait chacun leur état de manière séparée. 
+  Exemple: "Le système" devrait être remplacé par "cyberBatimentIMAG" si le système que l'on considère dans le scénario instancié correspond à l'instantiation du système CyberBatiment. Pour être plus précis, CyberBatiment est vu comme une classe de système pouvant être instantié (installé, configuré, etc.) dans différents contextes. Chaque instance de ce même système va maintenir un état, une configuration, etc, qui va être différente et les mêmes actions sur ces différentes instances de systèmes vont donc potentiellement donner des résultats différents. 
 
 $IntermediaireAction:
   La ou les actions doivent être reformulées de manière à ce que le sujet de l'action soit clairement identifié (cf $SujetAction) même si des intermediaires peuvent figurer dans l'action à titre d'illustration et/ou pour donner des détails quand aux interactions concretes entres les acteurs et le systeme.
-  Commentaire:
-  Exemple: Dans la phrase d'action "paul passe son badge210 dans le lecteurDeBadge214" le système de controle d'acces n'est pas représenté de manière explicite, alors que il est le destinataire du message dans un scenario externe. Le lecteurDeBadge214 joue simplement le rôle d'intermediaire, ou plus précisemment d'interface entre l'acteur et les éléments internes du systèmes. Si la description de ces éléments d'interfaces sont utiles, la phrase d'action devrait être reformulée de la manière suivante par exemple "paul s'identifie auprès du systemeDeControleIMAG via son badge210 qu'il passe devant le lecteurDeBadge214". Ici badge210 et lecteurDeBadge214 sont des intermediaires dans l'interaction entre paul et systemeDeControleIMAG. De manière plus abstraite, et si l'on veut faire abstraction de ces interfaces, on pourrait dire "paul s'identifie auprès du systemeDeControleIMAG".
+  Exemple: Dans la phrase d'action "[paul] passe son [badge210] dans le [lecteurDeBadge214]" le système de controle d'acces n'est pas représenté de manière explicite, alors que il est le destinataire du message dans un scenario externe. Le lecteurDeBadge214 joue simplement le rôle d'intermediaire, ou plus précisemment d'interface entre l'acteur et les éléments internes du systèmes. Si la description de ces éléments d'interfaces sont utiles, la phrase d'action devrait être reformulée de la manière suivante par exemple "[paul] s'identifie auprès du [systemeDeControleIMAG] via son [badge210] qu'il passe devant le [lecteurDeBadge214]". Ici badge210 et lecteurDeBadge214 sont des intermediaires dans l'interaction entre paul et systemeDeControleIMAG. De manière plus abstraite, et si l'on veut faire abstraction de ces interfaces, on pourrait dire "[paul] s'identifie auprès du [systemeDeControleIMAG]".
   
 $ActionAtomique:
   Certaines descriptions d'actions font références implicitement ou explicitement (via des connecteurs "et" par exemple) à plusieurs actions atomiques qui devraient décomposées.
   Commentaire: Séparer ces actions permet une meilleure traçabilité entre les différents modèles, par exemple entre les scénarii décrits textuellement et les diagrammes de séquences ou de communication.
+  Exemple: 
 
 $ActionConcrete:
-  L'action ou les actions ne sont pas décrites de manières suffisemment concrètes, soit en terme des moyens utilisés pour les interactions, soit en termes des informations échangées.
+  L'action ou les actions ne sont pas décrites de manières suffisemment concrètes, soit en terme des moyens utilisés pour les interactions, soit en termes d'informations échangées.
+  Commentaire: Les scénarii, notemment les scénarii instanciés doivent contenir suffisemment d'information pour pouvoir par la suite générer automatiquement ou manuellement des tests. Si des données précises ne sont pas fournies lors de l'écriture des scénarii, un travail supplémentaire devra être fait par la suite. Par ailleurs il est toujours utile de donner des exemples concrètes de valeurs ou d'objets pour pouvoir valider les scénarii. 
+  Exemple: 
   
 $ParametreConcret:
   Les paramètres des actions doivent avoir des valeurs concrétes (cf $ValeurConcrete).   

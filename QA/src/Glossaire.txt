@@ -6,11 +6,13 @@ $NomenclatureGlossaire:
 
 #== Termes 
 $NomTerme:
-  Le nom d'un terme doit être au singulier s'il s'agit d'un nom.
+  Le nom d'un terme doit être au singulier s'il s'agit d'un nom et doit correspondre si possible au terme le plus au terme utilisé dans le contexte correspondant au glossaire.
+  Exemple: PointDAcces, Piece, Vehicule, VehiculeAccidente
   
 $NomenclatureTerme:
-  Le nom d'un terme doit être de préférence en style MajMin (cf $MajMin).
-  Commentaire: Cette convention peut être fort utile pour faire ressortir dans un texte l'utilisation des termes définis dans un glossaire et donc pour renforcer le fait que ce terme à été utilisé de manière consciente et raisonnée.   
+  Le nom d'un terme doit être en style MajMin (cf $MajMin).
+  Commentaire: Cette convention peut être fort utile pour faire ressortir dans un texte l'utilisation des termes définis dans un glossaire et donc pour renforcer le fait que ce terme à été utilisé de manière consciente et raisonnée.
+  Exemple: VehiculeAccidente
 
 $TermeTropCompose:
   Le nom du terme est composé de plusieurs mots ou sous-termes mais certains de ceux-ci semblent ne pas être pertinents ou nécessaire dans la composition totale. Il est préférable de les enlever pour rester à des termes essentiels.
@@ -41,6 +43,7 @@ $DefinitionTermeTropGenerale:
 $TermeAGlossaire:
   Un ou des termes devraient être ajoutés dans l'un des glossaires dans la mesure où s'agit d'un terme spécifique ou d'un concept important.
 
+ 
 #== Attributs  
 $ClassificationTerme:
   Le terme dans lequel le glossaire apparait n'est pas le plus approprié. 
@@ -48,12 +51,13 @@ $ClassificationTerme:
 
 $TermesAlternatifs:
   Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. 
-  Commentaires: Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le cadre du projet considéré. Par ailleurs il ne faut pas confondre (1) d'une part les termes alternatifs à qui ont associe signfication que le principal et (2) les exemples qui eux sont des termes, des expressions, des artefacts ou des concepts plus spécifiques.
+  Commentaires: Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le contexte considéré. Par ailleurs il ne faut pas confondre (1) d'une part les termes alternatifs à qui ont associe la même signfication que le terme principal et (2) les exemples qui eux sont des termes, des expressions, des artefacts ou des concepts plus spécifiques.
   Exemple: Dans le contexte d'un système de contrôle d'accès, un terme principal pourrait être "PorteurDeBadge" avec comme termes alternatifs "PossesseurDeBadge", "PersonneABadge", "Badgeur". Si le système permet de définir des types arbitraires de "PorteurDeBadge" les termes suivants sont alors naturellement simplement des exemples "Etudiant", "PersonnelAdministratif", "Technicien", etc.
   
 #== References  
 $ReferenceVersTerme:
-  Une ou plusieurs expressions correspondent à des termes dans le glossaire (ou à des synonymes de ces termes) et devraient donc être remplacé par une référence vers ce terme (principal) (cf $FormatReferenceTerme).
+  Une ou plusieurs expressions correspondent à des termes dans le glossaire (ou à des synonymes de ces termes) et devraient donc être remplacée(s) par une référence vers ce terme (principal) (cf $FormatReferenceTerme).
+  Exemple: Dans la phrase "Le [ChefDAtelier] renseigne dans CyberGarage le temps de réparation pris par un mécanicien pour le véhicule", les termes "[CyberGarage]", "[TempsDeReparation]", "[Mecanicien]", "[Vehicule]" devraient être référencés si ceux-ci sont dans un glossaire, ou sinon, ils devraient être sans doute introduits dans le glossaire (cf $)  
 
 $FormatReferenceTerme:
   Lorsqu'un terme défini dans un glossaire est utilisé dans un texte une référence vers ce terme doit être créé sous la forme du terme tel que défini dans le glossaire et entre crochets. Dans le cas de termes au pluriel la marque du pluriel suivra immédiatement la référence. Les cas particuliers pourront être traités grace aux "alternatives" associés à un terme dans un glossaire.
@@ -88,5 +92,7 @@ $TermesCroises:
 #!!!???
 #  Capteurs : Organe qui élabore, à partir d'une grandeur physique, une autre grandeur physique, souvent de nature électrique, utilisable à des fins de mesure ou de commande.
 #  Il est plus utile de définir le vocabulaire propre au domaine, et encore plus utile propre au système à développer.
-  
 
+
+  
+# ... dans différents lieu ([zone] ou [batiment]) ...

@@ -3,6 +3,7 @@
 $NomenclatureLivrable:
   Le nom d'un ou de plusieurs ressources livrées n'est pas conforme aux règles spécifiées (cf $PackagingLivrable).
   Commentaire: Les livraisons sont des points clés de la vie d'un produit logiciel et l'attention qui doit y être portée est extrème. Ne pas respecter des règles de nomenclature spécifiées auparavant est un problème important. D'une part cela montre que l'organisation productrice n'est pas capable de suivre des règles élémentaires, d'autre par cela rend impossible le traitement automatique des éléments livrés par l'organization cliente. 
+  Exemple: S'il a été demandé de livrer un seul fichier sous la forme CyberKebab-GXXX-Y.pdf ou XXX est le numéro d'un groupe et Y le numéro de livraison, alors CyberKebab-G203-2.pdf est valide mais Cyberkebab_210.pdf ne l'est pas. Si l'organisation client doit gérer de multiples livraisons il est fort à parier que des scripts automatisent certaines parties. Ne pas respecter les conventions peut lier à des problèmes plus où moins importants.
 
 $DelaiLivrable:
   Le ou les délais de livraison n'ont pas été respectés.

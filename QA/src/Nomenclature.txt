@@ -23,12 +23,12 @@ $Generique:
   Le ou les termes utilisés sont trop génériques et ne fournissent pas d'information ou des termes plus spécifiques sont peut être disponibles dans le vocabulaire du domaine.
   
 $Connecteur:
-  Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
+  Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisés dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
   Commentaire: un identificateur correspond normallement à un concept ou à une entitée particulière définie et il existe généralement un terme décrivant ce concept, en tout cas dans un vocabulaire métier ou dans un jargon particulier. Si ce n'est pas le cas on peut se poser la question de la réalité ou de l'utilité ou de la réalité de ce concept. Si le concept est effectivement utile, dans ce cas il est généralement préférable de l'associer à un mot existant ou à l'une de ses dérivations (et à ajouter ces termes dans le glossaire), plutot que d'introduire des connecteurs. Très souvent l'utilisation de connecteurs correspond à une justaposition non réflechie d'éléments. Un identificateur composé par des connecteurs peut correspondre également à des pratiques de programmation ou de modélisation problématiques qu'il s'agira soit d'éliminer, soit de documenter avec soin.
 
 $HomogeneiteIdentificateurs:
   Les identificateurs utilisés ne sont globalement pas homogènes et soit il existe une absence totale de style, soit trop de styles sont utilisés sans que cela soit justifié.
-  Commentaire: Tous les identificateurs d'un même genre (e.g. identificateurs de classes, de scénarios, de cas d'utilisation) devrait être homogènes et respecter des règles de nomenclature portant à la fois sur le plan de la typographie (utilisation de minuscules, majuscules, soulignés ou tirets, etc.), de l'ensemble des caractères utilisés (il est généralement recommandé de ne pas utilisés d'accents ou d'autres caractères diacritiques), des formes grammaticales utilisées (par exemple des formes verbales au passif et au participe présent ne sont pas homogénes), des connecteurs (e.g. des articles) et abbréviations utilisés ou non. Le manque d'homogénéité peut avoir des impacts néfastes sur la lecture, la possibilité de référencer de manière systèmatique des éléménts, la possibilité de faire des recherches textuelles d'identificateurs. Elle met également en péril toute possibilité d'automatisation, d'extraction d'information, de référencement, etc.
+  Commentaire: Tous les identificateurs d'un même genre (e.g. identificateurs de classes, de scénarios, de cas d'utilisation) devraient être homogènes et respecter des règles de nomenclature portant à la fois sur le plan de la typographie (utilisation de minuscules, majuscules, soulignés ou tirets, etc.), de l'ensemble des caractères utilisés (il est généralement recommandé de ne pas utilisés d'accents ou d'autres caractères diacritiques), des formes grammaticales utilisées (par exemple des formes verbales au passif et au participe présent ne sont pas homogénes), des connecteurs (e.g. des articles) et abbréviations utilisés ou non. Le manque d'homogénéité peut avoir des impacts néfastes sur la lecture, la possibilité de référencer de manière systèmatique des éléménts, la possibilité de faire des recherches textuelles d'identificateurs. Elle met également en péril toute possibilité d'automatisation, d'extraction d'information, de référencement, etc.
   Exemple: "supprimer employé" et "CreationDUnePers" ne sont pas homogènes car ils diffèrent par raport à (1) la casse, (2) l'ensemble des caractères utilisés, (3) le fait d'utiliser des articles ou non, (4) la forme grammaticale mise en oeuvre (infinitif vs. nom), (5) l'utilisation ou la suppression des articles, (6) l'utilisation d'abbréviation.  
 
 
@@ -51,7 +51,7 @@ $NomPersonne:
   Exemple: "Djiamila Maria WONG CONNOR (DWG)"
 
 #== Dates, Time & Periodes ==
-$Date:
+$FormatDate:
 #  Sn  Semaine numéro n (par rapport à une référence implicite mais connue)
 #  AAAA-MM-JJ(am|pm)?
 #  AAAA-MM-JJ(am|pm)?-AAA-MM-JJ(am|pm)?
@@ -73,30 +73,28 @@ $Date:
   
   
 $MajMin:
-  Un ou des identificateurs devraient être dans le style MajMin c'est à dire correspondre à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une majuscule. L'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.
-  Exemple: ConnecteurDInterface, SMSRenvoye
+  L'identificateur doit correspondre à une suite de majuscules, minuscules ou chiffres, débutant par une majuscule.
+  Commentaire: L'identificateur ne doit comporter ni espaces, ni accents, ni délimiteurs.
+  Exemple: "ConnecteurDInterface2", "SMSRenvoye"
 
-$minMaj:
-  Un ou des identificateurs devraient être dans le style minMaj c'est à dire correspond à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une minuscule. LL'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.
-  Exemple: lesConnecteurs, smsRenvoye2, lesSMSRecus
-
+$MinMaj:
+  L'identificateur doit correspondre à une suite de majuscules, minuscules ou chiffres, débutant par une minuscule. 
+  Commentaire: L'identificateur ne doit comporter ni espaces, ni accents, ni délimiteurs.
+  Exemple: "lesConnecteurs", "smsRenvoye2", "les4SMSRecus"
   
+$MinMajSouligne:
+  L'identificateur doit correspondre à une suite de majuscules, minuscules, chiffres ou souligné ("_"), débutant par une minuscule. 
+  Commentaire: L'identificateur ne doit comporter ni espaces, ni accents, ni délimiteurs autre que le souligné "_".
+  Exemple: "acheterUnTicket_normal"
+
+$MAJSouligneMAJ:
+  L'identificateur doit correspondre à une suite séquences de majuscules, chiffres et soulignés ("_").
+  Commentaire: L'identificateur ne doit comporter ni espaces, ni accents, ni délimiteurs autre que le souligné "_".
+  Exemple: "CONST_WINDOW_CLOSED"
+
 $StyleSIdentificateur:
-  Différents styles d'intentificateurs sont utilisés sans pour autant que l'on puisse déterminer dans quelles conditions ces styles varient, s'ils sont utilisés de manière consistentes ou non. C'est le cas par exemple lorsque certains indentificateurs sont issues à la fois de styles MajMin, min_min, MAJ_MAJ, ou dans toutes autres combinaisons ad-hoc.
+  Différents styles d'intentificateurs sont utilisés sans pour autant que l'on puisse déterminer dans quelles conditions ces styles varient, s'ils sont utilisés de manière consistentes ou non. C'est le cas par exemple lorsque certains indentificateurs sont issues à la fois de styles MajMin, MinMaj, MAJSouligneMAJ etc, ou dans toutes autres combinaisons ad-hoc.
   
-$min_min:
-  TODO.
-  
-$min-min:
-  TODO.
-  
-$MAJ-MAJ:
-  TODO.
-  
-$MAJ_MAJ:
-  TODO.
-
-
 
 
 
