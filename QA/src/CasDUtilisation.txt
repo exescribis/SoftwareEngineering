@@ -48,7 +48,7 @@ $NomenclatureCU:
 
 $ActeurSujetCU:
   Le nom de l'acteur principal associé à un cas d'utilisation est le sujet de la forme verbale correspondant au nom du cas d'utilisation.
-  Exemple: "AcheterUnBillet" peut avoir comme acteur "Client" car la phrase "un client achète un billet" correspond à une des fontionalités que doit délivrer le système.
+  Exemple: "AcheterUnBillet" peut avoir comme acteur "Client" car la phrase "un client achète un billet" correspond à une des fontionalités que doit délivrer le système. Par contre "ControlerAccesUtilisateur" et "Utilisateur" ne forment pas une combinaison valide car l'utilisateur n'est pas le sujet de cette forme verbale. Il y a ici une confusion entre ce que faire le système et l'objectif de l'acteur. Un cas d'utilisation doit correspondre à un but de l'acteur (cf $ButCU), par exemple "EntrerDansUneZone".
   
 $AuMoinsUnCU:
   Au moins un cas d'utilisation doit être associé à chaque acteur.
