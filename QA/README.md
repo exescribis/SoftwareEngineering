@@ -48,7 +48,7 @@ PAQUETAGE DE REGLES
 ===================
 27paquetages triés par ordre alphabétique.
  [BaseDeDonnees](#basededonnees) (10 rules)
- [CasDUtilisation](#casdutilisation) (14 rules)
+ [CasDUtilisation](#casdutilisation) (17 rules)
  [CasDUtilisation_ModeleDetaille](#casdutilisation_modeledetaille) (2 rules)
  [CasDUtilisation_ModelePreliminaire](#casdutilisation_modelepreliminaire) (1 rules)
  [CasDUtilisation_StyleDecore](#casdutilisation_styledecore) (1 rules)
@@ -63,11 +63,11 @@ PAQUETAGE DE REGLES
  [Exigence](#exigence) (14 rules)
  [Glossaire](#glossaire) (18 rules)
  [Livrable](#livrable) (17 rules)
- [Nomenclature](#nomenclature) (22 rules)
+ [Nomenclature](#nomenclature) (20 rules)
  [ProgrammationWeb](#programmationweb) (2 rules)
  [Scenario](#scenario) (23 rules)
  [Sequence](#sequence) (1 rules)
- [Systeme](#systeme) (4 rules)
+ [Systeme](#systeme) (5 rules)
  [Tache](#tache) (5 rules)
  [TexteTechnique](#textetechnique) (36 rules)
  [Tracabilite](#tracabilite) (3 rules)
@@ -75,21 +75,19 @@ PAQUETAGE DE REGLES
  [UMLStarUML](#umlstaruml) (38 rules)
  [Valeur](#valeur) (17 rules)
 
-REGLES (489)
+REGLES (492)
 ======
 * [Abbreviation](#abbreviation) Paquetage : [TexteTechnique](#textetechnique)
 * [AbusDeString](#abusdestring) Paquetage : [Valeur](#valeur)
-* [ActeurSujet](#acteursujet) Paquetage : [CasDUtilisation](#casdutilisation)
+* [ActeurSujetCU](#acteursujetcu) Paquetage : [CasDUtilisation](#casdutilisation)
 * [ActeuronHumain](#acteuronhumain) Paquetage : [CasDUtilisation](#casdutilisation)
-* [Action](#action) Paquetage : [Scenario](#scenario)
 * [ActionAtomique](#actionatomique) Paquetage : [Scenario](#scenario)
 * [ActionConcrete](#actionconcrete) Paquetage : [Scenario](#scenario)
 * [ActionMetier](#actionmetier) Paquetage : [Scenario](#scenario)
-* [ActionVersPostcondition](#actionverspostcondition) Paquetage : [Scenario](#scenario)
-* [ActionVersPrecondition](#actionversprecondition) Paquetage : [Scenario](#scenario)
 * [AggregationNonJustifie](#aggregationnonjustifie) Paquetage : [Classe](#classe)
 * [AmbiguiteTransition](#ambiguitetransition) Paquetage : [Etat](#etat)
 * [ArticleInDefini](#articleindefini) Paquetage : [TexteTechnique](#textetechnique)
+* [AuMoinsUnCU](#aumoinsuncu) Paquetage : [CasDUtilisation](#casdutilisation)
 * [Auteur](#auteur) Paquetage : [Livrable](#livrable)
 * [ButCU](#butcu) Paquetage : [CasDUtilisation](#casdutilisation)
 * [CUAuxiliaireDecore](#cuauxiliairedecore) Paquetage : [CasDUtilisation_StyleDecore](#casdutilisation_styledecore)
@@ -115,7 +113,8 @@ REGLES (489)
 * [Copyright](#copyright) Paquetage : [Livrable](#livrable)
 * [Couleurs](#couleurs) Paquetage : [Diagramme](#diagramme)
 * [CouvertureAutomate](#couvertureautomate) Paquetage : [Etat](#etat)
-* [Date](#date) Paquetage : [Nomenclature](#nomenclature)
+* [Date](#date) Paquetage : [Livrable](#livrable)
+* [DebutSujetAction](#debutsujetaction) Paquetage : [Scenario](#scenario)
 * [DecompositionSousSysteme](#decompositionsoussysteme) Paquetage : [Systeme](#systeme)
 * [DefautDejaMentionne](#defautdejamentionne) Paquetage : [Livrable](#livrable)
 * [DefinitionAmbigueTerme](#definitionambigueterme) Paquetage : [Glossaire](#glossaire)
@@ -131,6 +130,7 @@ REGLES (489)
 * [DeltasTextuels](#deltastextuels) Paquetage : [Livrable](#livrable)
 * [Densite](#densite) Paquetage : [Diagramme](#diagramme)
 * [DescriptifLivrable](#descriptiflivrable) Paquetage : [Livrable](#livrable)
+* [DescriptionActeur](#descriptionacteur) Paquetage : [CasDUtilisation](#casdutilisation)
 * [DescriptionFigure](#descriptionfigure) Paquetage : [Document](#document)
 * [Disposition](#disposition) Paquetage : [Diagramme](#diagramme)
 * [DuplicationEtat](#duplicationetat) Paquetage : [Etat](#etat)
@@ -142,6 +142,8 @@ REGLES (489)
 * [ExigenceIncoherente](#exigenceincoherente) Paquetage : [Exigence](#exigence)
 * [ExigenceInvalide](#exigenceinvalide) Paquetage : [Exigence](#exigence)
 * [ExigencesMultiples](#exigencesmultiples) Paquetage : [Exigence](#exigence)
+* [FormatAction](#formataction) Paquetage : [Scenario](#scenario)
+* [FormatDate](#formatdate) Paquetage : [Nomenclature](#nomenclature)
 * [FormatLivrable](#formatlivrable) Paquetage : [Livrable](#livrable)
 * [FormatReferenceLignes](#formatreferencelignes) Paquetage : [Tracabilite](#tracabilite)
 * [FormatReferenceTerme](#formatreferenceterme) Paquetage : [Glossaire](#glossaire)
@@ -178,10 +180,11 @@ REGLES (489)
 * [LegendeFigure](#legendefigure) Paquetage : [Document](#document)
 * [LimiteDuSysteme](#limitedusysteme) Paquetage : [Systeme](#systeme)
 * [LiteralEnumeration](#literalenumeration) Paquetage : [Valeur](#valeur)
-* [MAJ-MAJ](#maj-maj) Paquetage : [Nomenclature](#nomenclature)
-* [MAJ_MAJ](#maj_maj) Paquetage : [Nomenclature](#nomenclature)
+* [MAJSouligneMAJ](#majsoulignemaj) Paquetage : [Nomenclature](#nomenclature)
 * [MajMin](#majmin) Paquetage : [Nomenclature](#nomenclature)
 * [MessageInexplique](#messageinexplique) Paquetage : [Scenario](#scenario)
+* [MinMaj](#minmaj) Paquetage : [Nomenclature](#nomenclature)
+* [MinMajSouligne](#minmajsouligne) Paquetage : [Nomenclature](#nomenclature)
 * [MiseAJourVersion](#miseajourversion) Paquetage : [Livrable](#livrable)
 * [ModelioR1000](#modelior1000) Paquetage : [UMLModelio](#umlmodelio)
 * [ModelioR1010](#modelior1010) Paquetage : [UMLModelio](#umlmodelio)
@@ -396,6 +399,7 @@ REGLES (489)
 * [NomRelationGlossaire](#nomrelationglossaire) Paquetage : [BaseDeDonnees](#basededonnees)
 * [NomRole](#nomrole) Paquetage : [Classe](#classe)
 * [NomScenario](#nomscenario) Paquetage : [Scenario](#scenario)
+* [NomScenarioGlossaire](#nomscenarioglossaire) Paquetage : [Scenario](#scenario)
 * [NomScenarioInstantie](#nomscenarioinstantie) Paquetage : [Scenario](#scenario)
 * [NomSysteme](#nomsysteme) Paquetage : [Systeme](#systeme)
 * [NomTache](#nomtache) Paquetage : [Tache](#tache)
@@ -403,6 +407,7 @@ REGLES (489)
 * [NomTransition](#nomtransition) Paquetage : [Etat](#etat)
 * [NomTransitionInutile](#nomtransitioninutile) Paquetage : [Etat](#etat)
 * [NomenclatureActeur](#nomenclatureacteur) Paquetage : [CasDUtilisation](#casdutilisation)
+* [NomenclatureActeurInstancie](#nomenclatureacteurinstancie) Paquetage : [CasDUtilisation](#casdutilisation)
 * [NomenclatureAssociation](#nomenclatureassociation) Paquetage : [Classe](#classe)
 * [NomenclatureAttribut](#nomenclatureattribut) Paquetage : [Classe](#classe)
 * [NomenclatureCU](#nomenclaturecu) Paquetage : [CasDUtilisation](#casdutilisation)
@@ -419,6 +424,7 @@ REGLES (489)
 * [NomenclatureRelation](#nomenclaturerelation) Paquetage : [BaseDeDonnees](#basededonnees)
 * [NomenclatureRole](#nomenclaturerole) Paquetage : [Classe](#classe)
 * [NomenclatureScenario](#nomenclaturescenario) Paquetage : [Scenario](#scenario)
+* [NomenclatureSysteme](#nomenclaturesysteme) Paquetage : [Systeme](#systeme)
 * [NomenclatureTache](#nomenclaturetache) Paquetage : [Tache](#tache)
 * [NomenclatureTerme](#nomenclatureterme) Paquetage : [Glossaire](#glossaire)
 * [NomenclatureTransition](#nomenclaturetransition) Paquetage : [Etat](#etat)
@@ -519,7 +525,7 @@ REGLES (489)
 * [Subjectif](#subjectif) Paquetage : [TexteTechnique](#textetechnique)
 * [Sujet](#sujet) Paquetage : [TexteTechnique](#textetechnique)
 * [SujetAction](#sujetaction) Paquetage : [Scenario](#scenario)
-* [SujetInstancie](#sujetinstancie) Paquetage : [Scenario](#scenario)
+* [SujetActionInstancie](#sujetactioninstancie) Paquetage : [Scenario](#scenario)
 * [SurDecomposition](#surdecomposition) Paquetage : [Systeme](#systeme)
 * [SurExgigence](#surexgigence) Paquetage : [Exigence](#exigence)
 * [Surcharge](#surcharge) Paquetage : [Diagramme](#diagramme)
@@ -550,7 +556,7 @@ REGLES (489)
 * [TypeTacheComposite](#typetachecomposite) Paquetage : [Tache](#tache)
 * [TypeValeur](#typevaleur) Paquetage : [Valeur](#valeur)
 * [TypeValeurIncorrect](#typevaleurincorrect) Paquetage : [Valeur](#valeur)
-* [UniteTempsEspaceCU](#unitetempsespacecu) Paquetage : [CasDUtilisation](#casdutilisation)
+* [UniteDeTempsCU](#unitedetempscu) Paquetage : [CasDUtilisation](#casdutilisation)
 * [UniteValeur](#unitevaleur) Paquetage : [Valeur](#valeur)
 * [UtiliteEtat](#utiliteetat) Paquetage : [Etat](#etat)
 * [ValeurCollection](#valeurcollection) Paquetage : [Valeur](#valeur)
@@ -563,9 +569,6 @@ REGLES (489)
 * [ValeurReflechie](#valeurreflechie) Paquetage : [Valeur](#valeur)
 * [VersionLivrable](#versionlivrable) Paquetage : [Livrable](#livrable)
 * [Vocabulaire](#vocabulaire) Paquetage : [TexteTechnique](#textetechnique)
-* [min-min](#min-min) Paquetage : [Nomenclature](#nomenclature)
-* [minMaj](#minmaj) Paquetage : [Nomenclature](#nomenclature)
-* [min_min](#min_min) Paquetage : [Nomenclature](#nomenclature)
 
 
 BaseDeDonnees
@@ -645,27 +648,61 @@ Paquetage :[BaseDeDonnees](#basededonnees)
 
 CasDUtilisation
 ====================================================
-14 rules: [NomActeur](#nomacteur) [NomenclatureActeur](#nomenclatureacteur) [NomActeurGlossaire](#nomacteurglossaire) [NomCU](#nomcu) [NomCUGlossaire](#nomcuglossaire) [NomenclatureCU](#nomenclaturecu) [NomActeurInstancie](#nomacteurinstancie) [ActeurSujet](#acteursujet) [ButCU](#butcu) [UniteTempsEspaceCU](#unitetempsespacecu) [RelationCU](#relationcu) [HeritageActeur](#heritageacteur) [SousTypageActeur](#soustypageacteur) [ActeuronHumain](#acteuronhumain) 
+17 rules: [NomActeur](#nomacteur) [NomenclatureActeur](#nomenclatureacteur) [NomActeurGlossaire](#nomacteurglossaire) [NomActeurInstancie](#nomacteurinstancie) [NomenclatureActeurInstancie](#nomenclatureacteurinstancie) [DescriptionActeur](#descriptionacteur) [NomCU](#nomcu) [NomCUGlossaire](#nomcuglossaire) [NomenclatureCU](#nomenclaturecu) [ActeurSujetCU](#acteursujetcu) [AuMoinsUnCU](#aumoinsuncu) [ButCU](#butcu) [UniteDeTempsCU](#unitedetempscu) [RelationCU](#relationcu) [HeritageActeur](#heritageacteur) [SousTypageActeur](#soustypageacteur) [ActeuronHumain](#acteuronhumain) 
 
 NomActeur
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Le nom d'un acteur doit être une forme nominale, un terme métier défini dans le glossaire (cf $NomCUGlossaire), ne pas être générique (par exemple "Utilisateur" et "Acteur" sont à éviter). La notion d'acteur est définie par le *rôle* joué par l'acteur par rapport au système et non pas par la *position* de l'acteur dans l'organisation.
+  Le nom d'un acteur doit être (1) une forme nominale, (2) un terme métier défini dans le glossaire (cf $NomCUGlossaire), et (3) ne pas être trop générique (par exemple "Utilisateur" et "Acteur" sont à éviter). 
 
-* **Exemple:**  "SpectateurDistant", "Superviseur" sont des noms potentiels d'acteurs. "Utilisateur" est trop générique. "Directeur" pourrait correspondre à une position dans une entreprise ; ce n'est pas forcemment un bon nom de role selon les cas.
+* **Commentaire:**  La notion d'acteur est définie par le *rôle* joué par l'acteur par rapport au système et non pas par la *position* de l'acteur dans l'organisation.
+
+* **Exemple:**  "SpectateurDistant", "Superviseur" sont des noms potentiels d'acteurs. "Utilisateur" ou "Acteur" sont trop génériques dans la mesure ou toutes les personnes potentiellement intéragissant avec le système sont des "utilisateurs" de ce système. "Directeur" pourrait correspondre à une position dans une entreprise ; ce n'est pas forcemment un bon nom de role selon les cas.
 
 NomenclatureActeur
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Les nom des acteurs doivent être en style MajMin (cf $MajMin).
+  Le nom d'un acteur doit être en style MajMin (cf $MajMin).
+
+* **Exemple:**  "SpectateurDistant"
 
 NomActeurGlossaire
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Les termes utilisés dans le nom d'un acteur doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
+  Les termes importants utilisés dans le nom d'un acteur doivent être définis dans le glossaire.
+
+* **Commentaire:**  Généralement il est utile de faire figurer le terme entier correspondant à l'acteur dans le glossaire. En effet il est souhaitable de définir au plus tôt les termes associés à ce type de rôle.  
+
+* **Exemple:**  L'acteur "SpectateurDistant" donnera lieu sans doute au terme "SpectateurDistant" dans un glossaire, mais aussi peut être à "Spectateur" et éventuellement "Distant" si ces termes font du sens dans d'autres contextes et ne correspondent pas à des notions triviales.
+
+NomActeurInstancie
+-------------------
+Paquetage :[CasDUtilisation](#casdutilisation)  
+
+  Les noms des personnes jouant le role d'acteur doivent dans des scénarios instanciés doivent être à la fois particuliers pour être mémotechniques mais aussi représenter la diversité culturelle associée au contexte du système et du projet associé.
+
+* **Exemple:**  "ahmed", "marie", "bob" sont des noms d'acteurs instanciés valides. "mrPropre" ou "babar" sont à proscrire car il donne une image enfantine et peu professionnelle du projet.
+
+NomenclatureActeurInstancie
+-------------------
+Paquetage :[CasDUtilisation](#casdutilisation)  
+
+  Le nom d'un acteur instancié doit être en style minMaj (cf $minMaj)
+
+* **Commentaire:**  Cette convention est liées au fait qu'il s'agit d'instances alors que les éléments du niveau "classes" commencent par une majuscule.
+
+* **Exemple:**  "ahmed"
+
+DescriptionActeur
+-------------------
+Paquetage :[CasDUtilisation](#casdutilisation)  
+
+  Chaque acteur doit être décrit en précisant des informations telles que (1) sa position dans l'organisation ou les organisations dans lequel le système est déployé, (2) l'importance éventuelle de cet acteur par rapport au projet, ou à l'utilisation du système, (3) des éléments de volumétrie indiquant des ordres de grandeurs concernant le nombre de personnes pouvant jouer ce rôle dans le contexte de différentes installation du système, (4) des caractéristiques éventuelles supplémentaires sur les tranches d'ages, d'handicap éventuels, etc.
+
+* **Commentaire:**  En pratique ces informations sont fondamentales car c'est de tels éléments entre autre qui servent à définir des priorités, des caractéristiques non fonctionnelles concernant les interfaces, etc.  
 
 NomCU
 -------------------
@@ -673,13 +710,15 @@ Paquetage :[CasDUtilisation](#casdutilisation)
 
   Le nom des cas d'utilisation doivent correspondre à des formes verbales simples, représentant explicitement la fonctionalité que l'acteur principal désire réaliser au moyen du système, sachant que l'acteur principal jouera le role de sujet dans cette forme verbale. Le nom du cas d'utilisation doit clairement faire référence à un but ($ActeurSujet).
 
-* **Exemple:**  "DeclarerLEntreeDUnVehicule"
+* **Exemple:**  "DeclarerLEntreeDUnVehicule" est valide. "EntreeVehicule" n'est pas valide car ce n'est pas une phrase verbale. 
 
 NomCUGlossaire
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Les termes utilisés dans le nom d'un cas d'utilisation doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation ne pose pas problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.  
+  Les termes utilisés dans le nom d'un cas d'utilisation doivent être définis dans le glossaire, en tout cas pour les termes principaux et ceux dont l'interprétation pourrait poser un problème. Si une abbréviation est utilisée celle-ci devra être impérativement définie dans le glossaire.
+
+* **Exemple:**  Si l'on considère le cas d'utilisation "DeclarerLEntreeDUnVehicule" il faudra s'assurer que "Vehicule" et peut être "EntreeDUnVehicule" ou "Entree" soient définis dans le glossaire. Si nécessaire on pourrait également définir "Declaration" mais le nom complet "DeclarerLEntreeDUnVehicule" sera défini de toute façon via la description de ce cas d'utilisation.
 
 NomenclatureCU
 -------------------
@@ -687,19 +726,27 @@ Paquetage :[CasDUtilisation](#casdutilisation)
 
   Le nom des cas d'utilisation doivent être en MajMin (cf $MajMin).
 
-* **Commentaire:**  les cas d'utilisation correspondent à des classes de scenarii et il est donc logique d'utiliser la même convention que pour les Classes a savoir l'utilisation d'une majuscule en début de nom.
+* **Commentaire:**  les cas d'utilisation correspondent à des classes de scenarii et il est donc logique d'utiliser la même convention que pour les classes à savoir l'utilisation d'une majuscule en début de nom.
 
-NomActeurInstancie
+* **Exemple:**  "DeclarerLEntreeDUnVehicule" 
+
+ActeurSujetCU
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Les noms des personnes jouant le role d'acteur doivent dans des scénarios instanciés doivent être à la fois particuliers pour être mémotechniques mais aussi représenter la diversité culturelle associé au contexte du système et du projet associé.
+  Le nom de l'acteur principal associé à un cas d'utilisation est le sujet de la forme verbale correspondant au nom du cas d'utilisation.
 
-ActeurSujet
+* **Exemple:**  "AcheterUnBillet" peut avoir comme acteur "Client" car la phrase "un client achète un billet" correspond à une des fontionalités que doit délivrer le système. Par contre "ControlerAccesUtilisateur" et "Utilisateur" ne forment pas une combinaison valide car l'utilisateur n'est pas le sujet de cette forme verbale. Il y a ici une confusion entre ce que faire le système et l'objectif de l'acteur. Un cas d'utilisation doit correspondre à un but de l'acteur (cf $ButCU), par exemple "EntrerDansUneZone".
+
+AuMoinsUnCU
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Le nom de l'acteur principal associé à un cas d'utilisation doit être le sujet de la forme verbale correspondant au nom du cas d'utilisation.
+  Au moins un cas d'utilisation doit être associé à chaque acteur.
+
+* **Commentaire:**  Si un acteur n'utilise aucun cas d'utilisation, alors il ne s'agit pas d'un acteur. Un acteur doit nécessairement être impliqué dans une interaction directe au moins avec un système et ces interactions sont modélisées par les cas d'utilisations. Dans le cadre d'UML uniquement les interactions directes sont modélisées et prises en compte.
+
+* **Exemple:**  "Vigile" n'est pas un acteur d'un système de contrôle d'accès à un batiment si cet celui-ci se limite à surveiller le batiment mais n'interagit jamais avec le système.   
 
 ButCU
 -------------------
@@ -711,11 +758,15 @@ Paquetage :[CasDUtilisation](#casdutilisation)
 
 * **Exemple:**  "EnregistrerEntrer", "SIdentifier", "EntrerPendantLesHeuresDOuvertures", "TaperSonCode" ne sont pas des noms valides de cas d'utilisation. Par contre "RetirerDeLArgent" ou "Entrer" sont valides car ils décrivent clairement le but visé par l'utilisateur.
 
-UniteTempsEspaceCU
+UniteDeTempsCU
 -------------------
 Paquetage :[CasDUtilisation](#casdutilisation)  
 
-  Un ou plusieurs cas d'utilisation ne correspondent pas à une unité de temps et d'espaces par rapport à l'utilisation entre l'acteur principal et le systeme.
+  Les cas d'utilisations doivent correspondre à des "unités de temps" en ce qui concerne les interactions entre un acteur et le système.
+
+* **Commentaire:**  Généralement un cas d'utilisation dans un sytème interactif n'excéde pas la notion de "session" qui correspond à une unité de temps maximale. Plusieurs cas d'utilisation peuvent avoir lieu dans la même "session" par exemple si l'acteur désire réaliser plusieurs buts avec le système.
+
+* **Exemple:**  Dans le cas d'un système d'achat de billets sportifs, s'il est possible d'annuler son billet après l'achat et la transaction terminée (par exemple en se reconnectant au système) quelques jours après alors "AcheterUnBillet" et "AnnulerUnBillet" seront deux cas d'utilisation séparés.   
 
 RelationCU
 -------------------
@@ -1548,15 +1599,19 @@ NomTerme
 -------------------
 Paquetage :[Glossaire](#glossaire)  
 
-  Le nom d'un terme doit être au singulier s'il s'agit d'un nom.
+  Le nom d'un terme doit être au singulier s'il s'agit d'un nom et doit correspondre si possible au terme le plus au terme utilisé dans le contexte correspondant au glossaire.
+
+* **Exemple:**  PointDAcces, Piece, Vehicule, VehiculeAccidente
 
 NomenclatureTerme
 -------------------
 Paquetage :[Glossaire](#glossaire)  
 
-  Le nom d'un terme doit être de préférence en style MajMin (cf $MajMin).
+  Le nom d'un terme doit être en style MajMin (cf $MajMin).
 
-* **Commentaire:**  Cette convention peut être fort utile pour faire ressortir dans un texte l'utilisation des termes définis dans un glossaire et donc pour renforcer le fait que ce terme à été utilisé de manière consciente et raisonnée.   
+* **Commentaire:**  Cette convention peut être fort utile pour faire ressortir dans un texte l'utilisation des termes définis dans un glossaire et donc pour renforcer le fait que ce terme à été utilisé de manière consciente et raisonnée.
+
+* **Exemple:**  VehiculeAccidente
 
 TermeTropCompose
 -------------------
@@ -1628,7 +1683,7 @@ Paquetage :[Glossaire](#glossaire)
 
   Différents termes alternatifs peuvent être associés si néccessaire à un terme. Ces differentes formes alternatives peuvent soit correspondre à des déclinaisons linguistiques (par exemple le passage d'un substantif à un verbe, etc), soit à des termes perçus comme synonymes dans le contexte du glossaire considéré. 
 
-* **Commentaire:**  Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le cadre du projet considéré. Par ailleurs il ne faut pas confondre (1) d'une part les termes alternatifs à qui ont associe signfication que le principal et (2) les exemples qui eux sont des termes, des expressions, des artefacts ou des concepts plus spécifiques.
+* **Commentaire:**  Il n'est pas nécessaire d'introduire des alternatives que si celles-ci sont effectivement utilisées dans le contexte considéré. Par ailleurs il ne faut pas confondre (1) d'une part les termes alternatifs à qui ont associe la même signfication que le terme principal et (2) les exemples qui eux sont des termes, des expressions, des artefacts ou des concepts plus spécifiques.
 
 * **Exemple:**  Dans le contexte d'un système de contrôle d'accès, un terme principal pourrait être "PorteurDeBadge" avec comme termes alternatifs "PossesseurDeBadge", "PersonneABadge", "Badgeur". Si le système permet de définir des types arbitraires de "PorteurDeBadge" les termes suivants sont alors naturellement simplement des exemples "Etudiant", "PersonnelAdministratif", "Technicien", etc.
 
@@ -1636,7 +1691,9 @@ ReferenceVersTerme
 -------------------
 Paquetage :[Glossaire](#glossaire)  
 
-  Une ou plusieurs expressions correspondent à des termes dans le glossaire (ou à des synonymes de ces termes) et devraient donc être remplacé par une référence vers ce terme (principal) (cf $FormatReferenceTerme).
+  Une ou plusieurs expressions correspondent à des termes dans le glossaire (ou à des synonymes de ces termes) et devraient donc être remplacée(s) par une référence vers ce terme (principal) (cf $FormatReferenceTerme).
+
+* **Exemple:**  Dans la phrase "Le [ChefDAtelier] renseigne dans CyberGarage le temps de réparation pris par un mécanicien pour le véhicule", les termes "[CyberGarage]", "[TempsDeReparation]", "[Mecanicien]", "[Vehicule]" devraient être référencés si ceux-ci sont dans un glossaire, ou sinon, ils devraient être sans doute introduits dans le glossaire (cf $)  
 
 FormatReferenceTerme
 -------------------
@@ -1684,6 +1741,8 @@ Paquetage :[Livrable](#livrable)
   Le nom d'un ou de plusieurs ressources livrées n'est pas conforme aux règles spécifiées (cf $PackagingLivrable).
 
 * **Commentaire:**  Les livraisons sont des points clés de la vie d'un produit logiciel et l'attention qui doit y être portée est extrème. Ne pas respecter des règles de nomenclature spécifiées auparavant est un problème important. D'une part cela montre que l'organisation productrice n'est pas capable de suivre des règles élémentaires, d'autre par cela rend impossible le traitement automatique des éléments livrés par l'organization cliente. 
+
+* **Exemple:**  S'il a été demandé de livrer un seul fichier sous la forme CyberKebab-GXXX-Y.pdf ou XXX est le numéro d'un groupe et Y le numéro de livraison, alors CyberKebab-G203-2.pdf est valide mais Cyberkebab_210.pdf ne l'est pas. Si l'organisation client doit gérer de multiples livraisons il est fort à parier que des scripts automatisent certaines parties. Ne pas respecter les conventions peut lier à des problèmes plus où moins importants.
 
 DelaiLivrable
 -------------------
@@ -1743,7 +1802,7 @@ Paquetage :[Livrable](#livrable)
 
 Date
 -------------------
-Paquetage :[Nomenclature](#nomenclature)  
+Paquetage :[Livrable](#livrable)  
 
   Une des dates mentionnées semble être incorrectes, non mise à jours, ou une date semble manquante.  
 
@@ -1804,7 +1863,7 @@ Paquetage :[Livrable](#livrable)
 
 Nomenclature
 ====================================================
-22 rules: [Abbreviation](#abbreviation) [OrthographeIdentificateur](#orthographeidentificateur) [Identificateur](#identificateur) [Trigramme](#trigramme) [FormeNominale](#formenominale) [FormeVerbale](#formeverbale) [Generique](#generique) [Connecteur](#connecteur) [HomogeneiteIdentificateurs](#homogeneiteidentificateurs) [Trigramme](#trigramme) [Portrait](#portrait) [NomPersonne](#nompersonne) [Date](#date) [MajMin](#majmin) [minMaj](#minmaj) [StyleSIdentificateur](#stylesidentificateur) [min_min](#min_min) [min-min](#min-min) [MAJ-MAJ](#maj-maj) [MAJ_MAJ](#maj_maj) [RoleDansPatron](#roledanspatron) [InteractionProscrite](#interactionproscrite) 
+20 rules: [Abbreviation](#abbreviation) [OrthographeIdentificateur](#orthographeidentificateur) [Identificateur](#identificateur) [Trigramme](#trigramme) [FormeNominale](#formenominale) [FormeVerbale](#formeverbale) [Generique](#generique) [Connecteur](#connecteur) [HomogeneiteIdentificateurs](#homogeneiteidentificateurs) [Trigramme](#trigramme) [Portrait](#portrait) [NomPersonne](#nompersonne) [FormatDate](#formatdate) [MajMin](#majmin) [MinMaj](#minmaj) [MinMajSouligne](#minmajsouligne) [MAJSouligneMAJ](#majsoulignemaj) [StyleSIdentificateur](#stylesidentificateur) [RoleDansPatron](#roledanspatron) [InteractionProscrite](#interactionproscrite) 
 
 Abbreviation
 -------------------
@@ -1868,7 +1927,7 @@ Connecteur
 -------------------
 Paquetage :[Nomenclature](#nomenclature)  
 
-  Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisé dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
+  Les connecteurs tel que "et", "ou", "/", "+", signes de ponctuations ou d'imbrications ne devraient pas être utilisés dans un identificateur dans la mesure ou l'objet identifié n'est pas clairement conceptualisé ou nommé.
 
 * **Commentaire:**  un identificateur correspond normallement à un concept ou à une entitée particulière définie et il existe généralement un terme décrivant ce concept, en tout cas dans un vocabulaire métier ou dans un jargon particulier. Si ce n'est pas le cas on peut se poser la question de la réalité ou de l'utilité ou de la réalité de ce concept. Si le concept est effectivement utile, dans ce cas il est généralement préférable de l'associer à un mot existant ou à l'une de ses dérivations (et à ajouter ces termes dans le glossaire), plutot que d'introduire des connecteurs. Très souvent l'utilisation de connecteurs correspond à une justaposition non réflechie d'éléments. Un identificateur composé par des connecteurs peut correspondre également à des pratiques de programmation ou de modélisation problématiques qu'il s'agira soit d'éliminer, soit de documenter avec soin.
 
@@ -1878,7 +1937,7 @@ Paquetage :[Nomenclature](#nomenclature)
 
   Les identificateurs utilisés ne sont globalement pas homogènes et soit il existe une absence totale de style, soit trop de styles sont utilisés sans que cela soit justifié.
 
-* **Commentaire:**  Tous les identificateurs d'un même genre (e.g. identificateurs de classes, de scénarios, de cas d'utilisation) devrait être homogènes et respecter des règles de nomenclature portant à la fois sur le plan de la typographie (utilisation de minuscules, majuscules, soulignés ou tirets, etc.), de l'ensemble des caractères utilisés (il est généralement recommandé de ne pas utilisés d'accents ou d'autres caractères diacritiques), des formes grammaticales utilisées (par exemple des formes verbales au passif et au participe présent ne sont pas homogénes), des connecteurs (e.g. des articles) et abbréviations utilisés ou non. Le manque d'homogénéité peut avoir des impacts néfastes sur la lecture, la possibilité de référencer de manière systèmatique des éléménts, la possibilité de faire des recherches textuelles d'identificateurs. Elle met également en péril toute possibilité d'automatisation, d'extraction d'information, de référencement, etc.
+* **Commentaire:**  Tous les identificateurs d'un même genre (e.g. identificateurs de classes, de scénarios, de cas d'utilisation) devraient être homogènes et respecter des règles de nomenclature portant à la fois sur le plan de la typographie (utilisation de minuscules, majuscules, soulignés ou tirets, etc.), de l'ensemble des caractères utilisés (il est généralement recommandé de ne pas utilisés d'accents ou d'autres caractères diacritiques), des formes grammaticales utilisées (par exemple des formes verbales au passif et au participe présent ne sont pas homogénes), des connecteurs (e.g. des articles) et abbréviations utilisés ou non. Le manque d'homogénéité peut avoir des impacts néfastes sur la lecture, la possibilité de référencer de manière systèmatique des éléménts, la possibilité de faire des recherches textuelles d'identificateurs. Elle met également en péril toute possibilité d'automatisation, d'extraction d'information, de référencement, etc.
 
 * **Exemple:**  "supprimer employé" et "CreationDUnePers" ne sont pas homogènes car ils diffèrent par raport à (1) la casse, (2) l'ensemble des caractères utilisés, (3) le fait d'utiliser des articles ou non, (4) la forme grammaticale mise en oeuvre (infinitif vs. nom), (5) l'utilisation ou la suppression des articles, (6) l'utilisation d'abbréviation.  
 
@@ -1912,57 +1971,57 @@ Paquetage :[Nomenclature](#nomenclature)
 
 * **Exemple:**  "Djiamila Maria WONG CONNOR (DWG)"
 
-Date
+FormatDate
 -------------------
 Paquetage :[Nomenclature](#nomenclature)  
 
-  Une des dates mentionnées semble être incorrectes, non mise à jours, ou une date semble manquante.  
+
 
 MajMin
 -------------------
 Paquetage :[Nomenclature](#nomenclature)  
 
-  Un ou des identificateurs devraient être dans le style MajMin c'est à dire correspondre à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une majuscule. L'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.
+  L'identificateur doit correspondre à une suite de majuscules, minuscules ou chiffres, débutant par une majuscule.
 
-* **Exemple:**  ConnecteurDInterface, SMSRenvoye
+* **Commentaire:**  L'identificateur ne doit comporter ni espaces, ni accents, ni délimiteurs.
 
-minMaj
+* **Exemple:**  "ConnecteurDInterface2", "SMSRenvoye"
+
+MinMaj
 -------------------
 Paquetage :[Nomenclature](#nomenclature)  
 
-  Un ou des identificateurs devraient être dans le style minMaj c'est à dire correspond à une suite sans espaces ni ponctuations de majuscules et de minuscules, débutant par une minuscule. LL'utilisation d'accents est généralement à proscrire mais les chiffres et le caractère souligné peuvent généralement être utilisé pour les identificateurs composites.
+  L'identificateur doit correspondre à une suite de majuscules, minuscules ou chiffres, débutant par une minuscule. 
 
-* **Exemple:**  lesConnecteurs, smsRenvoye2, lesSMSRecus
+* **Commentaire:**  L'identificateur ne doit comporter ni espaces, ni accents, ni délimiteurs.
+
+* **Exemple:**  "lesConnecteurs", "smsRenvoye2", "les4SMSRecus"
+
+MinMajSouligne
+-------------------
+Paquetage :[Nomenclature](#nomenclature)  
+
+  L'identificateur doit correspondre à une suite de majuscules, minuscules, chiffres ou souligné ("_"), débutant par une minuscule. 
+
+* **Commentaire:**  L'identificateur ne doit comporter ni espaces, ni accents, ni délimiteurs autre que le souligné "_".
+
+* **Exemple:**  "acheterUnTicket_normal"
+
+MAJSouligneMAJ
+-------------------
+Paquetage :[Nomenclature](#nomenclature)  
+
+  L'identificateur doit correspondre à une suite séquences de majuscules, chiffres et soulignés ("_").
+
+* **Commentaire:**  L'identificateur ne doit comporter ni espaces, ni accents, ni délimiteurs autre que le souligné "_".
+
+* **Exemple:**  "CONST_WINDOW_CLOSED"
 
 StyleSIdentificateur
 -------------------
 Paquetage :[Nomenclature](#nomenclature)  
 
-  Différents styles d'intentificateurs sont utilisés sans pour autant que l'on puisse déterminer dans quelles conditions ces styles varient, s'ils sont utilisés de manière consistentes ou non. C'est le cas par exemple lorsque certains indentificateurs sont issues à la fois de styles MajMin, min_min, MAJ_MAJ, ou dans toutes autres combinaisons ad-hoc.
-
-min_min
--------------------
-Paquetage :[Nomenclature](#nomenclature)  
-
-  TODO.
-
-min-min
--------------------
-Paquetage :[Nomenclature](#nomenclature)  
-
-  TODO.
-
-MAJ-MAJ
--------------------
-Paquetage :[Nomenclature](#nomenclature)  
-
-  TODO.
-
-MAJ_MAJ
--------------------
-Paquetage :[Nomenclature](#nomenclature)  
-
-  TODO.
+  Différents styles d'intentificateurs sont utilisés sans pour autant que l'on puisse déterminer dans quelles conditions ces styles varient, s'ils sont utilisés de manière consistentes ou non. C'est le cas par exemple lorsque certains indentificateurs sont issues à la fois de styles MajMin, MinMaj, MAJSouligneMAJ etc, ou dans toutes autres combinaisons ad-hoc.
 
 RoleDansPatron
 -------------------
@@ -1998,83 +2057,101 @@ Paquetage :[ProgrammationWeb](#programmationweb)
 
 Scenario
 ====================================================
-23 rules: [NomScenario](#nomscenario) [NomenclatureScenario](#nomenclaturescenario) [NomScenarioInstantie](#nomscenarioinstantie) [IntentionScenario](#intentionscenario) [SequenceDActions](#sequencedactions) [Action](#action) [ActionVersPrecondition](#actionversprecondition) [ActionVersPostcondition](#actionverspostcondition) [SujetAction](#sujetaction) [SujetInstancie](#sujetinstancie) [IntermediaireAction](#intermediaireaction) [ActionAtomique](#actionatomique) [ActionConcrete](#actionconcrete) [ParametreConcret](#parametreconcret) [ActionMetier](#actionmetier) [MessageInexplique](#messageinexplique) [TypeDeMessage](#typedemessage) [ValeurDeRetour](#valeurderetour) [RetourInexplique](#retourinexplique) [RetourManquant](#retourmanquant) [Responsabilites](#responsabilites) [ReferenceScenario](#referencescenario) [PresenceObjet](#presenceobjet) 
+23 rules: [NomScenario](#nomscenario) [NomenclatureScenario](#nomenclaturescenario) [NomScenarioGlossaire](#nomscenarioglossaire) [NomScenarioInstantie](#nomscenarioinstantie) [IntentionScenario](#intentionscenario) [SequenceDActions](#sequencedactions) [FormatAction](#formataction) [SujetAction](#sujetaction) [SujetActionInstancie](#sujetactioninstancie) [DebutSujetAction](#debutsujetaction) [IntermediaireAction](#intermediaireaction) [ActionAtomique](#actionatomique) [ActionConcrete](#actionconcrete) [ParametreConcret](#parametreconcret) [ActionMetier](#actionmetier) [MessageInexplique](#messageinexplique) [TypeDeMessage](#typedemessage) [ValeurDeRetour](#valeurderetour) [RetourInexplique](#retourinexplique) [RetourManquant](#retourmanquant) [Responsabilites](#responsabilites) [ReferenceScenario](#referencescenario) [PresenceObjet](#presenceobjet) 
 
 NomScenario
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  Chaque scenario doit être nommé et le nom d'un scénario doit si possible faire référence explicitement au cas d'utilisation qu'il réalise ainsi que dans la mesure du possible à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario et un résumé décrira le contenu ou l'intention du scénario (cf $IntentionScenario). 
+  Chaque scenario doit être nommé et le nom d'un scénario doit faire référence (1) au cas d'utilisation qu'il réalise et (2) à la (ou aux) caractéristique(s) principale(s) de ce scénario qui le différentie des autres scénarios. Si ce n'est pas possible un numéro pourra être associé au nom de scénario. Dans tous les cas un résumé décrira le contenu ou l'intention du scénario (cf $IntentionScenario). 
+
+* **Exemple:**  "cloreDossier_Normal" et "cloreDossier_AnnulationClient" sont deux scénarii correspondants clairement au même cas d'utilisation "CloreDossier". Le premier scénario correspond au scénario dit "nominal". Si de nombreux scénarii devaient être associés au même cas d'utilisation et s'il est difficile de leur donner un nom court on alors choisir des noms du style "cloreDossier_S1", "cloreDossier_S2", ... "cloreDossier_S12" par exemple.
 
 NomenclatureScenario
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  Le nom d'un scenario doit a priori être en style minMaj (cf $MinMaj).
+  Le nom d'un scenario doit être en style MinMajSouligne (cf $MinMajSouligne).
 
-* **Commentaire:**  Les scénarii devant être référencés par plusieurs autres éléments de modèles il est utile de nommer de manière précise les scénarii. Comme un scénarii est au niveau "objet", le style minMaj est recommandé et ce par opposition au style MajMin (cf $MajMin) recommandé pour les Cas d'Utilisation (cf $NomenclatureCU).  
+* **Commentaire:**  Les scénarii devant être référencés par plusieurs autres éléments de modèles il est utile de nommer de manière précise les scénarii. Comme un scénarii est au niveau "instance", le style minMajSougligne est recommandé et ce par opposition au style MajMin (cf $MajMin) recommandé pour les Cas d'Utilisation (cf $NomenclatureCU). L'utilisation du souligné peut être utile pour séparer le nom du cas d'utilisation du qualificatif correspondant au scénario.
+
+* **Exemple:**  "cloreDossier_DechargeClient"  
+
+NomScenarioGlossaire
+-------------------
+Paquetage :[Scenario](#scenario)  
+
+  Les termes importants utilisés dans le nom des scénarii doivent être définis dans le glossaire. 
+
+* **Exemple:**  Dans "cloreDossier_DechargeClient" il est peut être nécessaire de définir les termes suivants ou certains de ces termes: "Decharge" ou "DechargeClient" et/ou "Client" selon les cas.
 
 NomScenarioInstantie
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées. Si trop d'information sont à décrire, il peut être préférable de numéroter les scénario et de définir leur contenu via le résumé du scénario.
+  Le nom d'un scénario instantié doit faire autant que possible référence aux instances considérées dans le scénarios notamment à l'acteur instancié ou aux jeux de données considérées. Si trop d'information sont à décrire, il peut être préférable de numéroter les scénarii (cf $NomScenario) et de définir leur contenu via le résumé du scénario (cf $IntentionScenario).
 
 IntentionScenario
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  Si un scénario est décrit de manière détaillée sous la forme d'une séquence d'actions, le "résumé" associé au scénario doit principalement décrire l'intention du scénario et positionner celui-ci par rapport aux autres scénarii correspondant au même cas d'utilisation. 
+  La description détaillée d'un scénario sous forme d'une séquence d'actions doit être précédée d'un résumé décrivant l'intention associée à ce scénario. Ce "résumé" doit principalement (1) décrire l'intention du scénario, (2) positionner celui-ci par rapport aux autres scénarii correspondant au même cas d'utilisation, (3) introduire éventuellement les données et instances essentielles référencées dans le scénario.
 
 SequenceDActions
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  Le scenario n'est pas décrit sous forme d'une séquence d'actions clairement identifiables et repréable au sein d'une séquence.
+  La description du scénario doit se faire strictement sous forme d'une séquence d'actions avec une seule action par ligne (cf $FormatAction).
 
-Action
+* **Exemple:**  Les actions suivantes peuvent former une séquence valide (une action par ligne) "* [Mamadou] introduit sa [carteBancaire13] dans le [distributeur637] de [cyberBanqueDeLorient]", "* [cyberBanqueDeLorient] affiche l'[ecran17] sur le [distributeur637]", "* [Mamadou] introduit son code 7878", etc.
+
+FormatAction
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  La phrase ne correspond pas à une action du système ou d'un acteur (cf $SequenceDActions)(cf $SujetAction).
+  Une action doit être décrite sous forme d'une ligne de texte commençant par un asterisque ("*")
 
-ActionVersPrecondition
--------------------
-Paquetage :[Scenario](#scenario)  
-
-  La description du scenario comporte des éléments qui semblent relever des préconditions associés au scénario, plutôt qu'à des actions.
-
-ActionVersPostcondition
--------------------
-Paquetage :[Scenario](#scenario)  
-
-  La description du scenario comporte des éléments qui semblent relever des postconditions associés au scénario, plutôt qu'à des actions.
+* **Commentaire:**  "* [paul] s'identifie auprès de [cyberCompetition]." doit être suivie d'un saut de ligne.
 
 SujetAction
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  La phrase ne correspond pas à une action avec un sujet clairement identifié, celui-ci devant être soit le système, soit l'acteur (ou un des acteurs dans le cas de scénarii multi-acteur).   
+  Le sujet d'une action apparaissant dans un scénario doit (1) soit être le système (2) soit un des acteurs intervenants dans le cas d'utilisation. Dans tous les cas il doit être explicitement identifié. 
 
-SujetInstancie
+* **Commentaire:**  S'il s'agit d'une action intervenant dans une description de scénario instancié il s'agira impérativement d'une instance (cf $SujetActionInstancie).
+
+* **Commentaire:**  Cela veut dire qu'une action prend soit la forme "* [unSystemeInstancie] ... " soit la forme "* [unActeurInstancie] ... "
+
+* **Exemple:**  "* [cyberKebabLondres] affiche l'[ecran112] demandant à [bree] de valider sa [commande1223]"
+
+* **Exemple:**  "* [bree] valide la [commande1223] gràce à [cyberKebabLondres]" 
+
+SujetActionInstancie
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  Le sujet des phrases d'actions doivent correspondre à chaque fois à un acteur instancié ou un système instancié et ces sujets doivent faire référence autant que possible à des éléments de modèles définis par ailleurs.
+  Le sujet d'une action doit correspondre (1) soit à un acteur instancié, (2) soit à  un système instancié. De plus il doit faire référence à un élément de modèles défini par ailleurs.
 
 * **Commentaire:**  Dans un scenario instancié il est important d'instancier les acteurs et le système dans la mesure ou ces scénarii doivent être aussi concrets que possible pour pouvoir être validés par les différents intervenants. Par ailleurs, donner référencer des acteurs ou systèmes instanciés permet de décrire les caractéristiques de ces derniers plus en détails et par exemple de définir leur profil utilisateur lorsqu'il s'agit d'acteurs humains. Faire référence à un système instancié permet également de situer le scénario dans un contexte plus précis, en prenant en compte par exemple l'état du système instancié (qui pourrait en effet correspondre à un état particulier). Un tel degré de précision peu se réveler fort utile dans le cadre de l'élaboration de tests à partir   
 
-* **Exemple:**  "Le système" devrait être remplacé par "cyberBatimentIMAG" si le système que l'on considère dans le scénario instancié correspond à l'instantiation du système CyberBatiment. Pour être plus précis, CyberBatiment est vu comme une classe de système pouvant être instantié (installé, configuré, etc.) dans différents contextes et maintenant de fait chacun leur état de manière séparée. 
+* **Exemple:**  "Le système" devrait être remplacé par "cyberBatimentIMAG" si le système que l'on considère dans le scénario instancié correspond à l'instantiation du système CyberBatiment. Pour être plus précis, CyberBatiment est vu comme une classe de système pouvant être instantié (installé, configuré, etc.) dans différents contextes. Chaque instance de ce même système va maintenir un état, une configuration, etc, qui va être différente et les mêmes actions sur ces différentes instances de systèmes vont donc potentiellement donner des résultats différents. 
+
+DebutSujetAction
+-------------------
+Paquetage :[Scenario](#scenario)  
+
+  Le sujet d'une action doit débuter la phrase décrivant cette action.
+
+* **Exemple:**  "* [bree] valide la [commande1223] gràce à [cyberKebabLondres]"
 
 IntermediaireAction
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  La ou les actions doivent être reformulées de manière à ce que le sujet de l'action soit clairement identifié (cf $SujetAction) même si des intermediaires peuvent figurer dans l'action à titre d'illustration et/ou pour donner des détails quand aux interactions concretes entres les acteurs et le systeme.
+  La ou les actions doivent être reformulées de manière à ce que le sujet de l'action soit clairement identifié (cf $SujetAction et $SujetActionInstancie) même si des intermediaires peuvent figurer dans l'action à titre d'illustration et/ou pour donner des détails quand aux interactions concretes entres les acteurs et le systeme.
 
-* **Commentaire:** 
-
-* **Exemple:**  Dans la phrase d'action "paul passe son badge210 dans le lecteurDeBadge214" le système de controle d'acces n'est pas représenté de manière explicite, alors que il est le destinataire du message dans un scenario externe. Le lecteurDeBadge214 joue simplement le rôle d'intermediaire, ou plus précisemment d'interface entre l'acteur et les éléments internes du systèmes. Si la description de ces éléments d'interfaces sont utiles, la phrase d'action devrait être reformulée de la manière suivante par exemple "paul s'identifie auprès du systemeDeControleIMAG via son badge210 qu'il passe devant le lecteurDeBadge214". Ici badge210 et lecteurDeBadge214 sont des intermediaires dans l'interaction entre paul et systemeDeControleIMAG. De manière plus abstraite, et si l'on veut faire abstraction de ces interfaces, on pourrait dire "paul s'identifie auprès du systemeDeControleIMAG".
+* **Exemple:**  Dans la phrase d'action "[paul] passe son [badge210] dans le [lecteurDeBadge214]" le système de controle d'acces n'est pas représenté de manière explicite, alors que il est le destinataire du message dans un scenario externe. Le lecteurDeBadge214 joue simplement le rôle d'intermediaire, ou plus précisemment d'interface entre l'acteur et les éléments internes du systèmes. Si la description de ces éléments d'interfaces sont utiles, la phrase d'action devrait être reformulée de la manière suivante par exemple "[paul] s'identifie auprès du [systemeDeControleIMAG] via son [badge210] qu'il passe devant le [lecteurDeBadge214]". Ici badge210 et lecteurDeBadge214 sont des intermediaires dans l'interaction entre paul et systemeDeControleIMAG. De manière plus abstraite, et si l'on veut faire abstraction de ces interfaces, on pourrait dire "[paul] s'identifie auprès du [systemeDeControleIMAG]".
 
 ActionAtomique
 -------------------
@@ -2084,11 +2161,17 @@ Paquetage :[Scenario](#scenario)
 
 * **Commentaire:**  Séparer ces actions permet une meilleure traçabilité entre les différents modèles, par exemple entre les scénarii décrits textuellement et les diagrammes de séquences ou de communication.
 
+* **Exemple:**  
+
 ActionConcrete
 -------------------
 Paquetage :[Scenario](#scenario)  
 
-  L'action ou les actions ne sont pas décrites de manières suffisemment concrètes, soit en terme des moyens utilisés pour les interactions, soit en termes des informations échangées.
+  L'action ou les actions ne sont pas décrites de manières suffisemment concrètes, soit en terme des moyens utilisés pour les interactions, soit en termes d'informations échangées.
+
+* **Commentaire:**  Les scénarii, notemment les scénarii instanciés doivent contenir suffisemment d'information pour pouvoir par la suite générer automatiquement ou manuellement des tests. Si des données précises ne sont pas fournies lors de l'écriture des scénarii, un travail supplémentaire devra être fait par la suite. Par ailleurs il est toujours utile de donner des exemples concrètes de valeurs ou d'objets pour pouvoir valider les scénarii. 
+
+* **Exemple:**  
 
 ParametreConcret
 -------------------
@@ -2180,19 +2263,29 @@ Paquetage :[Sequence](#sequence)
 
 Systeme
 ====================================================
-4 rules: [NomSysteme](#nomsysteme) [DecompositionSousSysteme](#decompositionsoussysteme) [SurDecomposition](#surdecomposition) [LimiteDuSysteme](#limitedusysteme) 
+5 rules: [NomSysteme](#nomsysteme) [NomenclatureSysteme](#nomenclaturesysteme) [DecompositionSousSysteme](#decompositionsoussysteme) [SurDecomposition](#surdecomposition) [LimiteDuSysteme](#limitedusysteme) 
 
 NomSysteme
 -------------------
 Paquetage :[Systeme](#systeme)  
 
-  Les noms des systèmes et des sous-systèmes doivent clairement reflêter leur rôle et/ou la décomposition réalisée, ne doivent pas être générique (par exemple "Systeme" est à éviter), et doivent clairement montrer leur status de systèmes (par exemple SystemeDeGestionDesBatiment est correct alors que Batiment ne l'est pas).
+  Les noms des systèmes et des sous-systèmes doivent clairement reflêter leur rôle et/ou la décomposition réalisée, ne doivent pas être générique, et doivent montrer leur status de systèmes.
+
+* **Exemple:**  "Systeme" est à éviter car ce nom est trop générique. "Batiment" n'est pas adapté comme nom de sous-système car ce terme fait référence à un système physique. "GestionDesBatiments" ou "SystemeDeGestionDesBatiments" sont mieux adaptés.
+
+NomenclatureSysteme
+-------------------
+Paquetage :[Systeme](#systeme)  
+
+  Les noms de système et sous-systèmes doivent être en style MajMin (cf $MajMin).
+
+* **Exemple:**  "GestionDesIncidents"
 
 DecompositionSousSysteme
 -------------------
 Paquetage :[Systeme](#systeme)  
 
-  La décomposition en termes de sous systèmes ne semble pas adéquate, pas équilibrée et/ou pas justifiée.
+  La décomposition en termes de sous -ystèmes ne semble pas adéquate, pas équilibrée et/ou pas justifiée.
 
 SurDecomposition
 -------------------
@@ -2505,7 +2598,7 @@ Paquetage :[Tracabilite](#tracabilite)
 
 * **Commentaire:**  Les espaces ne sont pas autorisés.
 
-* **Exemple:**  [R001#2,4-5;B002#34] est équivalent à [R001#2][R001#4][R001#5][B002#34]
+* **Exemple:**  [CR001#2,4-5;CR002#34] est équivalent à [CR001#2][CR001#4][CR001#5][CB002#34]
 
 CUExigenceFonctionnelle
 -------------------
