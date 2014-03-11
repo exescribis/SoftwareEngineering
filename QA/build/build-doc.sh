@@ -56,16 +56,20 @@ gawk '
       #------ rule paragraph ----
       
       #--- deal with inner sections
+      gsub(/^  Type:/,"* **Type:** ") ;
       gsub(/^  Commentaires?:/,"* **Commentaire:** ") ;
       gsub(/^  Exemples?:/,"* **Exemple:** ") ;
       gsub(/^  Remarques?:/,"* **Remarque:** ") ;
       gsub(/^  Observations?:/,"* **Observation:** ") ;
+      gsub(/^  Meta:/,"* **Meta:** ") ;
+
       
       #--- deal with cf references
       # TODO gsub(/\( *cf *$([^\) ]+\ *)/, "cf $1" ) ;
 
       paragraph=$0 
-      RULE_TO_TEXTS[RULENAME] = add(RULE_TO_TEXTS[RULENAME],paragraph,"\n\n") 
+      RULE_TO_TEXTS[RULENAME] = add(RULE_TO_TEXTS[RULENAME],paragraph,"\n\n")
+      next      
     }
     
     
