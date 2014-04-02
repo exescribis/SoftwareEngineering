@@ -4,7 +4,8 @@ Bienvenue dans ModelioZone. Cet espace contient différentes ressources pour Mod
 
 Templates
 ---------
-Le répertoire "templates" contient des templates de documents pour la génération de rapports. Les indications pour installer un template sont également dans ce répertoire.
+The content of this directory has been moved to a new place where more ressources for modelio are available.
+See the [templates](https://github.com/megaplanet/ModelioScribes/tree/master/templates) directory of the [ModelioScribes](https://github.com/megaplanet/ModelioScribes) repository.
 
 Styles
 ------
