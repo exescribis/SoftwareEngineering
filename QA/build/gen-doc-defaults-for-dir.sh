@@ -4,10 +4,11 @@ EXT_SRC=.xfdf
 EXT_TGT=-dt.html
 THISDIR=`dirname $0`
 
+INPUTDIR=$DIR/xfdf
 OUTPUTDIR=$DIR/html
 mkdir -p $OUTPUTDIR
 
-for INPUT in `ls ${DIR}/*$EXT_SRC`
+for INPUT in `ls ${INPUTDIR}/*$EXT_SRC`
 do
   CORE=`basename $INPUT $EXT_SRC`
   OUTPUT=$OUTPUTDIR/$CORE$EXT_TGT
