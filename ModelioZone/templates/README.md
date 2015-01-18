@@ -1,4 +1,4 @@
 Directory Moved
 ===============
-The content of this directory has been moved to a new place where more ressources for modelio are available.
-See the [templates](https://github.com/megaplanet/ModelioScribes/tree/master/templates) directory of the [ModelioScribes](https://github.com/megaplanet/ModelioScribes) repository.
+The content of this directory has been moved to a new place.
+See the templates directory of [PyModelio](https://github.com/megaplanet/PyModelio) repository.
